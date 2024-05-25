@@ -1,0 +1,47 @@
+@startmindmap
+* PlantUML
+** 00 Quick Start
+*** Local Installation
+**** installation FAQ
+*** Command Line Operations
+**** Create "Hello World" in Sequence Diagram
+*** Some resources
+**** PlantUML Project in GitHub
+**** PlantUML Language Reference Guide
+**** PlanUML Web Server
+**** PlantUML cheatsheet
+**** PlantUML 101
+**** PlantUML Beginner's Guide
+**** Pladitor - out-of-the-box PlantUML diagram editor
+**** Ashley's PlantUML Doc
+** UML Related Diagrams
+*** 01 Sequence Diagram
+*** 02 Use Case Diagram
+*** 03 Class Diagram
+*** 04 Object Diagram
+*** 05 Activity Diagram (legacy)
+*** 06 Activity Diagram (New Syntax)
+*** 07 Component Diagram
+*** 08 Deployment Diagram
+*** 09 State Diagram
+*** 10 10 Timing Diagram
+** Non-UML Diagrams
+*** 11 Display JSON Data
+*** 12 Display YAML Data
+*** 13 Network Diagram (nwdiag)
+*** 14 Salt (Wireframe)
+*** 15 Archimate Diagram
+*** 16 Gantt Diagram
+*** 17 Mindmap
+*** 18 Work Breakdown Structure (WBS)
+*** 19 Maths
+*** 20 Entity Relationship Diagram
+** PlantUML as a Language
+*** 21 Common Commands in PlantUML
+*** 22 Creole
+*** 23 Defining the using sprites
+*** 24 Skinparam command
+*** 25 Preprocessing
+*** 26 Unicode
+*** 27 PlantUML Standard Library
+@endmindmap
