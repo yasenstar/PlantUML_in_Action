@@ -80,14 +80,14 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<node TEXT="00 Quick Start" POSITION="bottom_or_right" ID="ID_1426358653" CREATED="1716662000256" MODIFIED="1716662387157" LINK="https://plantuml.com/starting">
+<node TEXT="00 Quick Start" FOLDED="true" POSITION="bottom_or_right" ID="ID_1426358653" CREATED="1716662000256" MODIFIED="1716662387157" LINK="https://plantuml.com/starting">
 <node TEXT="Local Installation" ID="ID_684281566" CREATED="1716662966846" MODIFIED="1716663000371">
 <node TEXT="installation FAQ" ID="ID_903936578" CREATED="1716663050706" MODIFIED="1716663062075" LINK="https://plantuml.com/faq-install"/>
 </node>
 <node TEXT="Command Line Operations" ID="ID_170625412" CREATED="1716663009148" MODIFIED="1716663016786">
 <node TEXT="Create &quot;Hello World&quot; in Sequence Diagram" ID="ID_1668323427" CREATED="1716663016789" MODIFIED="1716663029606"/>
 </node>
-<node TEXT="Some resources" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
+<node TEXT="Some resources" FOLDED="true" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
 <node TEXT="PlantUML Project in GitHub" ID="ID_764004615" CREATED="1716662494639" MODIFIED="1716662505348" LINK="https://github.com/plantuml/plantuml"/>
 <node TEXT="PlantUML Language Reference Guide" ID="ID_1495801307" CREATED="1716662517632" MODIFIED="1716662534484" LINK="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf"/>
 <node TEXT="PlanUML Web Server" ID="ID_1810892035" CREATED="1716662420069" MODIFIED="1716662436141" LINK="https://www.plantuml.com/"/>
