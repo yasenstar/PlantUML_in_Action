@@ -1,0 +1,12 @@
+@startmindmap
+* Diagraming Tool
+** Static Drawing
+*** Visio
+*** draw.io
+** Repository Modeling
+*** Sparx Enterprise Architect
+*** Archi (ArchiMate) Tool
+** Diagramming as Code
+*** PlantUML
+*** Mermaid
+@endmindmap
