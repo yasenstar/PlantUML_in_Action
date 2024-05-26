@@ -1,0 +1,17 @@
+' Author: Xiaoqi Zhao
+' Version: 1.0
+
+@startuml
+
+actor Bob order 10 #blue 
+actor Alice order 20 #red 
+participant "I have a really\nlong name" as L order 30 #99FF99 
+' participant M as "I have a really\nlong name" #99FF99
+
+Bob <- Alice: Authentication Request
+Bob --> Alice: Authentication Response
+Bob -> L: Log transaction
+
+@enduml
+
+' you need put "order" before "color"
