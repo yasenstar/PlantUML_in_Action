@@ -54,6 +54,8 @@
 
 #### 1.3 Declaring Participant on Multiline
 
+##### Ref. QA 15232
+
 ### Part 2
 
 #### 1.4 Use Non-Letters in Participants
@@ -61,6 +63,14 @@
 #### 1.5 Message to Self
 
 #### 1.6 Text Alignment
+
+##### skinparam sequenceMessageAlign
+
+###### left
+
+###### right
+
+###### center
 
 ##### 1.6.1 Text of Response Message below the Arrow
 
@@ -70,15 +80,37 @@
 
 #### 1.8 Change Arrow Color
 
+##### -[#color]>
+
 #### 1.9 Message Sequence Numbering
+ (see:Part 5 - Message Notes)
+##### autonumber
+
+##### autonumber "number"
+
+##### autonumber "number" step(default=1)
+
+##### autonumber "style/color"
+
+##### autonumber resume/stope
+
+##### use numbering as variable: %autonumber%
 
 #### 1.0 Page Title, Header and Footer
+
+##### keyword: title
+
+##### keyword: header, footer
 
 ### Part 4
 
 #### 1.11 Splitting Diagrams
 
+##### keyword: newpage
+
 #### 1.12 Grouping Message
+
+##### keyword: alt/else, opt, loop, par, break, critical, group
 
 #### 1.13 Secondary Group Label
 
