@@ -1,0 +1,14 @@
+@startuml
+
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+
+actor Bob
+' actor Jack1
+' actor Jack2
+actor Alice
+
+Bob -> Alice: Request
+Bob <- Alice: Response
+
+@enduml

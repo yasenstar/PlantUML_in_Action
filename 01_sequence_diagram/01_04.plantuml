@@ -1,0 +1,7 @@
+@startuml
+
+Alice -> "Bob()": Hello
+"Bob()" -> "This is very\nlong" as Long
+Long --> "Bob()": OK
+
+@enduml
