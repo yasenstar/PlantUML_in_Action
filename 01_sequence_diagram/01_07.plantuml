@@ -1,0 +1,27 @@
+@startuml
+
+Bob -> Alice
+Bob <-- Alice
+
+Bob ->x Alice
+
+Bob -> Alice
+Bob ->> Alice
+
+Bob -\ Alice
+Bob -\\ Alice
+
+Bob -/ Alice
+Bob -// Alice
+
+Bob ->o Alice
+Bob -//o Alice
+
+Bob <-> Alice
+Bob o<-> Alice
+Bob o<->> Alice
+
+' when below change to empty arrow on both side?
+Bob <<-> Alice
+
+@enduml
