@@ -1,0 +1,10 @@
+' Author: Xiaoqi Zhao
+' Date: 2024/05/26
+
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another Authentication Request
+Alice <-- Bob: Another Authentication Response
+@enduml
