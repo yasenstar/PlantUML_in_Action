@@ -80,22 +80,27 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<node TEXT="00 Quick Start" FOLDED="true" POSITION="bottom_or_right" ID="ID_1426358653" CREATED="1716662000256" MODIFIED="1716662387157" LINK="https://plantuml.com/starting">
+<node TEXT="00 Quick Start" POSITION="bottom_or_right" ID="ID_1426358653" CREATED="1716662000256" MODIFIED="1716662387157" LINK="https://plantuml.com/starting">
 <node TEXT="Local Installation" ID="ID_684281566" CREATED="1716662966846" MODIFIED="1716663000371">
 <node TEXT="installation FAQ" ID="ID_903936578" CREATED="1716663050706" MODIFIED="1716663062075" LINK="https://plantuml.com/faq-install"/>
 </node>
 <node TEXT="Command Line Operations" ID="ID_170625412" CREATED="1716663009148" MODIFIED="1716663016786">
 <node TEXT="Create &quot;Hello World&quot; in Sequence Diagram" ID="ID_1668323427" CREATED="1716663016789" MODIFIED="1716663029606"/>
 </node>
-<node TEXT="Some resources" FOLDED="true" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
+<node TEXT="Some resources" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
 <node TEXT="PlantUML Project in GitHub" ID="ID_764004615" CREATED="1716662494639" MODIFIED="1716662505348" LINK="https://github.com/plantuml/plantuml"/>
 <node TEXT="PlantUML Language Reference Guide" ID="ID_1495801307" CREATED="1716662517632" MODIFIED="1716662534484" LINK="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf"/>
-<node TEXT="PlanUML Web Server" ID="ID_1810892035" CREATED="1716662420069" MODIFIED="1716662436141" LINK="https://www.plantuml.com/"/>
 <node TEXT="PlantUML cheatsheet" ID="ID_728879122" CREATED="1716662545213" MODIFIED="1716662554518" LINK="https://devhints.io/plantuml"/>
 <node TEXT="PlantUML 101" ID="ID_254962759" CREATED="1716662745211" MODIFIED="1716662768731" LINK="https://www.webdevtutor.net/blog/plantuml-101-tutorial"/>
 <node TEXT="PlantUML Beginner&apos;s Guide" ID="ID_1570246169" CREATED="1716662940852" MODIFIED="1716662959471" LINK="https://www.webdevtutor.net/blog/beginner-guide-plantuml-sequence-diagrams-with-examples"/>
 <node TEXT="Pladitor - out-of-the-box PlantUML diagram editor" ID="ID_1664797089" CREATED="1716662851053" MODIFIED="1716662880833" LINK="https://plantumleditor.com/"/>
 <node TEXT="Ashley&apos;s PlantUML Doc" ID="ID_1760503818" CREATED="1716662895097" MODIFIED="1716662911066" LINK="https://plantuml-documentation.readthedocs.io/en/latest/index.html"/>
+<node TEXT="Hitchhiker&apos;s Guide to PlantUML" ID="ID_108400670" CREATED="1716758087073" MODIFIED="1716758096831" LINK="https://crashedmind.github.io/PlantUMLHitchhikersGuide/"/>
+</node>
+<node TEXT="PlantUML Implementation" ID="ID_398095731" CREATED="1716757785464" MODIFIED="1716757792454">
+<node TEXT="Pure JavaScript Implementation" ID="ID_1760426387" CREATED="1716757792956" MODIFIED="1716757804782" LINK="https://plantuml.github.io/plantuml-core/raw.html"/>
+<node TEXT="PlanUML Web Server" POSITION="bottom_or_right" ID="ID_1810892035" CREATED="1716662420069" MODIFIED="1716662436141" LINK="https://www.plantuml.com/"/>
+<node TEXT="Node.js Model and CLI for running PlantUML" POSITION="bottom_or_right" ID="ID_1855810829" CREATED="1716758246379" MODIFIED="1716758262643" LINK="https://www.npmjs.com/package/node-plantuml"/>
 </node>
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>

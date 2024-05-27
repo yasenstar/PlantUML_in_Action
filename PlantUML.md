@@ -16,8 +16,6 @@
 
 ### PlantUML Language Reference Guide
 
-### PlanUML Web Server
-
 ### PlantUML cheatsheet
 
 ### PlantUML 101
@@ -27,6 +25,16 @@
 ### Pladitor - out-of-the-box PlantUML diagram editor
 
 ### Ashley's PlantUML Doc
+
+### Hitchhiker's Guide to PlantUML
+
+## PlantUML Implementation
+
+### Pure JavaScript Implementation
+
+### PlanUML Web Server
+
+### Node.js Model and CLI for running PlantUML
 
 ## PlantUML Forum
 
@@ -65,6 +73,7 @@
 #### 1.6 Text Alignment
 
 ##### skinparam sequenceMessageAlign
+or sequenceMessageAlignment
 
 ###### left
 
@@ -73,6 +82,8 @@
 ###### center
 
 ##### 1.6.1 Text of Response Message below the Arrow
+
+###### responseMessageBelowArrow (boolean)
 
 ### Part 3
 
