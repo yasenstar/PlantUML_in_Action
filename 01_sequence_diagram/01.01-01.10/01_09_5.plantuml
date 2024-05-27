@@ -1,0 +1,18 @@
+@startuml
+
+autonumber 1.1.1
+
+Bob -> Alice: Authentication Request
+Bob <-- Alice: Authentication Response
+
+autonumber inc A
+
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+autonumber inc B
+
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+@enduml

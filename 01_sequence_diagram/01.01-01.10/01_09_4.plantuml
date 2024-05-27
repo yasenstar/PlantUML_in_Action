@@ -1,0 +1,25 @@
+@startuml
+
+autonumber 10 10 "<b>[000]"
+
+Bob -> Alice: Authentication Request
+Bob <-- Alice: Authentication Response
+
+autonumber stop
+
+Bob -> Alice: dummy
+
+autonumber resume "<font color=red><b>Message 000   "
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+autonumber stop
+
+Bob -> Alice: dummy
+
+' the number after resume is the stepping
+autonumber resume 5 "<font color=blue><b>Message 000   "
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+@enduml

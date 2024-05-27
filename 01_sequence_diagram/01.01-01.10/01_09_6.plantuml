@@ -1,0 +1,15 @@
+@startuml
+
+autonumber 10
+
+Alice -> Bob: Hello
+note right
+    the <U+0025>autonumber<U+0025> works everywhere.
+    Here, its value is ** %autonumber% **
+end note
+
+Alice -> Bob: 2nd message
+
+Alice <-- Bob: Hello, Thanks, // This is response number %autonumber% //
+
+@enduml
