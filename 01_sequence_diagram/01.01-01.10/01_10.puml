@@ -1,0 +1,14 @@
+@startuml
+
+title Example Title
+
+header Page Header
+footer Version 1.0, Page %page% of %lastpage%
+
+actor Alice
+actor Bob
+
+Alice -> Bob : hello
+Alice <-- Bob : thanks, hello
+
+@enduml
