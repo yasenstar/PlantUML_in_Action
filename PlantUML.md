@@ -94,7 +94,7 @@ or sequenceMessageAlignment
 ##### -[#color]>
 
 #### 1.9 Message Sequence Numbering
- (see:Part 5 - Message Notes)
+
 ##### autonumber
 
 ##### autonumber "number"
@@ -103,11 +103,11 @@ or sequenceMessageAlignment
 
 ##### autonumber "style/color"
 
-##### autonumber resume/stope
+##### autonumber resume/stop
 
 ##### use numbering as variable: %autonumber%
-
-#### 1.0 Page Title, Header and Footer
+ (see:Part 5 - Message Notes)
+#### 1.10 Page Title, Header and Footer
 
 ##### keyword: title
 
@@ -125,15 +125,35 @@ or sequenceMessageAlignment
 
 #### 1.13 Secondary Group Label
 
+##### between [ and ]
+
 ### Part 5 - Message Notes
 
 #### 1.14 Notes on Messages
 
+##### keywords
+
+###### note left
+
+###### note right
+
+###### end note for multiline note
+
 #### 1.15 Some Other Notes
+
+##### relative
+
+###### note left of
+
+###### note right of
+
+###### note over
 
 #### 1.16 Changing Notes Shape [hnote, rnote]
 
 #### 1.17 Note over all Participants [across]
+
+##### note cross
 
 #### 1.18 Several Notes Aligned at the Same Level [/]
 
