@@ -1,0 +1,37 @@
+@startuml
+
+title diagram demo the autonumber
+
+header testing
+footer Page %page% of %lastpage%
+
+autonumber
+
+Bob -> Alice: Authentication Request
+Bob <-- Alice: Authentication Response
+
+newpage the 2nd page
+
+autonumber 15
+
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+newpage the 3rd page\nmy last page
+
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+autonumber 17
+
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+autonumber 100 10
+
+Bob -> Alice: Another Authentication Request
+Bob <-- Alice: Another Authentication Response
+
+@enduml
