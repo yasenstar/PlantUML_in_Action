@@ -87,7 +87,7 @@
 <node TEXT="Command Line Operations" ID="ID_170625412" CREATED="1716663009148" MODIFIED="1716663016786">
 <node TEXT="Create &quot;Hello World&quot; in Sequence Diagram" ID="ID_1668323427" CREATED="1716663016789" MODIFIED="1716663029606"/>
 </node>
-<node TEXT="Some resources" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
+<node TEXT="Some resources" FOLDED="true" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
 <node TEXT="PlantUML Project in GitHub" ID="ID_764004615" CREATED="1716662494639" MODIFIED="1716662505348" LINK="https://github.com/plantuml/plantuml"/>
 <node TEXT="PlantUML Language Reference Guide" ID="ID_1495801307" CREATED="1716662517632" MODIFIED="1716662534484" LINK="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf"/>
 <node TEXT="PlantUML cheatsheet" ID="ID_728879122" CREATED="1716662545213" MODIFIED="1716662554518" LINK="https://devhints.io/plantuml"/>
@@ -97,7 +97,7 @@
 <node TEXT="Ashley&apos;s PlantUML Doc" ID="ID_1760503818" CREATED="1716662895097" MODIFIED="1716662911066" LINK="https://plantuml-documentation.readthedocs.io/en/latest/index.html"/>
 <node TEXT="Hitchhiker&apos;s Guide to PlantUML" ID="ID_108400670" CREATED="1716758087073" MODIFIED="1716758096831" LINK="https://crashedmind.github.io/PlantUMLHitchhikersGuide/"/>
 </node>
-<node TEXT="PlantUML Implementation" ID="ID_398095731" CREATED="1716757785464" MODIFIED="1716757792454">
+<node TEXT="PlantUML Implementation" FOLDED="true" ID="ID_398095731" CREATED="1716757785464" MODIFIED="1716757792454">
 <node TEXT="Pure JavaScript Implementation" ID="ID_1760426387" CREATED="1716757792956" MODIFIED="1716757804782" LINK="https://plantuml.github.io/plantuml-core/raw.html"/>
 <node TEXT="PlanUML Web Server" POSITION="bottom_or_right" ID="ID_1810892035" CREATED="1716662420069" MODIFIED="1716662436141" LINK="https://www.plantuml.com/"/>
 <node TEXT="Node.js Model and CLI for running PlantUML" POSITION="bottom_or_right" ID="ID_1855810829" CREATED="1716758246379" MODIFIED="1716758262643" LINK="https://www.npmjs.com/package/node-plantuml"/>
@@ -139,16 +139,17 @@
 <node TEXT="1.8 Change Arrow Color" FOLDED="true" POSITION="bottom_or_right" ID="ID_1877294521" CREATED="1716689164546" MODIFIED="1716689170048">
 <node TEXT="-[#color]&gt;" ID="ID_1812381864" CREATED="1716746936674" MODIFIED="1716746949529"/>
 </node>
-<node TEXT="1.9 Message Sequence Numbering" FOLDED="true" POSITION="bottom_or_right" ID="ID_1042124825" CREATED="1716689173022" MODIFIED="1716748588442">
-<arrowlink DESTINATION="ID_1876454058"/>
+<node TEXT="1.9 Message Sequence Numbering" POSITION="bottom_or_right" ID="ID_1042124825" CREATED="1716689173022" MODIFIED="1716780979207">
 <node TEXT="autonumber" ID="ID_1705816043" CREATED="1716746954277" MODIFIED="1716746960444"/>
 <node TEXT="autonumber &quot;number&quot;" ID="ID_509747752" CREATED="1716746969557" MODIFIED="1716746975605"/>
 <node TEXT="autonumber &quot;number&quot; step(default=1)" ID="ID_1682911198" CREATED="1716746981416" MODIFIED="1716747002968"/>
 <node TEXT="autonumber &quot;style/color&quot;" ID="ID_1453092421" CREATED="1716747083264" MODIFIED="1716747100434"/>
-<node TEXT="autonumber resume/stope" ID="ID_236403415" CREATED="1716747144759" MODIFIED="1716747154472"/>
-<node TEXT="use numbering as variable: %autonumber%" ID="ID_1697192030" CREATED="1716747379985" MODIFIED="1716747395111" LINK="https://forum.plantuml.net/7119"/>
+<node TEXT="autonumber resume/stop" ID="ID_236403415" CREATED="1716747144759" MODIFIED="1716780327722"/>
+<node TEXT="use numbering as variable: %autonumber%" ID="ID_1697192030" CREATED="1716747379985" MODIFIED="1716780983361" LINK="https://forum.plantuml.net/7119">
+<arrowlink DESTINATION="ID_1876454058"/>
 </node>
-<node TEXT="1.0 Page Title, Header and Footer" POSITION="bottom_or_right" ID="ID_1457169828" CREATED="1716689186031" MODIFIED="1716689192344">
+</node>
+<node TEXT="1.0 Page Title, Header and Footer" FOLDED="true" POSITION="bottom_or_right" ID="ID_1457169828" CREATED="1716689186031" MODIFIED="1716689192344">
 <node TEXT="keyword: title" ID="ID_939462730" CREATED="1716747435099" MODIFIED="1716747447063"/>
 <node TEXT="keyword: header, footer" ID="ID_996784743" CREATED="1716747447535" MODIFIED="1716747457974"/>
 </node>
