@@ -158,8 +158,36 @@
 <node TEXT="1.11 Splitting Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1416405706" CREATED="1716689194722" MODIFIED="1716689199216">
 <node TEXT="keyword: newpage" ID="ID_630654812" CREATED="1716747579820" MODIFIED="1716747583697"/>
 </node>
-<node TEXT="1.12 Grouping Message" FOLDED="true" POSITION="bottom_or_right" ID="ID_1282404374" CREATED="1716689201395" MODIFIED="1716689205686">
-<node TEXT="keyword: alt/else, opt, loop, par, break, critical, group" ID="ID_539321042" CREATED="1716747657736" MODIFIED="1716747671761"/>
+<node TEXT="1.12 Grouping Message" POSITION="bottom_or_right" ID="ID_1282404374" CREATED="1716689201395" MODIFIED="1716689205686">
+<node TEXT="Frames Around Fragments (Ashley&apos;s)" ID="ID_1648775653" CREATED="1716853343566" MODIFIED="1716853363667" LINK="https://plantuml-documentation.readthedocs.io/en/latest/diagrams/sequence.html">
+<node ID="ID_1032867741" CREATED="1716853381764" MODIFIED="1716853407614"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      All frame keywords <span style="font-weight: bold;">must have a corresponding </span><span style="font-weight: normal;">&quot;end&quot; to signal where the frame ends</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Frames can be nested" ID="ID_253817796" CREATED="1716853408462" MODIFIED="1716853413648"/>
+<node TEXT="You cannot use a note within a frame" ID="ID_125736273" CREATED="1716853413836" MODIFIED="1716853432394"/>
+</node>
+<node TEXT="keywords" ID="ID_539321042" CREATED="1716747657736" MODIFIED="1716854289889">
+<node TEXT="alt: used to show one or more alternative sequences that can happen." ID="ID_463817274" CREATED="1716853459196" MODIFIED="1716853481044"/>
+<node TEXT="else: the default sequence in a list of alternative sequences" ID="ID_273218535" CREATED="1716853482285" MODIFIED="1716853498040"/>
+<node TEXT="opt: an optional sequence, it either happens or not" ID="ID_319469511" CREATED="1716853514615" MODIFIED="1716853611387"/>
+<node TEXT="loop: shows a sequence that loops" ID="ID_209347386" CREATED="1716853539021" MODIFIED="1716853606783"/>
+<node TEXT="par: shows a parallel sequence" ID="ID_1516349337" CREATED="1716853589003" MODIFIED="1716853602251"/>
+<node TEXT="break: shows that a sequence breaks, it stops (does not perform) any of the remaining sequence does this instead" ID="ID_345507221" CREATED="1716853615000" MODIFIED="1716853645093"/>
+<node TEXT="critical: a fragment of a sequence that cannot be &quot;interleaved&quot; by other fragments (e.g. parallel fragments, etc.)" ID="ID_1433324035" CREATED="1716853646824" MODIFIED="1716853677274"/>
+<node TEXT="group: allows you to fully specify the frame name" ID="ID_1170162333" CREATED="1716854267214" MODIFIED="1716854280242"/>
+</node>
 </node>
 <node TEXT="1.13 Secondary Group Label" FOLDED="true" POSITION="bottom_or_right" ID="ID_854116553" CREATED="1716689210011" MODIFIED="1716689215368">
 <node TEXT="between [ and ]" ID="ID_188510926" CREATED="1716835888363" MODIFIED="1716835894903"/>

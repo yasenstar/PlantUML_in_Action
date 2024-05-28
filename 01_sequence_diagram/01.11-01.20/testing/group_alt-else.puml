@@ -1,0 +1,29 @@
+@startuml
+
+' sample on alt and else
+
+Alice -> Bob : Authentical Request
+
+alt successful case
+
+    Alice <- Bob: Authentication Accepted
+
+else some kind of failure
+
+    Alice <- Bob: Authentical Failure
+    
+    group My own label
+        Alice -> Log: Log attack starts
+        loop 1000 times
+            Alice -> Bob: DNS Attack
+        end
+    Alice -> Log: Log attack end
+    end
+
+else another type of failure
+
+    Alice <-- Bob: Please repeat
+
+end
+
+@enduml

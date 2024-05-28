@@ -1,0 +1,10 @@
+@startuml
+
+archimate #Application "App1" <<application-component>>
+archimate #Application "App2" <<application-component>>
+archimate #Application "SFTP_Service" <<application-service>>
+
+App1 -right-> SFTP_Service 
+SFTP_Service .up.|> App2
+
+@enduml

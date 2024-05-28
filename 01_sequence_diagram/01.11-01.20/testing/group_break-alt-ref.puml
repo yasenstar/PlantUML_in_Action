@@ -1,0 +1,53 @@
+@startuml
+
+participant Object1
+participant Object2
+
+note across
+    1. Break combined fragment: 
+    When a break combined fragment is met and its guard condition is true,
+    only this fragment is still executed and then the execution of the 
+    interaction (flow) stops. If the condition is not met, the combined 
+    fragment is omitted and the normal flow continues. 
+    This is exactly the case you describe. 
+    In this case you would put the messages that shouldn't be executed in case of 
+    a break condition after the break combined fragment.
+end note
+break break contition
+    Object1 -> Object2 : breakFlow
+end
+Object1 <-- Object2 : normalFlow
+
+note across
+    2. Opt combined fragment:
+    When an opt combined fragment is met it executes only if a guard condition
+     is true. The rest of a flow continues regardless of the condition. 
+     You can put the part of the flow that is continued only if the break 
+     condition is not met inside the opt combined fragment. The opt fragment 
+     should have a guard that is opposite to the condition at which the flow 
+     should stop. If any additional actions should happen in case of a break, 
+     they should be put after the opt combined fragment.
+end note
+opt negation of break condition (continuation condition)
+    Object1 -> Object2 : normalFlow
+end
+Object1 <-- Object2 : breakFlow
+
+note across
+    3. Alt combined fragment:
+    When an alt combined fragment is met its guard conditions are evaluated 
+    and only the eventual one fragment which guard evaluates to true is executed. 
+    There might be also a situation when none of the guards evaluate to true 
+    and no fragment is executed in such case. Whatever flow is after the combined 
+    fragment is executed normally anyway. In this case you would preferably 
+    put two fragments, one with the correct operation guard and the second one 
+    with a condition that should cause a break. Put the normal flow in the first 
+    fragment and whatever should happen in case of a break in the second fragment.
+end note
+alt negation of break condition (continuation condition)
+    Object1 -> Object2 : normalFlow
+else break condition
+    Object1 <-- Object2 : breakFlow
+end
+
+@enduml

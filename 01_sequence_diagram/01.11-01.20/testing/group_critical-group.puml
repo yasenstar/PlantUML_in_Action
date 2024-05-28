@@ -1,0 +1,21 @@
+' Test on "par" and "else" keyword
+
+@startuml
+
+par
+    activate a
+    critical important
+        a -> b : do something
+    end
+    a -> e
+' using else to add dotted separate lines between threads
+else
+    group myGroup
+        a <- d : back
+    end
+    a -> c : do something
+else
+    a -> d : do something
+end
+
+@enduml

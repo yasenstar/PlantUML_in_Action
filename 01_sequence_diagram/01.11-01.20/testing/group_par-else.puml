@@ -1,0 +1,16 @@
+' Test on "par" and "else" keyword
+
+@startuml
+
+par
+    activate a
+    a -> b : do something
+    a -> e
+' using else to add dotted separate lines between threads
+else
+    a -> c : do something
+else
+    a -> d : do something
+end
+
+@enduml
