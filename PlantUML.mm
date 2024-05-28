@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.074">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.262">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" associatedTemplateLocation="template:/light_sky_element_template.mm"/>
 
 <map_styles>
@@ -80,14 +80,14 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<node TEXT="00 Quick Start" POSITION="bottom_or_right" ID="ID_1426358653" CREATED="1716662000256" MODIFIED="1716662387157" LINK="https://plantuml.com/starting">
+<node TEXT="00 Quick Start" FOLDED="true" POSITION="bottom_or_right" ID="ID_1426358653" CREATED="1716662000256" MODIFIED="1716662387157" LINK="https://plantuml.com/starting">
 <node TEXT="Local Installation" ID="ID_684281566" CREATED="1716662966846" MODIFIED="1716663000371">
 <node TEXT="installation FAQ" ID="ID_903936578" CREATED="1716663050706" MODIFIED="1716663062075" LINK="https://plantuml.com/faq-install"/>
 </node>
 <node TEXT="Command Line Operations" ID="ID_170625412" CREATED="1716663009148" MODIFIED="1716663016786">
 <node TEXT="Create &quot;Hello World&quot; in Sequence Diagram" ID="ID_1668323427" CREATED="1716663016789" MODIFIED="1716663029606"/>
 </node>
-<node TEXT="Some resources" FOLDED="true" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
+<node TEXT="Some resources" ID="ID_927664160" CREATED="1716662411299" MODIFIED="1716662420065">
 <node TEXT="PlantUML Project in GitHub" ID="ID_764004615" CREATED="1716662494639" MODIFIED="1716662505348" LINK="https://github.com/plantuml/plantuml"/>
 <node TEXT="PlantUML Language Reference Guide" ID="ID_1495801307" CREATED="1716662517632" MODIFIED="1716662534484" LINK="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf"/>
 <node TEXT="PlantUML cheatsheet" ID="ID_728879122" CREATED="1716662545213" MODIFIED="1716662554518" LINK="https://devhints.io/plantuml"/>
@@ -96,6 +96,7 @@
 <node TEXT="Pladitor - out-of-the-box PlantUML diagram editor" ID="ID_1664797089" CREATED="1716662851053" MODIFIED="1716662880833" LINK="https://plantumleditor.com/"/>
 <node TEXT="Ashley&apos;s PlantUML Doc" ID="ID_1760503818" CREATED="1716662895097" MODIFIED="1716662911066" LINK="https://plantuml-documentation.readthedocs.io/en/latest/index.html"/>
 <node TEXT="Hitchhiker&apos;s Guide to PlantUML" ID="ID_108400670" CREATED="1716758087073" MODIFIED="1716758096831" LINK="https://crashedmind.github.io/PlantUMLHitchhikersGuide/"/>
+<node TEXT="Real World PlantUML" ID="ID_879714020" CREATED="1716854377434" MODIFIED="1716854387548" LINK="https://real-world-plantuml.com/"/>
 </node>
 <node TEXT="PlantUML Implementation" FOLDED="true" ID="ID_398095731" CREATED="1716757785464" MODIFIED="1716757792454">
 <node TEXT="Pure JavaScript Implementation" ID="ID_1760426387" CREATED="1716757792956" MODIFIED="1716757804782" LINK="https://plantuml.github.io/plantuml-core/raw.html"/>
@@ -134,7 +135,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Part 3" FOLDED="true" ID="ID_811495031" CREATED="1716734580964" MODIFIED="1716734583219">
+<node TEXT="Part 3" ID="ID_811495031" CREATED="1716734580964" MODIFIED="1716734583219">
 <node TEXT="1.7 Change Arrow Style" POSITION="bottom_or_right" ID="ID_1206176874" CREATED="1716689135993" MODIFIED="1716689161127"/>
 <node TEXT="1.8 Change Arrow Color" FOLDED="true" POSITION="bottom_or_right" ID="ID_1877294521" CREATED="1716689164546" MODIFIED="1716689170048">
 <node TEXT="-[#color]&gt;" ID="ID_1812381864" CREATED="1716746936674" MODIFIED="1716746949529"/>
@@ -179,9 +180,14 @@
 <node TEXT="You cannot use a note within a frame" ID="ID_125736273" CREATED="1716853413836" MODIFIED="1716853432394"/>
 </node>
 <node TEXT="keywords" ID="ID_539321042" CREATED="1716747657736" MODIFIED="1716854289889">
-<node TEXT="alt: used to show one or more alternative sequences that can happen." ID="ID_463817274" CREATED="1716853459196" MODIFIED="1716853481044"/>
+<node TEXT="alt: used to show one or more alternative sequences that can happen." ID="ID_463817274" CREATED="1716853459196" MODIFIED="1716853481044">
+<node TEXT="used to describe alternative scenarios of a workflow, only one of the options will be executed" ID="ID_1383193909" CREATED="1716916303829" MODIFIED="1716916331112"/>
+</node>
 <node TEXT="else: the default sequence in a list of alternative sequences" ID="ID_273218535" CREATED="1716853482285" MODIFIED="1716853498040"/>
-<node TEXT="opt: an optional sequence, it either happens or not" ID="ID_319469511" CREATED="1716853514615" MODIFIED="1716853611387"/>
+<node TEXT="opt: an optional sequence, it either happens or not" ID="ID_319469511" CREATED="1716853514615" MODIFIED="1716916289414">
+<arrowlink DESTINATION="ID_463817274"/>
+<node TEXT="used to describe an optional step in the workflow" ID="ID_1792083397" CREATED="1716916332734" MODIFIED="1716916350244"/>
+</node>
 <node TEXT="loop: shows a sequence that loops" ID="ID_209347386" CREATED="1716853539021" MODIFIED="1716853606783"/>
 <node TEXT="par: shows a parallel sequence" ID="ID_1516349337" CREATED="1716853589003" MODIFIED="1716853602251"/>
 <node TEXT="break: shows that a sequence breaks, it stops (does not perform) any of the remaining sequence does this instead" ID="ID_345507221" CREATED="1716853615000" MODIFIED="1716853645093"/>
@@ -193,8 +199,8 @@
 <node TEXT="between [ and ]" ID="ID_188510926" CREATED="1716835888363" MODIFIED="1716835894903"/>
 </node>
 </node>
-<node TEXT="Part 5 - Message Notes" FOLDED="true" ID="ID_1876454058" CREATED="1716734601637" MODIFIED="1716734609321">
-<node TEXT="1.14 Notes on Messages" FOLDED="true" POSITION="bottom_or_right" ID="ID_525873962" CREATED="1716689217970" MODIFIED="1716689223248">
+<node TEXT="Part 5 - Message Notes" ID="ID_1876454058" CREATED="1716734601637" MODIFIED="1716734609321">
+<node TEXT="1.14 Notes on Messages" POSITION="bottom_or_right" ID="ID_525873962" CREATED="1716689217970" MODIFIED="1716689223248">
 <node TEXT="keywords" ID="ID_1836405417" CREATED="1716835974912" MODIFIED="1716835984469">
 <node TEXT="note left" ID="ID_1616297413" CREATED="1716835984469" MODIFIED="1716835990286"/>
 <node TEXT="note right" ID="ID_1899451457" CREATED="1716835990507" MODIFIED="1716835993968"/>
