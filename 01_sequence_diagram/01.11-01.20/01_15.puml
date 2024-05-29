@@ -1,0 +1,34 @@
+@startuml
+
+title Some Other Notes
+
+actor Alice
+actor Bob
+
+Alice -> Bob : Here is one looooooooooooooooooooooog message
+note left: test
+
+note left of Alice #aqua
+    This is the displayed
+    left of Alice.
+end note
+
+note right of Alice #yellow: This is the single line right of Alice
+
+note over Alice: This is displaed over Alice
+
+note over Alice, Bob #FFAAAA: This is displayed\n over both Alice and Bob
+
+note over Alice, Bob
+    This is another 
+    example of
+    multiline note
+end note
+
+note over Bob
+    This is another 
+    example of
+    multiline note
+end note
+
+@enduml
