@@ -1,0 +1,19 @@
+@startuml
+
+title Note on Messages
+
+Alice -> Bob : Hello
+note left: this is a first note
+
+Alice <- Bob : Hello too
+note right: this is the return greeting
+
+Bob -> Bob : I am thinking
+note left
+    a note
+    can also be defined
+    on several lines
+    like this
+end note
+
+@enduml
