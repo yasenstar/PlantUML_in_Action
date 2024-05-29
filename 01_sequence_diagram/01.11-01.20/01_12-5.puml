@@ -1,0 +1,16 @@
+@startuml
+
+title sample of critical keyword in group
+
+actor a
+actor b
+
+critical #FF0000 important messages
+    a -> b: do something
+end
+
+group critical activities
+    a -> b: do something
+end
+
+@enduml

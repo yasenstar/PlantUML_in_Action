@@ -1,0 +1,29 @@
+@startuml
+
+title sample of comparing opt and alt
+
+' Scanerio: for an online shop purchase sequence diagram
+' You may use 'opt' to describe how the user can add gift wrapping if she wishes.
+' You may use 'alt' to describe two variants of payment: using credit card or wire money transfer.
+
+actor User
+
+User -> App : Purchase Activity
+
+opt gift wrapping
+    User -> App : Choose gift wrapping options
+end
+
+opt laser label
+    User -> App : Choose laser lable options
+end
+
+alt Payment with Credit Card
+    User -> App : Enter Card Detail
+    App -> PaymentGateway : Pay with card
+else Payment by wire money transfer
+    User <- App : Provide Bank Information for Wire Transfer
+    User -> Bank : Payment with transfer
+end
+
+@enduml

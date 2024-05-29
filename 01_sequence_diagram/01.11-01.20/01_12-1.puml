@@ -1,0 +1,27 @@
+@startuml
+
+title sample on alt/else, group and loop
+
+Alice -> Bob : Authentication Request
+
+alt successful case
+
+    Alice <- Bob : Authentication Accepted
+
+else some kind of failure
+
+    Alice <- Bob : Authentication Failure
+    group My own label
+        Alice -> Log : Log attack start
+        loop 1000 times
+            Alice -> Bob : DNS Attack
+        end
+    end
+
+else another type of failure
+
+    Alice <- Bob : Please send again
+
+end
+
+@enduml

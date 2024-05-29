@@ -1,0 +1,24 @@
+@startuml
+
+title sample on break with opt, alt/else
+
+participant Object1
+participant Object2
+
+break break condition
+    Object1 -> Object2 : breakFlow
+end
+Object1 <-- Object2 : normalFlow
+
+opt negation of break condition
+    Object1 -> Object2: normalFlow
+end
+Object1 <-- Object2 : breakFlow
+
+alt negation of break condition
+    Object1 -> Object2: normalFlow
+else break condition
+    Object1 -> Object2 : breakFlow
+end
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+title sample of pal, activate/deactivate in group of messages
+
+par say hello at the same time
+    activate Alice
+    Alice -> Bob : Hello
+    Alice -> Jack : Hello
+else
+    Alice -> Grace : Hello
+    deactivate Alice
+end
+
+@enduml

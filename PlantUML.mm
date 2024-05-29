@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.262">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" associatedTemplateLocation="template:/light_sky_element_template.mm"/>
 
 <map_styles>
@@ -135,7 +135,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Part 3" ID="ID_811495031" CREATED="1716734580964" MODIFIED="1716734583219">
+<node TEXT="Part 3" FOLDED="true" ID="ID_811495031" CREATED="1716734580964" MODIFIED="1716734583219">
 <node TEXT="1.7 Change Arrow Style" POSITION="bottom_or_right" ID="ID_1206176874" CREATED="1716689135993" MODIFIED="1716689161127"/>
 <node TEXT="1.8 Change Arrow Color" FOLDED="true" POSITION="bottom_or_right" ID="ID_1877294521" CREATED="1716689164546" MODIFIED="1716689170048">
 <node TEXT="-[#color]&gt;" ID="ID_1812381864" CREATED="1716746936674" MODIFIED="1716746949529"/>
@@ -199,7 +199,7 @@
 <node TEXT="between [ and ]" ID="ID_188510926" CREATED="1716835888363" MODIFIED="1716835894903"/>
 </node>
 </node>
-<node TEXT="Part 5 - Message Notes" ID="ID_1876454058" CREATED="1716734601637" MODIFIED="1716734609321">
+<node TEXT="Part 5 - Message Notes" FOLDED="true" ID="ID_1876454058" CREATED="1716734601637" MODIFIED="1716734609321">
 <node TEXT="1.14 Notes on Messages" POSITION="bottom_or_right" ID="ID_525873962" CREATED="1716689217970" MODIFIED="1716689223248">
 <node TEXT="keywords" ID="ID_1836405417" CREATED="1716835974912" MODIFIED="1716835984469">
 <node TEXT="note left" ID="ID_1616297413" CREATED="1716835984469" MODIFIED="1716835990286"/>
@@ -223,10 +223,15 @@
 <node TEXT="Part 6" FOLDED="true" ID="ID_1395941879" CREATED="1716734620708" MODIFIED="1716734623470">
 <node TEXT="1.19 Creole and HTML" POSITION="bottom_or_right" ID="ID_1845596748" CREATED="1716689296887" MODIFIED="1716689302333"/>
 <node TEXT="1.20 Divider or Separator" POSITION="bottom_or_right" ID="ID_1720995525" CREATED="1716689303319" MODIFIED="1716689312450"/>
-<node TEXT="1.21 Reference" POSITION="bottom_or_right" ID="ID_1570441312" CREATED="1716689312607" MODIFIED="1716689315209"/>
+<node TEXT="1.21 Reference" POSITION="bottom_or_right" ID="ID_1570441312" CREATED="1716689312607" MODIFIED="1716689315209">
+<node TEXT="keyword: ref over" ID="ID_1280257283" CREATED="1716942586530" MODIFIED="1716942598219"/>
+</node>
 </node>
 <node TEXT="Part 7" FOLDED="true" ID="ID_844790583" CREATED="1716734631915" MODIFIED="1716734633780">
-<node TEXT="1.22 Delay" POSITION="bottom_or_right" ID="ID_1070127361" CREATED="1716689318651" MODIFIED="1716689321045"/>
+<node TEXT="1.22 Delay" POSITION="bottom_or_right" ID="ID_1070127361" CREATED="1716689318651" MODIFIED="1716689321045">
+<node TEXT="symbol: ..." ID="ID_476516193" CREATED="1716942662935" MODIFIED="1716942674498"/>
+<node TEXT="... text ..." ID="ID_332661936" CREATED="1716942677464" MODIFIED="1716942684479"/>
+</node>
 <node TEXT="1.23 Text Wrapping" POSITION="bottom_or_right" ID="ID_1453653890" CREATED="1716689323203" MODIFIED="1716689328230"/>
 <node TEXT="1.24 Space" POSITION="bottom_or_right" ID="ID_158730772" CREATED="1716689330368" MODIFIED="1716689332714"/>
 </node>
