@@ -1,0 +1,27 @@
+@startuml
+
+title different notes shape [note, hnote, rnote]
+
+actor caller
+participant server
+
+caller -> server : Contact Request
+rnote left: initial
+
+hnote over caller: idle
+
+caller <- server : Contact Confirmation
+
+rnote over server #cyan
+    "r": rectangle
+    "h": hexagon
+end rnote
+' endrnote is same as "end rnote"
+
+hnote right of caller #AAFFAA
+    this is
+    on several
+    lines
+end hnote
+
+@enduml
