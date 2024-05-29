@@ -1,0 +1,16 @@
+@startuml
+
+title Secondary Group Label
+
+Alice -> Bob : Authenticaltion Request
+Alice <-- Bob : Authentication Failure
+
+group My Own Label [My another label]
+    Alice -> Log : Log Attack Starts
+    loop 1000 times
+        Alice -> Bob : DNS Attack
+    end
+    Alice -> Log : Log Attack Ends
+end
+
+@enduml
