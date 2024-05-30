@@ -13,7 +13,7 @@ note across
     In this case you would put the messages that shouldn't be executed in case of 
     a break condition after the break combined fragment.
 end note
-break break contition
+break break condition
     Object1 -> Object2 : breakFlow
 end
 Object1 <-- Object2 : normalFlow
