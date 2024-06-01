@@ -1,0 +1,23 @@
+@startuml
+
+title notes aligned at the same level
+
+actor Yasen
+
+note over Alice: iniital state of Alice
+note over Bob: initial state of Bob
+note over Charlie: initial state of Charlie
+Bob -> Alice: Hello
+
+note over Alice: iniital state of Alice
+/ note over Bob: initial state of Bob
+note over Charlie: initial state of Charlie
+Bob -> Alice: Hello
+
+note over Yasen : my state
+/ note over Alice: iniital state of Alice
+/ note over Bob: initial state of Bob
+/ note over Charlie: initial state of Charlie
+Bob -> Alice: Hello
+
+@enduml
