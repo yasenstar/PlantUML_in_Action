@@ -1,0 +1,22 @@
+@startuml
+
+title Note over all participants using 'across'
+
+Alice -> Bob: m1
+Bob -> Charlie: m2
+
+note over Alice, Bob : note over first 2 part.
+
+note over Bob, Charlie : note over first 2 part.
+
+note over Alice, Charlie: old method for not over all
+
+note across: New method with:\n""note across""
+
+Alice <- Bob: m3
+
+hnote across: HNote to across
+
+rnote across: HNote to across
+
+@enduml
