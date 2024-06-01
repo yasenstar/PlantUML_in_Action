@@ -202,8 +202,22 @@
 <node TEXT="Part 5 - Message Notes" ID="ID_1876454058" CREATED="1716734601637" MODIFIED="1716734609321">
 <node TEXT="1.14 Notes on Messages" POSITION="bottom_or_right" ID="ID_525873962" CREATED="1716689217970" MODIFIED="1716689223248">
 <node TEXT="keywords" ID="ID_1836405417" CREATED="1716835974912" MODIFIED="1716835984469">
-<node TEXT="note left / center / right" ID="ID_1616297413" CREATED="1716835984469" MODIFIED="1716949240810"/>
-<node TEXT="end note for multiline note" ID="ID_1231536665" CREATED="1716835996341" MODIFIED="1716836017972"/>
+<node TEXT="note left / right" ID="ID_1616297413" CREATED="1716835984469" MODIFIED="1716949580445"/>
+<node ID="ID_1231536665" CREATED="1716835996341" MODIFIED="1716949584716"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <span style="text-decoration: underline;">end note</span>&#xa0;for multiline note
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 <node TEXT="1.15 Some Other Notes" FOLDED="true" POSITION="bottom_or_right" ID="ID_370133387" CREATED="1716689223679" MODIFIED="1716689248036">

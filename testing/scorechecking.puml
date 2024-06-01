@@ -1,0 +1,17 @@
+@startuml
+
+title 学生成绩查询系统使用用例
+
+left to right direction
+actor "老师" as teacher
+actor "学生" as student
+rectangle 学生成绩查询系统 {
+    usecase "记录成绩" as record
+    usecase "查询成绩" as check
+    usecase "修改成绩" as modify
+}
+teacher -- record
+teacher -- check
+teacher -- modify
+check -- student
+@enduml
