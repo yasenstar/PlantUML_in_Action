@@ -19,7 +19,12 @@ note left
     This is __underlined__
     This is ~~waved~~
     ----
-    This is {{globe_logo.png|globe}}, not supported(?)
+    This is {{globe_logo.png|globe}}, not supported(1)
+end note
+
+hnote left of Alice #red
+    (1) in above Creole, using {{imagefile|title}}
+    is not working
 end note
 
 Alice -> Bob : A //well formatted// message
@@ -30,12 +35,22 @@ note right of Alice
 end note
 
 note left of Bob
-    <u><color:red>This(?)</color></u> is <color #118888>displayed</color>
-    **<color purple>left of</color> <s:red>Alice(?)</s> Bob**
+    <u><color:red>This(?)</color></u> is <color #118888>displayed</color> (2)
+    **<color purple>left of</color> <s:red>Alice(?)</s> Bob** (3)
+end note
+
+hnote left of Bob #red
+    (2) in above cannot using <u:red> to set underline color
+    and, the underline color is followed the font color
+    (3) <s:red> is not working
 end note
 
 note over Alice, Bob
-    <w:red>This is hosted(?)</w> by <img globe_logo.png>
+    <w:red>This is hosted(?)</w> by <img globe_logo.png> (4)
+end note
+
+hnote left of Bob #red
+    (4) the <w:#FF33FF> is not working
 end note
 
 @enduml
