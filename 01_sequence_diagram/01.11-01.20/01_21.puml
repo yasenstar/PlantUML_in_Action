@@ -1,0 +1,28 @@
+@startuml
+
+title Reference
+
+participant Alice
+actor Bob
+
+ref over Alice, Bob : Init
+
+ref over Bob, Alice : Start
+
+Alice -> Bob: hello
+
+ref over Bob : yes\nno
+
+ref over Bob
+    This can be on
+    severl lines
+    you want
+end ref
+
+note across
+    here This can be on
+    severl lines
+    you want
+end note
+
+@enduml

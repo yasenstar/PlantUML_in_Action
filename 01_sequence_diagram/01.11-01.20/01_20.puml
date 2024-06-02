@@ -1,0 +1,14 @@
+@startuml
+
+title divider or separator
+
+== Initialization ==
+
+Alice -> Bob: Authentication Request
+Alice <-- Bob: Authentication Response
+
+== Repetition ==
+
+Alice -> Bob: Another Authentication Request
+Alice <-- Bob: Another Authentication Response
+@enduml
