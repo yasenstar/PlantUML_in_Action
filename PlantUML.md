@@ -28,6 +28,8 @@
 
 ### Hitchhiker's Guide to PlantUML
 
+### Real World PlantUML
+
 ## PlantUML Implementation
 
 ### Pure JavaScript Implementation
@@ -121,11 +123,40 @@ or sequenceMessageAlignment
 
 #### 1.12 Grouping Message
 
-##### keyword: alt/else, opt, loop, par, break, critical, group
+##### Frames Around Fragments (Ashley's)
+ 
+All frame keywordsmust have a corresponding"end" to signal where the frame ends
+
+
+###### Frames can be nested
+
+###### You cannot use a note within a frame
+
+##### keywords
+
+###### alt: used to show one or more alternative sequences that can happen.
+
+* used to describe alternative scenarios of a workflow, only one of the options will be executed
+
+###### else: the default sequence in a list of alternative sequences
+
+###### opt: an optional sequence, it either happens or not
+ (see:alt: used to show one or more alternative sequences that can happen.)
+* used to describe an optional step in the workflow
+
+###### loop: shows a sequence that loops
+
+###### par: shows a parallel sequence
+
+###### break: shows that a sequence breaks, it stops (does not perform) any of the remaining sequence does this instead
+
+###### critical: a fragment of a sequence that cannot be "interleaved" by other fragments (e.g. parallel fragments, etc.)
+
+###### group: allows you to fully specify the frame name
 
 #### 1.13 Secondary Group Label
 
-##### between [ and ]
+##### only for group, between [ and ]
 
 ### Part 5 - Message Notes
 
@@ -133,11 +164,10 @@ or sequenceMessageAlignment
 
 ##### keywords
 
-###### note left
+###### note left / right
+ 
+end note for multiline note
 
-###### note right
-
-###### end note for multiline note
 
 #### 1.15 Some Other Notes
 
@@ -161,23 +191,45 @@ or sequenceMessageAlignment
 
 #### 1.19 Creole and HTML
 
+##### Creole Cheat Sheet
+
+##### Question raised in Forum
+
 #### 1.20 Divider or Separator
 
+##### Use == separator to divide diagram into logical steps
+
 #### 1.21 Reference
+
+##### keyword: ref over
 
 ### Part 7
 
 #### 1.22 Delay
 
+##### symbol: ...
+
+##### ... text ...
+
 #### 1.23 Text Wrapping
 
+##### manually add \n in the text
+
+##### use "maxMessageSize (unit: pixel)" setting
+
 #### 1.24 Space
+
+##### manually use ||| to indicate some spacing
+
+##### specify a number of pixel to be used
 
 ### Part 8
 
 #### 1.25 Lifeline Activation and Destruction
 
 #### 1.26 Return
+
+##### syntax: return label
 
 ### Part 9
 

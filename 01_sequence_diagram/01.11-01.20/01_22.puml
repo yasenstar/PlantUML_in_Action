@@ -1,0 +1,11 @@
+@startuml
+
+title Delay in Sequence Diagram
+
+Alice --> Bob: Authentication Request
+...
+Alice <-- Bob: Authentication Response
+...5 minutes later...
+Alice <- Bob: Bye
+
+@enduml

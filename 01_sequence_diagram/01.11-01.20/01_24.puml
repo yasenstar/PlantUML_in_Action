@@ -1,0 +1,20 @@
+@startuml
+
+title Sequence Diagram: Space
+
+Alice -> Bob: message 1
+Alice <- Bob: OK
+|||
+Alice -> Bob: message 2
+Alice <- Bob: OK
+|||
+|||
+|||
+|||
+Alice -> Bob: message 3
+Alice <- Bob: OK
+||100||
+Alice -> Bob: message 4
+Alice <- Bob: OK
+
+@enduml

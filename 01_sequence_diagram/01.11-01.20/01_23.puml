@@ -1,0 +1,16 @@
+@startuml
+
+title Sequence Diagram: Text Wrapping
+
+skinparam MaxMessageSize 50
+
+participant a
+participant b
+
+' a -> b: this is mannualy done
+
+a -> b: this\nis\nmannualy\ndone
+
+a -> b: this is a very long message on several words
+
+@enduml
