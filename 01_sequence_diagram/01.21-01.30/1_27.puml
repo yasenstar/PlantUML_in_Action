@@ -1,0 +1,19 @@
+@startuml
+
+skinparam TitleFontColor blue
+
+title Participant ""creation"" 
+
+Bob -> Alice : Hello
+
+create Other
+Alice -> Other : new
+
+create control String
+
+Alice -> String
+note right #FFbbbb : You can also put notes!
+
+Bob <-- Alice : OK
+
+@enduml
