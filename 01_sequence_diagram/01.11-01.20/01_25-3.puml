@@ -1,0 +1,23 @@
+@startuml
+
+autoactivate on
+
+title autoactivation works with return keyword
+
+Alice -> Bob : hello
+
+Bob -> Bob : self call
+
+Bob <- Bill #005500 : hello from thread 2
+
+Bob -> George **: create
+
+return done in thread 2
+
+return <<RequestRreated>>
+
+Bob -> George !!: delete
+
+return success
+
+@enduml

@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.262">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" associatedTemplateLocation="template:/light_sky_element_template.mm"/>
 
 <map_styles>
@@ -233,7 +233,7 @@
 </node>
 <node TEXT="1.18 Several Notes Aligned at the Same Level [/]" POSITION="bottom_or_right" ID="ID_1374758428" CREATED="1716689282087" MODIFIED="1716689293297"/>
 </node>
-<node TEXT="Part 6" ID="ID_1395941879" CREATED="1716734620708" MODIFIED="1716734623470">
+<node TEXT="Part 6" FOLDED="true" ID="ID_1395941879" CREATED="1716734620708" MODIFIED="1716734623470">
 <node TEXT="1.19 Creole and HTML" POSITION="bottom_or_right" ID="ID_1845596748" CREATED="1716689296887" MODIFIED="1716689302333">
 <node TEXT="Creole Cheat Sheet" ID="ID_1505314023" CREATED="1717275276845" MODIFIED="1717275291596" LINK="http://wikicreole.org/wiki/CheatSheet"/>
 <node TEXT="Question raised in Forum" ID="ID_299054338" CREATED="1717291193811" MODIFIED="1717291204192" LINK="https://forum.plantuml.net/18974/some-creole-html-formatting-working-notes-reference-guide"/>
@@ -265,9 +265,16 @@
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
 </node>
 </node>
-<node TEXT="Part 9" FOLDED="true" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
-<node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1716689374254"/>
-<node TEXT="1.28 Shortcut Syntax for Activation, Deactivation, Creation" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1716689392110"/>
+<node TEXT="Part 9" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
+<node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1716689374254">
+<node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
+</node>
+<node TEXT="1.28 Shortcut Syntax" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">
+<node TEXT="Activate the target: ++" ID="ID_652208197" CREATED="1717345240765" MODIFIED="1717345252702"/>
+<node TEXT="Deactivate the source: --" ID="ID_1961776223" CREATED="1717345253068" MODIFIED="1717345263244"/>
+<node TEXT="Create an instance of the target: **" ID="ID_125886615" CREATED="1717345266026" MODIFIED="1717345279496"/>
+<node TEXT="Destroy an instance of the target: !!" ID="ID_288741682" CREATED="1717345279665" MODIFIED="1717345287537"/>
+</node>
 </node>
 <node TEXT="Part 10" FOLDED="true" ID="ID_819947795" CREATED="1716734674753" MODIFIED="1716734678588">
 <node TEXT="1.29 Incoming and Outgoing Messages" POSITION="bottom_or_right" ID="ID_1870176038" CREATED="1716689396841" MODIFIED="1716689404464"/>

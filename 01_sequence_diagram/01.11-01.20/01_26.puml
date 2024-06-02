@@ -1,0 +1,10 @@
+@startuml
+
+title Return in Sequence Diagram
+
+Bob -> Alice: hello
+activate Alice
+Alice -> Alice: some action
+' Bob <-- Alice: bye
+return Bye
+@enduml

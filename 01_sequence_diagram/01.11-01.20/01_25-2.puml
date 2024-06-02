@@ -1,0 +1,27 @@
+@startuml
+
+title Lifeline with Nesting
+
+User -> A: DoWork
+
+activate A #FFBBBB
+
+A -> A: Internal call
+
+activate A #red
+
+A -> B: << createRequest >>
+
+activate B #Blue
+
+A <-- B: << RequestCreated >>
+
+deactivate B
+
+deactivate A
+
+User <- A: Done
+
+deactivate A
+
+@enduml

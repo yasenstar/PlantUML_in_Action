@@ -1,0 +1,33 @@
+@startuml
+
+title Lifeline without Nesting
+
+participant User
+
+User -> A : DoWork
+
+activate A
+
+A -> B: << createRequest >>
+
+activate B
+
+B -> C: DoWork
+
+activate C
+
+B <-- C: WorkDone
+
+destroy C
+
+A <-- B: <<RequestCreated>>
+
+deactivate B
+
+User <- A: Done
+
+deactivate A
+
+User -> A: Thanks
+
+@enduml
