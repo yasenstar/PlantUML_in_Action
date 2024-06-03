@@ -1,5 +1,7 @@
 @startuml
 
+== Using Shortcuts==
+
 alice -> bob ++ : hello
 bob -> bob ++ : self call
 bob -> bib ++ #00FF00: hello
@@ -9,6 +11,7 @@ return rc
 bob -> george !! : delete
 return success
 
+== Not using Shortcuts ==
 alice -> bob : hello
 activate bob
 bob -> bob : self call
