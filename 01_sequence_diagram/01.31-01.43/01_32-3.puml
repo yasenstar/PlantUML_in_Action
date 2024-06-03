@@ -1,0 +1,19 @@
+@startuml
+
+skinparam guillemet false
+
+title Steoeotype (disabled) and Spotted Characters
+
+participant Bob << (C,#ADD1B2) >>
+actor Alice << (M,#FFAAAA) >>
+boundary A1 << (M,#FFAAAA) >>
+control A2 << (M,#FFAAAA)  >>
+entity A3 << (M,#FFAAAA)  >>
+database A4 << (M,#FFAAAA)  >>
+collections A5 << (M,#FFAAAA)  >>
+queue A6 << (M,#FFAAAA)  >>
+
+Bob -> Alice : First Message
+Bob -> A6 : Queue Message
+
+@enduml

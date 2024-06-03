@@ -1,0 +1,19 @@
+@startuml
+
+skinparam guillemet false
+
+title Steoeotype (disabled) and Spotted Characters
+
+participant Famous_Bob as Bob << (C,#ADD1B2) Generated >>
+actor Alice << (M,#FFAAAA) Testable >>
+boundary A1 << (M,#FFAAAA) Testable >>
+control A2 << (M,#FFAAAA) Testable >>
+entity A3 << (M,#FFAAAA) Testable >>
+database A4 << (M,#FFAAAA) Testable >>
+collections A5 << (M,#FFAAAA) Testable >>
+queue A6 << (M,#FFAAAA) Testable >>
+
+Bob -> Alice : First Message
+Bob -> A6 : Queue Message
+
+@enduml
