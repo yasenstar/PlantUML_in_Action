@@ -1,0 +1,18 @@
+@startuml
+
+title short arrow for incoming/outgoing message
+
+[-> Alice : ""[->""\nstandard incoming message\n**from start** to actor1
+?-> Alice : ""?->""\n**short** to actor1
+...
+[-> Bob : ""[->""\nstandard incoming message\n**from start** to actor1
+?-> Bob : ""?->""\n**short** to actor1
+...
+Alice ->] : ""->]""\nfrom actor1 **to end**
+Alice ->? : ""->]""\nfrom actor1 **short**
+...
+Bob ->] : ""->]""\nfrom actor1 **to end**
+Bob ->? : ""->]""\nfrom actor1\n **short**
+...
+Alice -> Bob : this is the standard message
+@enduml
