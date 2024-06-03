@@ -1,0 +1,28 @@
+@startuml
+
+alice -> bob ++ : hello
+bob -> bob ++ : self call
+bob -> bib ++ #00FF00: hello
+bob -> george ** : create
+return done
+return rc
+bob -> george !! : delete
+return success
+
+alice -> bob : hello
+activate bob
+bob -> bob : self call
+activate bob
+bob -> bib: hello
+activate bib #00FF00
+create george
+bob -> george : create
+bob <-- bib : done
+deactivate bib
+bob --> bob : rc
+deactivate bob
+bob -> george : delete
+destroy george
+alice <-- bob : success
+deactivate bob
+@enduml

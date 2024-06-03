@@ -1,0 +1,8 @@
+@startuml
+
+alice -> bob ++ #gold: hello1
+bob -> charlie --++ #FFCCCC: hello2
+charlie --> alice --++ #cyan: ok
+alice -> bob -- : step2
+
+@enduml
