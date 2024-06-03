@@ -1,0 +1,22 @@
+@startuml
+
+title Anchors and Duration
+
+!pragma teoz true
+
+{start} Alice -> Bob : start doing things during duration
+...
+...
+{1} Bob -> Max : something
+...
+{2} Bob <- Max : something return
+
+{end} Alice <- Bob : Finish
+
+{start} <-> {end} : some time
+
+{1} <-> {2} : some time too
+
+{start} <-> {1} : 2 minutes
+
+@enduml
