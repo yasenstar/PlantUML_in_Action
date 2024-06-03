@@ -1,0 +1,14 @@
+@startuml
+
+title
+    __Simple__ <u>Simple</u> <i>several</i>
+    **communication** //example//
+    <font color=green>on several lines</font>
+    This is hosted by <img:globe_logo.png>
+end title
+
+A -> B : request
+
+B --> A : response
+
+@enduml

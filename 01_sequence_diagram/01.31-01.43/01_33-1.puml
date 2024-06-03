@@ -1,0 +1,9 @@
+@startuml
+
+title __Simple__ **communication** //example//
+
+A -> B : request
+
+B --> A : response
+
+@enduml
