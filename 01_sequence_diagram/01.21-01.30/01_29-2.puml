@@ -1,0 +1,31 @@
+@startuml
+
+actor Alice
+actor Bob #lightblue
+actor Carol #orange
+
+Alice -> Bob
+Bob -> Carol
+Alice <-- Bob
+...
+== incoming message from left ==
+[-> Bob
+[o-> Carol
+[o-->o Bob
+[x-[#red]> Bob
+...
+== outgoing message to left ==
+[<- Bob
+[x<[#FFAAAA]-- Carol
+...
+== outgoing message to right ==
+Bob ->]
+Bob ->o]
+Alice o-->x]
+Bob ->x]
+...
+== incoming message from right ==
+Bob <-]
+Bob x<--]
+
+@enduml

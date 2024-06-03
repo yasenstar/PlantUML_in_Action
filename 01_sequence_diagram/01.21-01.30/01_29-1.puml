@@ -1,0 +1,31 @@
+@startuml
+
+title incoming/outgoing message
+
+[-> A : DoWork
+
+activate A
+
+A -> A : Internal Call
+
+activate A
+
+A ->] : << createRequect >>
+
+A <--] : << requestCreated >>
+
+deactivate A
+
+A -->] : Done
+
+[<-- A : Done
+
+A -> B : Hello
+
+A <- B : OK
+
+B -> A : OK2
+
+deactivate A
+
+@enduml
