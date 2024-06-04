@@ -1,0 +1,37 @@
+@startuml
+title **Use Case - Example**
+
+left to right direction
+
+actor "Site User" as su
+actor Webmaster as wm
+
+rectangle "Website Use Case Diagram" {
+    usecase "Search docs -full text" as u01
+    usecase "Browse docs" as u02
+    usecase "View events" as u03
+    usecase "Log in" as u04
+    usecase "upload docs" as u05
+    usecase "Post new event to homepage" as u06
+    usecase "Add user" as u07
+    usecase "Download docs" as u08
+    usecase "Preview docs" as u09
+    usecase "Upload local docs" as u10
+    usecase "Add local user" as u11
+}
+
+su --> u01
+su --> u02
+su --> u03
+su --> u04
+su --> u05
+wm --> u05
+wm --> u06
+wm --> u07
+u01 ..> u08
+u01 ..> u09
+u09 ..> u02
+u10 ..> u05
+u11 ..> u08
+
+@enduml
