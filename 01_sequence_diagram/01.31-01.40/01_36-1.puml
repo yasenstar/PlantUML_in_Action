@@ -1,0 +1,27 @@
+@startuml
+
+skinparam SequenceArrowThickness 3
+skinparam RoundCorner 30
+skinparam MaxMessageSize 50
+skinparam SequenceParticipant underline
+
+' hide footbox
+
+actor User
+participant First_Class as A
+participant Second_Class as B
+participant Third_Class as C
+
+User -> A : DoWork
+activate A
+A -> B : Create Request
+activate B
+B -> C : DoWork
+activate C
+B <-- C : WorkDone
+destroy C
+A <-- B : Request Created
+deactivate B
+User <-- A : Done
+deactivate A
+@enduml

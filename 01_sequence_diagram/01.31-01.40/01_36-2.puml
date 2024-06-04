@@ -1,0 +1,43 @@
+@startuml
+
+skinparam BackgroundColor #EEEAAA
+skinparam Handwritten true
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    LifeLineBorderColor blue
+    Lifelinebackgroundcolor #A9DCDF
+    
+    ActorBorderColor #FFAAAA
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontName Aapex
+    ActorFontSize 17
+
+    ParticipantBorderColor Green
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontColor #A9DCDF
+    ParticipantFontSize 17
+    ParticipantFontStyle italic
+}
+
+actor User
+participant First_Class as A
+participant Second_Class as B
+participant Third_Class as C
+
+User -> A : DoWork
+activate A
+A -> B : Create Request
+activate B
+B -> C : DoWork
+activate C
+B <-- C : WorkDone
+destroy C
+A <-- B : Request Created
+deactivate B
+User <-- A : Done
+deactivate A
+
+@enduml
