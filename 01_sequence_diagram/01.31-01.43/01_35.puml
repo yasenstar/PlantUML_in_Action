@@ -1,0 +1,9 @@
+@startuml
+
+title Foot Box Removed
+
+hide footbox
+
+Alice -> Bob : Hello
+Bob -> Alice : Hello
+@enduml

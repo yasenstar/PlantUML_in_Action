@@ -1,0 +1,20 @@
+@startuml
+
+title nested box for participants
+
+!pragma teoz true
+box "Internal Service" #LightBlue
+    actor Bob
+    box "Subteam" #FFAAAA
+        actor Alice
+        actor John
+    end box
+end box
+
+actor Other
+
+Bob -> Alice : hello
+Alice -> Other : hello
+John <-- Other : dowork
+
+@enduml
