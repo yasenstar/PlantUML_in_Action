@@ -90,7 +90,7 @@ or sequenceMessageAlignment
 ### Part 3
 
 #### 1.7 Change Arrow Style
-
+ (see:1.29 Incoming and Outgoing Messages)
 #### 1.8 Change Arrow Color
 
 ##### -[#color]>
@@ -226,7 +226,7 @@ end note for multiline note
 ### Part 8
 
 #### 1.25 Lifeline Activation and Destruction
- (see:1.32 Sterotypes and Spots)
+ (see:Activate the target: ++Deactivate the source: --Destroy an instance of the target: !!1.32 Stereotypes and Spots)
 #### 1.26 Return
 
 ##### syntax: return label
@@ -234,7 +234,7 @@ end note for multiline note
 ### Part 9
 
 #### 1.27 Participant Creation
-
+ (see:1.25 Lifeline Activation and DestructionCreate an instance of the target: **)
 ##### keyword: create
 
 #### 1.28 Shortcut Syntax
@@ -261,9 +261,18 @@ end note for multiline note
 
 ##### keyword: teoz
 
-#### 1.32 Sterotypes and Spots
+#### 1.32 Stereotypes and Spots
  (see:2.09 Stereotypes)
-##### << and >>
+##### stereotype: << and >>
+
+###### guillemet character as default
+
+a pair of punctuation marks in the form of sideways double chevrons, « and », used as quotation marks in a number of languages
+
+
+###### skinparam guillemet false
+
+##### spotted characters: (X,color)
 
 ### Part 12
 
@@ -293,6 +302,8 @@ box andend box
 #### 1.36 Skinparam
  (see:1.39 Specific SkinParameter)
 ##### "skinparam" command
+
+##### All Skin Parameters with Samples
 
 #### 1.37 Changing Padding
 
@@ -592,3 +603,7 @@ Examples of All Arrow Type
 ## 26 Unicode
 
 ## 27 PlantUML Standard Library
+
+# Add-on
+
+## Formatting Diagrams with Skinparams, HTML and Creole

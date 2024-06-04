@@ -1,0 +1,5 @@
+@startuml
+
+A ->(20) B++ : text 10
+B -->(30) A-- : text 10
+@enduml

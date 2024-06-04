@@ -1,0 +1,6 @@
+@startuml
+
+!pragma teoz true
+a ->(50) c : Starts\nwhen 'B' sends
+& b ->(25) c: \nBut B's message\n arrives before A's
+@enduml

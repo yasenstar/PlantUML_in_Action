@@ -1,0 +1,17 @@
+@startuml
+
+mainframe This is one diagram
+
+title color a group message
+
+group#LightCoral #66AAAA myGroup
+    Alice -> Bob : Authentication Request
+
+    alt#gold #LightBlue Successful Case
+        Alice <- Bob : Authentication Accepted
+    else #pink Failure
+        Alice <- Bob : Authentication Rejected
+    end
+end
+
+@enduml
