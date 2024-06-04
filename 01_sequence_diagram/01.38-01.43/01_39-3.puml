@@ -1,0 +1,13 @@
+@startuml
+
+' skinparam LifelineStrategy solid
+skinparam lifeline {
+    strategy solid
+}
+
+title lifelinestrategy solid
+Bob -> Alice : hello
+activate Alice
+Bob <- Alice : OK
+deactivate Alice
+@enduml

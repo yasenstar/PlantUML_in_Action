@@ -1,0 +1,6 @@
+@startuml
+skinparam style strictuml
+title strictUML
+Bob -> Alice : hello
+Bob <- Alice : OK
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+' skinparam LifelineStrategy nosolid
+
+title lifelinestrategy nosolid
+Bob -> Alice : hello
+activate Alice
+Bob <- Alice : OK
+deactivate Alice
+@enduml
