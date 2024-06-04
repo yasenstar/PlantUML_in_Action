@@ -1,0 +1,29 @@
+@startuml
+title Outgoing Message
+
+participant Alice as a
+' participant Bob as b
+
+a ->? : "" -> ""
+a ->>? : "" ->> ""
+a -\? : "" -\ ""
+a -\\? : "" -\\ ""
+a -/? : "" -/ ""
+a -//? : "" -// ""
+a ->x? : "" ->x ""
+a x->? : "" x-> ""
+a x->x? : "" x->x ""
+a ->o? : "" ->o ""
+a o->? : "" o-> ""
+a o->o? : "" o->o ""
+a <->? : "" <-> ""
+a o<->o? : "" o<->o ""
+a x<->x? : "" x<->x ""
+a ->>o? : "" ->>o ""
+a -\o? : "" -\o ""
+a -\\o? : "" -\\o ""
+a -/o? : "" -/o ""
+a -//o? : "" -//o ""
+a x->o? : "" x->o ""
+
+@enduml
