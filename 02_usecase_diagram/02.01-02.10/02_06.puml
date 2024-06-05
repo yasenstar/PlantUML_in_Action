@@ -1,0 +1,17 @@
+@startuml
+
+title basic use case diagram example
+
+:User: as u
+:Main_Admin: as ma
+(Start) as st
+(Use the Application) as use
+
+ma --> u : A special\nrole of
+
+u -->"A small label" use
+ma ------> use : A small label
+
+u -> st
+
+@enduml
