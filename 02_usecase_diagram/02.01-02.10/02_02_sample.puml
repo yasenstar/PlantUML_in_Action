@@ -4,10 +4,10 @@ title **Use Case - Example**
 left to right direction
 
 actor "Site User" as su
-actor Webmaster as wm
+actor "Webmaster" as wm
 
 rectangle "Website Use Case Diagram" {
-    usecase "Search docs -full text" as u01
+    usecase "Search docs - full text" as u01
     usecase "Browse docs" as u02
     usecase "View events" as u03
     usecase "Log in" as u04
@@ -20,18 +20,18 @@ rectangle "Website Use Case Diagram" {
     usecase "Add local user" as u11
 }
 
-su --> u01
-su --> u02
-su --> u03
-su --> u04
-su --> u05
-wm --> u05
-wm --> u06
-wm --> u07
-u01 ..> u08
-u01 ..> u09
-u09 ..> u02
-u10 ..> u05
-u11 ..> u08
+su --- u01
+su --- u02
+su --- u03
+su --- u04
+su --- u05
+wm --- u05
+wm --- u06
+wm --- u07
+u01 ..>"<< include >>" u08
+u01 ..>"<< include >>" u09
+u09 ..>"<< include >>" u02
+u10 ..>"<< extend >>" u05
+u11 ..>"<< extend >>" u08
 
 @enduml

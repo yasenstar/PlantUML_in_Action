@@ -1,0 +1,14 @@
+@startuml
+
+title Actors in Usecase Diagram
+
+:First Actor:
+:Another\nActor: as Man2
+actor Woman3
+actor :Last Actor: as Person1
+
+:First Actor: -->"hello world" Man2
+Man2 -> Woman3
+Woman3 --- Person1
+:First Actor: -> Person1
+@enduml
