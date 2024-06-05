@@ -8,8 +8,8 @@ participant Participant [
     ----
     ""SubTitle""
     ----
-    Contents
-    2ndline
+    ..Contents..
+    ==2ndline==
 ]
 
 actor Bob

@@ -1,0 +1,39 @@
+@startuml
+
+title Usecases Description\nMultiline and SequenceNewpageSeparatorColor
+
+usecase UC1 as "You can use
+several lines to define your usecase.
+You can also use separators.
+--
+Several separators are possible.
+==
+More separator.
+..
+Underline separator
+__
+Add titles:
+--Title1--
+..Title2..
+==Title3==
+__Title4__
+Description."
+
+actor U1 as "You can use
+several lines to define your usecase.
+You can also use separators.
+--
+Several separators are possible.
+==
+More separator.
+..
+Underline separator
+__
+Add titles:
+--Title1--
+..Title2..
+==Title3==
+__Title4__
+Description."
+
+@enduml
