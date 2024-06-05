@@ -1,5 +1,7 @@
 @startuml
 
+skinparam actorStyle awesome
+
 title Reference
 
 participant Alice

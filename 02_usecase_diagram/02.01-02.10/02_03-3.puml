@@ -1,0 +1,20 @@
+@startuml
+
+title Actor Style: Default - Stick Man
+
+skinparam ActorStyle Hollow
+:User: as u
+:My new User:
+skinparam ActorStyle awesome
+:Main Admin: as Admin
+
+left to right direction
+
+"Use the appliction" as (Use)
+"Admin the application" as (Manage)
+:Main Admin: as Admin
+
+u --> (Use)
+Admin ..> (Manage)
+
+@enduml

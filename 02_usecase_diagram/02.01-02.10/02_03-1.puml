@@ -1,0 +1,14 @@
+@startuml
+
+title Actor Style: Default - Stick Man
+
+left to right direction
+
+"Use the appliction" as (Use)
+"Admin the application" as (Manage)
+:Main Admin: as Admin
+
+:User: --> (Use)
+Admin --> (Manage)
+
+@enduml
