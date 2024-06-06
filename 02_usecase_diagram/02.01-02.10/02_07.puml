@@ -1,0 +1,17 @@
+@startuml
+
+title Extension in Use Case Diagram
+
+left to right direction
+
+:User: as u
+:Main Admin: as adm
+
+(start) as st
+(use the application) as use
+
+u <|-- adm
+
+st <|-- use
+
+@enduml
