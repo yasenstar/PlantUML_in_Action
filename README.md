@@ -8,7 +8,7 @@ Learning and practice PlantUML languange and its modeling
 
 ![PlantUML in Action TOC](img/PlantUML-in-action.jpg)
 
-## Videos on Diagramming Practice
+## Videos/Course on Diagramming Practice
 
 [Video List on YouTube](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
 
