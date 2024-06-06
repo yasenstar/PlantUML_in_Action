@@ -1,0 +1,18 @@
+@startuml
+
+title Stereotypes in Use Case Diagram
+
+' :User: << Human >>
+:User: << Human >> as u
+' :User: as u << Human >> 
+:Main Database: as MySql
+(Start) << One Shot >>
+(Use the application) << Main >> as use
+
+MySql << Application >>
+
+u -> (Start)
+u --> use
+MySql --> use
+
+@enduml
