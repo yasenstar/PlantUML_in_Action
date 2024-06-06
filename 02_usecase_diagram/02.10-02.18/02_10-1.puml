@@ -1,0 +1,10 @@
+@startuml
+' left to right direction
+:user: --> (use case 1)
+(use case 2) -> :user: 
+:user: ---> (use case 3)
+
+:user: ..> (use case 4)
+:user: .> (use case 5)
+:user: ...> (use case 6)
+@enduml

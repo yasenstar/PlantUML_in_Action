@@ -1,0 +1,8 @@
+@startuml
+
+:user: -up-> (up)
+:user: .right.> (right) : to_right
+:user: -left-> "to_left" (left)
+:user: -down-> (down)
+
+@enduml

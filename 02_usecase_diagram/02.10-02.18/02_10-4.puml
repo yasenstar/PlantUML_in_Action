@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+:user: -u--> (up)
+:user: --ri-> (right) : to_right
+:user: ---left-->  (left)
+:user: --do--> (down)
+
+' question: left/right cannot adjust length
+
+@enduml
