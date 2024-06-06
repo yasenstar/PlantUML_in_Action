@@ -1,0 +1,7 @@
+@startuml
+
+user1 --> (usecase1)
+newpage
+user2 --> (usecase2)
+
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+left to right direction
+user1 --> (usecase1)
+user2 --> (usecase2)
+@enduml
