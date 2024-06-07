@@ -11,6 +11,7 @@ actor bar4
 (person) --> (bar2) #line:red;text:purple : red, text purple
 (person) --> (bar2) #blue;text:purple : blue, text purple
 (person) --> (bar3) #line:green;line.dashed;text:green : green dashed
+(person) --> (bar3) #green;line.dashed;text:green : green dashed
 (person) --> (bar4) #line:blue;line.dotted;text:blue : blue, dotted
 
 @enduml

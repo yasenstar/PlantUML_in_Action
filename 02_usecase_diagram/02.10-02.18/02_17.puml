@@ -1,0 +1,13 @@
+@startuml
+title change element color and style
+
+actor a #red;line:red;line.bold;text:red
+actor b #pink;line:blue;line.dotted;text:orange
+
+usecase c #purple;line:blue;line.bold;text:yellow
+usecase d #FFAAAA
+
+rectangle test #FFCCCC {
+    actor e
+}
+@enduml
