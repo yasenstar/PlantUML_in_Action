@@ -1,0 +1,13 @@
+@startuml
+
+' allowmixing
+
+actor Actor as a
+usecase Usecase
+
+json Fruit_Info {
+    "fruit":"Apple",
+    "size":"Large",
+    "color": ["Red", "Green", "Yellow"]
+}
+@enduml
