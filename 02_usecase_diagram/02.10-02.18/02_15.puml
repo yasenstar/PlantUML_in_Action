@@ -1,0 +1,14 @@
+@startuml
+title business use case notation
+
+(First usecase)/
+(Another Usecase)/ as (UC2)
+usecase/ UC3
+usecase/ (Last\nusecase) as UC4
+
+:First Actor:/
+:Another\nActor:/ as a2
+actor/ Woman3
+actor/ :Last actor: as Person1
+
+@enduml

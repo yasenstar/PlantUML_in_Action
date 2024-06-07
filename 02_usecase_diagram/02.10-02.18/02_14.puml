@@ -1,0 +1,22 @@
+@startuml
+
+title Complete Use Case Example
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+:Customer:
+:Clerk:
+
+rectangle checkout {
+    (payment) as pay
+    (help) as h
+}
+
+Customer -- checkout
+checkout -- Clerk
+h .> checkout : extends
+checkout .> pay : include
+
+@enduml

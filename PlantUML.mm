@@ -165,7 +165,7 @@
 <node TEXT="In a configuration file" ID="ID_348264343" CREATED="1717707984788" MODIFIED="1717707991867"/>
 </node>
 <node TEXT="2.14 Complete example" ID="ID_1501288717" CREATED="1717355284228" MODIFIED="1717355289625"/>
-<node TEXT="2.15 Business Use Case" FOLDED="true" ID="ID_1610145069" CREATED="1717355292589" MODIFIED="1717355296642">
+<node TEXT="2.15 Business Use Case" ID="ID_1610145069" CREATED="1717355292589" MODIFIED="1717768082363" LINK="https://forum.plantuml.net/12179/add-support-to-business-use-case">
 <node TEXT="2.15 1 Business Usecase" ID="ID_1557013690" CREATED="1717355298387" MODIFIED="1717355303415"/>
 <node TEXT="2.15.2 Business Actor" ID="ID_527078089" CREATED="1717355305893" MODIFIED="1717355310182"/>
 </node>
@@ -585,8 +585,9 @@
 <node TEXT="26 Unicode" POSITION="bottom_or_right" ID="ID_948088624" CREATED="1716658953769" MODIFIED="1716658957237"/>
 <node TEXT="27 PlantUML Standard Library" POSITION="bottom_or_right" ID="ID_1504198015" CREATED="1716658957537" MODIFIED="1716658964841"/>
 </node>
-<node TEXT="Add-on" FOLDED="true" POSITION="bottom_or_right" ID="ID_1572620001" CREATED="1717375073762" MODIFIED="1717375075859">
+<node TEXT="Add-on and Reference" POSITION="bottom_or_right" ID="ID_1572620001" CREATED="1717375073762" MODIFIED="1717766663700">
 <node TEXT="Formatting Diagrams with Skinparams, HTML and Creole" ID="ID_1461312111" CREATED="1717375075861" MODIFIED="1717375095970" LINK="https://plantuml-documentation.readthedocs.io/en/latest/formatting/index.html"/>
+<node TEXT="RUP - Rational Unified Process by SWI Group" ID="ID_1645211290" CREATED="1717766664823" MODIFIED="1717767068983" LINK="https://swi.cs.vsb.cz/RUPLarge"/>
 </node>
 </node>
 </map>
