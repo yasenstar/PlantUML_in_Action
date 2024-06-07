@@ -1,0 +1,16 @@
+@startuml
+title change color / style for arrow
+
+actor person
+actor bar1
+actor bar2
+actor bar3
+actor bar4
+
+(person) --> (bar1) : normal
+(person) --> (bar2) #line:red;text:purple : red, text purple
+' when not working with only #green?
+(person) --> (bar3) #line:green;line.dashed;text:green : green dashed
+(person) --> (bar4) #line:blue;line.dotted;text:blue : blue, dotted
+
+@enduml
