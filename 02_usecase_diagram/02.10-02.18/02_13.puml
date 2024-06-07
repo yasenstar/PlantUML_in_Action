@@ -1,0 +1,36 @@
+@startuml
+
+title Skinparam in Use Case Diagram
+
+skinparam handwritten true
+
+skinparam actor {
+    BackgroundColor Cyan
+    BorderColor Blue
+    FontName Courier
+    BackgroundColor<< Human >> Purple
+}
+
+skinparam usecase {
+    BackgroundColor DarkSeaGreen
+    BorderColor DarkSlateGray
+
+    BackgroundColor Green
+
+    BackgroundColor<< Main >> Yellow
+
+    BorderColor<< One Shot >> Red
+
+    ArrowColor Olive
+}
+
+User << Human >>
+:Main Database: as MySql << Application >>
+(Start) << One Shot >>
+(Use the appliction) as (Use) << Main >>
+
+User -> (Start)
+User --> (Use)
+MySql --> (Use)
+
+@enduml
