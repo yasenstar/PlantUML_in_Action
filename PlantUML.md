@@ -66,15 +66,31 @@
 
 #### 2.04 Usecases description
 
+##### -- (dashes)
+
+##### .. (periods)
+ 
+'== (equals)
+
+##### __ (underscores)
+
 #### 2.05 Use package
+
+##### package PackageName {}
+
+##### rectangle Name {}
 
 #### 2.06 Basic example
 
-##### arrow: -->
+##### arrow: ->, --> and more
 
 #### 2.07 Extension
 
 ##### symbol: <|--
+
+##### Mapping to Class Diagram's Generalization Relationship
+ (see:Mapping to ArchiMate's Specialization Relationship)
+##### Mapping to ArchiMate's Specialization Relationship
 
 #### 2.08 Using notes
 
@@ -92,6 +108,12 @@
 
 #### 2.10 Changing arrows direction
 
+##### --> or ..>
+
+##### <-- or <..
+
+##### -left-> or -l-> or -le->
+
 #### 2.11 Splitting diagrams
 
 ##### keyword: newpage
@@ -99,6 +121,12 @@
 #### 2.12 Left to Right Direction
 
 #### 2.13 Skinparam
+
+##### In the diagram definition part
+
+##### In an included file
+
+##### In a configuration file
 
 #### 2.14 Complete example
 
@@ -115,6 +143,8 @@
 #### 2.18 Display JSON Data on Usecase Diagram
 
 ##### 2.18.1 Simple Example
+
+##### Work with JSON
 
 ### 03 Class Diagram
 
@@ -361,7 +391,7 @@ All frame keywordsmust have a corresponding"end" to signal where the frame ends
 ###### only for group, between [ and ]
 
 #### Part 5 - Message Notes
-
+ (see:2.08 Using notes)
 ##### 1.14 Notes on Messages
 
 ###### keywords
@@ -608,6 +638,13 @@ Examples of All Arrow Type
 
 ## 27 PlantUML Standard Library
 
-# Add-on
+# Add-on and Reference
 
 ## Formatting Diagrams with Skinparams, HTML and Creole
+
+## RUP - Rational Unified Process by SWI Group
+
+## A Comprehensive Guide to Sequence Diagram
+ (see:01 Sequence Diagram)
+## A Comprehensive Guide to Use Case Diagram
+ (see:02 Use Case Diagram)
