@@ -1,0 +1,63 @@
+@startuml
+
+' diagram source:
+' https://landing.moqups.com/img/content/diagrams/uml-diagrams/uml-class-diagram/uml-class-1600.png
+
+left to right direction
+
+class User
+class Customer
+class "Shopping Cart" as sc
+class Orders
+class "Order Details" as od
+
+User o- Customer
+sc "0..*" --* "1" Customer
+Customer "1" *-- "0..*" Orders
+Orders "1" *-- "1" od
+
+class User {
+    - id
+    - email
+    - password
+    - lastLogin
+    + getSession()
+}
+
+sc : - id
+sc : - productId
+sc : + addProductToCard()
+sc : + removeProductFromCart()
+sc : + checkOut()
+
+class Customer {
+    - name
+    - billingAddress
+    - defaultShippingAddress
+    + signUp()
+    + login()
+}
+
+class Orders {
+    - id
+    - customerId
+    - orderDate
+    - status
+    - price
+    + updateOrderStatus()
+    + placeOrder()
+    + cancelOrder()
+}
+
+class od {
+    - id
+    - orderId
+    - shippingAddress
+    - shippingType
+    - shippingCost
+    - billingAddress
+    - createdDate
+    + cancelOrder()
+}
+
+@enduml
