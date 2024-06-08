@@ -1,0 +1,10 @@
+@startuml
+
+class "This is my class" as class1
+class class2 as "It works this way too"
+
+class1 o- class2
+
+class2 *-- "foo/dummy" : use
+
+@enduml

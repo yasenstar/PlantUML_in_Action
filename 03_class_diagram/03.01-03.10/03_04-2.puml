@@ -1,0 +1,10 @@
+@startuml
+class $C1
+remove $C1
+
+class $C2 $C2
+remove $C2
+
+class "$C2new" as dollarC2
+remove dollarC2
+@enduml
