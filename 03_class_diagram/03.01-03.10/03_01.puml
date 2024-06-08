@@ -1,0 +1,25 @@
+@startuml
+title Declaring Element
+
+abstract    abstract
+abstract class  abstract_class
+annotation  annotation
+circle  circle
+()  circle_short_form
+class   class
+class   class_stereo <<stereotype>>
+diamond diamond
+<>  diamond_short_form
+entity  entity
+enum    enumerated
+exception   exception
+interface   interface
+metaclass   metaclass
+protocol    protocol
+stereotype  stereotype
+struct  struct
+package package_name #FFAAAA {
+    metaclass   metaclass1
+}
+
+@enduml
