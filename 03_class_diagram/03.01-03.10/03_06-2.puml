@@ -1,0 +1,13 @@
+@startuml
+
+skinparam ClassAttributeIconSize 0
+
+class Dummy {
+    - field1
+    # field2
+    \~ method1()
+    ~ method3()
+    + method2()
+}
+
+@enduml

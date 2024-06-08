@@ -5,6 +5,8 @@
 
 left to right direction
 
+' skinparam classAttributeIconSize 0
+
 class User
 class Customer
 class "Shopping Cart" as sc
@@ -33,8 +35,8 @@ sc : + checkOut()
 class Customer {
     - name
     - billingAddress
-    - defaultShippingAddress
-    + signUp()
+    # defaultShippingAddress
+    ~ signUp()
     + login()
 }
 
