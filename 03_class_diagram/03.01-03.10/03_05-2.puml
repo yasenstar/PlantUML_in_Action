@@ -1,0 +1,20 @@
+@startuml
+
+Dummy -* Flight
+
+Dummy : String data
+Dummy : void methods()
+
+class Dummy {
+    Integer amount
+    newMehtod()
+}
+
+class Flight {
+    Integer flightNumber
+    flightPrice : Float
+    departureTime : DateTime
+    ticketIssue()
+}
+
+@enduml
