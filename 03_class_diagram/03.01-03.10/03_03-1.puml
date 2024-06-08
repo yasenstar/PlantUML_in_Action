@@ -1,0 +1,11 @@
+@startuml
+
+' left to right direction
+
+Class01 "1" *-- "many" Class02 : contains
+
+Class03 "0..1" o-- "1..n" Class04 : aggregation
+
+Class05 --> "1" Person : relation
+
+@enduml

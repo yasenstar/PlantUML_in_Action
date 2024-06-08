@@ -1,0 +1,7 @@
+@startuml
+
+Driver - Car : isDriven <
+Car *- Wheel : has 4 >
+Car -- Person : < owns
+
+@enduml
