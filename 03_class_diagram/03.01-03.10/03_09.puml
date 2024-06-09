@@ -1,0 +1,37 @@
+@startuml
+
+title Notes and Stereotypes in Class Diagram
+
+class Object << general >>
+
+Object <|-- ArrayList
+
+ArrayList << Specialized >>
+
+class Foo
+note left: On last defined class
+
+note top of Object : In Java, every class\nextends this one.
+
+note "This is a floating note" as N1
+
+note "This note is connected\ntoseveral objects." as N2
+
+note as N3
+    This is a
+    multipli lines
+    note and
+    connected per alias
+end note
+
+Object .. N2
+N2 .. ArrayList
+
+Foo .. N3
+N3 .. Object
+N3 .. N1
+N3 .. ArrayList
+
+N2 .. N3
+
+@enduml
