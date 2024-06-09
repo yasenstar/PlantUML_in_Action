@@ -1,0 +1,38 @@
+@startuml
+
+title Advanced Class Body
+
+class Class01 {
+    You can use
+    several lines
+    inside class
+    ..
+    as you want
+    == and group ==
+    ==
+    things together()
+    __
+    as many as you want
+    method01()
+    --
+    field
+}
+
+class User {
+    .. 123 ..
+    + getName()
+    - getAddress()
+    == fields ==
+    + Name
+    -- encrypted --
+    + String password
+}
+
+class User01 {
+    + getName()
+    - getAddress()
+    + Name
+    + String password
+}
+
+@enduml
