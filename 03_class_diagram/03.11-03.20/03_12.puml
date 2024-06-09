@@ -1,0 +1,17 @@
+@startuml
+title Notes on Link
+
+class Dummy
+class Foo1
+class Foo2
+
+Dummy --|> Foo1 : A Link
+note on link #red: not that is RED
+
+Foo2 -> Dummy : Another Link
+note right on link #cyan
+    this is my note on right link
+    and in light blue
+end note
+
+@enduml
