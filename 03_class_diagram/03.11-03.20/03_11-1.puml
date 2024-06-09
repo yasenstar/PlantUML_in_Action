@@ -1,0 +1,27 @@
+@startuml
+
+title Note on Field or Method
+
+class A {
+    ~ {static} int counter
+    - date shipping_date
+    + void {abstract} start(int timeout)
+}
+
+note right of A::counter
+    This member is
+    annotated
+end note
+
+note left of A::shipping_date
+    This member is
+    annotated
+end note
+
+note left of A::start
+    This method is
+    now explained in
+    a UML note
+end note
+
+@enduml

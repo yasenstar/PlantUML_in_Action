@@ -1,0 +1,17 @@
+@startuml
+
+class A {
+    {static} int counter
+    + void {abstract} start(int timeoutms)
+    + void {abstract} start(Duration timeout)
+}
+
+note right of A::"start(int timeoutms)"
+    This is first method note
+end note
+
+note right of A::"start(Duration timeout)"
+    This is second method note
+end note
+
+@enduml
