@@ -1,0 +1,30 @@
+@startuml
+title More on Notes in Class Diagram
+
+left to right direction
+
+class Foo
+note right : On last defined class
+
+note top of Foo
+    In Java, <size:20><b>every</b></size>
+    <u>class</u>
+    <i>extends</i>
+    this one.
+end note
+
+note as N1
+    This note is <u>also</u>
+    <b><color #FFAAAA>on several</color></b>
+    <s>anything</s>
+    <del>words</del>
+    <strike>wrong words</strike> lines
+    And this is hosted by
+    <img:logo.png>
+    or
+    <img src="logo.png">
+end note
+
+Foo .. N1
+
+@enduml
