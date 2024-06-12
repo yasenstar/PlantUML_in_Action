@@ -1,0 +1,9 @@
+@startuml
+' skinparam genericDisplay old
+class Foo <? extends Element > {
+    name
+    int size()
+}
+class Element
+Foo *- Element
+@enduml
