@@ -1,0 +1,30 @@
+@startuml
+
+title hide attribute, methods...
+
+class Dummy1 {
+    date
+    +myMehtods()
+}
+
+class Dummy2 {
+    +hiddenMethos()
+}
+
+interface Dummy3 <<Serializable>> {
+    String Name
+    Add()
+}
+
+' hide members
+' show Dummy1 methods
+' show Dummy1 attributes
+hide Dummy1 methods
+show members
+' hide <<Serializable>> circle
+' hide <<Serializable>> attributes
+hide <<Serializable>> fields
+hide <<Serializable>> methods
+hide Dummy2 circle
+
+@enduml
