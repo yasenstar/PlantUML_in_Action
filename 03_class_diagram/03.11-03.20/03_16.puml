@@ -1,0 +1,15 @@
+@startuml
+
+title Remove Classes
+
+class Foo1
+class Foo2
+class Foo3
+
+Foo2 *-- Foo1
+Foo1 -* Foo3
+
+remove Foo2
+hide Foo2
+
+@enduml

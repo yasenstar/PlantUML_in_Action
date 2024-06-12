@@ -1,0 +1,16 @@
+@startuml
+
+title hide classes
+
+class Foo1 {
+    +calculate()
+}
+class Foo2
+
+Foo1 <|--- Foo2
+Foo1 *- Foo2
+
+hide Foo1
+' show Foo1
+
+@enduml
