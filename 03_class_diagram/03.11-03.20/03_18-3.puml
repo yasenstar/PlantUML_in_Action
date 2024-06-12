@@ -1,0 +1,10 @@
+@startuml
+class C1
+class C2
+class C3
+class C4
+C1 - C2
+C1 -- C4
+remove @unlinked
+restore C3
+@enduml
