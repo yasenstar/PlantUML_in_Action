@@ -1,0 +1,10 @@
+@startuml
+
+' using period char (dot) to seperate auto-creating package
+class X1.X2.X3.foo {}
+
+' package X1.X2.X3.X4 {}
+
+class X1.X2.X3.X4.foo2
+
+@enduml

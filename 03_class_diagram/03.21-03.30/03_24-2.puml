@@ -1,0 +1,13 @@
+@startuml
+
+set separator ::
+
+class X1::X2::X3::foo {}
+
+set separator ||
+
+class X1||X2||foo1 {}
+
+class X1::X2 {}
+
+@enduml

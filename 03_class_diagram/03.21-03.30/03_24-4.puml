@@ -1,0 +1,14 @@
+@startuml
+
+set separator none
+
+package X1 {
+    package X2.1 {
+        package X3.1 {
+            interface interface1
+        }
+
+    }
+    package X2.2 {}
+}
+@enduml
