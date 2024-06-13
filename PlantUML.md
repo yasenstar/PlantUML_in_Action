@@ -107,7 +107,7 @@
 ##### << and >>
 
 #### 2.10 Changing arrows direction
-
+ (see:3.26 Changing Arrows Orientation)
 ##### --> or ..>
 
 ##### <-- or <..
@@ -141,116 +141,255 @@
 #### 2.17 Change Element Color and Style (inline style)
 
 #### 2.18 Display JSON Data on Usecase Diagram
-
+ (see:11 Display JSON Data)
 ##### 2.18.1 Simple Example
 
 ##### Work with JSON
 
 ### 03 Class Diagram
 
-#### 3.01 Declaring Element
+#### Group 1: Notation Definition
 
-#### 3.02 Relations between Classes
+##### 3.01 Declaring Element
 
-#### 3.03 Label on Relations
+##### 3.02 Relations between Classes
 
-#### 3.04 Using Non-Letters in Element Names and Relation Labels
+###### Extension Relation
 
-#### 3.05 Adding Methods
+###### Composition Relation
 
-#### 3.06 Defining Visibility
+###### Aggregation Relation
 
-#### 3.07 Abstract and Static
+##### 3.03 Label on Relations
 
-#### 3.08 Advanced Class Body
+###### use : followed by text of the label
 
-#### 3.09 Notes and Stereotypes
+###### use "" for cardinality on each side of relation
 
-#### 3.10 More on Notes
+##### 3.04 Using Non-Letters in
+Element Names and Relation Labels
 
-#### 3.11 Note on Field or Method
+###### Use the "as" keyword
 
-##### 3.11.1 Constraint
+###### Put "" around the class name
 
-##### 3.11.2 Note on Field or Method
+###### 3.04.1 Starting names with $
 
-##### 3.11.3 Note on Method with the Same Name
+#### Group 2: Basis on Class Body
 
-#### 3.12 Note on Links
+##### 3.05 Adding Methods
 
-#### 3.13 Abstract Class and Interface
+###### Use ":" follow by the field's or method's name
 
-#### 3.14 Hide Attributes, Methods...
+###### {field}, {method}
 
-#### 3.15 Hide Classes
+##### Real Example: Customer Shopping class diagram
 
-#### 3.16 Remove Classes
+##### 3.06 Defining Visibility
 
-#### 3.17 Hide, Remove or Restore Tagged Elements or Wildcard
+###### turn off:
+skinparam classAttributeIconSize 0
 
-#### 3.18 Hide or Remove Unlinked Class
+##### 3.07 Abstract and Static
 
-#### 3.19 Use Generics
+- In UML, we indicate a class is static by underlining its name in the first compartment of the class diagram.We can similarly indicate operations and methods are static by underlining the entire line referring to them.
+- To indicate a class is abstract, we italicize its name. Abstract methods are also indicated by italicizing the entire line referring to them.
 
-#### 3.20 Specific Spot
 
-#### 3.21 Packages
+###### static method: {static}
 
-#### 3.22 Packages Style
+###### abstract method: {abstract}
 
-#### 3.23 Namespaces
+##### 3.08 Advanced Class Body
 
-#### 3.24 Automatic Package Creation
+###### --
 
-#### 3.25 Lollipop Interface
+###### ..
+ 
+''==
 
-#### 3.26 Changing Arrows Orientation
+###### __
 
-#### 3.27 Association Classes
+#### Group 3: Notes in Class Diagram
 
-#### 3.28 Association on Same Class
+##### 3.09 Notes and Stereotypes
 
-#### 3.29 Skinparam
+##### 3.10 More on Notes
 
-#### 3.30 Skinned Stereotypes
+###### <b>, <u>, <i>
 
-#### 3.31 Color Gradient
+###### <s>, <del>, <strike>
 
-#### 3.32 Help on Layout
+###### <font color="#AAAAAA"> or <font color="colorname">
 
-#### 3.33 Splitting Large Files
+###### <color:#AAAAAA> or <color:colorname>
 
-#### 3.34 Extends and Implements
+###### <size:nn> to change font size, in pixel
 
-#### 3.35 Bracketed Relations (linking or arrow) Style
+###### <img src="file"> or <img:file>
 
-##### 3.35.1 Line Style
+##### 3.11 Note on Field or Method
 
-##### 3.35.2 Line Color
+###### 3.11.1 Constraint
 
-##### 3.35.3 Line Thickness
+###### 3.11.2 Note on Field or Method
 
-##### 3.35.4 Mix
+###### 3.11.3 Note on Method with the Same Name
 
-#### 3.36 Change Relations (linking or arrow) color and style (inline style)
+##### 3.12 Note on Links
 
-#### 3.37 Change Class Color and Style (inline style)
+#### Group 4: Class and Interface
 
-#### 3.38 Arrow from/to Class Members
+##### 3.13 Abstract Class and Interface
 
-#### 3.39 Grouping Inheritance Arrow Heads
+###### keyword: abstract
 
-##### 3.39.1 GroupInheritance 1 (no grouping)
+###### keyword: abstract class
 
-##### 3.39.2 GroupInheritance 2 (grouping from 2)
+###### keyword: interface
 
-##### 3.39.3 GroupInheritance 3 (grouping only from 3)
+###### keyword: annotation
 
-##### 3.39.4 GroupInheritance 4 (grouping only from 4)
+###### keyword: enum
 
-#### 3.40 Display JSON Data on Class or Object Diagram
+##### 3.14 Hide Attributes, Methods...
 
-#### 3.41 Packages and Namespaces Enhancement
+###### command: hide/show
+
+###### hide empty members
+
+##### 3.15 Hide Classes
+
+###### show/hide
+
+##### 3.16 Remove Classes
+
+###### remove/hide/restore with $tags
+
+##### 3.17 Hide, Remove or Restore Tagged Elements or Wildcard
+
+##### 3.18 Hide or Remove Unlinked Class
+
+###### hide @unlinked
+
+###### remove @unlinked
+
+#### Group 5: Use Generics and Specific Spot
+
+##### 3.19 Use Generics
+
+###### Usually generics are represented as classifier's template parameter.
+
+###### Generics in Java have been around for a while but support for mapping generically specified artifacts in UML to their Ecore representation is new to UML2 2.1
+
+###### UML Parameterized Class
+
+###### bracket < and >
+
+##### 3.20 Specific Spot
+
+###### spot characters: C, I, E, A
+
+###### within stereotype <<>>, 1) (), 2) single character, 3) color code or color name
+
+#### Group 6: Packages
+
+A package in the Unified Modeling Language is used "to group elements, and to provide a namespace for the grouped elements".[1] A package may contain other packages, thus providing for a hierarchical organization of packages.
+
+
+
+Pretty much all UML elements can be grouped into packages. Thus, classes, objects, use cases, components, nodes, node instances etc. can all be organized as packages, thus enabling a manageable organization of the myriad elements that a real-world UML model entails.
+
+
+##### 3.21 Packages
+
+###### keyword: package
+
+###### package definitions can be nested
+
+##### 3.22 Packages Style
+
+###### command: skinparam packageStyle
+
+###### using stereotype on package
+
+* <<Node>>
+
+* <<Rectangle>>
+
+* <<Folder>>: default
+
+* <<Frame>>
+
+* <<Cloud>>
+
+* <<Database>>
+
+###### can define links between packages
+
+##### 3.23 Namespaces
+
+##### 3.24 Automatic Package Creation
+
+###### define another separator: set spearator ???
+
+###### disable automatic namespace creation: set separator none
+
+#### Group 7: Arrows and Association
+
+##### 3.25 Lollipop Interface
+
+##### 3.26 Changing Arrows Orientation
+
+##### 3.27 Association Classes
+
+##### 3.28 Association on Same Class
+
+#### Group 8: Styles
+
+##### 3.29 Skinparam
+
+##### 3.30 Skinned Stereotypes
+
+##### 3.31 Color Gradient
+
+##### 3.32 Help on Layout
+
+##### 3.33 Splitting Large Files
+
+##### 3.34 Extends and Implements
+
+##### 3.35 Bracketed Relations (linking or arrow) Style
+
+###### 3.35.1 Line Style
+
+###### 3.35.2 Line Color
+
+###### 3.35.3 Line Thickness
+
+###### 3.35.4 Mix
+
+##### 3.36 Change Relations (linking or arrow) color and style (inline style)
+
+##### 3.37 Change Class Color and Style (inline style)
+
+#### Group 9: Others
+
+##### 3.38 Arrow from/to Class Members
+
+##### 3.39 Grouping Inheritance Arrow Heads
+
+###### 3.39.1 GroupInheritance 1 (no grouping)
+
+###### 3.39.2 GroupInheritance 2 (grouping from 2)
+
+###### 3.39.3 GroupInheritance 3 (grouping only from 3)
+
+###### 3.39.4 GroupInheritance 4 (grouping only from 4)
+
+##### 3.40 Display JSON Data on Class or Object Diagram
+ (see:11 Display JSON Data)
+##### 3.41 Packages and Namespaces Enhancement
 
 ### 04 Object Diagram
 

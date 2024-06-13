@@ -150,7 +150,8 @@
 <arrowlink DESTINATION="ID_1294480597"/>
 <node TEXT="&lt;&lt; and &gt;&gt;" ID="ID_167338441" CREATED="1717355042158" MODIFIED="1717355045155"/>
 </node>
-<node TEXT="2.10 Changing arrows direction" FOLDED="true" ID="ID_916139700" CREATED="1717355050053" MODIFIED="1717355058097">
+<node TEXT="2.10 Changing arrows direction" FOLDED="true" ID="ID_916139700" CREATED="1717355050053" MODIFIED="1718240498667">
+<arrowlink DESTINATION="ID_1953136807"/>
 <node TEXT="--&gt; or ..&gt;" ID="ID_868836369" CREATED="1717639928232" MODIFIED="1717639935353"/>
 <node TEXT="&lt;-- or &lt;.." ID="ID_1079945521" CREATED="1717639936055" MODIFIED="1717639941886"/>
 <node TEXT="-left-&gt; or -l-&gt; or -le-&gt;" ID="ID_1333429947" CREATED="1717639942961" MODIFIED="1717639967472"/>
@@ -165,19 +166,19 @@
 <node TEXT="In a configuration file" ID="ID_348264343" CREATED="1717707984788" MODIFIED="1717707991867"/>
 </node>
 <node TEXT="2.14 Complete example" ID="ID_1501288717" CREATED="1717355284228" MODIFIED="1717355289625"/>
-<node TEXT="2.15 Business Use Case" ID="ID_1610145069" CREATED="1717355292589" MODIFIED="1717768082363" LINK="https://forum.plantuml.net/12179/add-support-to-business-use-case">
+<node TEXT="2.15 Business Use Case" FOLDED="true" ID="ID_1610145069" CREATED="1717355292589" MODIFIED="1717768082363" LINK="https://forum.plantuml.net/12179/add-support-to-business-use-case">
 <node TEXT="2.15 1 Business Usecase" ID="ID_1557013690" CREATED="1717355298387" MODIFIED="1717355303415"/>
 <node TEXT="2.15.2 Business Actor" ID="ID_527078089" CREATED="1717355305893" MODIFIED="1717355310182"/>
 </node>
 <node TEXT="2.16 Change Arrow Color and Style (inline style)" ID="ID_1206590422" CREATED="1717355313575" MODIFIED="1717355323403"/>
 <node TEXT="2.17 Change Element Color and Style (inline style)" ID="ID_7092507" CREATED="1717355326111" MODIFIED="1717355338374"/>
-<node TEXT="2.18 Display JSON Data on Usecase Diagram" ID="ID_1669254804" CREATED="1717355341368" MODIFIED="1717787457748">
+<node TEXT="2.18 Display JSON Data on Usecase Diagram" FOLDED="true" ID="ID_1669254804" CREATED="1717355341368" MODIFIED="1717787457748">
 <arrowlink DESTINATION="ID_588971608"/>
 <node TEXT="2.18.1 Simple Example" ID="ID_1375280105" CREATED="1717355352140" MODIFIED="1717355357999"/>
 <node TEXT="Work with JSON" ID="ID_193319873" CREATED="1717787392901" MODIFIED="1717787397629" LINK="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON"/>
 </node>
 </node>
-<node TEXT="03 Class Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1716658611130">
+<node TEXT="03 Class Diagram" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1716658611130">
 <node TEXT="Group 1: Notation Definition" FOLDED="true" ID="ID_6284272" CREATED="1717795525178" MODIFIED="1717795543084">
 <node TEXT="3.01 Declaring Element" POSITION="bottom_or_right" ID="ID_1138859544" CREATED="1717355364987" MODIFIED="1717355370658"/>
 <node TEXT="3.02 Relations between Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1155065871" CREATED="1717355373991" MODIFIED="1717355395800">
@@ -195,7 +196,7 @@
 <node TEXT="3.04.1 Starting names with $" ID="ID_1223662543" CREATED="1717851210462" MODIFIED="1717851217560"/>
 </node>
 </node>
-<node TEXT="Group 2: Basis on Class Body" ID="ID_1444266506" CREATED="1717795597114" MODIFIED="1717795606520">
+<node TEXT="Group 2: Basis on Class Body" FOLDED="true" ID="ID_1444266506" CREATED="1717795597114" MODIFIED="1717795606520">
 <node TEXT="3.05 Adding Methods" FOLDED="true" POSITION="bottom_or_right" ID="ID_849405929" CREATED="1717355421683" MODIFIED="1717355426984">
 <node TEXT="Use &quot;:&quot; follow by the field&apos;s or method&apos;s name" ID="ID_1130188474" CREATED="1717851352639" MODIFIED="1717851367081"/>
 <node TEXT="{field}, {method}" ID="ID_1032290913" CREATED="1717881123208" MODIFIED="1717881131717"/>
@@ -204,7 +205,23 @@
 <node TEXT="3.06 Defining Visibility" FOLDED="true" POSITION="bottom_or_right" ID="ID_1067224402" CREATED="1717355431163" MODIFIED="1717355437937">
 <node TEXT="turn off:&#xa;skinparam classAttributeIconSize 0" ID="ID_1455437523" CREATED="1717880766807" MODIFIED="1717880785369"/>
 </node>
-<node TEXT="3.07 Abstract and Static" FOLDED="true" POSITION="bottom_or_right" ID="ID_962584885" CREATED="1717355441759" MODIFIED="1717355451461">
+<node TEXT="3.07 Abstract and Static" POSITION="bottom_or_right" ID="ID_962584885" CREATED="1717355441759" MODIFIED="1717883626511" LINK="https://textbooks.cs.ksu.edu/cc410/i-oop/05-uml/05-classes/#:~:text=In%20UML%2C%20we%20indicate%20a%20class%20is%20static,a%20class%20is%20abstract%2C%20we%20italicize%20its%20name."><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        In UML, we indicate a class is static by underlining its name in the first compartment of the class diagram.We can similarly indicate operations and methods are static by underlining the entire line referring to them.
+      </li>
+      <li>
+        To indicate a class is abstract, we italicize its name. Abstract methods are also indicated by italicizing the entire line referring to them.
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
 <node TEXT="static method: {static}" ID="ID_115455698" CREATED="1717881076795" MODIFIED="1717881088415"/>
 <node TEXT="abstract method: {abstract}" ID="ID_1654344004" CREATED="1717881088687" MODIFIED="1717881100149"/>
 </node>
@@ -217,7 +234,7 @@
 </node>
 <node TEXT="Group 3: Notes in Class Diagram" FOLDED="true" ID="ID_971003273" CREATED="1717795623899" MODIFIED="1717795633062">
 <node TEXT="3.09 Notes and Stereotypes" POSITION="bottom_or_right" ID="ID_1294480597" CREATED="1717355461552" MODIFIED="1717355471928"/>
-<node TEXT="3.10 More on Notes" POSITION="bottom_or_right" ID="ID_353083034" CREATED="1717355494270" MODIFIED="1717355497866">
+<node TEXT="3.10 More on Notes" FOLDED="true" POSITION="bottom_or_right" ID="ID_353083034" CREATED="1717355494270" MODIFIED="1717355497866">
 <node TEXT="&lt;b&gt;, &lt;u&gt;, &lt;i&gt;" ID="ID_974647703" CREATED="1717881401097" MODIFIED="1717881411430"/>
 <node TEXT="&lt;s&gt;, &lt;del&gt;, &lt;strike&gt;" ID="ID_754078772" CREATED="1717881411932" MODIFIED="1717881421326"/>
 <node TEXT="&lt;font color=&quot;#AAAAAA&quot;&gt; or &lt;font color=&quot;colorname&quot;&gt;" ID="ID_1269188368" CREATED="1717881421624" MODIFIED="1717881441042"/>
@@ -233,22 +250,80 @@
 <node TEXT="3.12 Note on Links" POSITION="bottom_or_right" ID="ID_1045144282" CREATED="1717355542739" MODIFIED="1717355547387"/>
 </node>
 <node TEXT="Group 4: Class and Interface" FOLDED="true" ID="ID_115483789" CREATED="1717795657420" MODIFIED="1717795676649">
-<node TEXT="3.13 Abstract Class and Interface" POSITION="bottom_or_right" ID="ID_635072429" CREATED="1717355551321" MODIFIED="1717355559352"/>
-<node TEXT="3.14 Hide Attributes, Methods..." POSITION="bottom_or_right" ID="ID_563475061" CREATED="1717355563241" MODIFIED="1717355572413"/>
-<node TEXT="3.15 Hide Classes" POSITION="bottom_or_right" ID="ID_1385290378" CREATED="1717355576336" MODIFIED="1717355581383"/>
-<node TEXT="3.16 Remove Classes" POSITION="bottom_or_right" ID="ID_93409891" CREATED="1717355589301" MODIFIED="1717355600391"/>
+<node TEXT="3.13 Abstract Class and Interface" POSITION="bottom_or_right" ID="ID_635072429" CREATED="1717355551321" MODIFIED="1717355559352">
+<node TEXT="keyword: abstract" ID="ID_1166882638" CREATED="1717946031741" MODIFIED="1717946042967"/>
+<node TEXT="keyword: abstract class" ID="ID_1812477446" CREATED="1717946043317" MODIFIED="1717946048534"/>
+<node TEXT="keyword: interface" ID="ID_696857680" CREATED="1717946052272" MODIFIED="1717946058108"/>
+<node TEXT="keyword: annotation" ID="ID_563745198" CREATED="1717946058316" MODIFIED="1717946062691"/>
+<node TEXT="keyword: enum" ID="ID_1039556248" CREATED="1717946062878" MODIFIED="1717946065675"/>
+</node>
+<node TEXT="3.14 Hide Attributes, Methods..." FOLDED="true" POSITION="bottom_or_right" ID="ID_563475061" CREATED="1717355563241" MODIFIED="1717355572413">
+<node TEXT="command: hide/show" ID="ID_1253926724" CREATED="1717946122564" MODIFIED="1717946137936"/>
+<node TEXT="hide empty members" ID="ID_912787834" CREATED="1717946140169" MODIFIED="1717946145449"/>
+</node>
+<node TEXT="3.15 Hide Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1385290378" CREATED="1717355576336" MODIFIED="1717355581383">
+<node TEXT="show/hide" ID="ID_1527509218" CREATED="1717946214334" MODIFIED="1717946218321"/>
+</node>
+<node TEXT="3.16 Remove Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_93409891" CREATED="1717355589301" MODIFIED="1717355600391">
+<node TEXT="remove/hide/restore with $tags" ID="ID_1304819284" CREATED="1717946248403" MODIFIED="1717946262577"/>
+</node>
 <node TEXT="3.17 Hide, Remove or Restore Tagged Elements or Wildcard" POSITION="bottom_or_right" ID="ID_1358227466" CREATED="1717355600939" MODIFIED="1717355618816"/>
-<node TEXT="3.18 Hide or Remove Unlinked Class" POSITION="bottom_or_right" ID="ID_542597774" CREATED="1717355625318" MODIFIED="1717355634902"/>
+<node TEXT="3.18 Hide or Remove Unlinked Class" POSITION="bottom_or_right" ID="ID_542597774" CREATED="1717355625318" MODIFIED="1717355634902">
+<node TEXT="hide @unlinked" ID="ID_1548132206" CREATED="1717946391461" MODIFIED="1717946397029"/>
+<node TEXT="remove @unlinked" ID="ID_1809962139" CREATED="1717946397320" MODIFIED="1717946400986"/>
+</node>
 </node>
 <node TEXT="Group 5: Use Generics and Specific Spot" FOLDED="true" ID="ID_179415901" CREATED="1717797220732" MODIFIED="1717797235608">
-<node TEXT="3.19 Use Generics" POSITION="bottom_or_right" ID="ID_1092095371" CREATED="1717355640729" MODIFIED="1717355645859"/>
-<node TEXT="3.20 Specific Spot" POSITION="bottom_or_right" ID="ID_1748889040" CREATED="1717355647968" MODIFIED="1717355651931"/>
+<node TEXT="3.19 Use Generics" POSITION="bottom_or_right" ID="ID_1092095371" CREATED="1717355640729" MODIFIED="1717355645859">
+<node TEXT="Usually generics are represented as classifier&apos;s template parameter." ID="ID_1483948521" CREATED="1718228697677" MODIFIED="1718228721642"/>
+<node TEXT="Generics in Java have been around for a while but support for mapping generically specified artifacts in UML to their Ecore representation is new to UML2 2.1" ID="ID_803902111" CREATED="1718228849110" MODIFIED="1718228935605" LINK="https://www.eclipse.org/articles/article/?file=Article-Defining-Generics-with-UML-Templates/index.html"/>
+<node TEXT="UML Parameterized Class" ID="ID_785978778" CREATED="1718228810205" MODIFIED="1718228823214" LINK="https://etutorials.org/Programming/UML/Chapter+6.+Class+Diagrams+Advanced+Concepts/Parameterized+Class/"/>
+<node TEXT="bracket &lt; and &gt;" POSITION="bottom_or_right" ID="ID_469565622" CREATED="1717946492805" MODIFIED="1717946503215"/>
 </node>
-<node TEXT="Group 6: Packages" FOLDED="true" ID="ID_118679930" CREATED="1717797281836" MODIFIED="1717797286135">
-<node TEXT="3.21 Packages" POSITION="bottom_or_right" ID="ID_904115507" CREATED="1717355654333" MODIFIED="1717355657439"/>
-<node TEXT="3.22 Packages Style" POSITION="bottom_or_right" ID="ID_258444637" CREATED="1717355658158" MODIFIED="1717355664896"/>
+<node TEXT="3.20 Specific Spot" POSITION="bottom_or_right" ID="ID_1748889040" CREATED="1717355647968" MODIFIED="1717355651931">
+<node TEXT="spot characters: C, I, E, A" ID="ID_1877663170" CREATED="1717946507528" MODIFIED="1717946517867"/>
+<node TEXT="within stereotype &lt;&lt;&gt;&gt;, 1) (), 2) single character, 3) color code or color name" ID="ID_1583685885" CREATED="1718236503097" MODIFIED="1718236537008"/>
+</node>
+</node>
+<node TEXT="Group 6: Packages" FOLDED="true" ID="ID_118679930" CREATED="1717797281836" MODIFIED="1718243786783" LINK="https://en.wikipedia.org/wiki/Package_(UML)"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A package in the Unified Modeling Language is used &quot;to group elements, and to provide a namespace for the grouped elements&quot;.[1] A package may contain other packages, thus providing for a hierarchical organization of packages.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Pretty much all UML elements can be grouped into packages. Thus, classes, objects, use cases, components, nodes, node instances etc. can all be organized as packages, thus enabling a manageable organization of the myriad elements that a real-world UML model entails.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="3.21 Packages" FOLDED="true" POSITION="bottom_or_right" ID="ID_904115507" CREATED="1717355654333" MODIFIED="1717355657439">
+<node TEXT="keyword: package" ID="ID_31615312" CREATED="1718238246766" MODIFIED="1718238261188"/>
+<node TEXT="package definitions can be nested" ID="ID_331315378" CREATED="1718238262570" MODIFIED="1718238271614"/>
+</node>
+<node TEXT="3.22 Packages Style" FOLDED="true" POSITION="bottom_or_right" ID="ID_258444637" CREATED="1717355658158" MODIFIED="1717355664896">
+<node TEXT="command: skinparam packageStyle" ID="ID_1518597101" CREATED="1718238817398" MODIFIED="1718238831257"/>
+<node TEXT="using stereotype on package" ID="ID_169315188" CREATED="1718238832196" MODIFIED="1718238840250">
+<node TEXT="&lt;&lt;Node&gt;&gt;" ID="ID_1373254493" CREATED="1718238938252" MODIFIED="1718238943406"/>
+<node TEXT="&lt;&lt;Rectangle&gt;&gt;" ID="ID_1337805423" CREATED="1718238943847" MODIFIED="1718238948767"/>
+<node TEXT="&lt;&lt;Folder&gt;&gt;: default" ID="ID_1942698211" CREATED="1718238948919" MODIFIED="1718238969148"/>
+<node TEXT="&lt;&lt;Frame&gt;&gt;" ID="ID_1835107795" CREATED="1718238953434" MODIFIED="1718238957249"/>
+<node TEXT="&lt;&lt;Cloud&gt;&gt;" ID="ID_1059889948" CREATED="1718238970434" MODIFIED="1718238973834"/>
+<node TEXT="&lt;&lt;Database&gt;&gt;" ID="ID_643557207" CREATED="1718238974000" MODIFIED="1718238978001"/>
+</node>
+<node TEXT="can define links between packages" ID="ID_847636346" CREATED="1718238852741" MODIFIED="1718238862446"/>
+</node>
 <node TEXT="3.23 Namespaces" POSITION="bottom_or_right" ID="ID_791365022" CREATED="1717355670837" MODIFIED="1717355674256"/>
-<node TEXT="3.24 Automatic Package Creation" POSITION="bottom_or_right" ID="ID_1124542142" CREATED="1717355674421" MODIFIED="1717355682808"/>
+<node TEXT="3.24 Automatic Package Creation" POSITION="bottom_or_right" ID="ID_1124542142" CREATED="1717355674421" MODIFIED="1717355682808">
+<node TEXT="define another separator: set spearator ???" ID="ID_1671057476" CREATED="1718239100081" MODIFIED="1718239117083"/>
+<node TEXT="disable automatic namespace creation: set separator none" ID="ID_143571617" CREATED="1718239118296" MODIFIED="1718239138528"/>
+</node>
 </node>
 <node TEXT="Group 7: Arrows and Association" FOLDED="true" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
 <node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975"/>
@@ -595,7 +670,7 @@
 <node TEXT="1.39.3 Style Strictuml" ID="ID_705286905" CREATED="1716689709244" MODIFIED="1716689717978"/>
 </node>
 </node>
-<node TEXT="Part 16" ID="ID_1236215673" CREATED="1716734745687" MODIFIED="1716734748144">
+<node TEXT="Part 16" FOLDED="true" ID="ID_1236215673" CREATED="1716734745687" MODIFIED="1716734748144">
 <node TEXT="1.40 Hide Unlinked Participant" POSITION="bottom_or_right" ID="ID_1774639613" CREATED="1716689724873" MODIFIED="1716689732526"/>
 <node TEXT="1.41 Color a Group Message" POSITION="bottom_or_right" ID="ID_1179945236" CREATED="1716689735672" MODIFIED="1716689742138"/>
 <node TEXT="1.42 Mainframe" POSITION="bottom_or_right" ID="ID_928745055" CREATED="1716689744101" MODIFIED="1716689747442">
