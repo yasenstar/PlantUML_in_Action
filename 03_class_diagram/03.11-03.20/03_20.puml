@@ -1,0 +1,6 @@
+@startuml
+
+class Class1 << (S,#FF7700) myself >>
+interface Interface << (L, Cyan) testing >>
+
+@enduml
