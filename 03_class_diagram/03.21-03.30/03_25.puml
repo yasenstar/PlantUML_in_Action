@@ -1,0 +1,22 @@
+@startuml
+
+title Lollipop Interface
+
+left to right direction
+
+class foo1
+class foo2
+bar1 ()-- foo1
+foo2 --() bar
+foo1 -() bar2
+foo1 -() bar3
+
+class Playlist
+class iTunes_Reader
+class new_reader
+circle TrackData
+Playlist --( TrackData
+TrackData -- iTunes_Reader
+TrackData -- new_reader
+
+@enduml

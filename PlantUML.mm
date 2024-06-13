@@ -320,13 +320,17 @@
 <node TEXT="can define links between packages" ID="ID_847636346" CREATED="1718238852741" MODIFIED="1718238862446"/>
 </node>
 <node TEXT="3.23 Namespaces" POSITION="bottom_or_right" ID="ID_791365022" CREATED="1717355670837" MODIFIED="1717355674256"/>
-<node TEXT="3.24 Automatic Package Creation" POSITION="bottom_or_right" ID="ID_1124542142" CREATED="1717355674421" MODIFIED="1717355682808">
+<node TEXT="3.24 Automatic Package Creation" FOLDED="true" POSITION="bottom_or_right" ID="ID_1124542142" CREATED="1717355674421" MODIFIED="1717355682808">
 <node TEXT="define another separator: set spearator ???" ID="ID_1671057476" CREATED="1718239100081" MODIFIED="1718239117083"/>
 <node TEXT="disable automatic namespace creation: set separator none" ID="ID_143571617" CREATED="1718239118296" MODIFIED="1718239138528"/>
 </node>
 </node>
-<node TEXT="Group 7: Arrows and Association" FOLDED="true" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
-<node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975"/>
+<node TEXT="Group 7: Arrows and Association" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
+<node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975">
+<node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
+<node TEXT="Forum: #2259 - using circle" ID="ID_1009025671" CREATED="1718310941605" MODIFIED="1718310958769" LINK="https://forum.plantuml.net/2259/how-draw-the-lollipop-socket-symbol-class-diagram-consumes"/>
+<node TEXT="Ball and Socket by MArtin Fowler" ID="ID_1917201758" CREATED="1718311294402" MODIFIED="1718311304529" LINK="https://martinfowler.com/bliki/BallAndSocket.html"/>
+</node>
 <node TEXT="3.26 Changing Arrows Orientation" POSITION="bottom_or_right" ID="ID_1953136807" CREATED="1717355695965" MODIFIED="1717355706301"/>
 <node TEXT="3.27 Association Classes" POSITION="bottom_or_right" ID="ID_415237312" CREATED="1717355715525" MODIFIED="1717355721360"/>
 <node TEXT="3.28 Association on Same Class" POSITION="bottom_or_right" ID="ID_342117144" CREATED="1717355723959" MODIFIED="1717355730594"/>
