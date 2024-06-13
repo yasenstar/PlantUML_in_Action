@@ -1,0 +1,34 @@
+@startuml
+
+' skinparam PackageStyle Node
+' skinparam PackageStyle Rectangle
+' skinparam PackageStyle Folder
+' skinparam PackageStyle Frame
+skinparam PackageStyle Cloud
+' skinparam PackageStyle Database
+
+package foo1 {
+    class Class1
+}
+
+package foo2 {
+    class Class2
+}
+
+package foo3 {
+    class Class3
+}
+
+package foo4 {
+    class Class4
+}
+
+package foo5 {
+    class Class5
+}
+
+package foo6 {
+    class Class6
+}
+
+@enduml

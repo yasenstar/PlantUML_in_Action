@@ -1,0 +1,18 @@
+@startuml
+skinparam PackageStyle frame
+
+namespace foo1.foo2 {
+    class myClass {}
+}
+
+package foo1.foo2.foo3 {
+    class Object {
+        - calculate()
+    }
+}
+
+foo1.foo2 +-- foo1.foo2.foo3
+foo1 +-- foo1.foo2.foo3
+foo2 <|-- foo3
+
+@enduml
