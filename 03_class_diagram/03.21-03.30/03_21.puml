@@ -1,0 +1,24 @@
+@startuml
+title Packages
+
+package "Classic Collections" #FFAAAA {
+    class Object
+    class ArrayList
+    Object <|-- ArrayList
+}
+
+package com.plantuml.mysite {
+    class Demo1
+    class Demo2
+    Demo1 *- Demo2
+}
+
+Object <|-- Demo1
+
+package com.plantuml.mysite1 #DDDDDD {}
+
+package com.yasen #cyan {}
+
+ArrayList -- com.plantuml.mysite
+
+@enduml
