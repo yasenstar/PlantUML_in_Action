@@ -1,0 +1,15 @@
+@startuml
+
+class Bar1
+class Bar2
+class Together1
+class Together2
+class Together3
+class Together4
+
+Together1 - Together2
+Together2 - Together3
+Together2 --> Bar1
+Bar1 -> Bar2
+
+@enduml
