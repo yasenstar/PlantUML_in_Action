@@ -1,0 +1,41 @@
+@startuml
+
+skinparam backgroundcolor Brown/White
+skinparam classBackgroundColor Pink|Blue
+
+package example #Yellow {
+    class Dummy #Cyan
+    class Foo #FFAAFF
+}
+note left of example #LightGreen
+    this is my
+    note on package
+end note
+
+Dummy -- Foo #red 
+
+package colorful01 #Yellow|Cyan {
+    class Class01
+    interface Interface01
+    Class01 *-- Interface01
+}
+
+package colorful02 #Yellow/Cyan {
+    class Class01
+    interface Interface01
+    Class01 *-- Interface01
+}
+
+package colorful03 #Yellow\Cyan {
+    class Class01
+    interface Interface01
+    Class01 *-- Interface01
+}
+
+package colorful04 #Yellow-Cyan {
+    class Class01
+    interface Interface01
+    Class01 *-- Interface01
+}
+
+@enduml
