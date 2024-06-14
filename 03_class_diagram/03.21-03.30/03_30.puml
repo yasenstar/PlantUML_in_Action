@@ -1,0 +1,29 @@
+@startuml
+
+' styles
+' skinparam ClassBackgroundColor PaleGreen
+skinparam class {
+    BackgroundColor PaleGreen
+    ArrowColor SeaGreen
+    BorderColor SpringGreen
+    BackgroundColor<<Foo1>> Wheat
+    BackgroundColor<<Foo2>> Purple
+    BorderColor<<Foo2>> Yellow
+    ' StereotypeFontColor Cyan
+}
+
+' skinparam stereotypeCBackgroundColor YellowGreen
+' skinparam stereotypeCBackgroundColor<<Foo1>> DimGram
+skinparam ClassStereotypeFontColor Cyan
+
+' Definitions
+class Class01 << Foo1 >>
+class Class02
+class Class03
+class Class04 << Foo2 >>
+
+' Relationships
+Class01 "1" *-- "many" Class02 : contains
+Class03 o-- Class04 : aggregation
+
+@enduml
