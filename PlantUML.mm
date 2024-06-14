@@ -372,7 +372,10 @@
 </node>
 <node TEXT="Group 8: Styles" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
 <node TEXT="3.29 Skinparam" POSITION="bottom_or_right" ID="ID_1829365211" CREATED="1717355732819" MODIFIED="1717355737214"/>
-<node TEXT="3.30 Skinned Stereotypes" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629"/>
+<node TEXT="3.30 Skinned Stereotypes" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629">
+<node TEXT="discussion #16549" POSITION="bottom_or_right" ID="ID_189305300" CREATED="1718397734077" MODIFIED="1718397744821" LINK="https://forum.plantuml.net/16549/skinparam-stereotypecbackgroundcolor-isnt-applied"/>
+<node TEXT="discussion #16650" ID="ID_1118618104" CREATED="1718397711780" MODIFIED="1718397724602" LINK="https://forum.plantuml.net/16550/stereotype-char-and-char-background-color-for-class-diagrams"/>
+</node>
 <node TEXT="3.31 Color Gradient" POSITION="bottom_or_right" ID="ID_1353428753" CREATED="1717355755862" MODIFIED="1717355760544"/>
 <node TEXT="3.32 Help on Layout" FOLDED="true" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130">
 <node TEXT="keyword: together" ID="ID_829375482" CREATED="1718383994401" MODIFIED="1718384054383">
@@ -799,7 +802,7 @@
 <node TEXT="26 Unicode" POSITION="bottom_or_right" ID="ID_948088624" CREATED="1716658953769" MODIFIED="1716658957237"/>
 <node TEXT="27 PlantUML Standard Library" POSITION="bottom_or_right" ID="ID_1504198015" CREATED="1716658957537" MODIFIED="1716658964841"/>
 </node>
-<node TEXT="Add-on and Reference" FOLDED="true" POSITION="bottom_or_right" ID="ID_1572620001" CREATED="1717375073762" MODIFIED="1717766663700">
+<node TEXT="Add-on and Reference" POSITION="bottom_or_right" ID="ID_1572620001" CREATED="1717375073762" MODIFIED="1717766663700">
 <node TEXT="Formatting Diagrams with Skinparams, HTML and Creole" ID="ID_1461312111" CREATED="1717375075861" MODIFIED="1717375095970" LINK="https://plantuml-documentation.readthedocs.io/en/latest/formatting/index.html"/>
 <node TEXT="RUP - Rational Unified Process by SWI Group" ID="ID_1645211290" CREATED="1717766664823" MODIFIED="1717767068983" LINK="https://swi.cs.vsb.cz/RUPLarge"/>
 <node TEXT="A Comprehensive Guide to Sequence Diagram" ID="ID_506906884" CREATED="1717787169300" MODIFIED="1717788601320" LINK="https://guides.visual-paradigm.com/understanding-sequence-diagrams-a-comprehensive-guide/">
