@@ -1,0 +1,32 @@
+@startuml
+' left to right direction
+
+' Class Definition
+class Student {
+    Name
+}
+class Course
+
+database information_entities {
+
+    class Enrollment1 {
+        drop()
+        cancel()
+    }
+
+    class Enrollment2 {
+        drop()
+        cancel()
+    }
+
+    class Enrollment3 {
+        drop()
+        cancel()
+    }
+
+}
+
+' Class Relationships
+Student "0..*" - "1..*" Course
+(Student, Course) ... information_entities
+@enduml

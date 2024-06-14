@@ -220,8 +220,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="static method: {static}" ID="ID_115455698" CREATED="1717881076795" MODIFIED="1717881088415"/>
 <node TEXT="abstract method: {abstract}" ID="ID_1654344004" CREATED="1717881088687" MODIFIED="1717881100149"/>
 </node>
@@ -301,8 +300,7 @@
       Pretty much all UML elements can be grouped into packages. Thus, classes, objects, use cases, components, nodes, node instances etc. can all be organized as packages, thus enabling a manageable organization of the myriad elements that a real-world UML model entails.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="3.21 Packages" FOLDED="true" POSITION="bottom_or_right" ID="ID_904115507" CREATED="1717355654333" MODIFIED="1717355657439">
 <node TEXT="keyword: package" ID="ID_31615312" CREATED="1718238246766" MODIFIED="1718238261188"/>
 <node TEXT="package definitions can be nested" ID="ID_331315378" CREATED="1718238262570" MODIFIED="1718238271614"/>
@@ -326,13 +324,45 @@
 </node>
 </node>
 <node TEXT="Group 7: Arrows and Association" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
-<node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975">
+<node TEXT="3.25 Lollipop Interface" FOLDED="true" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975">
 <node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
 <node TEXT="Forum: #2259 - using circle" ID="ID_1009025671" CREATED="1718310941605" MODIFIED="1718310958769" LINK="https://forum.plantuml.net/2259/how-draw-the-lollipop-socket-symbol-class-diagram-consumes"/>
 <node TEXT="Ball and Socket by Martin Fowler" ID="ID_1917201758" CREATED="1718311294402" MODIFIED="1718311647210" LINK="https://martinfowler.com/bliki/BallAndSocket.html"/>
 </node>
 <node TEXT="3.26 Changing Arrows Orientation" POSITION="bottom_or_right" ID="ID_1953136807" CREATED="1717355695965" MODIFIED="1717355706301"/>
-<node TEXT="3.27 Association Classes" POSITION="bottom_or_right" ID="ID_415237312" CREATED="1717355715525" MODIFIED="1717355721360"/>
+<node TEXT="3.27 Association Classes" POSITION="bottom_or_right" ID="ID_415237312" CREATED="1717355715525" MODIFIED="1717355721360">
+<node ID="ID_1388400280" CREATED="1718377742100" MODIFIED="1718377760898"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      define <span style="font-style: italic;">association class</span>&#xa0;after a relation
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1057125112" CREATED="1718377762360" MODIFIED="1718377775767"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      define <span style="font-style: italic;">association </span>in another direction
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="How to associate more than 1 classes to one same relation?" ID="ID_1052345911" CREATED="1718380133526" MODIFIED="1718380161298" LINK="https://forum.plantuml.net/4062/two-association-classes-on-one-relation?state=comment-19001&amp;show=19001#c19001"/>
+</node>
 <node TEXT="3.28 Association on Same Class" POSITION="bottom_or_right" ID="ID_342117144" CREATED="1717355723959" MODIFIED="1717355730594"/>
 </node>
 <node TEXT="Group 8: Styles" FOLDED="true" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
@@ -535,10 +565,10 @@
 </node>
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
-<arrowlink DESTINATION="ID_652208197"/>
-<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_288741682"/>
 <arrowlink DESTINATION="ID_1961776223"/>
+<arrowlink DESTINATION="ID_1235100678"/>
+<arrowlink DESTINATION="ID_652208197"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -546,8 +576,8 @@
 </node>
 <node TEXT="Part 9" FOLDED="true" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
 <node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1717364077035">
-<arrowlink DESTINATION="ID_125886615"/>
 <arrowlink DESTINATION="ID_1063219866"/>
+<arrowlink DESTINATION="ID_125886615"/>
 <node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
 </node>
 <node TEXT="1.28 Shortcut Syntax" FOLDED="true" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">

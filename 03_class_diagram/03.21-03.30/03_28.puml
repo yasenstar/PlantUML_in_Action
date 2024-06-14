@@ -1,0 +1,16 @@
+@startuml
+' Definitions
+class Station {
+    + name: string
+}
+class StationCrossing {
+    + cost: TimeInterval
+}
+<> diamond
+
+' Relationships and Association
+StationCrossing . diamond
+diamond - " to 0..* " Station
+diamond - " from 0..* " Station
+
+@enduml
