@@ -1,0 +1,23 @@
+@startuml
+title intro skinparam in class diagram
+
+' skinpararm
+skinparam class {
+    BackgroundColor PaleGreen
+    ArrowColor Red
+    BorderColor Blue
+}
+' skinparam StereotypeCBackgroundColor RedBlue
+' ? no effect
+
+' definition
+class Class01 << test >>
+class Class02
+class Class03
+class Class04 << testing >> 
+
+' relationships
+Class01 "1" *-- "1..n" Class02 : contains
+Class03 o-- Class04 : aggregation
+
+@enduml

@@ -181,31 +181,36 @@
 <node TEXT="03 Class Diagram" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1716658611130">
 <node TEXT="Group 1: Notation Definition" FOLDED="true" ID="ID_6284272" CREATED="1717795525178" MODIFIED="1717795543084">
 <node TEXT="3.01 Declaring Element" POSITION="bottom_or_right" ID="ID_1138859544" CREATED="1717355364987" MODIFIED="1717355370658"/>
-<node TEXT="3.02 Relations between Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1155065871" CREATED="1717355373991" MODIFIED="1717355395800">
+<node TEXT="3.02 Relations between Classes" POSITION="bottom_or_right" ID="ID_1155065871" CREATED="1717355373991" MODIFIED="1717355395800">
 <node TEXT="Extension Relation" ID="ID_16876414" CREATED="1717795481251" MODIFIED="1717795486467"/>
 <node TEXT="Composition Relation" ID="ID_1430750687" CREATED="1717795486902" MODIFIED="1717795491029"/>
 <node TEXT="Aggregation Relation" ID="ID_800250790" CREATED="1717795491359" MODIFIED="1717795494939"/>
 </node>
-<node TEXT="3.03 Label on Relations" FOLDED="true" POSITION="bottom_or_right" ID="ID_1960690600" CREATED="1717355383351" MODIFIED="1717355397567">
+<node TEXT="3.03 Label on Relations" POSITION="bottom_or_right" ID="ID_1960690600" CREATED="1717355383351" MODIFIED="1717355397567">
 <node TEXT="use : followed by text of the label" ID="ID_592858701" CREATED="1717850939396" MODIFIED="1717850961621"/>
 <node TEXT="use &quot;&quot; for cardinality on each side of relation" ID="ID_690030901" CREATED="1717850968507" MODIFIED="1717850983183"/>
 </node>
-<node TEXT="3.04 Using Non-Letters in&#xa;Element Names and Relation Labels" FOLDED="true" POSITION="bottom_or_right" ID="ID_1302676351" CREATED="1717355390467" MODIFIED="1717851130844">
+<node TEXT="3.04 Using Non-Letters in&#xa;Element Names and Relation Labels" POSITION="bottom_or_right" ID="ID_1302676351" CREATED="1717355390467" MODIFIED="1717851130844">
 <node TEXT="Use the &quot;as&quot; keyword" ID="ID_1155497678" CREATED="1717851132544" MODIFIED="1717851150728"/>
 <node TEXT="Put &quot;&quot; around the class name" ID="ID_777686277" CREATED="1717851152904" MODIFIED="1717851160762"/>
 <node TEXT="3.04.1 Starting names with $" ID="ID_1223662543" CREATED="1717851210462" MODIFIED="1717851217560"/>
 </node>
 </node>
-<node TEXT="Group 2: Basis on Class Body" FOLDED="true" ID="ID_1444266506" CREATED="1717795597114" MODIFIED="1717795606520">
+<node TEXT="Group 2: Basis on Class Body" FOLDED="true" ID="ID_1444266506" CREATED="1717795597114" MODIFIED="1718381208793" VGAP_QUANTITY="3 pt">
 <node TEXT="3.05 Adding Methods" FOLDED="true" POSITION="bottom_or_right" ID="ID_849405929" CREATED="1717355421683" MODIFIED="1717355426984">
 <node TEXT="Use &quot;:&quot; follow by the field&apos;s or method&apos;s name" ID="ID_1130188474" CREATED="1717851352639" MODIFIED="1717851367081"/>
 <node TEXT="{field}, {method}" ID="ID_1032290913" CREATED="1717881123208" MODIFIED="1717881131717"/>
 </node>
 <node TEXT="Real Example: Customer Shopping class diagram" POSITION="bottom_or_right" ID="ID_1255923509" CREATED="1717851788095" MODIFIED="1717851813723"/>
-<node TEXT="3.06 Defining Visibility" FOLDED="true" POSITION="bottom_or_right" ID="ID_1067224402" CREATED="1717355431163" MODIFIED="1717355437937">
-<node TEXT="turn off:&#xa;skinparam classAttributeIconSize 0" ID="ID_1455437523" CREATED="1717880766807" MODIFIED="1717880785369"/>
+<node TEXT="3.06 Defining Visibility" POSITION="bottom_or_right" ID="ID_1067224402" CREATED="1717355431163" MODIFIED="1718381208792">
+<node TEXT="turn off:&#xa;skinparam classAttributeIconSize 0" ID="ID_1455437523" CREATED="1717880766807" MODIFIED="1717880785369">
+<node TEXT="-: Private" ID="ID_200053995" CREATED="1718380269162" MODIFIED="1718380276849"/>
+<node TEXT="+: Public" ID="ID_1707376647" CREATED="1718380277288" MODIFIED="1718380285590"/>
+<node TEXT="#: Protected" ID="ID_1194192816" CREATED="1718380286219" MODIFIED="1718380293873"/>
+<node TEXT="~: package private" ID="ID_484756912" CREATED="1718380294059" MODIFIED="1718380299782"/>
 </node>
-<node TEXT="3.07 Abstract and Static" POSITION="bottom_or_right" ID="ID_962584885" CREATED="1717355441759" MODIFIED="1717883626511" LINK="https://textbooks.cs.ksu.edu/cc410/i-oop/05-uml/05-classes/#:~:text=In%20UML%2C%20we%20indicate%20a%20class%20is%20static,a%20class%20is%20abstract%2C%20we%20italicize%20its%20name."><richcontent TYPE="NOTE">
+</node>
+<node TEXT="3.07 Abstract and Static" FOLDED="true" POSITION="bottom_or_right" ID="ID_962584885" CREATED="1717355441759" MODIFIED="1717883626511" LINK="https://textbooks.cs.ksu.edu/cc410/i-oop/05-uml/05-classes/#:~:text=In%20UML%2C%20we%20indicate%20a%20class%20is%20static,a%20class%20is%20abstract%2C%20we%20italicize%20its%20name."><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -224,7 +229,7 @@
 <node TEXT="static method: {static}" ID="ID_115455698" CREATED="1717881076795" MODIFIED="1717881088415"/>
 <node TEXT="abstract method: {abstract}" ID="ID_1654344004" CREATED="1717881088687" MODIFIED="1717881100149"/>
 </node>
-<node TEXT="3.08 Advanced Class Body" POSITION="bottom_or_right" ID="ID_98155563" CREATED="1717355453599" MODIFIED="1717355459017">
+<node TEXT="3.08 Advanced Class Body" FOLDED="true" POSITION="bottom_or_right" ID="ID_98155563" CREATED="1717355453599" MODIFIED="1717355459017">
 <node TEXT="--" ID="ID_1983192107" CREATED="1717881247952" MODIFIED="1717881251622"/>
 <node TEXT=".." ID="ID_960547843" CREATED="1717881253168" MODIFIED="1717881255046"/>
 <node TEXT="&apos;&apos;==" ID="ID_1620833131" CREATED="1717881255459" MODIFIED="1717881260736"/>
@@ -256,11 +261,11 @@
 <node TEXT="keyword: annotation" ID="ID_563745198" CREATED="1717946058316" MODIFIED="1717946062691"/>
 <node TEXT="keyword: enum" ID="ID_1039556248" CREATED="1717946062878" MODIFIED="1717946065675"/>
 </node>
-<node TEXT="3.14 Hide Attributes, Methods..." FOLDED="true" POSITION="bottom_or_right" ID="ID_563475061" CREATED="1717355563241" MODIFIED="1717355572413">
+<node TEXT="3.14 Hide Attributes, Methods..." POSITION="bottom_or_right" ID="ID_563475061" CREATED="1717355563241" MODIFIED="1717355572413">
 <node TEXT="command: hide/show" ID="ID_1253926724" CREATED="1717946122564" MODIFIED="1717946137936"/>
 <node TEXT="hide empty members" ID="ID_912787834" CREATED="1717946140169" MODIFIED="1717946145449"/>
 </node>
-<node TEXT="3.15 Hide Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1385290378" CREATED="1717355576336" MODIFIED="1717355581383">
+<node TEXT="3.15 Hide Classes" POSITION="bottom_or_right" ID="ID_1385290378" CREATED="1717355576336" MODIFIED="1717355581383">
 <node TEXT="show/hide" ID="ID_1527509218" CREATED="1717946214334" MODIFIED="1717946218321"/>
 </node>
 <node TEXT="3.16 Remove Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_93409891" CREATED="1717355589301" MODIFIED="1717355600391">
@@ -323,14 +328,14 @@
 <node TEXT="disable automatic namespace creation: set separator none" ID="ID_143571617" CREATED="1718239118296" MODIFIED="1718239138528"/>
 </node>
 </node>
-<node TEXT="Group 7: Arrows and Association" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
+<node TEXT="Group 7: Arrows and Association" FOLDED="true" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
 <node TEXT="3.25 Lollipop Interface" FOLDED="true" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975">
 <node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
 <node TEXT="Forum: #2259 - using circle" ID="ID_1009025671" CREATED="1718310941605" MODIFIED="1718310958769" LINK="https://forum.plantuml.net/2259/how-draw-the-lollipop-socket-symbol-class-diagram-consumes"/>
 <node TEXT="Ball and Socket by Martin Fowler" ID="ID_1917201758" CREATED="1718311294402" MODIFIED="1718311647210" LINK="https://martinfowler.com/bliki/BallAndSocket.html"/>
 </node>
 <node TEXT="3.26 Changing Arrows Orientation" POSITION="bottom_or_right" ID="ID_1953136807" CREATED="1717355695965" MODIFIED="1717355706301"/>
-<node TEXT="3.27 Association Classes" POSITION="bottom_or_right" ID="ID_415237312" CREATED="1717355715525" MODIFIED="1717355721360">
+<node TEXT="3.27 Association Classes" FOLDED="true" POSITION="bottom_or_right" ID="ID_415237312" CREATED="1717355715525" MODIFIED="1717355721360">
 <node ID="ID_1388400280" CREATED="1718377742100" MODIFIED="1718377760898"><richcontent TYPE="NODE">
 
 <html>
@@ -365,13 +370,65 @@
 </node>
 <node TEXT="3.28 Association on Same Class" POSITION="bottom_or_right" ID="ID_342117144" CREATED="1717355723959" MODIFIED="1717355730594"/>
 </node>
-<node TEXT="Group 8: Styles" FOLDED="true" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
+<node TEXT="Group 8: Styles" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
 <node TEXT="3.29 Skinparam" POSITION="bottom_or_right" ID="ID_1829365211" CREATED="1717355732819" MODIFIED="1717355737214"/>
 <node TEXT="3.30 Skinned Stereotypes" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629"/>
 <node TEXT="3.31 Color Gradient" POSITION="bottom_or_right" ID="ID_1353428753" CREATED="1717355755862" MODIFIED="1717355760544"/>
-<node TEXT="3.32 Help on Layout" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130"/>
-<node TEXT="3.33 Splitting Large Files" POSITION="bottom_or_right" ID="ID_1484557625" CREATED="1717355770875" MODIFIED="1717355777469"/>
-<node TEXT="3.34 Extends and Implements" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117"/>
+<node TEXT="3.32 Help on Layout" FOLDED="true" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130">
+<node TEXT="keyword: together" ID="ID_829375482" CREATED="1718383994401" MODIFIED="1718384054383">
+<font NAME="HarmonyOS Sans"/>
+</node>
+<node TEXT="use hidden links to force the layout" ID="ID_23151564" CREATED="1718384065001" MODIFIED="1718384073903"/>
+</node>
+<node TEXT="3.33 Splitting Large Files" FOLDED="true" POSITION="bottom_or_right" ID="ID_1484557625" CREATED="1717355770875" MODIFIED="1717355777469">
+<node ID="ID_509190052" CREATED="1718384225381" MODIFIED="1718384258739"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      use the <span style="font-style: italic;">page (hpages)x(vpages)</span>&#xa0;to split images
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="3.34 Extends and Implements" FOLDED="true" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117">
+<node ID="ID_322847657" CREATED="1718384400622" MODIFIED="1718384411013"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      keyword: <span style="font-style: italic;">extends</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_774579772" CREATED="1718384411554" MODIFIED="1718384418399"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      keyword: <span style="font-style: italic;">implements</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 <node TEXT="3.35 Bracketed Relations (linking or arrow) Style" FOLDED="true" POSITION="bottom_or_right" ID="ID_1286408587" CREATED="1717355788427" MODIFIED="1717355806170">
 <node TEXT="3.35.1 Line Style" ID="ID_1999711609" CREATED="1717355806178" MODIFIED="1717355810737"/>
 <node TEXT="3.35.2 Line Color" ID="ID_170411620" CREATED="1717355813616" MODIFIED="1717355817357"/>
