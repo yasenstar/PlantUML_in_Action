@@ -329,7 +329,7 @@
 <node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975">
 <node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
 <node TEXT="Forum: #2259 - using circle" ID="ID_1009025671" CREATED="1718310941605" MODIFIED="1718310958769" LINK="https://forum.plantuml.net/2259/how-draw-the-lollipop-socket-symbol-class-diagram-consumes"/>
-<node TEXT="Ball and Socket by MArtin Fowler" ID="ID_1917201758" CREATED="1718311294402" MODIFIED="1718311304529" LINK="https://martinfowler.com/bliki/BallAndSocket.html"/>
+<node TEXT="Ball and Socket by Martin Fowler" ID="ID_1917201758" CREATED="1718311294402" MODIFIED="1718311647210" LINK="https://martinfowler.com/bliki/BallAndSocket.html"/>
 </node>
 <node TEXT="3.26 Changing Arrows Orientation" POSITION="bottom_or_right" ID="ID_1953136807" CREATED="1717355695965" MODIFIED="1717355706301"/>
 <node TEXT="3.27 Association Classes" POSITION="bottom_or_right" ID="ID_415237312" CREATED="1717355715525" MODIFIED="1717355721360"/>

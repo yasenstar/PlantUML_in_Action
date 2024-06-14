@@ -1,0 +1,12 @@
+@startuml
+
+class Room
+class Student1
+class Student2
+class Chair1
+class Chair2
+
+Student1 -o Room
+Chair1 --* Room
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+' left to right direction
+class Room
+class Student1
+class Student2
+class Chair1
+class Chair2
+
+Room -l-> "left" Student1
+Room -ri-> "right" Student2
+Room *-u- "up" Chair1
+Room *-d- "down" Chair2
+
+@enduml
