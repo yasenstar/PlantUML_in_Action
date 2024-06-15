@@ -1,0 +1,11 @@
+@startuml
+abstract abstract1
+annotation annotation1 #pink ##[bold]red
+class class1 #palegreen ##[dashed]green
+interface interface1 #aliceblue ##[dotted]blue
+
+abstract abstract2
+annotation annotation2 #back:pink;header:cyan;line:red;line.bold;text:red
+class class2 #palegreen;line:green;line.dashed;text:green
+interface interface2 #aliceblue;line:blue;line.dotted;text:blue
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class bar1 #line:green;back:lightblue
+class bar2 #lightblue;line:green
+class bar3 #back:red;line:0000FF
+class bar4 #line.dashed:blue;text:green
+class bar5_dotted_green #line.dotted:green
+class bar6_bold #line.bold:red
+class bar7_gradient #lightgreen/yellow;header:cyan\FF0000
+@enduml
