@@ -372,18 +372,18 @@
 </node>
 <node TEXT="Group 8: Styles" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
 <node TEXT="3.29 Skinparam" POSITION="bottom_or_right" ID="ID_1829365211" CREATED="1717355732819" MODIFIED="1717355737214"/>
-<node TEXT="3.30 Skinned Stereotypes" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629">
+<node TEXT="3.30 Skinned Stereotypes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629">
 <node TEXT="discussion #16549" POSITION="bottom_or_right" ID="ID_189305300" CREATED="1718397734077" MODIFIED="1718397744821" LINK="https://forum.plantuml.net/16549/skinparam-stereotypecbackgroundcolor-isnt-applied"/>
 <node TEXT="discussion #16650" ID="ID_1118618104" CREATED="1718397711780" MODIFIED="1718397724602" LINK="https://forum.plantuml.net/16550/stereotype-char-and-char-background-color-for-class-diagrams"/>
 </node>
 <node TEXT="3.31 Color Gradient" POSITION="bottom_or_right" ID="ID_1353428753" CREATED="1717355755862" MODIFIED="1717355760544"/>
-<node TEXT="3.32 Help on Layout" FOLDED="true" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130">
+<node TEXT="3.32 Help on Layout" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130">
 <node TEXT="keyword: together" ID="ID_829375482" CREATED="1718383994401" MODIFIED="1718384054383">
 <font NAME="HarmonyOS Sans"/>
 </node>
 <node TEXT="use hidden links to force the layout" ID="ID_23151564" CREATED="1718384065001" MODIFIED="1718384073903"/>
 </node>
-<node TEXT="3.33 Splitting Large Files" FOLDED="true" POSITION="bottom_or_right" ID="ID_1484557625" CREATED="1717355770875" MODIFIED="1717355777469">
+<node TEXT="3.33 Splitting Large Files" POSITION="bottom_or_right" ID="ID_1484557625" CREATED="1717355770875" MODIFIED="1717355777469">
 <node ID="ID_509190052" CREATED="1718384225381" MODIFIED="1718384258739"><richcontent TYPE="NODE">
 
 <html>
@@ -399,6 +399,7 @@
 
 </richcontent>
 </node>
+<node TEXT="discussion #3876" ID="ID_1028961324" CREATED="1718469672614" MODIFIED="1718469680509" LINK="https://forum.plantuml.net/3876/using-splitting-large-files"/>
 </node>
 <node TEXT="3.34 Extends and Implements" FOLDED="true" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117">
 <node ID="ID_322847657" CREATED="1718384400622" MODIFIED="1718384411013"><richcontent TYPE="NODE">
