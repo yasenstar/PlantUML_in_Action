@@ -1,0 +1,31 @@
+@startuml
+
+title Line Style with Label
+
+' definitions
+class foo
+class bar
+class bar1 
+class bar2
+class bar3
+class bar4
+class bar5
+
+' add class members
+bar1 : [bold]\n[#red]\n[thickness=5]
+bar2 : [dashed]\n[#green]
+bar3 : [dotted]\n[#FFAAAA]
+bar4 : [hidden]
+bar5 : [plain]\n[#blue]
+
+' relationships
+foo -[thickness=5]-> bar : ""
+' question1: how to keep it empty?
+foo -[#red,thickness=5,bold]-> bar1 : [bold]\n[#red]
+' question2: how bold mix with thickness?
+foo -[dashed,thickness=5,#green]-> bar2 : [dashed]\n[#green]
+foo -[dotted,#FFAAAA,thickness=15]-> bar3 : [dotted]\n[#FFAAAA]
+foo -[hidden]-> bar4 : [hidden]
+foo -[plain,#blue,thickness=5]-> bar5 : [plain]\n[#blue]
+
+@enduml

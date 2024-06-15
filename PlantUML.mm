@@ -401,7 +401,7 @@
 </node>
 <node TEXT="discussion #3876" ID="ID_1028961324" CREATED="1718469672614" MODIFIED="1718469680509" LINK="https://forum.plantuml.net/3876/using-splitting-large-files"/>
 </node>
-<node TEXT="3.34 Extends and Implements" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117">
+<node TEXT="3.34 Extends and Implements" FOLDED="true" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117">
 <node ID="ID_774579772" CREATED="1718384411554" MODIFIED="1718384418399"><richcontent TYPE="NODE">
 
 <html>
@@ -476,7 +476,7 @@
 <node TEXT="Article: Inheritance and Interfaces in Java and UML" ID="ID_1415370115" CREATED="1718471388828" MODIFIED="1718471401485" LINK="https://www.informit.com/articles/article.aspx?p=29224&amp;seqNum=2"/>
 <node TEXT="Interface in Java" ID="ID_1862971419" CREATED="1718471481226" MODIFIED="1718471487355" LINK="https://www.javatpoint.com/interface-in-java"/>
 </node>
-<node TEXT="3.35 Bracketed Relations (linking or arrow) Style" FOLDED="true" POSITION="bottom_or_right" ID="ID_1286408587" CREATED="1717355788427" MODIFIED="1717355806170">
+<node TEXT="3.35 Bracketed Relations (linking or arrow) Style&#xa;   syntax: class1 -[style]-&gt; class2" POSITION="bottom_or_right" ID="ID_1286408587" CREATED="1717355788427" MODIFIED="1718478850012">
 <node TEXT="3.35.1 Line Style" ID="ID_1999711609" CREATED="1717355806178" MODIFIED="1717355810737"/>
 <node TEXT="3.35.2 Line Color" ID="ID_170411620" CREATED="1717355813616" MODIFIED="1717355817357"/>
 <node TEXT="3.35.3 Line Thickness" ID="ID_1360582508" CREATED="1717355819099" MODIFIED="1717355824056"/>
