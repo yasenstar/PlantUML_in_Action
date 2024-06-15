@@ -1,0 +1,28 @@
+@startuml
+
+class CreditCarePayment implements Payment
+class CashPayment implements Payment
+
+class CreditCarePayment {
+    amount
+    calcAmount()
+    authorize()
+}
+
+class CashPayment {
+    amountTendered
+    changeGiven
+    calcAmount()
+}
+
+interface Payment {
+    calcAmount()
+}
+
+class Sale {
+    amount
+}
+
+Sale - Payment
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+class Class1 extends Class2
+class Class1 implements Interface1
+interface Interface1 extends Interface2
+
+@enduml

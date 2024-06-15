@@ -98,7 +98,7 @@
 <node TEXT="Hitchhiker&apos;s Guide to PlantUML" ID="ID_108400670" CREATED="1716758087073" MODIFIED="1716758096831" LINK="https://crashedmind.github.io/PlantUMLHitchhikersGuide/"/>
 <node TEXT="Real World PlantUML" ID="ID_879714020" CREATED="1716854377434" MODIFIED="1716854387548" LINK="https://real-world-plantuml.com/"/>
 </node>
-<node TEXT="PlantUML Implementation" FOLDED="true" ID="ID_398095731" CREATED="1716757785464" MODIFIED="1716757792454">
+<node TEXT="PlantUML Implementation" ID="ID_398095731" CREATED="1716757785464" MODIFIED="1716757792454">
 <node TEXT="Pure JavaScript Implementation" ID="ID_1760426387" CREATED="1716757792956" MODIFIED="1716757804782" LINK="https://plantuml.github.io/plantuml-core/raw.html"/>
 <node TEXT="PlanUML Web Server" POSITION="bottom_or_right" ID="ID_1810892035" CREATED="1716662420069" MODIFIED="1716662436141" LINK="https://www.plantuml.com/"/>
 <node TEXT="Node.js Model and CLI for running PlantUML" POSITION="bottom_or_right" ID="ID_1855810829" CREATED="1716758246379" MODIFIED="1716758262643" LINK="https://www.npmjs.com/package/node-plantuml"/>
@@ -377,13 +377,13 @@
 <node TEXT="discussion #16650" ID="ID_1118618104" CREATED="1718397711780" MODIFIED="1718397724602" LINK="https://forum.plantuml.net/16550/stereotype-char-and-char-background-color-for-class-diagrams"/>
 </node>
 <node TEXT="3.31 Color Gradient" POSITION="bottom_or_right" ID="ID_1353428753" CREATED="1717355755862" MODIFIED="1717355760544"/>
-<node TEXT="3.32 Help on Layout" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130">
+<node TEXT="3.32 Help on Layout" FOLDED="true" POSITION="bottom_or_right" ID="ID_961283668" CREATED="1717355760779" MODIFIED="1717355768130">
 <node TEXT="keyword: together" ID="ID_829375482" CREATED="1718383994401" MODIFIED="1718384054383">
 <font NAME="HarmonyOS Sans"/>
 </node>
 <node TEXT="use hidden links to force the layout" ID="ID_23151564" CREATED="1718384065001" MODIFIED="1718384073903"/>
 </node>
-<node TEXT="3.33 Splitting Large Files" POSITION="bottom_or_right" ID="ID_1484557625" CREATED="1717355770875" MODIFIED="1717355777469">
+<node TEXT="3.33 Splitting Large Files" FOLDED="true" POSITION="bottom_or_right" ID="ID_1484557625" CREATED="1717355770875" MODIFIED="1717355777469">
 <node ID="ID_509190052" CREATED="1718384225381" MODIFIED="1718384258739"><richcontent TYPE="NODE">
 
 <html>
@@ -401,22 +401,7 @@
 </node>
 <node TEXT="discussion #3876" ID="ID_1028961324" CREATED="1718469672614" MODIFIED="1718469680509" LINK="https://forum.plantuml.net/3876/using-splitting-large-files"/>
 </node>
-<node TEXT="3.34 Extends and Implements" FOLDED="true" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117">
-<node ID="ID_322847657" CREATED="1718384400622" MODIFIED="1718384411013"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      keyword: <span style="font-style: italic;">extends</span>
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
+<node TEXT="3.34 Extends and Implements" POSITION="bottom_or_right" ID="ID_767839054" CREATED="1717355781337" MODIFIED="1717355786117">
 <node ID="ID_774579772" CREATED="1718384411554" MODIFIED="1718384418399"><richcontent TYPE="NODE">
 
 <html>
@@ -431,7 +416,65 @@
 </html>
 
 </richcontent>
+<node TEXT="UML realization relationship" ID="ID_1037030546" CREATED="1718470966777" MODIFIED="1718471288253"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      UML realization relationships between the definition and implementations of an interface (the equivalent of Java implements)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Although Java does not support multiple inheritance in the same way as languages such as C++, it does support the idea of implementation of multiple interfaces. The form of inheritance represented by the <span style="font-weight: bold;">implements</span><span style="font-weight: normal;">&#xa0;&#xa0;keyword in Java is inheritance of interface only. This type of inheritance is sometimes called </span><span style="font-weight: bold;">sub-typing</span><span style="font-weight: normal;">. </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">In UML, the relationship between a class implementing an interface and the interface definition is called a </span><span style="font-weight: bold;">realization relationship</span><span style="font-weight: normal;">, and it is drawn as a dashed line with a closed arrowhead from the implementing class to the interface. Interfaces are drawn using the same symbol as a class but with an additional keyword &lt;&lt;interface&gt;&gt; above the class name.</span>
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
+</node>
+<node ID="ID_322847657" CREATED="1718384400622" MODIFIED="1718384411013"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      keyword: <span style="font-style: italic;">extends</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="UML generalization / specialization relationship" ID="ID_664351583" CREATED="1718470946953" MODIFIED="1718471378637"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      UML generalization relationships, used to indicate that one interface extends one or more others.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Interfaces can extend one or more other interfaces. A UML generalization relationship (solid line with closed arrowhead) is used to represent this sort of relationship.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="Article: Inheritance and Interfaces in Java and UML" ID="ID_1415370115" CREATED="1718471388828" MODIFIED="1718471401485" LINK="https://www.informit.com/articles/article.aspx?p=29224&amp;seqNum=2"/>
+<node TEXT="Interface in Java" ID="ID_1862971419" CREATED="1718471481226" MODIFIED="1718471487355" LINK="https://www.javatpoint.com/interface-in-java"/>
 </node>
 <node TEXT="3.35 Bracketed Relations (linking or arrow) Style" FOLDED="true" POSITION="bottom_or_right" ID="ID_1286408587" CREATED="1717355788427" MODIFIED="1717355806170">
 <node TEXT="3.35.1 Line Style" ID="ID_1999711609" CREATED="1717355806178" MODIFIED="1717355810737"/>

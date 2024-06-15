@@ -1,0 +1,8 @@
+@startuml
+
+interface InterfaceB <<interface>> extends InterfaceA
+interface InterfaceB extends InterfaceC
+interface InterfaceA extends InterfaceD
+interface InterfaceC extends InterfaceD
+
+@enduml
