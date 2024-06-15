@@ -21,7 +21,7 @@ bar5 : [plain]
 ' relationships
 foo --> bar : ""
 ' question: how to keep it empty?
-foo -[bold]-> bar1 : [bold]
+foo -[bold]-> bar1 #text:red : [bold]
 foo -[dashed]-> bar2 : [dashed]
 foo -[dotted]-> bar3 : [dotted]
 foo -[hidden]-> bar4 : [hidden]

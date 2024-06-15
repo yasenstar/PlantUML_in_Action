@@ -1,0 +1,7 @@
+@startuml
+class foo
+foo --> bar : normal
+foo --> bar1 #line:red;line.bold;text:red : red bold
+foo --> bar2 #line.dashed;line:green;text:green : green dashed
+foo --> bar3 #FFAAAA;line.dotted;text:blue : blue dotted
+@enduml
