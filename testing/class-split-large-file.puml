@@ -1,0 +1,4 @@
+@startuml
+page 2x2
+class foo
+@enduml

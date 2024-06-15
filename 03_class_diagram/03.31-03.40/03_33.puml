@@ -1,0 +1,34 @@
+@startuml
+
+page 2x2
+
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor red
+
+title split into 4 pages
+
+class BaseClass
+
+namespace net.dummy #DDDDDD {
+    class Meeting
+    class Person
+    Meeting o-- Person
+    Meeting o-- Person
+    Person <|- Person
+}
+
+namespace net.unused {
+    class Person
+}
+
+namespace net.foo {
+    class foo1
+}
+
+BaseClass <|-- Meeting
+BaseClass <|-- net.dummy.Person
+BaseClass <|-- net.dummy.Person
+BaseClass <|-- net.unused.Person
+
+@enduml
