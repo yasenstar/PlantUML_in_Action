@@ -1,0 +1,12 @@
+@startuml
+
+class Class
+object Object
+interface Interface
+
+json Fruit_Info {
+    "fruit":"Apple",
+    "size":"Large",
+    "color": ["Red", "Green", "Cyan", "Yellow"]
+}
+@enduml

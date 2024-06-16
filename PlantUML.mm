@@ -370,7 +370,7 @@
 </node>
 <node TEXT="3.28 Association on Same Class" POSITION="bottom_or_right" ID="ID_342117144" CREATED="1717355723959" MODIFIED="1717355730594"/>
 </node>
-<node TEXT="Group 8: Styles" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
+<node TEXT="Group 8: Styles" FOLDED="true" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
 <node TEXT="3.29 Skinparam" POSITION="bottom_or_right" ID="ID_1829365211" CREATED="1717355732819" MODIFIED="1717355737214"/>
 <node TEXT="3.30 Skinned Stereotypes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629">
 <node TEXT="discussion #16549" POSITION="bottom_or_right" ID="ID_189305300" CREATED="1718397734077" MODIFIED="1718397744821" LINK="https://forum.plantuml.net/16549/skinparam-stereotypecbackgroundcolor-isnt-applied"/>
@@ -476,16 +476,21 @@
 <node TEXT="Article: Inheritance and Interfaces in Java and UML" ID="ID_1415370115" CREATED="1718471388828" MODIFIED="1718471401485" LINK="https://www.informit.com/articles/article.aspx?p=29224&amp;seqNum=2"/>
 <node TEXT="Interface in Java" ID="ID_1862971419" CREATED="1718471481226" MODIFIED="1718471487355" LINK="https://www.javatpoint.com/interface-in-java"/>
 </node>
-<node TEXT="3.35 Bracketed Relations (linking or arrow) Style&#xa;   syntax: class1 -[style]-&gt; class2" POSITION="bottom_or_right" ID="ID_1286408587" CREATED="1717355788427" MODIFIED="1718478850012">
+<node TEXT="3.35 Bracketed Relations (linking or arrow) Style&#xa;   syntax: class1 -[style]-&gt; class2" FOLDED="true" POSITION="bottom_or_right" ID="ID_1286408587" CREATED="1717355788427" MODIFIED="1718478850012">
 <node TEXT="3.35.1 Line Style" ID="ID_1999711609" CREATED="1717355806178" MODIFIED="1717355810737"/>
 <node TEXT="3.35.2 Line Color" ID="ID_170411620" CREATED="1717355813616" MODIFIED="1717355817357"/>
 <node TEXT="3.35.3 Line Thickness" ID="ID_1360582508" CREATED="1717355819099" MODIFIED="1717355824056"/>
-<node TEXT="3.35.4 Mix" ID="ID_1979403117" CREATED="1717355825986" MODIFIED="1717355830337"/>
+<node TEXT="3.35.4 Mix" ID="ID_1979403117" CREATED="1717355825986" MODIFIED="1717355830337">
+<node TEXT="Question raised: #19008" ID="ID_633862502" CREATED="1718493629311" MODIFIED="1718493638729" LINK="https://forum.plantuml.net/19008/class-diagram-why-bold-and-thickness-for-link-are-shown-mixed"/>
+</node>
 </node>
 <node TEXT="3.36 Change Relations (linking or arrow) color and style (inline style)" POSITION="bottom_or_right" ID="ID_743846237" CREATED="1717355831151" MODIFIED="1717355854453"/>
-<node TEXT="3.37 Change Class Color and Style (inline style)" POSITION="bottom_or_right" ID="ID_222492444" CREATED="1717355858262" MODIFIED="1717355869521"/>
+<node TEXT="3.37 Change Class Color and Style (inline style)" POSITION="bottom_or_right" ID="ID_222492444" CREATED="1717355858262" MODIFIED="1718495454360" VGAP_QUANTITY="3 pt">
+<node TEXT="#color ##[style]color" ID="ID_955161227" CREATED="1718494475975" MODIFIED="1718494484507"/>
+<node TEXT="#[color|back:color];head:color;line:color;line.[bold|dashed|dotted];text:color" ID="ID_79179649" CREATED="1718494485074" MODIFIED="1718495454358"/>
 </node>
-<node TEXT="Group 9: Others" FOLDED="true" ID="ID_988609192" CREATED="1717797378428" MODIFIED="1717797383051">
+</node>
+<node TEXT="Group 9: Others" ID="ID_988609192" CREATED="1717797378428" MODIFIED="1717797383051">
 <node TEXT="3.38 Arrow from/to Class Members" POSITION="bottom_or_right" ID="ID_7779878" CREATED="1717355879449" MODIFIED="1717355889634"/>
 <node TEXT="3.39 Grouping Inheritance Arrow Heads" FOLDED="true" POSITION="bottom_or_right" ID="ID_1807284231" CREATED="1717355896656" MODIFIED="1717355920434">
 <node TEXT="3.39.1 GroupInheritance 1 (no grouping)" ID="ID_1016550828" CREATED="1717355933368" MODIFIED="1717355943421"/>
@@ -499,7 +504,7 @@
 <node TEXT="3.41 Packages and Namespaces Enhancement" POSITION="bottom_or_right" ID="ID_1561440010" CREATED="1717356242409" MODIFIED="1717356252983"/>
 </node>
 </node>
-<node TEXT="04 Object Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1716658754276">
+<node TEXT="04 Object Diagram" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1716658754276">
 <node TEXT="4.01 Definition of Objects" ID="ID_1857929750" CREATED="1717356259731" MODIFIED="1717356268776"/>
 <node TEXT="4.02 Relations between Objects" ID="ID_676494154" CREATED="1717356273510" MODIFIED="1717356279888"/>
 <node TEXT="4.03 Associations Objects" ID="ID_10627745" CREATED="1717356284611" MODIFIED="1717356291532"/>
