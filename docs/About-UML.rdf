@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.omg.org/spec/UML/About-UML#"
+     xml:base="https://www.omg.org/spec/UML/About-UML"
+     xmlns:sm="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
+     xmlns:dct="https://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="https://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="https://www.omg.org/spec/UML/About-UML">
+        <owl:versionIRI rdf:resource="https://www.omg.org/spec/UML/2.5.1/About-UML"/>
+        <owl:imports rdf:resource="https://www.omg.org/techprocess/ab/SpecificationMetadata/"/>
+        <rdfs:label>About the Unified Modeling Language Specification Version 2.5.1</rdfs:label>
+        <owl:versionInfo>Generated on 2024-06-14T16:27:32-0400</owl:versionInfo>
+        <dct:license rdf:resource="https://www.omg.org/techprocess/ab/SpecificationMetadata/MITLicense"/>
+        <sm:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-01T00:00:00-0500</sm:creationDate>
+        <sm:filename>About-UML</sm:filename>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="https://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/category -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/category"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/creationDate -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/creationDate"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/filename -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/filename"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/keyword -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/keyword"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/publicationDate -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/publicationDate"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationAbbreviation -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationAbbreviation"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationAbstract -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationAbstract"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationTitle -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationTitle"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationURL -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/specificationURL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/Specification -->
+
+
+    <owl:Class rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/Specification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.omg.org/spec/UML -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.omg.org/spec/UML">
+        <rdf:type rdf:resource="https://www.omg.org/techprocess/ab/SpecificationMetadata/Specification"/>
+        <sm:category>modeling</sm:category>
+        <sm:category>platform</sm:category>
+        <sm:category>software-engineering</sm:category>
+        <sm:keyword>abstraction</sm:keyword>
+        <sm:keyword>action-sequence</sm:keyword>
+        <sm:keyword>action-state</sm:keyword>
+        <sm:keyword>activity-graph</sm:keyword>
+        <sm:keyword>architecture</sm:keyword>
+        <sm:keyword>association</sm:keyword>
+        <sm:keyword>class-diagram</sm:keyword>
+        <sm:keyword>collaboration-diagram</sm:keyword>
+        <sm:keyword>component-diagram</sm:keyword>
+        <sm:keyword>control-flow</sm:keyword>
+        <sm:keyword>data-flow</sm:keyword>
+        <sm:keyword>deployment-diagram</sm:keyword>
+        <sm:keyword>execution</sm:keyword>
+        <sm:keyword>implementation</sm:keyword>
+        <sm:keyword>pins</sm:keyword>
+        <sm:keyword>procedure</sm:keyword>
+        <sm:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-01T00:00:00-0500</sm:publicationDate>
+        <sm:specificationAbbreviation>UML</sm:specificationAbbreviation>
+        <sm:specificationAbstract>A specification defining a graphical language for visualizing, specifying, constructing, and documenting the artifacts of distributed object systems.</sm:specificationAbstract>
+        <sm:specificationTitle>Unified Modeling Language</sm:specificationTitle>
+        <sm:specificationURL rdf:resource="https://www.omg.org/spec/UML/About-UML"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.20.2022-02-19T16:38:31Z) https://github.com/owlcs/owlapi/ -->
+
+

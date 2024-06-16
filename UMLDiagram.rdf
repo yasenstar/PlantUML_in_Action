@@ -6,7 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml">
+        <rdfs:comment>Reference: https://www.uml-diagrams.org/uml-25-diagrams.html</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -37,6 +39,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams">
@@ -55,10 +65,35 @@
     
 
 
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_State_Machine_DIagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_State_Machine_DIagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Shows structure of the designed system, subsystem or component as related classes and interfaces, with their features, constraints and relationships - associations, generalizations, dependencies, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Classifiers -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Classifiers">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Modeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Collaboration_Use_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Collaboration_Use_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram"/>
     </owl:Class>
     
 
@@ -79,6 +114,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Communication_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Communication_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployments -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployments">
@@ -89,7 +156,18 @@
 
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Diagram_Classification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Diagram_Classification"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Diagram_Classification">
+        <rdfs:comment>V2 grouping based on https://www.uml-diagrams.org/uml-25-diagrams.html</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Information_Flow_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Information_Flow_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram"/>
+    </owl:Class>
     
 
 
@@ -109,10 +187,68 @@
     
 
 
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Overview_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Overview_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interactions -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interactions">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Modeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Internal_Structure_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Internal_Structure_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Mainfestation_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Mainfestation_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Model_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Model_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Network_Architecture_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Network_Architecture_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Object_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Object_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
     </owl:Class>
     
 
@@ -125,9 +261,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Profile_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Profile_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Protocol_State_Machine_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Protocol_State_Machine_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_State_Machine_DIagram"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Semantic_Areas -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Semantic_Areas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Sequence_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Sequence_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+    </owl:Class>
     
 
 
@@ -143,6 +311,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Diagram_Classification"/>
+        <rdfs:comment>Structure diagrams show static structure of the system and its parts on different abstraction and implementation levels and how those parts are related to each other. The elements in a structure diagram represent the meaningful concepts of a system, and may include abstract, real world and implementation concepts.
+
+Structure diagrams are not utilizing time related concepts, do not show the details of dynamic behavior. However, they may show relationships to the behaviors of the classifiers exhibited in the structure diagrams.</rdfs:comment>
         <rdfs:seeAlso>Static UML Modeling</rdfs:seeAlso>
     </owl:Class>
     
@@ -165,6 +336,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Timing_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Timing_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#UseCase_Diagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#UseCase_Diagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Use_Cases -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Use_Cases">
@@ -178,131 +366,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Values">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Modeling"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.omg.org/spec/UML/2.5.1/About-UML/</rdfs:comment>
-        <rdfs:comment>The objective of UML is to provide system architects, software engineers, and software developers with tools for analysis, design, and implementation of software-based systems as well as for modeling business and similar processes.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Communication_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Communication_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Overview_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Overview_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Object_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Object_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Profile_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Profile_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Sequence_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Sequence_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Timing_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Timing_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Use_Case_Diagram -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Use_Case_Diagram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
-    </owl:NamedIndividual>
     
 
 
