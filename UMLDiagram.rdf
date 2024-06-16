@@ -8,6 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml">
         <rdfs:comment>Reference: https://www.uml-diagrams.org/uml-25-diagrams.html</rdfs:comment>
+        <rdfs:comment>UML Specification v2.5.1: https://www.omg.org/spec/UML/2.5.1/About-UML/</rdfs:comment>
     </owl:Ontology>
     
 
@@ -43,6 +44,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+        <rdfs:comment>Shows sequence and conditions for coordinating lower-level behaviors, rather than which classifiers own those behaviors. These are commonly called control flow and object flow models.</rdfs:comment>
     </owl:Class>
     
 
@@ -51,6 +53,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Diagram_Classification"/>
+        <rdfs:comment>Behavior diagrams show the dynamic behavior of the objects in a system, which can be described as a series of changes to the system over time.</rdfs:comment>
         <rdfs:seeAlso>Dynamic UML Modeling</rdfs:seeAlso>
     </owl:Class>
     
@@ -69,6 +72,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_State_Machine_DIagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram"/>
+        <rdfs:comment>Shows discrete behavior of a part of designed system through finite state transitions.</rdfs:comment>
     </owl:Class>
     
 
@@ -119,6 +123,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Communication_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+        <rdfs:comment>Focuses on the interaction between lifelines where the architecture of the internal structure and how this corresponds with the message passing is central. The sequencing of messages is given through a sequence numbering scheme.</rdfs:comment>
+        <owl:deprecated>a.k.a. Collaboration diagram in UML 1.x</owl:deprecated>
     </owl:Class>
     
 
@@ -178,6 +184,7 @@ Instance level deployment diagram shows deployment of instances of artifacts to 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Information_Flow_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram"/>
+        <rdfs:comment>Shows exchange of information between system entities at some high levels of abstraction. Information flows may be useful to describe circulation of information through a system by representing aspects of models not yet fully specified or with less details.</rdfs:comment>
     </owl:Class>
     
 
@@ -194,6 +201,11 @@ Instance level deployment diagram shows deployment of instances of artifacts to 
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+        <rdfs:comment>Interaction diagrams include several different types of diagrams:
+- sequence diagrams,
+- communication diagrams (known as collaboration diagrams in UML 1.x),
+- timing diagrams,
+- interaction overview diagrams.</rdfs:comment>
     </owl:Class>
     
 
@@ -203,6 +215,7 @@ Instance level deployment diagram shows deployment of instances of artifacts to 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Overview_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Activity_Diagram"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+        <owl:deprecated>Defines interactions through a variant of activity diagrams in a way that promotes overview of the control flow. Interaction overview diagrams focus on the overview of the flow of control where the nodes are interactions or interaction uses. The lifelines and the messages do not appear at this overview level.</owl:deprecated>
     </owl:Class>
     
 
@@ -297,6 +310,7 @@ Profile diagrams were first introduced in UML 2.0.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Protocol_State_Machine_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_State_Machine_DIagram"/>
+        <rdfs:comment>Shows usage protocol or a lifecycle of some classifier, e.g. which operations of the classifier may be called in each state of the classifier, under which specific conditions, and satisfying some optional postconditions after the classifier transitions to a target state.</rdfs:comment>
     </owl:Class>
     
 
@@ -311,6 +325,7 @@ Profile diagrams were first introduced in UML 2.0.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Sequence_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+        <rdfs:comment>Most common kind of interaction diagrams which focuses on the message interchange between lifelines (objects).</rdfs:comment>
     </owl:Class>
     
 
@@ -319,6 +334,7 @@ Profile diagrams were first introduced in UML 2.0.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#State_Machine_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
+        <rdfs:comment>Used for modeling discrete behavior through finite state transitions. In addition to expressing the behavior of a part of the system, state machines can also be used to express the usage protocol of part of a system. These two kinds of state machines are referred to as behavioral state machines and protocol state machines.</rdfs:comment>
     </owl:Class>
     
 
@@ -364,6 +380,7 @@ Structure diagrams are not utilizing time related concepts, do not show the deta
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Timing_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Interaction_Diagram"/>
+        <owl:deprecated>Shows interactions when a primary purpose of the diagram is to reason about time. Timing diagrams focus on conditions changing within and among lifelines along a linear time axis.</owl:deprecated>
     </owl:Class>
     
 
@@ -373,6 +390,7 @@ Structure diagrams are not utilizing time related concepts, do not show the deta
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#UseCase_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Behavioral_Diagrams"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Class_Diagram"/>
+        <rdfs:comment>Describes a set of actions (use cases) that some system or systems (subject) should or can perform in collaboration with one or more external users of the system (actors) to provide some observable and valuable results to the actors or other stakeholders of the system(s).</rdfs:comment>
     </owl:Class>
     
 
