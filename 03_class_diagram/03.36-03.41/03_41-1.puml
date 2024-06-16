@@ -1,0 +1,11 @@
+@startuml
+
+class A.B.C.D.E {
+    class foo
+}
+
+package A.B.C {
+    class class
+}
+
+@enduml

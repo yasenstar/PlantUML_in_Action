@@ -1,0 +1,10 @@
+@startuml
+set separator none
+class A.B.C.D.Z {}
+
+set separator -
+class F-G-H {}
+
+set separator .
+class A.B.C.D.Z {}
+@enduml

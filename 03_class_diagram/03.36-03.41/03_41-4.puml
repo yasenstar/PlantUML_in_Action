@@ -1,0 +1,7 @@
+@startuml
+' !pragma useIntermediatePackages false
+set separator none
+package A.B.C.D {
+    class Z
+}
+@enduml

@@ -190,6 +190,14 @@ Element Names and Relation Labels
 ###### turn off:
 skinparam classAttributeIconSize 0
 
+* -: Private
+
+* +: Public
+
+* #: Protected
+
+* ~: package private
+
 ##### 3.07 Abstract and Static
 
 - In UML, we indicate a class is static by underlining its name in the first compartment of the class diagram.We can similarly indicate operations and methods are static by underlining the entire line referring to them.
@@ -339,9 +347,23 @@ Pretty much all UML elements can be grouped into packages. Thus, classes, object
 
 ##### 3.25 Lollipop Interface
 
+###### Discussion: Interface consumption socket
+
+###### Forum: #2259 - using circle
+
+###### Ball and Socket by Martin Fowler
+
 ##### 3.26 Changing Arrows Orientation
 
 ##### 3.27 Association Classes
+ 
+defineassociation class after a relation
+
+ 
+defineassociationin another direction
+
+
+###### How to associate more than 1 classes to one same relation?
 
 ##### 3.28 Association on Same Class
 
@@ -351,15 +373,59 @@ Pretty much all UML elements can be grouped into packages. Thus, classes, object
 
 ##### 3.30 Skinned Stereotypes
 
+###### discussion #16549
+
+###### discussion #16650
+
 ##### 3.31 Color Gradient
 
 ##### 3.32 Help on Layout
 
+###### keyword: together
+
+###### use hidden links to force the layout
+
 ##### 3.33 Splitting Large Files
+ 
+use thepage (hpages)x(vpages) to split images
+
+
+###### discussion #3876
 
 ##### 3.34 Extends and Implements
+ 
+keyword:implements
+
+
+* UML realization relationship
+
+UML realization relationships between the definition and implementations of an interface (the equivalent of Java implements)
+
+
+
+Although Java does not support multiple inheritance in the same way as languages such as C++, it does support the idea of implementation of multiple interfaces. The form of inheritance represented by theimplements  keyword in Java is inheritance of interface only. This type of inheritance is sometimes calledsub-typing.
+
+In UML, the relationship between a class implementing an interface and the interface definition is called arealization relationship, and it is drawn as a dashed line with a closed arrowhead from the implementing class to the interface. Interfaces are drawn using the same symbol as a class but with an additional keyword <<interface>> above the class name.
+
+ 
+keyword:extends
+
+
+* UML generalization / specialization relationship
+
+UML generalization relationships, used to indicate that one interface extends one or more others.
+
+
+
+Interfaces can extend one or more other interfaces. A UML generalization relationship (solid line with closed arrowhead) is used to represent this sort of relationship.
+
+
+###### Article: Inheritance and Interfaces in Java and UML
+
+###### Interface in Java
 
 ##### 3.35 Bracketed Relations (linking or arrow) Style
+   syntax: class1 -[style]-> class2
 
 ###### 3.35.1 Line Style
 
@@ -369,9 +435,15 @@ Pretty much all UML elements can be grouped into packages. Thus, classes, object
 
 ###### 3.35.4 Mix
 
+* Question raised: #19008
+
 ##### 3.36 Change Relations (linking or arrow) color and style (inline style)
 
 ##### 3.37 Change Class Color and Style (inline style)
+
+###### #color ##[style]color
+
+###### #[color|back:color];head:color;line:color;line.[bold|dashed|dotted];text:color
 
 #### Group 9: Others
 
