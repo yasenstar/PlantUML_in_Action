@@ -94,6 +94,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Collaboration_Use_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram"/>
+        <rdfs:comment>Shows objects in a system cooperating with each other to produce some behavior of the system.</rdfs:comment>
     </owl:Class>
     
 
@@ -126,6 +127,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Shows components and dependencies between them. This type of diagrams is used for Component-Based Development (CBD), to describe systems with Service-Oriented Architecture (SOA).</rdfs:comment>
     </owl:Class>
     
 
@@ -134,6 +136,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Diagram could be used to show:
+- Internal structure of a classifier
+- A behavior of a collaboration</rdfs:comment>
     </owl:Class>
     
 
@@ -142,6 +147,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Shows architecture of the system as deployment (distribution) of software artifacts to deployment targets.
+Note, that components were directly deployed to nodes in UML 1.x deployment diagrams. In UML 2.x artifacts are deployed to nodes, and artifacts could manifest (implement) components. Components are deployed to nodes indirectly through artifacts.
+
+Specification level deployment diagram (also called type level) shows some overview of deployment of artifacts to deployment targets, without referencing specific instances of artifacts or nodes.
+
+Instance level deployment diagram shows deployment of instances of artifacts to specific instances of deployment targets. It could be used for example to show differences in deployments to development, staging or production environments with the names/ids of specific build or deployment servers or devices.</rdfs:comment>
     </owl:Class>
     
 
@@ -208,6 +219,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Internal_Structure_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Composite_Structure_Diagram"/>
+        <rdfs:comment>Shows internal structure of a classifier - a decomposition of the classifier into its properties, parts and relationships.</rdfs:comment>
     </owl:Class>
     
 
@@ -217,6 +229,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Mainfestation_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Component_Diagram"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram"/>
+        <rdfs:comment>While component diagrams show components and relationships between components and classifiers, and deployment diagrams - deployments of artifacts to deployment targets, some missing intermediate diagram is manifestation diagram to be used to show manifestation (implementation) of components by artifacts and internal structure of artifacts.
+Because manifestation diagrams are not defined by UML 2.5 specification, manifestation of components by artifacts could be shown using either component diagrams or deployment diagrams.</rdfs:comment>
     </owl:Class>
     
 
@@ -225,6 +239,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Model_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram"/>
+        <rdfs:comment>UML auxiliary structure diagram which shows some abstraction or specific view of a system, to describe architectural, logical or behavioral aspects of the system. It could show, for example, architecture of a multi-layered (aka multi-tiered) application - see multi-layered application model.</rdfs:comment>
     </owl:Class>
     
 
@@ -233,6 +248,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Network_Architecture_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Deployment_Diagram"/>
+        <rdfs:comment>Deployment diagrams could be used to show logical or physical network architecture of the system. This kind of deployment diagrams - not formally defined in UML 2.5 - could be called network architecture diagrams.</rdfs:comment>
     </owl:Class>
     
 
@@ -241,6 +257,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Object_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Instance level class diagram which shows instance specifications of classes and interfaces (objects), slots with value specifications, and links (instances of association).
+
+Object diagram was defined in now obsolete UML 1.4.2 Specification as &quot;a graph of instances, including objects and data values. A static object diagram is an instance of a class diagram; it shows a snapshot of the detailed state of a system at a point in time.&quot; It also stated that object diagram is &quot;a class diagram with objects and no classes.&quot;</rdfs:comment>
     </owl:Class>
     
 
@@ -249,6 +268,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Package_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Shows packages and relationships between the packages.</rdfs:comment>
     </owl:Class>
     
 
@@ -265,6 +285,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Profile_Diagram">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yasen/ontologies/2024/5/uml#Structural_Diagrams"/>
+        <rdfs:comment>Auxiliary UML diagram which allows to define custom stereotypes, tagged values, and constraints as a lightweight extension mechanism to the UML standard. Profiles allow to adapt the UML metamodel for different
+- platforms (such as J2EE or .NET), or
+- domains (such as real-time or business process modeling).
+Profile diagrams were first introduced in UML 2.0.</rdfs:comment>
     </owl:Class>
     
 
