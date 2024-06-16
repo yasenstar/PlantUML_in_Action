@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+
+class user {
+    id : INTEGER
+    ..
+    other_id : INTEGER
+}
+
+class Email {
+    id : INTEGER
+    ..
+    user_id : INTEGER
+    address : STRING
+}
+
+user::id *-- Email::user_id
+@enduml

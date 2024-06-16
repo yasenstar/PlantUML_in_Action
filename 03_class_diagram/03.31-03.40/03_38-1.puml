@@ -1,0 +1,20 @@
+@startuml
+class Foo {
+    + field1
+    - field2
+}
+class Bar {
+    - field3
+    + field4
+}
+class Self {
+    + field5
+    + field6
+}
+
+Foo::field1 --> Bar::field3 : foo
+Foo::field1 --> Bar::field4 : foo
+Foo --> Self::field6 : new
+Bar -> Self
+Bar::field3 --> Self
+@enduml
