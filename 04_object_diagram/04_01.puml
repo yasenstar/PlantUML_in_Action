@@ -1,0 +1,10 @@
+@startuml
+
+' class Class01
+' interface Interface01
+' class "My class" as mc
+
+object firstObject
+object "My Second Object" as o2
+
+@enduml

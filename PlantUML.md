@@ -465,21 +465,56 @@ Interfaces can extend one or more other interfaces. A UML generalization relatio
 
 ### 04 Object Diagram
 
+An object diagram is a graphical representation that showcase objects and their relationshipsat a specific moment in time.
+
+It provides asnapshot of the system's structure, capturing thestatic view of the instances present and their associations.
+
+
 #### 4.01 Definition of Objects
 
 #### 4.02 Relations between Objects
 
+##### Extension: <|--
+
+##### Composition: *--
+
+##### Aggregation: o--
+
 #### 4.03 Associations Objects
+
+##### diamond
 
 #### 4.04 Adding Fields
 
 #### 4.05 Common Features with Class Diagrams
 
+##### Hide attributes, methods
+ (see:3.14 Hide Attributes, Methods...)
+##### Defines notes
+ (see:Group 3: Notes in Class Diagram)
+##### Use packages
+ (see:Group 6: Packages)
+##### Skin the output
+ (see:Group 8: Styles)
 #### 4.06 Map Table or Associative Array
+
+##### keyword: map and Separator: =>
 
 #### 4.07 Program (or project) evaluation and review technique (PERT) with Map
 
+#### 4.08 Display JSON Data on Class or Object Diagram
+ (see:11 Display JSON Data)
 ### 07 Component Diagram
+
+#### 7.01 Components
+
+##### 7.01.01 Naming Exceptions
+
+#### 7.02 Interfaces
+
+#### 7.03 Basic Example
+
+#### 7.04 Using Notes
 
 ### 08 Deployment Diagram
 
@@ -805,7 +840,187 @@ Examples of All Arrow Type
 
 ### 05 Activity Diagram (legacy)
 
+#### 5.01 Simple Action
+
+##### use (*) for starting point and ending point
+
+##### use (*top) to force starting point to be at the top
+
+##### use --> for arrows
+
+#### 5.02 Label on Arrows
+
+##### using [ and ] after --> for labeling on arrows
+
+#### 5.03 Changing Arrow Direction
+
+##### e.g. -down->
+
+#### 5.04 Branches
+
+##### use if/then/else keyword
+
+#### 5.05 More on Branches
+
+#### 5.06 Synchronization
+
+##### use === code === to display sync bars
+
+#### 5.07 Long Action Description
+
+##### put "xxx" with as keyword
+
+#### 5.08 Notes
+
+#### 5.09 Partition
+
+##### keyword: partition
+
+##### close the partition definition using closing bracket }
+
+#### 5.10 Skinparam
+
+#### 5.11 Octagon
+
+##### skinparam activityShape octagon
+
+#### 5.12 Complete Example
+
 ### 06 Activity Diagram (New Syntax)
+
+#### 6.01 Simple Action
+
+##### label starts with : and ends with ;
+
+#### 6.02 Start/Stop/End
+
+#### 6.03 Conditional
+
+##### 6.03.01 Several Tests (horizontal Mode)
+
+##### 6.03.02 Several Tests (Vertical Mode)
+
+#### 6.04 Switch and Case [switch, case, endswitch]
+
+#### 6.05 Conditional with Stop on an Action [kill, detach]
+
+#### 6.06 Repeat Loop
+
+##### 6.06.01 Simple Repeat Loop
+
+##### 6.06.02 Repeat Loop with Repeat Action and Backward Action
+
+#### 6.07 Break on a Repeat Loop [break]
+
+#### 6.08 Goto and Label Processing [label, goto]
+
+#### 6.09 While Loop
+
+##### 6.09.01 Simple While Loop
+
+###### use while and endwhile keywords
+
+##### 6.09.02 While Loop with Backward Action
+
+###### use backward keyword
+
+##### 6.09.03 Infinite While Loop
+
+#### 6.10 Parallel Processing [fork, fork again, end fork, end merge]
+
+##### 6.10.01 Simple fork
+
+##### 6.10.02 for with end merge
+
+##### 6.10.03 Label on end fork (or UML joinspec)
+
+##### 6.10.04 Other example
+
+#### 6.11 Split Processing
+
+##### 6.11.01 Split
+
+###### use split, split again and end split keywords
+
+##### 6.11.02 Input split (multi-start)
+
+###### use hidden arrows to make an input split (multi-start)
+
+##### 6.11.03 Output split (multi-end)
+
+###### use kill or detach to make an output split (multi-end)
+
+#### 6.12 Notes
+
+#### 6.14 Lines without Arrows
+
+##### skinparam ArrowHeadColor none
+
+#### 6.15 Arrows
+
+##### -> notation
+
+#### 6.16 Connector
+
+##### use () to denote connector
+
+#### 6.17 Color on Connector
+
+#### 6.18 Grouping or Partition
+
+##### 6.18.01 Group
+
+##### 6.18.02 Partition
+
+##### 6.18.3 Group, Partition, Package, Rectangle or Card
+
+#### 6.19 Swimlanes
+
+##### use pipe | define swimlanes
+
+##### can add if conditional or repeat or while loop within swimlanes
+
+##### Alias: |[#<color>|]<swimlane_alias>| <swimlane_title>
+
+#### 6.20 Detach or Kill [detach, kill]
+
+#### 6.21 SDL (Specification and Decription Language)
+
+##### 6.21.01 Table of SDL Shape Name
+
+##### 6.21.02 SDL using Final Separator (Deprecated form)
+
+##### 6.21.03 SLD using Normal separator and Stereotype (Current official form)
+
+#### 6.22 Complete Example
+
+#### 6.23 Condition Style
+
+##### 6.23.01 Inside Sytle (by default)
+
+##### 6.23.02 Diamond Style
+
+###### skinparam conditionStyle diamond
+
+##### 6.23.03 InsideDiamand (or Foo1) Style
+
+###### skinparam conditionStyle InsideDiamond
+
+#### 6.24 Condition End Style
+
+##### 6.24.01 Diamond Style (by default)
+
+###### skinparam ConditionEndStyle diamond
+
+##### 6.24.02 Horizontal Line (hline) Style
+
+###### skinparam ConditionEndStyle hline
+
+#### 6.25 Using (global) Style
+
+##### 6.25.01 Without Style (by default)
+
+##### 6.25.02 With Style
 
 ### 09 State Diagram
 
