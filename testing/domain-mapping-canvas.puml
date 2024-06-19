@@ -1,0 +1,14 @@
+@startuml
+(Archi_App-Cap-Map) as Archi
+(SharePoint_List) --> Archi : maintain base on\nmodified date
+
+note right of Archi
+    Property on Core Domain Relation
+    Name: Canvas; Value: Core
+end note
+
+Archi --> (Azure_SQL)
+
+(Azure_SQL) -> (Canvas2.0)
+
+@enduml

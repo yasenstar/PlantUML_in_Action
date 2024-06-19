@@ -12,7 +12,11 @@ Learning and practice PlantUML languange and its modeling
 
 [Video List on YouTube](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
 
-For access full contents without waiting publishing gradually in YouTube, welcome to subscribe my packaged course in Udemy - [PlantUML in Action](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196), thanks for your supporting and appreciation to my work!
+For access full contents without waiting publishing gradually in YouTube, welcome to subscribe my packaged course in Udemy - 
+
+[![PlantUML in Action](img/udemy-cover.png)](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196)
+
+thanks for your supporting and appreciation to my work!
 
 ---
 
