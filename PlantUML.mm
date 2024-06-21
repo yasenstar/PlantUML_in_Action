@@ -348,7 +348,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1057125112" CREATED="1718377762360" MODIFIED="1718377775767"><richcontent TYPE="NODE">
@@ -363,7 +362,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="How to associate more than 1 classes to one same relation?" ID="ID_1052345911" CREATED="1718380133526" MODIFIED="1718380161298" LINK="https://forum.plantuml.net/4062/two-association-classes-on-one-relation?state=comment-19001&amp;show=19001#c19001"/>
@@ -396,7 +394,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="discussion #3876" ID="ID_1028961324" CREATED="1718469672614" MODIFIED="1718469680509" LINK="https://forum.plantuml.net/3876/using-splitting-large-files"/>
@@ -414,7 +411,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="UML realization relationship" ID="ID_1037030546" CREATED="1718470966777" MODIFIED="1718471288253"><richcontent TYPE="NOTE">
 <html>
@@ -435,8 +431,7 @@
       <span style="font-weight: normal;">In UML, the relationship between a class implementing an interface and the interface definition is called a </span><span style="font-weight: bold;">realization relationship</span><span style="font-weight: normal;">, and it is drawn as a dashed line with a closed arrowhead from the implementing class to the interface. Interfaces are drawn using the same symbol as a class but with an additional keyword &lt;&lt;interface&gt;&gt; above the class name.</span>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node ID="ID_322847657" CREATED="1718384400622" MODIFIED="1718384411013"><richcontent TYPE="NODE">
@@ -451,7 +446,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="UML generalization / specialization relationship" ID="ID_664351583" CREATED="1718470946953" MODIFIED="1718471378637"><richcontent TYPE="NOTE">
 <html>
@@ -469,8 +463,7 @@
       Interfaces can extend one or more other interfaces. A UML generalization relationship (solid line with closed arrowhead) is used to represent this sort of relationship.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="Article: Inheritance and Interfaces in Java and UML" ID="ID_1415370115" CREATED="1718471388828" MODIFIED="1718471401485" LINK="https://www.informit.com/articles/article.aspx?p=29224&amp;seqNum=2"/>
@@ -504,7 +497,7 @@
 <node TEXT="3.41 Packages and Namespaces Enhancement" POSITION="bottom_or_right" ID="ID_1561440010" CREATED="1717356242409" MODIFIED="1717356252983"/>
 </node>
 </node>
-<node TEXT="04 Object Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1718802223332" VGAP_QUANTITY="3 pt"><richcontent TYPE="NOTE">
+<node TEXT="04 Object Diagram" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1718802223332" VGAP_QUANTITY="3 pt"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -517,8 +510,7 @@
       It provides a <span style="font-weight: bold;">snapshot</span>&#xa0;of the system's structure, capturing the <span style="font-weight: bold;">static view</span>&#xa0;of the instances present and their associations.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="4.01 Definition of Objects" ID="ID_1857929750" CREATED="1717356259731" MODIFIED="1717356268776"/>
 <node TEXT="4.02 Relations between Objects" FOLDED="true" ID="ID_676494154" CREATED="1717356273510" MODIFIED="1717356279888">
 <node TEXT="Extension: &lt;|--" ID="ID_982433115" CREATED="1718586439972" MODIFIED="1718586452150"/>
@@ -719,10 +711,10 @@
 </node>
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
-<arrowlink DESTINATION="ID_288741682"/>
 <arrowlink DESTINATION="ID_1961776223"/>
-<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_652208197"/>
+<arrowlink DESTINATION="ID_1235100678"/>
+<arrowlink DESTINATION="ID_288741682"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -730,8 +722,8 @@
 </node>
 <node TEXT="Part 9" FOLDED="true" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
 <node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1717364077035">
-<arrowlink DESTINATION="ID_1063219866"/>
 <arrowlink DESTINATION="ID_125886615"/>
+<arrowlink DESTINATION="ID_1063219866"/>
 <node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
 </node>
 <node TEXT="1.28 Shortcut Syntax" FOLDED="true" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">

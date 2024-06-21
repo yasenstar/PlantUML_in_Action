@@ -1,0 +1,16 @@
+@startuml
+object user
+
+user : name = "Dummy"
+user : id = 123
+user : phone = 12345
+
+object user1 {
+    name = "Yasen"
+    id = 456
+    phone = 54321
+}
+
+user : add = "abcde"
+
+@enduml

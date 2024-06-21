@@ -1,0 +1,16 @@
+@startuml
+object o1
+object o3
+diamond dia
+circle cir
+rectangle rec {
+    object o2
+    object o4
+}
+
+o1 --> dia
+o2 --> dia
+o4 --> dia
+dia -> o3
+cir <- dia
+@enduml
