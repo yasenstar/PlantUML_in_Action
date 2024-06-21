@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.747">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -521,7 +521,7 @@
 <node TEXT="diamond" ID="ID_658217038" CREATED="1718586387334" MODIFIED="1718586390149"/>
 </node>
 <node TEXT="4.04 Adding Fields" ID="ID_640856132" CREATED="1717356295001" MODIFIED="1717356299606"/>
-<node TEXT="4.05 Common Features with Class Diagrams" FOLDED="true" ID="ID_752435943" CREATED="1717356302423" MODIFIED="1718802223331">
+<node TEXT="4.05 Common Features with Class Diagrams" ID="ID_752435943" CREATED="1717356302423" MODIFIED="1718802223331">
 <node TEXT="Hide attributes, methods" ID="ID_1704158615" CREATED="1718586579137" MODIFIED="1718586827681">
 <arrowlink DESTINATION="ID_563475061" STARTINCLINATION="99 pt;0 pt;" ENDINCLINATION="99.75 pt;0 pt;"/>
 </node>
