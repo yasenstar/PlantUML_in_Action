@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.262">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.747">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -504,7 +504,7 @@
 <node TEXT="3.41 Packages and Namespaces Enhancement" POSITION="bottom_or_right" ID="ID_1561440010" CREATED="1717356242409" MODIFIED="1717356252983"/>
 </node>
 </node>
-<node TEXT="04 Object Diagram" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1718547799928"><richcontent TYPE="NOTE">
+<node TEXT="04 Object Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1718802223332" VGAP_QUANTITY="3 pt"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -529,7 +529,7 @@
 <node TEXT="diamond" ID="ID_658217038" CREATED="1718586387334" MODIFIED="1718586390149"/>
 </node>
 <node TEXT="4.04 Adding Fields" ID="ID_640856132" CREATED="1717356295001" MODIFIED="1717356299606"/>
-<node TEXT="4.05 Common Features with Class Diagrams" FOLDED="true" ID="ID_752435943" CREATED="1717356302423" MODIFIED="1717356314240">
+<node TEXT="4.05 Common Features with Class Diagrams" FOLDED="true" ID="ID_752435943" CREATED="1717356302423" MODIFIED="1718802223331">
 <node TEXT="Hide attributes, methods" ID="ID_1704158615" CREATED="1718586579137" MODIFIED="1718586827681">
 <arrowlink DESTINATION="ID_563475061" STARTINCLINATION="99 pt;0 pt;" ENDINCLINATION="99.75 pt;0 pt;"/>
 </node>
@@ -551,7 +551,7 @@
 <arrowlink DESTINATION="ID_588971608"/>
 </node>
 </node>
-<node TEXT="07 Component Diagram" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1716658785460">
+<node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1716658785460">
 <node TEXT="7.01 Components" ID="ID_1036640811" CREATED="1718642734800" MODIFIED="1718642739809">
 <node TEXT="7.01.01 Naming Exceptions" ID="ID_762125154" CREATED="1718642742723" MODIFIED="1718642749622"/>
 </node>
@@ -869,7 +869,7 @@
 </node>
 </node>
 </node>
-<node TEXT="05 Activity Diagram (legacy)" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1716658762019">
+<node TEXT="05 Activity Diagram (legacy)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1716658762019">
 <node TEXT="5.01 Simple Action" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1718627049057">
 <node TEXT="use (*) for starting point and ending point" ID="ID_1213322656" CREATED="1718627051739" MODIFIED="1718627065590"/>
 <node TEXT="use (*top) to force starting point to be at the top" ID="ID_472095347" CREATED="1718627066076" MODIFIED="1718627081466"/>
@@ -902,7 +902,7 @@
 </node>
 <node TEXT="5.12 Complete Example" ID="ID_151629836" CREATED="1718627336567" MODIFIED="1718627341562"/>
 </node>
-<node TEXT="06 Activity Diagram (New Syntax)" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
+<node TEXT="06 Activity Diagram (New Syntax)" FOLDED="true" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
 <node TEXT="6.01 Simple Action" ID="ID_1888938828" CREATED="1718627347868" MODIFIED="1718627381652">
 <node TEXT="label starts with : and ends with ;" ID="ID_866524595" CREATED="1718627385335" MODIFIED="1718627394774"/>
 </node>
