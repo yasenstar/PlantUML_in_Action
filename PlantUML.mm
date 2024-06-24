@@ -236,7 +236,7 @@
 <node TEXT="__" ID="ID_487153758" CREATED="1717881262125" MODIFIED="1717881264171"/>
 </node>
 </node>
-<node TEXT="Group 3: Notes in Class Diagram" FOLDED="true" ID="ID_971003273" CREATED="1717795623899" MODIFIED="1717795633062">
+<node TEXT="Group 3: Notes in Class Diagram" ID="ID_971003273" CREATED="1717795623899" MODIFIED="1717795633062">
 <node TEXT="3.09 Notes and Stereotypes" POSITION="bottom_or_right" ID="ID_1294480597" CREATED="1717355461552" MODIFIED="1717355471928"/>
 <node TEXT="3.10 More on Notes" FOLDED="true" POSITION="bottom_or_right" ID="ID_353083034" CREATED="1717355494270" MODIFIED="1717355497866">
 <node TEXT="&lt;b&gt;, &lt;u&gt;, &lt;i&gt;" ID="ID_974647703" CREATED="1717881401097" MODIFIED="1717881411430"/>
@@ -289,7 +289,7 @@
 <node TEXT="within stereotype &lt;&lt;&gt;&gt;, 1) (), 2) single character, 3) color code or color name" ID="ID_1583685885" CREATED="1718236503097" MODIFIED="1718236537008"/>
 </node>
 </node>
-<node TEXT="Group 6: Packages" FOLDED="true" ID="ID_118679930" CREATED="1717797281836" MODIFIED="1718243786783" LINK="https://en.wikipedia.org/wiki/Package_(UML)"><richcontent TYPE="NOTE">
+<node TEXT="Group 6: Packages" ID="ID_118679930" CREATED="1717797281836" MODIFIED="1718243786783" LINK="https://en.wikipedia.org/wiki/Package_(UML)"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -368,7 +368,7 @@
 </node>
 <node TEXT="3.28 Association on Same Class" POSITION="bottom_or_right" ID="ID_342117144" CREATED="1717355723959" MODIFIED="1717355730594"/>
 </node>
-<node TEXT="Group 8: Styles" FOLDED="true" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
+<node TEXT="Group 8: Styles" ID="ID_858224420" CREATED="1717797342110" MODIFIED="1717797350166">
 <node TEXT="3.29 Skinparam" POSITION="bottom_or_right" ID="ID_1829365211" CREATED="1717355732819" MODIFIED="1717355737214"/>
 <node TEXT="3.30 Skinned Stereotypes" FOLDED="true" POSITION="bottom_or_right" ID="ID_1394843552" CREATED="1717355740540" MODIFIED="1717355753629">
 <node TEXT="discussion #16549" POSITION="bottom_or_right" ID="ID_189305300" CREATED="1718397734077" MODIFIED="1718397744821" LINK="https://forum.plantuml.net/16549/skinparam-stereotypecbackgroundcolor-isnt-applied"/>
@@ -535,7 +535,7 @@
 <arrowlink DESTINATION="ID_858224420"/>
 </node>
 </node>
-<node TEXT="4.06 Map Table or Associative Array" FOLDED="true" ID="ID_1987702877" CREATED="1717356314831" MODIFIED="1717356322841">
+<node TEXT="4.06 Map Table or Associative Array" ID="ID_1987702877" CREATED="1717356314831" MODIFIED="1717356322841">
 <node TEXT="keyword: map and Separator: =&gt;" ID="ID_1403557418" CREATED="1718587011903" MODIFIED="1718587028532"/>
 </node>
 <node TEXT="4.07 Program (or project) evaluation and review technique (PERT) with Map" ID="ID_270515488" CREATED="1717356329907" MODIFIED="1717356351409"/>
