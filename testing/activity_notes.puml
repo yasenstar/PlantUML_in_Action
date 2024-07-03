@@ -1,0 +1,8 @@
+@startuml
+note right: test note
+(*) --> "Some action"
+note bottom: words
+"Some action" --> "more action"
+note top: more\nwords
+"more action" -> (*)
+@enduml

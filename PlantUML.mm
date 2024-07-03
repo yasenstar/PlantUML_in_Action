@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.575">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -521,7 +521,7 @@
 <node TEXT="diamond" ID="ID_658217038" CREATED="1718586387334" MODIFIED="1718586390149"/>
 </node>
 <node TEXT="4.04 Adding Fields" ID="ID_640856132" CREATED="1717356295001" MODIFIED="1717356299606"/>
-<node TEXT="4.05 Common Features with Class Diagrams" ID="ID_752435943" CREATED="1717356302423" MODIFIED="1718802223331">
+<node TEXT="4.05 Common Features with Class Diagrams" FOLDED="true" ID="ID_752435943" CREATED="1717356302423" MODIFIED="1718802223331">
 <node TEXT="Hide attributes, methods" ID="ID_1704158615" CREATED="1718586579137" MODIFIED="1718586827681">
 <arrowlink DESTINATION="ID_563475061" STARTINCLINATION="99 pt;0 pt;" ENDINCLINATION="99.6 pt;0 pt;"/>
 </node>
@@ -711,10 +711,10 @@
 </node>
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
-<arrowlink DESTINATION="ID_1961776223"/>
-<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_288741682"/>
+<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_652208197"/>
+<arrowlink DESTINATION="ID_1961776223"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -722,8 +722,8 @@
 </node>
 <node TEXT="Part 9" FOLDED="true" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
 <node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1717364077035">
-<arrowlink DESTINATION="ID_125886615"/>
 <arrowlink DESTINATION="ID_1063219866"/>
+<arrowlink DESTINATION="ID_125886615"/>
 <node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
 </node>
 <node TEXT="1.28 Shortcut Syntax" FOLDED="true" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">
@@ -883,12 +883,33 @@
 <node TEXT="5.07 Long Action Description" FOLDED="true" ID="ID_783236425" CREATED="1718627206190" MODIFIED="1718627212381">
 <node TEXT="put &quot;xxx&quot; with as keyword" ID="ID_438408968" CREATED="1718627233823" MODIFIED="1718627242392"/>
 </node>
-<node TEXT="5.08 Notes" ID="ID_1115070392" CREATED="1718627244314" MODIFIED="1718627247089"/>
+<node TEXT="5.08 Notes" FOLDED="true" ID="ID_1115070392" CREATED="1718627244314" MODIFIED="1718627247089">
+<node TEXT="Add notes just after the description of activity" ID="ID_1020049974" CREATED="1719966375173" MODIFIED="1719966389114"/>
+<node ID="ID_1944204682" CREATED="1719966390201" MODIFIED="1719966456780"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      using <span style="font-style: italic;">endnote</span>&#xa0;if want to have multiline note
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 <node TEXT="5.09 Partition" FOLDED="true" ID="ID_1383430587" CREATED="1718627253507" MODIFIED="1719297658776" VGAP_QUANTITY="3 pt">
 <node TEXT="keyword: partition" ID="ID_1238799081" CREATED="1718627277873" MODIFIED="1718627281953"/>
 <node TEXT="close the partition definition using closing bracket }" ID="ID_825675684" CREATED="1718627288052" MODIFIED="1719297658775"/>
 </node>
-<node TEXT="5.10 Skinparam" ID="ID_82847542" CREATED="1718627310066" MODIFIED="1718627314488"/>
+<node TEXT="5.10 Skinparam" FOLDED="true" ID="ID_82847542" CREATED="1718627310066" MODIFIED="1718627314488">
+<node TEXT="In diagram definition" ID="ID_1862166752" CREATED="1719966971980" MODIFIED="1719966980460"/>
+<node TEXT="In an included file" ID="ID_1018963369" CREATED="1719966980622" MODIFIED="1719966984617"/>
+<node TEXT="In a configuration file" ID="ID_595308092" CREATED="1719966984779" MODIFIED="1719966990955"/>
+</node>
 <node TEXT="5.11 Octagon" FOLDED="true" ID="ID_948374716" CREATED="1718627316843" MODIFIED="1718627319979">
 <node TEXT="skinparam activityShape octagon" ID="ID_1917040631" CREATED="1718627322534" MODIFIED="1718627334126"/>
 </node>
