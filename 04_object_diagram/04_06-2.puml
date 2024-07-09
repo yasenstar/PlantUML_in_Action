@@ -1,0 +1,8 @@
+@startuml
+map "Map **Country => CapitalCity**" as CC {
+    UK => London
+    USA => Washington
+    Germany => Berlin
+    China => Beijing
+}
+@enduml

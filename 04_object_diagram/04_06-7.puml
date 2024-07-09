@@ -1,0 +1,11 @@
+@startuml
+object Foo
+object Baz
+map Bar {
+    abc => 123
+    def => 345
+}
+
+Bar::abc -> Baz : Label two
+Foo --> Bar::def : Label one
+@enduml

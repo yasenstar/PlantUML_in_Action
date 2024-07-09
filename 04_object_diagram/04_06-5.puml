@@ -1,0 +1,18 @@
+@startuml
+
+object London
+object Washington
+object Berlin
+object NewYork
+object CCTable
+
+map "**CapitalCity**" as CC {
+    UK *-> London
+    USA *--> Washington
+    Germany *---> Berlin
+}
+
+CCTable -> CC
+NewYork --> CC::USA
+
+@enduml

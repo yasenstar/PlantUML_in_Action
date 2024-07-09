@@ -1,0 +1,14 @@
+@startuml
+package foo {
+    object baz
+}
+package bar {
+    map A {
+        c =>
+        b *-> foo.baz
+    }
+}
+
+A::c -> foo
+A -> foo
+@enduml
