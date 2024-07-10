@@ -106,8 +106,8 @@
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>
 <node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
-<node TEXT="Static UML Modeling" FOLDED="true" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1717549571208">
-<node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1716658606201">
+<node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
+<node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" FOLDED="true" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1717354799804"/>
 </node>
@@ -178,7 +178,7 @@
 <node TEXT="Work with JSON" ID="ID_193319873" CREATED="1717787392901" MODIFIED="1717787397629" LINK="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON"/>
 </node>
 </node>
-<node TEXT="03 Class Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1716658611130">
+<node TEXT="03 Class Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1720591127978" LINK="https://en.wikipedia.org/wiki/Class_diagram">
 <node TEXT="Group 1: Notation Definition" FOLDED="true" ID="ID_6284272" CREATED="1717795525178" MODIFIED="1717795543084">
 <node TEXT="3.01 Declaring Element" POSITION="bottom_or_right" ID="ID_1138859544" CREATED="1717355364987" MODIFIED="1717355370658"/>
 <node TEXT="3.02 Relations between Classes" POSITION="bottom_or_right" ID="ID_1155065871" CREATED="1717355373991" MODIFIED="1717355395800">
@@ -483,7 +483,7 @@
 <node TEXT="#[color|back:color];head:color;line:color;line.[bold|dashed|dotted];text:color" ID="ID_79179649" CREATED="1718494485074" MODIFIED="1718495454358"/>
 </node>
 </node>
-<node TEXT="Group 9: Others" FOLDED="true" ID="ID_988609192" CREATED="1717797378428" MODIFIED="1717797383051">
+<node TEXT="Group 9: Others" ID="ID_988609192" CREATED="1717797378428" MODIFIED="1717797383051">
 <node TEXT="3.38 Arrow from/to Class Members" POSITION="bottom_or_right" ID="ID_7779878" CREATED="1717355879449" MODIFIED="1717355889634"/>
 <node TEXT="3.39 Grouping Inheritance Arrow Heads" FOLDED="true" POSITION="bottom_or_right" ID="ID_1807284231" CREATED="1717355896656" MODIFIED="1717355920434">
 <node TEXT="3.39.1 GroupInheritance 1 (no grouping)" ID="ID_1016550828" CREATED="1717355933368" MODIFIED="1717355943421"/>
@@ -497,7 +497,7 @@
 <node TEXT="3.41 Packages and Namespaces Enhancement" POSITION="bottom_or_right" ID="ID_1561440010" CREATED="1717356242409" MODIFIED="1717356252983"/>
 </node>
 </node>
-<node TEXT="04 Object Diagram" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1718802223332" VGAP_QUANTITY="3 pt"><richcontent TYPE="NOTE">
+<node TEXT="04 Object Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_409306097" CREATED="1716658613306" MODIFIED="1720591119209" LINK="https://en.wikipedia.org/wiki/Object_diagram" VGAP_QUANTITY="3 pt"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -538,12 +538,14 @@
 <node TEXT="4.06 Map Table or Associative Array" ID="ID_1987702877" CREATED="1717356314831" MODIFIED="1717356322841">
 <node TEXT="keyword: map and Separator: =&gt;" ID="ID_1403557418" CREATED="1718587011903" MODIFIED="1718587028532"/>
 </node>
-<node TEXT="4.07 Program (or project) evaluation and review technique (PERT) with Map" ID="ID_270515488" CREATED="1717356329907" MODIFIED="1720581458454" LINK="https://asana.com/resources/pert-chart"/>
-<node TEXT="4.08 Display JSON Data on Class or Object Diagram" ID="ID_689661337" CREATED="1718547148066" MODIFIED="1718547175630">
+<node TEXT="4.07 Program (or project) evaluation and review technique (PERT) with Map" ID="ID_270515488" CREATED="1717356329907" MODIFIED="1720581458454" LINK="https://asana.com/resources/pert-chart">
+<node TEXT="Sample PERT" ID="ID_331424546" CREATED="1720583240106" MODIFIED="1720583249359" LINK="https://clickup.com/blog/pert-chart-examples/"/>
+</node>
+<node TEXT="4.08 Display JSON Data on Class or Object Diagram" ID="ID_689661337" CREATED="1718547148066" MODIFIED="1720583116186">
 <arrowlink DESTINATION="ID_588971608"/>
 </node>
 </node>
-<node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1716658785460">
+<node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
 <node TEXT="7.01 Components" ID="ID_1036640811" CREATED="1718642734800" MODIFIED="1718642739809">
 <node TEXT="7.01.01 Naming Exceptions" ID="ID_762125154" CREATED="1718642742723" MODIFIED="1718642749622"/>
 </node>
@@ -551,10 +553,11 @@
 <node TEXT="7.03 Basic Example" ID="ID_1418936785" CREATED="1718642764308" MODIFIED="1718642769014"/>
 <node TEXT="7.04 Using Notes" ID="ID_793169446" CREATED="1718642769427" MODIFIED="1718642772534"/>
 </node>
-<node TEXT="08 Deployment Diagram" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1716658790360"/>
+<node TEXT="08 Deployment Diagram" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1720591157962" LINK="https://en.wikipedia.org/wiki/Deployment_diagram"/>
 </node>
-<node TEXT="Dynamic UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1717549587042">
-<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1716658597532">
+<node TEXT="Behavioral (Dynamic) UML Modeling" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1720591230903">
+<arrowlink DESTINATION="ID_1749037007"/>
+<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
 <node TEXT="Characteristics of Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1437830674" CREATED="1716734224598" MODIFIED="1716737761423" VGAP_QUANTITY="3 pt">
 <node TEXT="Intuitive Syntax" ID="ID_1858398428" CREATED="1716734238455" MODIFIED="1716734246623"/>
@@ -825,7 +828,7 @@
 </node>
 <node TEXT="1.37 Changing Padding" POSITION="bottom_or_right" ID="ID_734262648" CREATED="1716689491706" MODIFIED="1716689497051"/>
 </node>
-<node TEXT="Part 14" FOLDED="true" ID="ID_543050534" CREATED="1716734724137" MODIFIED="1716734727011">
+<node TEXT="Part 14" ID="ID_543050534" CREATED="1716734724137" MODIFIED="1716734727011">
 <node TEXT="1.38 Appendix:&#xa;Examples of All Arrow Type" POSITION="bottom_or_right" ID="ID_989850902" CREATED="1716689503089" MODIFIED="1717350495876">
 <node TEXT="1.38.1 Normal Arrow" ID="ID_567087003" CREATED="1716689515568" MODIFIED="1716689522701"/>
 <node TEXT="1.38.2 Itself Arrow" ID="ID_1259855048" CREATED="1716689527098" MODIFIED="1716689532261"/>
@@ -843,7 +846,7 @@
 <node TEXT="1.38.8 Short Outgoing (with &apos;?&apos;)" ID="ID_1135075639" CREATED="1717350746921" MODIFIED="1717350757869"/>
 </node>
 </node>
-<node TEXT="Part 15" FOLDED="true" ID="ID_1061826137" CREATED="1716734737306" MODIFIED="1716734739605">
+<node TEXT="Part 15" ID="ID_1061826137" CREATED="1716734737306" MODIFIED="1716734739605">
 <node TEXT="1.39 Specific SkinParameter" POSITION="bottom_or_right" ID="ID_1847826917" CREATED="1716689677403" MODIFIED="1716689684682">
 <node TEXT="1.39.1 By default" ID="ID_800691587" CREATED="1716689692228" MODIFIED="1716689697682"/>
 <node TEXT="1.39.2 Lifeline Strategy" ID="ID_1535153071" CREATED="1716689697840" MODIFIED="1716689705802"/>
@@ -861,13 +864,13 @@
 </node>
 </node>
 </node>
-<node TEXT="05 Activity Diagram (legacy)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1716658762019">
-<node TEXT="5.01 Simple Action" FOLDED="true" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1718627049057">
+<node TEXT="05 Activity Diagram (legacy)" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1720591041912" LINK="https://en.wikipedia.org/wiki/Activity_diagram">
+<node TEXT="5.01 Simple Action" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1718627049057">
 <node TEXT="use (*) for starting point and ending point" ID="ID_1213322656" CREATED="1718627051739" MODIFIED="1718627065590"/>
 <node TEXT="use (*top) to force starting point to be at the top" ID="ID_472095347" CREATED="1718627066076" MODIFIED="1718627081466"/>
 <node TEXT="use --&gt; for arrows" ID="ID_1661877154" CREATED="1718627081817" MODIFIED="1718627086368"/>
 </node>
-<node TEXT="5.02 Label on Arrows" FOLDED="true" ID="ID_1915659137" CREATED="1718627090671" MODIFIED="1718627096971">
+<node TEXT="5.02 Label on Arrows" ID="ID_1915659137" CREATED="1718627090671" MODIFIED="1718627096971">
 <node TEXT="using [ and ] after --&gt; for labeling on arrows" ID="ID_1589620444" CREATED="1718627100545" MODIFIED="1718627127712"/>
 </node>
 <node TEXT="5.03 Changing Arrow Direction" FOLDED="true" ID="ID_370999913" CREATED="1718627130597" MODIFIED="1719297653099" VGAP_QUANTITY="3 pt">
@@ -1009,8 +1012,8 @@
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
 </node>
-<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1716658797956"/>
-<node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1716658805350"/>
+<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine"/>
+<node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)"/>
 </node>
 </node>
 <node TEXT="Non-UML Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">

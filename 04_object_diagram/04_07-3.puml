@@ -1,5 +1,5 @@
 @startuml PERT
-title Aireplance Design Process
+title Aireplane Design Process
 left to right direction
 
 'defintion of tasks
@@ -74,7 +74,7 @@ t3 --> t4
 t4 --> t5
 t5 --> t6
 
-t7 --> t8
+t7 ----> t8
 t8 --> t9
 
 t10 --> t11

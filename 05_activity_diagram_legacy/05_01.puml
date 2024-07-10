@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+(*) --> "First Action" as a1
+a1 --> "New_Action" as a2
+a2 -> (*)
+@enduml
