@@ -1,0 +1,12 @@
+@startuml
+class Class
+object Object
+json JSON_Table {
+    "fruit":"Apple",
+    "size":"Large",
+    "color":[
+        "Red",
+        "Green"
+    ]
+}
+@enduml

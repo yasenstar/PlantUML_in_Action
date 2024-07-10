@@ -1,4 +1,4 @@
-@startuml PERT
+@startuml PERT-Project
 title PERT: Project Name
 left to right direction
 
