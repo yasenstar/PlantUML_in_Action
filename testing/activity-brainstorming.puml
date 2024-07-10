@@ -1,0 +1,43 @@
+@startuml
+title Brainstorming Process
+
+(*) --> if "" as a1 then
+    -->[inexpeienced participants in the group] "Warm-up Practice"
+else
+    -->[else] "Explain Problem"
+endif
+"Warm-up Practice" -left-> "Explain Problem"
+--> "Present Rules"
+--> "Call for Ideas"
+--> if "" as a2 then
+    -right->[idea(s) available] if "" as a3 then
+        -right->[more] "Participants write down their idea"
+        --> "Everybody presents their idea in turn" as x1
+    else
+        -->[one] ===b1===
+        ===b1=== --> "Present Idea"
+        ===b1=== --> "Record Idea"
+        "Present Idea" --> ===b2===
+        "Record Idea" --> ===b2===
+        ===b2=== --> if "" as a4 then
+            -->[time left] "Elaborate on Idea" as x2
+            x1 --> x2
+            x2 --> if "" as a5 then
+                -->[one] ===b1===
+                a5 --> ===b3===
+            else
+                -->[no time left] "Wrap Up" as x3
+            endif
+            -->[none] if "" as a6 then
+                    -->[time left] "Call for Ideas"
+                endif
+        else
+            -left->[no time left] x3
+            x3 --> (*)
+        endif
+    endif
+else
+    -->[no idea(s)] "Suggest Lead"
+endif
+"Suggest Lead" --> a2
+@enduml
