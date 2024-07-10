@@ -1,0 +1,84 @@
+@startuml
+title Aireplance Design Process
+
+'defintion of tasks
+
+package starting {
+    map "Design" as t1 {
+    ET => LT
+    80 => 100
+    }
+}
+
+map "Aerodynamics" as t2 {
+    ET => LT
+    30 => 45
+}
+map "Propulsion" as t3 {
+    ET => LT
+    50 => 65
+}
+map "Wind Tunnel" as t4 {
+    ET => LT
+    20 => 30
+}
+map "Review" as t5 {
+    ET => LT
+    45 => 55
+}
+map "Research Flights" as t6 {
+    ET => LT
+    50 => 60
+}
+map "Build & Test Model" as t7 {
+    ET => LT
+    50 => 70
+}
+map "Build Prototype" as t8 {
+    ET => LT
+    60 => 80
+}
+map "Finalize" as t9 {
+    ET => LT
+    20 => 30
+}
+map "Structure" as t10 {
+    ET => LT
+    35 => 55
+}
+map "Control & Stability" as t11 {
+    ET => LT
+    40 => 50
+}
+map "Computation" as t12 {
+    ET => LT
+    20 => 30
+}
+map "Flight Simulation" as t13 {
+    ET => LT
+    30 => 45
+}
+map "Revise & Review" as t14 {
+    ET => LT
+    45 => 55
+}
+
+'relationships
+t1 -> t2
+t1 -> t7
+t1 -> t10
+
+t2 -> t3
+t3 -> t4
+t4 -> t5
+t5 -> t6
+
+t7 -> t8
+t8 -> t9
+
+t10 -> t11
+t11 -> t12
+t12 -> t13
+t13 -> t14
+
+@enduml

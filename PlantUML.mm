@@ -538,7 +538,7 @@
 <node TEXT="4.06 Map Table or Associative Array" ID="ID_1987702877" CREATED="1717356314831" MODIFIED="1717356322841">
 <node TEXT="keyword: map and Separator: =&gt;" ID="ID_1403557418" CREATED="1718587011903" MODIFIED="1718587028532"/>
 </node>
-<node TEXT="4.07 Program (or project) evaluation and review technique (PERT) with Map" ID="ID_270515488" CREATED="1717356329907" MODIFIED="1717356351409"/>
+<node TEXT="4.07 Program (or project) evaluation and review technique (PERT) with Map" ID="ID_270515488" CREATED="1717356329907" MODIFIED="1720581458454" LINK="https://asana.com/resources/pert-chart"/>
 <node TEXT="4.08 Display JSON Data on Class or Object Diagram" ID="ID_689661337" CREATED="1718547148066" MODIFIED="1718547175630">
 <arrowlink DESTINATION="ID_588971608"/>
 </node>
