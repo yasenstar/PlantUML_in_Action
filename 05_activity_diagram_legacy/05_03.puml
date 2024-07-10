@@ -1,0 +1,11 @@
+@startuml
+title change arrow direction
+
+(*) -up->[label] "First Action"
+"First Action" -right-> "Second Action"
+"Second Action" -> "Third Action"
+"Third Action" -down-> "Fourth Action"
+-down-> "Fifth Action"
+--> "Sixty Action"
+-left-> (*)
+@enduml
