@@ -1,0 +1,60 @@
+@startuml
+title Brainstorming Process (Activity Diagram)
+
+(*) --> if "" as a1 then
+    -->[inexperienced participants in the group] "Warm-up practice"
+else
+    -->[else] "Explain problem"
+endif
+
+"Warm-up practice" -left-> "Explain problem"
+
+"Explain problem" --> "Present rules"
+
+"Present rules" --> "Call for ideas"
+
+"Call for ideas" --> if "" as a2 then
+    -right->[idea(s) available] if "" as a3 then
+        -right->[more] "Participants write down their idea"
+        "Participants write down their idea" --> "Everybody presents their idea in turn"
+    else
+        -->[one] ===b1===
+    endif
+else
+    -->[no idea(s)] "Suggest lead"
+    "Suggest lead" --> a2
+endif
+
+===b1=== --> "Present idea"
+===b1=== --> "Record idea"
+"Present idea" --> ===b2===
+"Record idea" --> ===b2===
+
+===b2=== --> if "" as a4 then
+    -->[time left] "Elaborate on idea"
+else
+    -->[no time left] "Wrap up"
+endif
+
+"Everybody presents their idea in turn" --> "Elaborate on idea"
+
+"Elaborate on idea" --> if "" as a5 then
+    -right->[more] ===b3===
+    a5 -up->[one] ===b1===
+else
+    -->[none] if "" as a6 then
+        -up->[time left] "Call for ideas"
+    else
+        -->[no time left] "Wrap up"
+    endif
+endif
+
+===b3=== --> "Select most associated idea"
+===b3=== --> "Others write down their idea"
+"Select most associated idea" --> ===b4===
+"Others write down their idea" --> ===b4===
+===b4=== -up-> ===b1===
+
+"Wrap up" --> (*)
+
+@enduml
