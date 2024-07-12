@@ -1,0 +1,47 @@
+@startuml
+title Servlet Container
+
+(*) --> "ClickServlet.handleRequest()"
+"ClickServlet.handleRequest()" --> "new Page"
+
+"new Page" --> if "Page.onSecurityClient" as a1 then
+    -right->[true] "Page.oninit()"
+    "Page.oninit()" --> if "isForward?" as a2 then
+        -->[yes] ===b1===
+    else
+        -right->[no] "Process controls"
+        "Process controls" --> if "continue processing?" as a3 then
+            -->[yes] ===b1===
+        else
+            -->[no] ===b2===
+        endif
+    endif
+    ===b1=== --> if "is Pot" as a4 then
+        -->[yes] "Page.onPost()"
+    else
+        -->[no] "Page.onGet()"
+    endif
+    "Page.onPost()" --> "Page.onRender()"
+    "Page.onGet()" --> "Page.onRender()"
+    "Page.onRender()" --> ===b2===
+else
+    -->[false] ===b2===
+endif
+
+===b2=== --> if "Do redirect?" as a5 then
+    -->[yes] "redirect request"
+    "redirect request" --> ===b3===
+else
+    -->[no] if "Do Forward" as a6 then
+        -left->[yes] "Forward request"
+        "Forward request" --> ===b3===
+    else
+        -right->[no] "Render page template"
+        "Render page template" --> ===b3===
+    endif
+endif
+
+===b3=== --> "Page.onDestroy()"
+"Page.onDestroy()" --> (*)
+
+@enduml
