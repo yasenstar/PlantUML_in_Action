@@ -1,0 +1,22 @@
+@startuml
+note right: test note
+(*) --> "Some Action"
+note bottom: words
+"Some Action" -> if "condiction" as a1 then
+note right: test1
+    -->[yes] "action 1"
+else
+note left: test2
+    -->[no] "action 2"
+    --> ===b1===
+    note top: notes on b1
+    ===b1=== --> "action 3"
+    --> (*)
+    ===b1=== --> "action 4"
+    --> (*)
+endif
+"action 1" --> "More Action"
+note top: more words
+"More Action" -> (*)
+note bottom: test note
+@enduml

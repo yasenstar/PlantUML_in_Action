@@ -1,0 +1,9 @@
+@startuml
+(*) --> "Some Actions"
+note right: This action\nhas to be defined
+"Some Actions" --> (*)
+note left
+    This note is on
+    serveral lines
+end note
+@enduml

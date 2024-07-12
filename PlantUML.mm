@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.641">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -673,7 +673,7 @@
 </node>
 </node>
 </node>
-<node TEXT="1.15 Some Other Notes" FOLDED="true" POSITION="bottom_or_right" ID="ID_370133387" CREATED="1716689223679" MODIFIED="1716689248036">
+<node TEXT="1.15 Some Other Notes" POSITION="bottom_or_right" ID="ID_370133387" CREATED="1716689223679" MODIFIED="1716689248036">
 <node TEXT="relative" ID="ID_1010786909" CREATED="1716836148465" MODIFIED="1716836157390">
 <node TEXT="note left of" POSITION="bottom_or_right" ID="ID_980222687" CREATED="1716836101661" MODIFIED="1716836106579"/>
 <node TEXT="note right of" POSITION="bottom_or_right" ID="ID_691787208" CREATED="1716836106753" MODIFIED="1716836112358"/>
@@ -829,7 +829,7 @@
 <node TEXT="1.37 Changing Padding" POSITION="bottom_or_right" ID="ID_734262648" CREATED="1716689491706" MODIFIED="1716689497051"/>
 </node>
 <node TEXT="Part 14" ID="ID_543050534" CREATED="1716734724137" MODIFIED="1716734727011">
-<node TEXT="1.38 Appendix:&#xa;Examples of All Arrow Type" POSITION="bottom_or_right" ID="ID_989850902" CREATED="1716689503089" MODIFIED="1717350495876">
+<node TEXT="1.38 Appendix:&#xa;Examples of All Arrow Type" FOLDED="true" POSITION="bottom_or_right" ID="ID_989850902" CREATED="1716689503089" MODIFIED="1717350495876">
 <node TEXT="1.38.1 Normal Arrow" ID="ID_567087003" CREATED="1716689515568" MODIFIED="1716689522701"/>
 <node TEXT="1.38.2 Itself Arrow" ID="ID_1259855048" CREATED="1716689527098" MODIFIED="1716689532261"/>
 <node TEXT="1.38.3 Incoming and Outgoing Messages (with &apos;[&apos;, &apos;]&apos;)" FOLDED="true" ID="ID_1693103070" CREATED="1716689536465" MODIFIED="1716689553604">
@@ -847,7 +847,7 @@
 </node>
 </node>
 <node TEXT="Part 15" ID="ID_1061826137" CREATED="1716734737306" MODIFIED="1716734739605">
-<node TEXT="1.39 Specific SkinParameter" POSITION="bottom_or_right" ID="ID_1847826917" CREATED="1716689677403" MODIFIED="1716689684682">
+<node TEXT="1.39 Specific SkinParameter" FOLDED="true" POSITION="bottom_or_right" ID="ID_1847826917" CREATED="1716689677403" MODIFIED="1716689684682">
 <node TEXT="1.39.1 By default" ID="ID_800691587" CREATED="1716689692228" MODIFIED="1716689697682"/>
 <node TEXT="1.39.2 Lifeline Strategy" ID="ID_1535153071" CREATED="1716689697840" MODIFIED="1716689705802"/>
 <node TEXT="1.39.3 Style Strictuml" ID="ID_705286905" CREATED="1716689709244" MODIFIED="1716689717978"/>
@@ -880,11 +880,15 @@
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>
-<node TEXT="5.06 Synchronization" ID="ID_1416633778" CREATED="1718627186466" MODIFIED="1718627190833">
+<node TEXT="5.06 Synchronization" FOLDED="true" ID="ID_1416633778" CREATED="1718627186466" MODIFIED="1718627190833">
 <node TEXT="use === code === to display sync bars" ID="ID_1555430895" CREATED="1718627191450" MODIFIED="1718627200723"/>
 </node>
-<node TEXT="5.07 Long Action Description" FOLDED="true" ID="ID_783236425" CREATED="1718627206190" MODIFIED="1718627212381">
-<node TEXT="put &quot;xxx&quot; with as keyword" ID="ID_438408968" CREATED="1718627233823" MODIFIED="1718627242392"/>
+<node TEXT="5.07 Long Action Description" ID="ID_783236425" CREATED="1718627206190" MODIFIED="1718627212381">
+<node TEXT="&lt;size:xx&gt;&lt;/size&gt;: font size" ID="ID_438408968" CREATED="1718627233823" MODIFIED="1720690589350"/>
+<node TEXT="&lt;color:###&gt;&lt;/color&gt;: font color" ID="ID_799752190" CREATED="1720690605010" MODIFIED="1720690616788"/>
+<node TEXT="&lt;b&gt;&lt;/b&gt;: font bold" ID="ID_1498919155" CREATED="1720690589771" MODIFIED="1720690603908"/>
+<node TEXT="&lt;i&gt;&lt;/i&gt;: font italic" ID="ID_591565292" CREATED="1720690619361" MODIFIED="1720690630915"/>
+<node TEXT="&lt;image:sourcename&gt;: insert image" ID="ID_962783440" CREATED="1720690638554" MODIFIED="1720690654300"/>
 </node>
 <node TEXT="5.08 Notes" FOLDED="true" ID="ID_1115070392" CREATED="1718627244314" MODIFIED="1718627247089">
 <node TEXT="Add notes just after the description of activity" ID="ID_1020049974" CREATED="1719966375173" MODIFIED="1719966389114"/>

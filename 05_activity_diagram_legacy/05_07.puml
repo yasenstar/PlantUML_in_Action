@@ -1,0 +1,13 @@
+@startuml
+(*) -left-> "this <size:40>action</size>
+is <size:30><b>very</b></size>
+<color:red>long2</color>
+<b><color:#AAAAFF>new term</color></b>
+and defined on
+that many <i><size:20>text</size></i>" as a1
+
+a1 -up-> "Another action\non several lines"
+
+a1 --> "Short action <img:bike.jpeg>"
+
+@enduml
