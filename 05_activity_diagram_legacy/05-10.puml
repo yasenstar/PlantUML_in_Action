@@ -1,0 +1,28 @@
+@startuml
+
+' skinparam backgroundColor #LightSkyBlue
+skinparam backgroundColor #AAFFFF
+
+skinparam activity {
+    StartColor red
+    EndColor Blue
+    BarColor SaddleBrown
+    BackgroundColor Peru
+    BackgroundColor<< Begin >> Olive
+    BorderColor red
+    BorderColor<< Begin >> Blue
+    FontName Impact
+    FontSize 40
+}
+
+title SkinParameter
+
+(*) --> "Climbs on Platform" << Begin >>
+--> ===S1===
+===S1=== --> Bows
+===S1=== --> Ones
+Bows --> ===S2===
+Ones --> ===S2===
+===S2=== --> Wavestreams
+--> (*)
+@enduml
