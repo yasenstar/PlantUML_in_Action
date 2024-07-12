@@ -1,0 +1,24 @@
+@startuml
+title Partition in Activity DiagramBorderColor
+
+partition Conductor #FFAAAA {
+    (*) --> "Climbs on Platform"
+    "Climbs on Platform" --> ===S1===
+    ===S1=== --> Bows
+    Bows --> ===S2===
+    ===S2=== --> WavesArmes
+}
+
+partition Audience #LightSkyBlue {
+    ===S1=== --> Applauds
+    Applauds --> ===S2===
+}
+
+partition Orchestra #CCCCEE {
+    WavesArmes -> Introduction
+    Introduction --> "Play music"
+}
+
+"Play music" -left-> (*)
+
+@enduml
