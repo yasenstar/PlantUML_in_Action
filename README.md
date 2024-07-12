@@ -12,8 +12,8 @@
 
 Learning and practice PlantUML languange and its modeling
 
-|---|---|
 |![logl](img/PlantUML-Logo.png)|![PlantUML in Action TOC](img/PlantUML-in-action.jpg)|
+|---|---|
 
 ## Videos/Course on Diagramming Practice
 
