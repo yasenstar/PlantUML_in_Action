@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.641">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -865,7 +865,9 @@
 </node>
 </node>
 <node TEXT="05 Activity Diagram (legacy)" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1720591041912" LINK="https://en.wikipedia.org/wiki/Activity_diagram">
-<node TEXT="5.01 Simple Action" FOLDED="true" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1718627049057">
+<node TEXT="5.01 Simple Action" FOLDED="true" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1720770738713">
+<arrowlink WIDTH="2" DESTINATION="ID_1888938828" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink DESTINATION="ID_511629604"/>
 <node TEXT="use (*) for starting point and ending point" ID="ID_1213322656" CREATED="1718627051739" MODIFIED="1718627065590"/>
 <node TEXT="use (*top) to force starting point to be at the top" ID="ID_472095347" CREATED="1718627066076" MODIFIED="1718627081466"/>
 <node TEXT="use --&gt; for arrows" ID="ID_1661877154" CREATED="1718627081817" MODIFIED="1718627086368"/>
@@ -876,21 +878,25 @@
 <node TEXT="5.03 Changing Arrow Direction" FOLDED="true" ID="ID_370999913" CREATED="1718627130597" MODIFIED="1719297653099" VGAP_QUANTITY="3 pt">
 <node TEXT="e.g. -down-&gt;" ID="ID_1622483910" CREATED="1718627138976" MODIFIED="1719297653097"/>
 </node>
-<node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1718627156200">
+<node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1720771052725">
+<arrowlink DESTINATION="ID_999052549"/>
+<arrowlink DESTINATION="ID_1131340221"/>
+<arrowlink DESTINATION="ID_1828622956"/>
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>
 <node TEXT="5.06 Synchronization" FOLDED="true" ID="ID_1416633778" CREATED="1718627186466" MODIFIED="1718627190833">
 <node TEXT="use === code === to display sync bars" ID="ID_1555430895" CREATED="1718627191450" MODIFIED="1718627200723"/>
 </node>
-<node TEXT="5.07 Long Action Description" ID="ID_783236425" CREATED="1718627206190" MODIFIED="1718627212381">
+<node TEXT="5.07 Long Action Description" FOLDED="true" ID="ID_783236425" CREATED="1718627206190" MODIFIED="1718627212381">
 <node TEXT="&lt;size:xx&gt;&lt;/size&gt;: font size" ID="ID_438408968" CREATED="1718627233823" MODIFIED="1720690589350"/>
 <node TEXT="&lt;color:###&gt;&lt;/color&gt;: font color" ID="ID_799752190" CREATED="1720690605010" MODIFIED="1720690616788"/>
 <node TEXT="&lt;b&gt;&lt;/b&gt;: font bold" ID="ID_1498919155" CREATED="1720690589771" MODIFIED="1720690603908"/>
 <node TEXT="&lt;i&gt;&lt;/i&gt;: font italic" ID="ID_591565292" CREATED="1720690619361" MODIFIED="1720690630915"/>
 <node TEXT="&lt;image:sourcename&gt;: insert image" ID="ID_962783440" CREATED="1720690638554" MODIFIED="1720690654300"/>
 </node>
-<node TEXT="5.08 Notes" FOLDED="true" ID="ID_1115070392" CREATED="1718627244314" MODIFIED="1718627247089">
+<node TEXT="5.08 Notes" FOLDED="true" ID="ID_1115070392" CREATED="1718627244314" MODIFIED="1720771130723">
+<arrowlink DESTINATION="ID_237537806"/>
 <node TEXT="Add notes just after the description of activity" ID="ID_1020049974" CREATED="1719966375173" MODIFIED="1719966389114"/>
 <node ID="ID_1944204682" CREATED="1719966390201" MODIFIED="1719966456780"><richcontent TYPE="NODE">
 
@@ -907,7 +913,8 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="5.09 Partition" FOLDED="true" ID="ID_1383430587" CREATED="1718627253507" MODIFIED="1719297658776" VGAP_QUANTITY="3 pt">
+<node TEXT="5.09 Partition" FOLDED="true" ID="ID_1383430587" CREATED="1718627253507" MODIFIED="1720771115442" VGAP_QUANTITY="3 pt">
+<arrowlink DESTINATION="ID_1800494967"/>
 <node TEXT="keyword: partition" ID="ID_1238799081" CREATED="1718627277873" MODIFIED="1718627281953"/>
 <node TEXT="close the partition definition using closing bracket }" ID="ID_825675684" CREATED="1718627288052" MODIFIED="1719297658775"/>
 </node>
@@ -921,26 +928,83 @@
 </node>
 <node TEXT="5.12 Complete Example" ID="ID_151629836" CREATED="1718627336567" MODIFIED="1718627341562"/>
 </node>
-<node TEXT="06 Activity Diagram (New Syntax)" FOLDED="true" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
-<node TEXT="6.01 Simple Action" ID="ID_1888938828" CREATED="1718627347868" MODIFIED="1718627381652">
-<node TEXT="label starts with : and ends with ;" ID="ID_866524595" CREATED="1718627385335" MODIFIED="1718627394774"/>
+<node TEXT="06 Activity Diagram (New Syntax)" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
+<node TEXT="6.01 Simple Action" FOLDED="true" ID="ID_1888938828" CREATED="1718627347868" MODIFIED="1718627381652">
+<node TEXT="Activities label starts with : and ends with ;" ID="ID_866524595" CREATED="1718627385335" MODIFIED="1720770343113"/>
 </node>
-<node TEXT="6.02 Start/Stop/End" ID="ID_511629604" CREATED="1718627403479" MODIFIED="1718627410784"/>
-<node TEXT="6.03 Conditional" ID="ID_999052549" CREATED="1718627414396" MODIFIED="1718627419370">
-<node TEXT="6.03.01 Several Tests (horizontal Mode)" ID="ID_363798233" CREATED="1718627453495" MODIFIED="1718627465226"/>
-<node TEXT="6.03.02 Several Tests (Vertical Mode)" ID="ID_1989182018" CREATED="1718627465637" MODIFIED="1718627475973"/>
+<node TEXT="6.02 Start/Stop/End" FOLDED="true" ID="ID_511629604" CREATED="1718627403479" MODIFIED="1718627410784">
+<node ID="ID_440680072" CREATED="1720770344758" MODIFIED="1720770384668"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Use <span style="font-weight: bold;">start</span><span style="font-weight: normal;">&#xa0;keywords to denote the beginning</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
-<node TEXT="6.04 Switch and Case [switch, case, endswitch]" ID="ID_1131340221" CREATED="1718627427229" MODIFIED="1718627444024"/>
-<node TEXT="6.05 Conditional with Stop on an Action [kill, detach]" ID="ID_1828622956" CREATED="1718627536143" MODIFIED="1718627549377"/>
-<node TEXT="6.06 Repeat Loop" ID="ID_116022607" CREATED="1718627555132" MODIFIED="1718627560718">
+<node ID="ID_656252225" CREATED="1720770385207" MODIFIED="1720770409768"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Use <span style="font-weight: bold;">Stop </span><span style="font-weight: normal;">or </span><span style="font-weight: bold;">End</span><span style="font-weight: normal;">&#xa0;&#xa0;to denote the end of a diagram</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Branches" ID="ID_342101877" CREATED="1720771065460" MODIFIED="1720771068741">
+<node TEXT="6.03 Conditional" FOLDED="true" POSITION="bottom_or_right" ID="ID_999052549" CREATED="1718627414396" MODIFIED="1718627419370">
+<node TEXT="Basic Syntax" ID="ID_336411191" CREATED="1720770565923" MODIFIED="1720770575012">
+<node TEXT="if (...) then (...)" ID="ID_1596817279" CREATED="1720770575015" MODIFIED="1720770585477"/>
+<node TEXT="if (...) is (...) then" ID="ID_710145311" CREATED="1720770746899" MODIFIED="1720770775208"/>
+<node TEXT="if (...) equals (...) then" ID="ID_731259154" CREATED="1720770776148" MODIFIED="1720770783814"/>
+</node>
+<node TEXT="6.03.01 Several Tests (horizontal Mode)" ID="ID_363798233" CREATED="1718627453495" MODIFIED="1718627465226">
+<node TEXT="elseif keyword to have several tests" ID="ID_292745066" CREATED="1720770805219" MODIFIED="1720770821273"/>
+</node>
+<node TEXT="6.03.02 Several Tests (Vertical Mode)" ID="ID_1989182018" CREATED="1718627465637" MODIFIED="1718627475973">
+<node ID="ID_1510680311" CREATED="1720770830612" MODIFIED="1720770854411"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      command <span style="font-weight: bold;">!pragma useVerticalIf on</span><span style="font-weight: normal;">&#xa0;&#xa0;to have the tests in vertical mode</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="6.04 Switch and Case [switch, case, endswitch]" POSITION="bottom_or_right" ID="ID_1131340221" CREATED="1718627427229" MODIFIED="1718627444024"/>
+<node TEXT="6.05 Conditional with Stop on an Action [kill, detach]" POSITION="bottom_or_right" ID="ID_1828622956" CREATED="1718627536143" MODIFIED="1718627549377"/>
+</node>
+<node TEXT="Looping" ID="ID_229670327" CREATED="1720771077524" MODIFIED="1720771079590">
+<node TEXT="6.06 Repeat Loop" FOLDED="true" POSITION="bottom_or_right" ID="ID_116022607" CREATED="1718627555132" MODIFIED="1718627560718">
 <node TEXT="6.06.01 Simple Repeat Loop" ID="ID_1907248696" CREATED="1718627560720" MODIFIED="1718627567971"/>
 <node TEXT="6.06.02 Repeat Loop with Repeat Action and Backward Action" ID="ID_985041121" CREATED="1718627572317" MODIFIED="1718627679368">
 <font BOLD="false"/>
 </node>
 </node>
-<node TEXT="6.07 Break on a Repeat Loop [break]" ID="ID_832639314" CREATED="1718627589114" MODIFIED="1718627598429"/>
-<node TEXT="6.08 Goto and Label Processing [label, goto]" ID="ID_1978189519" CREATED="1718627608325" MODIFIED="1718627616990"/>
-<node TEXT="6.09 While Loop" ID="ID_40925453" CREATED="1718627621911" MODIFIED="1718627627451">
+<node TEXT="6.07 Break on a Repeat Loop [break]" POSITION="bottom_or_right" ID="ID_832639314" CREATED="1718627589114" MODIFIED="1718627598429"/>
+<node TEXT="6.08 Goto and Label Processing [label, goto]" POSITION="bottom_or_right" ID="ID_1978189519" CREATED="1718627608325" MODIFIED="1718627616990"/>
+<node TEXT="6.09 While Loop" FOLDED="true" POSITION="bottom_or_right" ID="ID_40925453" CREATED="1718627621911" MODIFIED="1718627627451">
 <node TEXT="6.09.01 Simple While Loop" ID="ID_248391736" CREATED="1718627627453" MODIFIED="1718627633198">
 <node TEXT="use while and endwhile keywords" ID="ID_1341134953" CREATED="1718627635341" MODIFIED="1718627642744"/>
 </node>
@@ -949,13 +1013,14 @@
 </node>
 <node TEXT="6.09.03 Infinite While Loop" ID="ID_369668438" CREATED="1718627682156" MODIFIED="1718627690997"/>
 </node>
-<node TEXT="6.10 Parallel Processing [fork, fork again, end fork, end merge]" ID="ID_467899982" CREATED="1718627694505" MODIFIED="1718627779135">
+</node>
+<node TEXT="6.10 Parallel Processing [fork, fork again, end fork, end merge]" FOLDED="true" ID="ID_467899982" CREATED="1718627694505" MODIFIED="1718627779135">
 <node TEXT="6.10.01 Simple fork" ID="ID_1118143093" CREATED="1718627785154" MODIFIED="1718627797960"/>
 <node TEXT="6.10.02 for with end merge" ID="ID_1642429274" CREATED="1718627803245" MODIFIED="1718627810443"/>
 <node TEXT="6.10.03 Label on end fork (or UML joinspec)" ID="ID_498802603" CREATED="1718627819450" MODIFIED="1718627832612"/>
 <node TEXT="6.10.04 Other example" ID="ID_650716974" CREATED="1718627836729" MODIFIED="1718627841178"/>
 </node>
-<node TEXT="6.11 Split Processing" ID="ID_1361098567" CREATED="1718627843665" MODIFIED="1718627851311">
+<node TEXT="6.11 Split Processing" FOLDED="true" ID="ID_1361098567" CREATED="1718627843665" MODIFIED="1718627851311">
 <node TEXT="6.11.01 Split" ID="ID_322813475" CREATED="1718627851313" MODIFIED="1718627855168">
 <node TEXT="use split, split again and end split keywords" ID="ID_956292957" CREATED="1718627856738" MODIFIED="1718627869730"/>
 </node>
@@ -967,34 +1032,34 @@
 </node>
 </node>
 <node TEXT="6.12 Notes" ID="ID_237537806" CREATED="1718629180201" MODIFIED="1718629188219"/>
-<node TEXT="6.14 Lines without Arrows" ID="ID_430497830" CREATED="1718629197458" MODIFIED="1718629217471">
+<node TEXT="6.14 Lines without Arrows" FOLDED="true" ID="ID_430497830" CREATED="1718629197458" MODIFIED="1718629217471">
 <node TEXT="skinparam ArrowHeadColor none" ID="ID_1256135463" CREATED="1718642126258" MODIFIED="1718642139232"/>
 </node>
 <node TEXT="6.15 Arrows" ID="ID_1265814359" CREATED="1718642143060" MODIFIED="1718642146001">
 <node TEXT="-&gt; notation" ID="ID_1099811625" CREATED="1718642150157" MODIFIED="1718642153285"/>
 </node>
-<node TEXT="6.16 Connector" ID="ID_1693197250" CREATED="1718642157148" MODIFIED="1718642164178">
+<node TEXT="6.16 Connector" FOLDED="true" ID="ID_1693197250" CREATED="1718642157148" MODIFIED="1718642164178">
 <node TEXT="use () to denote connector" ID="ID_936298040" CREATED="1718642164181" MODIFIED="1718642172198"/>
 </node>
 <node TEXT="6.17 Color on Connector" ID="ID_866522908" CREATED="1718642195424" MODIFIED="1718642201285"/>
-<node TEXT="6.18 Grouping or Partition" ID="ID_1800494967" CREATED="1718642250626" MODIFIED="1718642256866">
+<node TEXT="6.18 Grouping or Partition" FOLDED="true" ID="ID_1800494967" CREATED="1718642250626" MODIFIED="1718642256866">
 <node TEXT="6.18.01 Group" ID="ID_1297670094" CREATED="1718642256868" MODIFIED="1718642262052"/>
 <node TEXT="6.18.02 Partition" ID="ID_848985811" CREATED="1718642277990" MODIFIED="1718642286868"/>
 <node TEXT="6.18.3 Group, Partition, Package, Rectangle or Card" ID="ID_403415467" CREATED="1718642291895" MODIFIED="1718642304373"/>
 </node>
-<node TEXT="6.19 Swimlanes" ID="ID_769243585" CREATED="1718642309142" MODIFIED="1718642313532">
+<node TEXT="6.19 Swimlanes" FOLDED="true" ID="ID_769243585" CREATED="1718642309142" MODIFIED="1718642313532">
 <node TEXT="use pipe | define swimlanes" ID="ID_1632838159" CREATED="1718642317496" MODIFIED="1718642330042"/>
 <node TEXT="can add if conditional or repeat or while loop within swimlanes" ID="ID_320204195" CREATED="1718642338240" MODIFIED="1718642357637"/>
 <node TEXT="Alias: |[#&lt;color&gt;|]&lt;swimlane_alias&gt;| &lt;swimlane_title&gt;" ID="ID_1660059142" CREATED="1718642362897" MODIFIED="1718642433541"/>
 </node>
 <node TEXT="6.20 Detach or Kill [detach, kill]" ID="ID_1677620132" CREATED="1718642437570" MODIFIED="1718642446182"/>
-<node TEXT="6.21 SDL (Specification and Decription Language)" ID="ID_512326598" CREATED="1718642450742" MODIFIED="1718642463974">
+<node TEXT="6.21 SDL (Specification and Decription Language)" FOLDED="true" ID="ID_512326598" CREATED="1718642450742" MODIFIED="1718642463974">
 <node TEXT="6.21.01 Table of SDL Shape Name" ID="ID_762182654" CREATED="1718642463978" MODIFIED="1718642472159"/>
 <node TEXT="6.21.02 SDL using Final Separator (Deprecated form)" ID="ID_1700307035" CREATED="1718642477194" MODIFIED="1718642489049"/>
 <node TEXT="6.21.03 SLD using Normal separator and Stereotype (Current official form)" ID="ID_1141199301" CREATED="1718642489407" MODIFIED="1718642511184"/>
 </node>
 <node TEXT="6.22 Complete Example" ID="ID_1670166274" CREATED="1718642515338" MODIFIED="1718642519992"/>
-<node TEXT="6.23 Condition Style" ID="ID_1222213733" CREATED="1718642524794" MODIFIED="1718642531013">
+<node TEXT="6.23 Condition Style" FOLDED="true" ID="ID_1222213733" CREATED="1718642524794" MODIFIED="1718642531013">
 <node TEXT="6.23.01 Inside Sytle (by default)" ID="ID_1593384294" CREATED="1718642531014" MODIFIED="1718642539067"/>
 <node TEXT="6.23.02 Diamond Style" ID="ID_227940643" CREATED="1718642542480" MODIFIED="1718642548725">
 <node TEXT="skinparam conditionStyle diamond" ID="ID_632353062" CREATED="1718642587689" MODIFIED="1718642596738"/>
@@ -1003,7 +1068,7 @@
 <node TEXT="skinparam conditionStyle InsideDiamond" ID="ID_171492708" CREATED="1718642599895" MODIFIED="1718642608410"/>
 </node>
 </node>
-<node TEXT="6.24 Condition End Style" ID="ID_1529685893" CREATED="1718642612140" MODIFIED="1718642617206">
+<node TEXT="6.24 Condition End Style" FOLDED="true" ID="ID_1529685893" CREATED="1718642612140" MODIFIED="1718642617206">
 <node TEXT="6.24.01 Diamond Style (by default)" ID="ID_1775823415" CREATED="1718642621564" MODIFIED="1718642640900">
 <node TEXT="skinparam ConditionEndStyle diamond" ID="ID_841178913" CREATED="1718642640902" MODIFIED="1718642654610"/>
 </node>
@@ -1011,7 +1076,7 @@
 <node TEXT="skinparam ConditionEndStyle hline" ID="ID_1122099474" CREATED="1718642667580" MODIFIED="1718642677446"/>
 </node>
 </node>
-<node TEXT="6.25 Using (global) Style" ID="ID_1008198287" CREATED="1718642685861" MODIFIED="1718642694281">
+<node TEXT="6.25 Using (global) Style" FOLDED="true" ID="ID_1008198287" CREATED="1718642685861" MODIFIED="1718642694281">
 <node TEXT="6.25.01 Without Style (by default)" ID="ID_609358843" CREATED="1718642694283" MODIFIED="1718642704598"/>
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
