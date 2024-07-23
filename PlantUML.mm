@@ -987,6 +987,24 @@
 </html>
 </richcontent>
 </node>
+<node ID="ID_1460821546" CREATED="1721718844777" MODIFIED="1721718886661"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Use the <span style="font-weight: bold;">-P</span><span style="font-weight: normal;">&#xa0;command-line option to specify the pragma: </span>
+    </p>
+    <p>
+      <span style="font-weight: normal; font-style: italic;">java -jar plantuml.jar -P useVerticalIf=on</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 <node TEXT="6.04 Switch and Case [switch, case, endswitch]" POSITION="bottom_or_right" ID="ID_1131340221" CREATED="1718627427229" MODIFIED="1718627444024"/>

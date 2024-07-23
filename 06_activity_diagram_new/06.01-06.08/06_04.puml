@@ -1,0 +1,28 @@
+@startuml
+
+start
+
+switch (test?)
+
+case ( condition A )
+    :Text 1;
+    :more action;
+    switch (small check?)
+    case (1)
+        :action1;
+    case (2)
+        :action2;
+    endswitch
+case ( condition B )
+    :Text 2;
+case ( condition C )
+    :Text 3;
+case ( condition D )
+    :Text 4;
+case ( condition E )
+    :Text 5;
+
+endswitch
+
+stop
+@enduml
