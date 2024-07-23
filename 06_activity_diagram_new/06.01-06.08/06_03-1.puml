@@ -1,0 +1,14 @@
+@startuml
+
+start
+
+if (Graphiviz installed?) then (yes)
+    :process all
+    diagrams;
+else (no)
+    :process only\n__sequence__ and __activity__ diagrams;
+endif
+
+stop
+
+@enduml
