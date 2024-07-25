@@ -3,7 +3,9 @@
 <div align="center">
 <!-- <p><a href="https://www.nuget.org/packages/MiniExcel"><img src="https://img.shields.io/nuget/v/MiniExcel.svg" alt="NuGet"></a>  <a href="https://www.nuget.org/packages/MiniExcel"><img src="https://img.shields.io/nuget/dt/MiniExcel.svg" alt=""></a> -->
 <a href="https://ci.appveyor.com/project/yasenstar/plantuml-in-action/branch/master"><img src="https://ci.appveyor.com/api/projects/status/b2vustrwsuqx45f4/branch/master?svg=true" alt="Build status"></a>
-<a href="https://github.com/yasenstar/PlantUML_in_Action" rel="nofollow"><img src="https://img.shields.io/github/stars/yasenstar/plantuml-in-action?logo=github" alt="GitHub stars"></a>
+<a href="https://github.com/yasenstar/PlantUML_in_Action" rel="nofollow">
+<!-- <img src="https://img.shields.io/github/stars/yasenstar/plantuml-in-action?logo=github" alt="GitHub stars"> -->
+</a>
 <!-- <a href="https://www.nuget.org/packages/MiniExcel"><img src="https://img.shields.io/badge/.NET-%3E%3D%204.5-red.svg" alt="version"></a> -->
 </p>
 </div>
