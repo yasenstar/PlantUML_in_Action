@@ -1,0 +1,12 @@
+@startuml
+
+skinparam activityShape<< Check >> octagon
+
+(*) --> "Graphviz installed?" << Check >>
+"Graphviz installed?" -->[yes] "process all diagrams"
+"Graphviz installed?" -->[no] "process only"
+"process all diagrams" --> " " << Check >>
+"process only" --> " "
+" " --> (*)
+
+@enduml
