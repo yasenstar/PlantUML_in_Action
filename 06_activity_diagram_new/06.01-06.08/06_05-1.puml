@@ -1,0 +1,10 @@
+@startuml
+start
+if (condition?) then
+    :error;
+    stop
+endif
+#palegreen:task;
+' stop
+end
+@enduml

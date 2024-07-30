@@ -1,0 +1,11 @@
+@startuml
+title use "kill" to stop precise action
+start
+if (condition?) then
+    #pink:error;
+    kill
+endif
+#palegreen:task;
+' stop
+end
+@enduml

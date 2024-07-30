@@ -1,0 +1,11 @@
+@startuml
+title use "detach" to stop precise action
+start
+if (condition?) then
+    #pink:error;
+    detach
+endif
+#palegreen:task;
+' stop
+end
+@enduml
