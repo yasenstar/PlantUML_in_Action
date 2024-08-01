@@ -1,0 +1,17 @@
+@startuml
+title 6.11.1 split
+start
+:new action;
+split
+    :A;
+split again
+    :B;
+split again
+    :C;
+split again
+    :D;
+    :E;
+end split
+:F;
+end
+@enduml

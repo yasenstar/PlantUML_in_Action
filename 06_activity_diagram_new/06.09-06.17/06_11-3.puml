@@ -1,0 +1,20 @@
+@startuml
+title 6.11.3 multi-end
+start
+split
+    :A;
+    kill
+split again
+    :B;
+    detach
+split again
+    :C;
+    :Delay;
+    (Y)
+    kill
+split again
+    stop
+split again
+    end
+end split
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+title 6.11.2 multi-start
+' start
+split
+    -[hidden]->
+    :A;
+    split
+        :D;
+        :another;
+    split again
+        :E;
+    end split
+split again
+    -[hidden]->
+    :B;
+    :new;
+split again
+    -[hidden]->
+    :C;
+end split
+stop
+@enduml
