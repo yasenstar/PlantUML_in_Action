@@ -1,0 +1,7 @@
+@startuml
+start
+partition #AAAAAA/white testPartition {
+    #blue-green:testActivity;
+}
+end
+@enduml
