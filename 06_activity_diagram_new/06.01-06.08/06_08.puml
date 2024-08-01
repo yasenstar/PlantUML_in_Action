@@ -1,0 +1,21 @@
+@startuml
+title Point Two Queries to Same Activity with 'goto'
+start
+if (Test Question?) then (yes)
+    ' space label only for alignment
+    label sp_label0
+    label sp_label1
+    ' real label
+    label lab
+    :Shared;
+else (no)
+    if (Second Test Question?) then (yes)
+        label sp_label2
+        goto sp_label1
+    else (no)
+        :nonShared;
+    endif
+endif
+:merge;
+stop
+@enduml
