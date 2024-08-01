@@ -1,0 +1,11 @@
+@startuml
+title 6.10.2 "fork" with "end merge"
+start
+fork
+    :action 1;
+fork again
+    :action 2;
+    :action 3;
+end merge
+stop
+@enduml

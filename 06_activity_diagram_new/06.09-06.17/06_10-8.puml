@@ -1,0 +1,17 @@
+@startuml
+title https://th.bing.com/th/id/OIP.c07QD6DBg2-ny1ytcqHScQHaIB?rs=1&pid=ImgDetMain
+start
+:Receive Order;
+fork
+    :Fill Order;
+    if () then ([rush order])
+        :Arrange Overnight\nDelivery;
+    else ([else])
+        :Arrange Regular\nDelivery;
+    endif
+fork again
+    :Send Invoice;
+    :Receive Payment;
+end fork
+stop
+@enduml

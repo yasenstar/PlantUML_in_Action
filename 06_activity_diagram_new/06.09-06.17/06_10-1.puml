@@ -1,0 +1,11 @@
+@startuml
+title 6.10.1 Simple "fork"
+start
+fork
+    :action 1;
+fork again
+    :action 2;
+    :action 3;
+end fork
+stop
+@enduml

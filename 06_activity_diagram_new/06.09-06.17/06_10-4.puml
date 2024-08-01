@@ -1,0 +1,13 @@
+@startuml
+start
+:coding;
+fork
+    :action 1;
+fork again
+    :action 2;
+    end
+fork again
+    :action 3;
+end merge
+stop
+@enduml
