@@ -1,0 +1,15 @@
+@startuml
+title 6.9.3 Infinite while loop (detach, hidden)
+start
+if (condition1?) then (yes)
+    while (loop forever)
+        :step 2;
+    endwhile
+    -[hidden]->
+    detach
+else (n0)
+    :end normally;
+    stop
+endif
+
+@enduml

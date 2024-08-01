@@ -1,0 +1,15 @@
+@startuml
+title 6.9.1-2 Simple While Loop with Labels
+start
+
+'basic While loop structure
+' while ()
+' endwhile
+
+while (data available?) is (not empty)
+    :read data;
+    :generate diagrams;
+endwhile (empty)
+
+stop
+@enduml

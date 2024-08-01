@@ -1,0 +1,10 @@
+@startuml
+title 6.9.2 While loop with backward action
+start
+while (check file size?) is (not empty)
+    :read file;
+    backward :log;
+endwhile (empty)
+:close file;
+stop
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+title 6.9.1 Simple While Loop
+start
+
+'basic While loop structure
+' while ()
+' endwhile
+
+while (data available?)
+    :read data;
+    :generate diagrams;
+endwhile
+
+stop
+@enduml
