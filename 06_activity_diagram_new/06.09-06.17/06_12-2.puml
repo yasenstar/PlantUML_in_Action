@@ -1,0 +1,9 @@
+@startuml
+start
+repeat :Enter data;
+:Submit;
+backward :Warning;
+note right: Note
+repeat while (Valid?) is (No) not (Yes)
+stop
+@enduml
