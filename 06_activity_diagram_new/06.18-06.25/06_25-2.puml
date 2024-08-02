@@ -1,0 +1,23 @@
+@startuml
+start
+:init;
+-> test of color;
+if (colors) is (red) then
+    :print red;
+else
+    :print not red;
+    note right: no color
+endif
+split
+    group End1
+        :end1;
+    end group
+    -> this is the end1;
+split again
+    partition End2 {
+        :end2;
+    }
+    -> this is the end2;
+end split
+end
+@enduml

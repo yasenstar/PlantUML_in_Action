@@ -1,0 +1,71 @@
+@startuml
+
+<style>
+activityDiagram {
+    BackgroundColor #33FFAA
+    BorderColor #red
+    FontColor #AA0000
+    FontName arial
+
+
+    diamond {
+        BackgroundColor #ccf
+        LineColor #00FF00
+        FontColor green
+        FontName arial
+        FontSize 20
+    }
+
+    arrow {
+        FontColor blue
+        FontName arial
+        FontSize 15
+    }
+
+    group {
+        LineColor red
+        FontColor purple
+        RoundCorner 20
+        BackgroundColor PeachPuff
+    }
+
+    partition {
+        LineColor green
+        FontColor purple
+        RoundCorner 20
+        BackgroundColor LightBlue
+    }
+
+    note {
+        FontColor blue
+        BackgroundColor #aad
+    }
+}
+document {
+    FontColor Yellow
+    BackgroundColor #aad
+}
+</style>
+title Global Style
+start
+:init;
+-> test of color;
+if (colors) is (red) then
+    :print red;
+else
+    :print not red;
+    note right: no color
+endif
+split
+    group End1
+        :end1;
+    end group
+    -> this is the end1;
+split again
+    partition End2 {
+        :end2;
+    }
+    -> this is the end2;
+end split
+end
+@enduml
