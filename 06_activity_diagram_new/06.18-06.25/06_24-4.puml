@@ -1,0 +1,12 @@
+@startuml
+skinparam ConditionEndStyle hline
+start
+:A;
+if (decision) is (yes) then
+    :B1;
+else (no)
+    :B2;
+endif
+:C;
+stop
+@enduml
