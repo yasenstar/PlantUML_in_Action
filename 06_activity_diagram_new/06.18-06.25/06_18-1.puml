@@ -1,0 +1,14 @@
+@startuml
+start
+group Initialization
+    :read config file;
+    :init internal variable;
+end group
+group Running Group
+    group User Interaction
+        :wait for user interaction;
+    end group    
+    :print information;
+end group
+stop
+@enduml

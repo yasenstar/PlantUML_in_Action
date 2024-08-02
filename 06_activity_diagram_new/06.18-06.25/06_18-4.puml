@@ -1,0 +1,14 @@
+@startuml
+start
+partition #lightgreen "[[http://plantuml.com Initialization]]" {
+    :read config file on [[http://plantuml.com plantuml_website]];
+    :init internal variable;
+}
+partition Running Group {
+    group #AAFFFF User Interaction
+        :wait for user interaction;
+    end group 
+    :print information;
+}
+stop
+@enduml

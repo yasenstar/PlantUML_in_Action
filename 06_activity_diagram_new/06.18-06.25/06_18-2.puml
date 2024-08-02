@@ -1,0 +1,14 @@
+@startuml
+start
+partition Initialization {
+    :read config file;
+    :init internal variable;
+}
+partition Running Group {
+    group User Interaction
+        :wait for user interaction;
+    end group 
+    :print information;
+}
+stop
+@enduml

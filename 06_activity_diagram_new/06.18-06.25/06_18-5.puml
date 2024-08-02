@@ -1,0 +1,24 @@
+@startuml
+start
+group Group
+    :Activity;
+end group
+floating note right: Note on Group
+partition Partition {
+    :Activity;
+}
+floating note: Note on Partition
+package Package {
+    :Activity;
+}
+floating note: Note on Package
+rectangle Rectangle {
+    :Activity;
+}
+floating note: Note on Rectangle
+card Card {
+    :Activity;
+}
+floating note: Note on Card
+end
+@enduml

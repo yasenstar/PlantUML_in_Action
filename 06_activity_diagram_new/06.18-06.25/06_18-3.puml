@@ -1,0 +1,14 @@
+@startuml
+start
+partition #lightgreen Initialization {
+    :read config file;
+    :init internal variable;
+}
+partition Running Group {
+    group #AAFFFF User Interaction
+        :wait for user interaction;
+    end group 
+    :print information;
+}
+stop
+@enduml
