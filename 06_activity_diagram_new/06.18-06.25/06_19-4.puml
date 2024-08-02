@@ -1,0 +1,31 @@
+@startuml
+title Sales Process using Swimlanes
+
+' definition part
+|#Pink|S1| Sales
+|#Green|P1| Production
+|#Yellow|P2| Packing
+|#LightBlue|S2| Shipping
+
+' diagraming part
+|S1|
+    start
+    :Receive Enquiry;
+    split
+        |P1|
+            :Check Lead Time;
+    split again
+        |S2|
+            :Check Shipping Costs;
+    end split
+|S1|
+    :Quote to Customer;
+    :Take Order;
+|P1|
+    :Make Product;
+|P2|
+    :Packing Goods;
+|S2|
+    :Shipping and Delivery;
+    stop
+@enduml

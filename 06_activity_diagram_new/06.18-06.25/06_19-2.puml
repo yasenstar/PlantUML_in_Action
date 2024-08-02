@@ -1,0 +1,18 @@
+@startuml
+|#LightPink|Actor_For_red|
+start
+if (color?) is (red) then
+    #Orange:<b>action red</b>;
+    :foo1;
+else (not red)
+    |#LightGray|Actor_For_not_red|
+    #gray:action not red;
+    :foo2;
+endif
+|Next_Actor|
+    #lightblue:foo3;
+    :foo4;
+|Final_Actor|
+    #green:foo5;
+    stop
+@enduml

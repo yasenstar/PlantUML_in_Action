@@ -1,0 +1,19 @@
+@startuml
+
+' definition part
+|#palegreen|f| fisherman
+|c| cook
+|#gold|e| eater
+
+' diagraming
+|f|
+    start
+    :go fish;
+|c|
+    :fry fish;
+|f|
+    :fish again;
+|e|
+    :eat fish;
+    stop
+@enduml
