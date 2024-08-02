@@ -1,0 +1,10 @@
+@startuml
+title 6.23.1 Condition Inside Style (default)
+start
+repeat
+    :act1;
+    :act2;
+repeat while (**end**)
+:act3;
+stop
+@enduml
