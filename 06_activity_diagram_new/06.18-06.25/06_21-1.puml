@@ -1,0 +1,27 @@
+@startuml
+title 6.21.2 SDL using final separator (deprecated form)
+
+:ready;
+:next(o)|
+:Receiving;
+split
+    :nak(i)<
+    :ack(o)>
+split again
+    :ack(i)<
+    :next(o)\non several lines|
+    :i:=i+1]
+    :ack(o)>
+split again
+    :err()<
+    :nak(o)>
+split again
+    :foo/
+split again
+    :bar\\
+split again
+    :i>5}
+    stop
+end split
+:finish;
+@enduml

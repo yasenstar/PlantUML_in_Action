@@ -1,0 +1,30 @@
+@startuml
+title **SDL Diagram** (https://www.rff.com/sdl_diagram.png)
+:state;
+:from control; <<procedure>>
+:to network; <<output>>
+:state;
+split
+    :from network; <<input>>
+    :to control; <<procedure>>
+    :state;
+    kill
+split again
+    :from network; <<input>>
+    :to control; <<procedure>>
+    :state;
+    split
+        :from control; <<procedure>>
+        :to network; <<output>>
+        :state;
+        kill
+    split again
+        :from network; <<input>>
+        :to control; <<procedure>>
+    end split
+split again
+    :from network; <<input>>
+    :to control; <<procedure>>
+end split
+:state;
+@enduml
