@@ -1,0 +1,9 @@
+@startuml
+start
+skinparam ArrowHeadColor none
+repeat :Enter data;
+    :Submit;
+    backward :Warning;
+repeat while (Valid?) is (No) not (Yes)
+stop
+@enduml

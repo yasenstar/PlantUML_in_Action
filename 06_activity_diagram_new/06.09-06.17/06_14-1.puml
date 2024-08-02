@@ -1,0 +1,7 @@
+@startuml
+start
+skinparam ArrowHeadColor none
+:Hello World;
+:This is one defined on\nserveral **lines**;
+stop
+@enduml
