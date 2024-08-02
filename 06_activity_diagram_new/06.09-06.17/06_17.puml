@@ -1,0 +1,10 @@
+@startuml
+title 6.16 Connector
+start
+:Some activities;
+#lightblue:(B)
+:Other activities
+more things;
+#AA0000:(G)
+stop
+@enduml

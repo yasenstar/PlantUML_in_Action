@@ -1,0 +1,10 @@
+@startuml
+title 6.16 Connector
+start
+:Some activities;
+(A)
+detach
+(A)
+:Other activities;
+stop
+@enduml
