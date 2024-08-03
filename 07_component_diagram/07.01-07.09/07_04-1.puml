@@ -1,0 +1,21 @@
+@startuml
+component Component as C
+
+note top of C: A top note
+
+note left of C
+    A left not can
+    be on
+    several lines
+end note
+
+note right of C: A right note
+
+note bottom of C
+    aaaa
+    bbbb
+    ccc
+    dddd
+end note
+
+@enduml

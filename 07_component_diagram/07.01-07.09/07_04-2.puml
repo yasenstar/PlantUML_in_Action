@@ -1,0 +1,20 @@
+@startuml
+component Component1 as C
+component Component2 as D
+interface Interface1 as E
+
+note as N
+    A floating note can also be
+    on
+    several lines
+end note
+
+C .. N
+
+D -- N
+
+' N - E
+
+E <-> N
+
+@enduml
