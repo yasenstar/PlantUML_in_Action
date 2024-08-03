@@ -1,0 +1,11 @@
+@startuml
+() "First Interface"
+() "Second Interface" as Interf2
+interface Interf3
+interface "Last\ninterface" as Interf4
+
+component comp1
+remove comp1
+
+footer //Adding "component" to force diagram to be a **component diagram**//
+@enduml

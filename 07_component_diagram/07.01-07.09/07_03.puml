@@ -1,0 +1,10 @@
+@startuml
+title My first Component Diagram
+component [First Component] as comp1
+interface DataAccess as data
+interface HTTP as http
+
+data - comp1: access
+comp1 --> http: use
+
+@enduml

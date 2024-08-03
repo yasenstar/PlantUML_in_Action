@@ -1,0 +1,6 @@
+@startuml
+[First Component]
+[Second Component] as Comp2
+component Comp3
+component [Last\nComponent] as Comp4
+@enduml

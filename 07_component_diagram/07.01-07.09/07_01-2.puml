@@ -1,0 +1,12 @@
+@startuml
+component [$C1]
+component [$C2] $C2
+component [$C3] as dollarC3
+remove $C1
+' remove $C2
+hide $C2
+' restore $C2
+show $C2
+remove dollarC3
+restore dollarC3
+@enduml
