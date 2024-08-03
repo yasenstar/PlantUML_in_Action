@@ -106,7 +106,7 @@
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>
 <node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
-<node TEXT="Structural (Static) UML Modeling" FOLDED="true" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
+<node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
 <node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" FOLDED="true" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1717354799804"/>
@@ -545,18 +545,75 @@
 <arrowlink DESTINATION="ID_588971608"/>
 </node>
 </node>
-<node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
-<node TEXT="7.01 Components" ID="ID_1036640811" CREATED="1718642734800" MODIFIED="1718642739809">
+<node TEXT="07 Component Diagram" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
+<node TEXT="Basis" ID="ID_290864243" CREATED="1722684210284" MODIFIED="1722684215937">
+<node TEXT="7.01 Components" POSITION="bottom_or_right" ID="ID_1036640811" CREATED="1718642734800" MODIFIED="1718642739809">
 <node TEXT="7.01.01 Naming Exceptions" ID="ID_762125154" CREATED="1718642742723" MODIFIED="1718642749622"/>
 </node>
-<node TEXT="7.02 Interfaces" ID="ID_556248321" CREATED="1718642757336" MODIFIED="1718642760895"/>
-<node TEXT="7.03 Basic Example" ID="ID_1418936785" CREATED="1718642764308" MODIFIED="1718642769014"/>
-<node TEXT="7.04 Using Notes" ID="ID_793169446" CREATED="1718642769427" MODIFIED="1718642772534"/>
+<node TEXT="7.02 Interfaces" POSITION="bottom_or_right" ID="ID_556248321" CREATED="1718642757336" MODIFIED="1718642760895"/>
+<node TEXT="7.03 Basic Example" POSITION="bottom_or_right" ID="ID_1418936785" CREATED="1718642764308" MODIFIED="1718642769014"/>
 </node>
-<node TEXT="08 Deployment Diagram" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1720591157962" LINK="https://en.wikipedia.org/wiki/Deployment_diagram"/>
+<node TEXT="Note and Description" ID="ID_1727764283" CREATED="1722684391402" MODIFIED="1722684402692">
+<node TEXT="7.04 Using Notes" POSITION="bottom_or_right" ID="ID_793169446" CREATED="1718642769427" MODIFIED="1718642772534"/>
+<node TEXT="7.10 Long Description" POSITION="bottom_or_right" ID="ID_380628654" CREATED="1722684182596" MODIFIED="1722684189489"/>
 </node>
-<node TEXT="Behavioral (Dynamic) UML Modeling" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1720591547825">
-<arrowlink DESTINATION="ID_1749037007" MIDDLE_LABEL="Behavioral"/>
+<node TEXT="Component Notation" ID="ID_1457280862" CREATED="1722684192083" MODIFIED="1722684200590">
+<node TEXT="7.07 Use UML2 Notation" POSITION="bottom_or_right" ID="ID_173374377" CREATED="1722684121800" MODIFIED="1722684126838">
+<node TEXT="by default from v1.2020.13-14 UML2 notation is used" ID="ID_1158852256" CREATED="1722684133146" MODIFIED="1722684148700"/>
+</node>
+<node TEXT="7.08 Use UML1 Notation" POSITION="bottom_or_right" ID="ID_1633820862" CREATED="1722684151907" MODIFIED="1722684157451"/>
+<node TEXT="7.09 Use Rectangle Notation (remove UML notation)" POSITION="bottom_or_right" ID="ID_153271274" CREATED="1722684165134" MODIFIED="1722684181430"/>
+</node>
+<node TEXT="Styles" ID="ID_847280378" CREATED="1722684357999" MODIFIED="1722684360414">
+<node TEXT="7.05 Grouping Components" POSITION="bottom_or_right" ID="ID_1242935270" CREATED="1722684051513" MODIFIED="1722684060720"/>
+<node TEXT="7.06 Changing Arrows Direction" POSITION="bottom_or_right" ID="ID_1245075936" CREATED="1722684110389" MODIFIED="1722684116938"/>
+<node TEXT="7.13 Skinparam" POSITION="bottom_or_right" ID="ID_1297466326" CREATED="1722684288408" MODIFIED="1722684295918"/>
+<node TEXT="7.14 Specific SkinParameter" POSITION="bottom_or_right" ID="ID_1493529758" CREATED="1722684299471" MODIFIED="1722684309164"/>
+<node TEXT="7.12 Using Sprite in Stereotype" POSITION="bottom_or_right" ID="ID_1154842227" CREATED="1722684227541" MODIFIED="1722684287686"/>
+<node TEXT="7.11 Individual Colors" POSITION="bottom_or_right" ID="ID_1115182604" CREATED="1722684267920" MODIFIED="1722684281654"/>
+</node>
+<node TEXT="Display Related" ID="ID_1863171373" CREATED="1722684348133" MODIFIED="1722684352612">
+<node TEXT="7.15 Hide or Remove Unlinked Component" POSITION="bottom_or_right" ID="ID_1933376505" CREATED="1722684312459" MODIFIED="1722684323730"/>
+<node TEXT="7.16 Hide, Remove or Restore Tagged Component or Wildcard" POSITION="bottom_or_right" ID="ID_1990986210" CREATED="1722684326660" MODIFIED="1722684344696"/>
+<node TEXT="7.17 Display JSON Data on Component Diagram" POSITION="bottom_or_right" ID="ID_1321885849" CREATED="1722684421867" MODIFIED="1722684431888"/>
+</node>
+<node TEXT="7.18 Port [port, portIn, portOut]" ID="ID_1418102515" CREATED="1722684442160" MODIFIED="1722684451070"/>
+</node>
+<node TEXT="08 Deployment Diagram" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1720591157962" LINK="https://en.wikipedia.org/wiki/Deployment_diagram">
+<node TEXT="Declaring" ID="ID_143141775" CREATED="1722684794967" MODIFIED="1722684798936">
+<node TEXT="8.01 Declaring Element" POSITION="bottom_or_right" ID="ID_619971608" CREATED="1722684457500" MODIFIED="1722684465507"/>
+<node TEXT="8.02 Declaring Element (using short form)" POSITION="bottom_or_right" ID="ID_1246692484" CREATED="1722684475913" MODIFIED="1722684488073"/>
+</node>
+<node TEXT="Linking/Arrow and Arrow / Elements Styles" ID="ID_963413688" CREATED="1722684803549" MODIFIED="1722684832881">
+<node TEXT="8.03 Linking or Arrow" POSITION="bottom_or_right" ID="ID_1390270239" CREATED="1722684490881" MODIFIED="1722684495211"/>
+<node TEXT="8.04 Bracketed Arrow Style" POSITION="bottom_or_right" ID="ID_262444354" CREATED="1722684502564" MODIFIED="1722684516280"/>
+<node TEXT="8.05 Change Arrow Color and Style (inline style)" POSITION="bottom_or_right" ID="ID_20902991" CREATED="1722684523231" MODIFIED="1722684535683"/>
+<node TEXT="8.06 Change Element Color and Style (inline style)" POSITION="bottom_or_right" ID="ID_303013971" CREATED="1722684540885" MODIFIED="1722684549738"/>
+</node>
+<node TEXT="Packages or Nested" ID="ID_820595514" CREATED="1722684841651" MODIFIED="1722684847175">
+<node TEXT="8.07 Nestable Elements" POSITION="bottom_or_right" ID="ID_164147693" CREATED="1722684555447" MODIFIED="1722684562673"/>
+<node TEXT="8.08 Packages and Nested Elements" POSITION="bottom_or_right" ID="ID_680296981" CREATED="1722684565296" MODIFIED="1722684573206"/>
+</node>
+<node TEXT="Alias and Styles" ID="ID_693759478" CREATED="1722684852134" MODIFIED="1722684856187">
+<node TEXT="8.09 Alias" POSITION="bottom_or_right" ID="ID_860991111" CREATED="1722684583955" MODIFIED="1722684587495"/>
+<node TEXT="8.10 Round Corner" POSITION="bottom_or_right" ID="ID_1928620195" CREATED="1722684604995" MODIFIED="1722684610758"/>
+<node TEXT="8.11 Specific SkinParameter" POSITION="bottom_or_right" ID="ID_1084243138" CREATED="1722684610969" MODIFIED="1722684617764"/>
+</node>
+<node TEXT="Appendix" ID="ID_733408675" CREATED="1722684715288" MODIFIED="1722684717181">
+<node TEXT="8.12 Appendix: All type of Arrow Line" POSITION="bottom_or_right" ID="ID_1780681440" CREATED="1722684623760" MODIFIED="1722684631275"/>
+<node TEXT="8.13 Appendix: All type of arrow head or &apos;0&apos; arrow" POSITION="bottom_or_right" ID="ID_956975806" CREATED="1722684632784" MODIFIED="1722684646065"/>
+<node TEXT="8.14 Appendix: Test of inline style on all element" POSITION="bottom_or_right" ID="ID_335591997" CREATED="1722684651465" MODIFIED="1722684663449"/>
+<node TEXT="8.15 Appendix: Test of style on all element" POSITION="bottom_or_right" ID="ID_1938971949" CREATED="1722684668140" MODIFIED="1722684680068"/>
+<node TEXT="8.16 Appendix: Test of stereotype with style on all element" POSITION="bottom_or_right" ID="ID_927353333" CREATED="1722684696166" MODIFIED="1722684711411"/>
+</node>
+<node TEXT="Others" ID="ID_30065214" CREATED="1722684865183" MODIFIED="1722684866882">
+<node TEXT="8.17 Display JSON Data on Deployment Diagram" POSITION="bottom_or_right" ID="ID_1386582686" CREATED="1722684724911" MODIFIED="1722684741419"/>
+<node TEXT="8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram" POSITION="bottom_or_right" ID="ID_1618848251" CREATED="1722684747993" MODIFIED="1722684772569"/>
+<node TEXT="9.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1722684785887"/>
+</node>
+</node>
+</node>
+<node TEXT="Behavioral (Dynamic) UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
 <node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
 <node TEXT="Characteristics of Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1437830674" CREATED="1716734224598" MODIFIED="1716737761423" VGAP_QUANTITY="3 pt">
@@ -928,7 +985,7 @@
 </node>
 <node TEXT="5.12 Complete Example" ID="ID_151629836" CREATED="1718627336567" MODIFIED="1718627341562"/>
 </node>
-<node TEXT="06 Activity Diagram (New Syntax)" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
+<node TEXT="06 Activity Diagram (New Syntax)" FOLDED="true" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
 <node TEXT="6.01 Simple Action" FOLDED="true" ID="ID_1888938828" CREATED="1718627347868" MODIFIED="1718627381652">
 <node TEXT="Activities label starts with : and ends with ;" ID="ID_866524595" CREATED="1718627385335" MODIFIED="1720770343113"/>
 </node>
@@ -1085,8 +1142,11 @@
 <node TEXT="Alias: |[#&lt;color&gt;|]&lt;swimlane_alias&gt;| &lt;swimlane_title&gt;" ID="ID_1660059142" CREATED="1718642362897" MODIFIED="1718642433541"/>
 </node>
 <node TEXT="6.20 Detach or Kill [detach, kill]" ID="ID_1677620132" CREATED="1718642437570" MODIFIED="1718642446182"/>
-<node TEXT="6.21 SDL (Specification and Decription Language)" ID="ID_512326598" CREATED="1718642450742" MODIFIED="1722624163761" LINK="https://en.wikipedia.org/wiki/Specification_and_Description_Language">
-<node TEXT="Overview of SDL" ID="ID_1046079973" CREATED="1722625308133" MODIFIED="1722625315674" LINK="https://www.sdl-forum.org/SDL/Overview_of_SDL.pdf"/>
+<node TEXT="6.21 SDL (Specification and Decription Language)" FOLDED="true" ID="ID_512326598" CREATED="1718642450742" MODIFIED="1722624163761" LINK="https://en.wikipedia.org/wiki/Specification_and_Description_Language">
+<node TEXT="SDL Forum" ID="ID_1140309223" CREATED="1722629246456" MODIFIED="1722629252050" LINK="https://www.sdl-forum.org/"/>
+<node TEXT="Overview of SDL" ID="ID_1046079973" CREATED="1722625308133" MODIFIED="1722625315674" LINK="https://www.sdl-forum.org/SDL/Overview_of_SDL.pdf">
+<node TEXT="Also available in GitHub" ID="ID_1188917420" CREATED="1722625336507" MODIFIED="1722625350393" LINK="https://github.com/yasenstar/PlantUML_in_Action/blob/main/docs/activity-diagram/Overview_of_SDL.pdf"/>
+</node>
 <node TEXT="6.21.01 Table of SDL Shape Name" ID="ID_762182654" CREATED="1718642463978" MODIFIED="1718642472159"/>
 <node TEXT="6.21.02 SDL using Final Separator (Deprecated form)" ID="ID_1700307035" CREATED="1718642477194" MODIFIED="1718642489049"/>
 <node TEXT="6.21.03 SLD using Normal separator and Stereotype (Current official form)" ID="ID_1141199301" CREATED="1718642489407" MODIFIED="1718642511184"/>
@@ -1109,7 +1169,7 @@
 <node TEXT="skinparam ConditionEndStyle hline" ID="ID_1122099474" CREATED="1718642667580" MODIFIED="1718642677446"/>
 </node>
 </node>
-<node TEXT="6.25 Using (global) Style" ID="ID_1008198287" CREATED="1718642685861" MODIFIED="1718642694281">
+<node TEXT="6.25 Using (global) Style" FOLDED="true" ID="ID_1008198287" CREATED="1718642685861" MODIFIED="1718642694281">
 <node TEXT="6.25.01 Without Style (by default)" ID="ID_609358843" CREATED="1718642694283" MODIFIED="1718642704598"/>
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
@@ -1118,7 +1178,7 @@
 <node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)"/>
 </node>
 </node>
-<node TEXT="Non-UML Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
+<node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
 <node TEXT="11 Display JSON Data" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1716658810975"/>
 <node TEXT="12 Display YAML Data" POSITION="bottom_or_right" ID="ID_430003065" CREATED="1716658813635" MODIFIED="1716658819766"/>
 <node TEXT="13 Network Diagram (nwdiag)" POSITION="bottom_or_right" ID="ID_1607808120" CREATED="1716658821719" MODIFIED="1716658834915"/>

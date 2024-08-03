@@ -42,7 +42,7 @@
 
 # UML Related Diagrams
 
-## Static UML Modeling
+## Structural (Static) UML Modeling
 
 ### 02 Use Case Diagram
 
@@ -502,23 +502,115 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 
 #### 4.07 Program (or project) evaluation and review technique (PERT) with Map
 
+##### Sample PERT
+
 #### 4.08 Display JSON Data on Class or Object Diagram
  (see:11 Display JSON Data)
 ### 07 Component Diagram
 
-#### 7.01 Components
+#### Basis
 
-##### 7.01.01 Naming Exceptions
+##### 7.01 Components
 
-#### 7.02 Interfaces
+###### 7.01.01 Naming Exceptions
 
-#### 7.03 Basic Example
+##### 7.02 Interfaces
 
-#### 7.04 Using Notes
+##### 7.03 Basic Example
+
+#### Note and Description
+
+##### 7.04 Using Notes
+
+##### 7.10 Long Description
+
+#### Component Notation
+
+##### 7.07 Use UML2 Notation
+
+###### by default from v1.2020.13-14 UML2 notation is used
+
+##### 7.08 Use UML1 Notation
+
+##### 7.09 Use Rectangle Notation (remove UML notation)
+
+#### Styles
+
+##### 7.05 Grouping Components
+
+##### 7.06 Changing Arrows Direction
+
+##### 7.13 Skinparam
+
+##### 7.14 Specific SkinParameter
+
+##### 7.12 Using Sprite in Stereotype
+
+##### 7.11 Individual Colors
+
+#### Display Related
+
+##### 7.15 Hide or Remove Unlinked Component
+
+##### 7.16 Hide, Remove or Restore Tagged Component or Wildcard
+
+##### 7.17 Display JSON Data on Component Diagram
+
+#### 7.18 Port [port, portIn, portOut]
 
 ### 08 Deployment Diagram
 
-## Dynamic UML Modeling
+#### Declaring
+
+##### 8.01 Declaring Element
+
+##### 8.02 Declaring Element (using short form)
+
+#### Linking/Arrow and Arrow / Elements Styles
+
+##### 8.03 Linking or Arrow
+
+##### 8.04 Bracketed Arrow Style
+
+##### 8.05 Change Arrow Color and Style (inline style)
+
+##### 8.06 Change Element Color and Style (inline style)
+
+#### Packages or Nested
+
+##### 8.07 Nestable Elements
+
+##### 8.08 Packages and Nested Elements
+
+#### Alias and Styles
+
+##### 8.09 Alias
+
+##### 8.10 Round Corner
+
+##### 8.11 Specific SkinParameter
+
+#### Appendix
+
+##### 8.12 Appendix: All type of Arrow Line
+
+##### 8.13 Appendix: All type of arrow head or '0' arrow
+
+##### 8.14 Appendix: Test of inline style on all element
+
+##### 8.15 Appendix: Test of style on all element
+
+##### 8.16 Appendix: Test of stereotype with style on all element
+
+#### Others
+
+##### 8.17 Display JSON Data on Deployment Diagram
+
+##### 8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram
+
+##### 9.19 Port [port, portIn, portOut]
+
+## Behavioral (Dynamic) UML Modeling
 
 ### 01 Sequence Diagram
 
@@ -841,7 +933,7 @@ Examples of All Arrow Type
 ### 05 Activity Diagram (legacy)
 
 #### 5.01 Simple Action
-
+ (see:6.01 Simple Action6.02 Start/Stop/End)
 ##### use (*) for starting point and ending point
 
 ##### use (*top) to force starting point to be at the top
@@ -857,7 +949,7 @@ Examples of All Arrow Type
 ##### e.g. -down->
 
 #### 5.04 Branches
-
+ (see:6.03 Conditional6.04 Switch and Case [switch, case, endswitch]6.05 Conditional with Stop on an Action [kill, detach])
 ##### use if/then/else keyword
 
 #### 5.05 More on Branches
@@ -868,17 +960,36 @@ Examples of All Arrow Type
 
 #### 5.07 Long Action Description
 
-##### put "xxx" with as keyword
+##### <size:xx></size>: font size
+
+##### <color:###></color>: font color
+
+##### <b></b>: font bold
+
+##### <i></i>: font italic
+
+##### <image:sourcename>: insert image
 
 #### 5.08 Notes
+ (see:6.12 Notes)
+##### Add notes just after the description of activity
+ 
+usingendnote if want to have multiline note
+
 
 #### 5.09 Partition
-
+ (see:6.18 Grouping or Partition)
 ##### keyword: partition
 
 ##### close the partition definition using closing bracket }
 
 #### 5.10 Skinparam
+
+##### In diagram definition
+
+##### In an included file
+
+##### In a configuration file
 
 #### 5.11 Octagon
 
@@ -890,81 +1001,131 @@ Examples of All Arrow Type
 
 #### 6.01 Simple Action
 
-##### label starts with : and ends with ;
+##### Activities label starts with : and ends with ;
 
 #### 6.02 Start/Stop/End
+ 
+Usestart keywords to denote the beginning
 
-#### 6.03 Conditional
+ 
+UseStoporEnd  to denote the end of a diagram
 
-##### 6.03.01 Several Tests (horizontal Mode)
 
-##### 6.03.02 Several Tests (Vertical Mode)
+#### Branches
 
-#### 6.04 Switch and Case [switch, case, endswitch]
+##### 6.03 Conditional
 
-#### 6.05 Conditional with Stop on an Action [kill, detach]
+###### Basic Syntax
 
-#### 6.06 Repeat Loop
+* if (...) then (...)
 
-##### 6.06.01 Simple Repeat Loop
+* if (...) is (...) then
 
-##### 6.06.02 Repeat Loop with Repeat Action and Backward Action
+* if (...) equals (...) then
 
-#### 6.07 Break on a Repeat Loop [break]
+###### 6.03.01 Several Tests (horizontal Mode)
 
-#### 6.08 Goto and Label Processing [label, goto]
+* elseif keyword to have several tests
 
-#### 6.09 While Loop
+###### 6.03.02 Several Tests (Vertical Mode)
+ 
+command!pragma useVerticalIf on  to have the tests in vertical mode
 
-##### 6.09.01 Simple While Loop
+ 
+Use the-P command-line option to specify the pragma:
 
-###### use while and endwhile keywords
+java -jar plantuml.jar -P useVerticalIf=on
 
-##### 6.09.02 While Loop with Backward Action
 
-###### use backward keyword
+##### 6.04 Switch and Case [switch, case, endswitch]
 
-##### 6.09.03 Infinite While Loop
+##### 6.05 Conditional with Stop on an Action [kill, detach]
 
-#### 6.10 Parallel Processing [fork, fork again, end fork, end merge]
+###### stop: stop action on a if loop
 
-##### 6.10.01 Simple fork
+###### kill or detach: stop at the precise action
 
-##### 6.10.02 for with end merge
+##### 6.08 Goto and Label Processing [label, goto]
 
-##### 6.10.03 Label on end fork (or UML joinspec)
+###### label <label_name>
 
-##### 6.10.04 Other example
+###### goto <label_name>
 
-#### 6.11 Split Processing
+#### Looping
 
-##### 6.11.01 Split
+##### 6.06 Repeat Loop
 
-###### use split, split again and end split keywords
+###### 6.06.01 Simple Repeat Loop
 
-##### 6.11.02 Input split (multi-start)
+* "repeat" and "repeat while" keyword
 
-###### use hidden arrows to make an input split (multi-start)
+* "repeat" and "backward" keyword
 
-##### 6.11.03 Output split (multi-end)
+###### 6.06.02 Repeat Loop with Repeat Action and Backward Action
+ (see:6.09.02 While Loop with Backward Action)
+##### 6.07 Break on a Repeat Loop [break]
 
-###### use kill or detach to make an output split (multi-end)
+##### 6.09 While Loop
 
-#### 6.12 Notes
+###### 6.09.01 Simple While Loop
 
-#### 6.14 Lines without Arrows
+* use while and endwhile keywords
 
-##### skinparam ArrowHeadColor none
+###### 6.09.02 While Loop with Backward Action
 
-#### 6.15 Arrows
+* use backward keyword
 
-##### -> notation
+###### 6.09.03 Infinite While Loop
 
-#### 6.16 Connector
+#### Parallel vs Split Processing
 
-##### use () to denote connector
+##### 6.10 Parallel Processing [fork, fork again, end fork, end merge]
 
-#### 6.17 Color on Connector
+###### 6.10.01 Simple fork
+
+###### 6.10.02 fork with end merge
+
+###### 6.10.03 Label on end fork (or UML joinspec)
+
+###### 6.10.04 Other example
+
+##### 6.11 Split Processing
+
+###### 6.11.01 Split
+
+* use split, split again and end split keywords
+
+###### 6.11.02 Input split (multi-start)
+
+* use hidden arrows to make an input split (multi-start)
+
+###### 6.11.03 Output split (multi-end)
+
+* use kill or detach to make an output split (multi-end)
+
+#### Styling and Formatting
+
+##### 6.12 Notes
+
+##### 6.13 Colors
+
+###### Can specify a color for some activities
+
+###### Can use gradient color
+
+##### 6.14 Lines without Arrows
+
+###### skinparam ArrowHeadColor none
+
+##### 6.15 Arrows
+
+###### -> notation
+
+##### 6.16 Connector
+
+###### use () to denote connector
+
+##### 6.17 Color on Connector
 
 #### 6.18 Grouping or Partition
 
@@ -985,6 +1146,12 @@ Examples of All Arrow Type
 #### 6.20 Detach or Kill [detach, kill]
 
 #### 6.21 SDL (Specification and Decription Language)
+
+##### SDL Forum
+
+##### Overview of SDL
+
+###### Also available in GitHub
 
 ##### 6.21.01 Table of SDL Shape Name
 
