@@ -1,0 +1,35 @@
+@startuml
+
+package "Some Group" {
+    component "First Component" as comp1
+    interface HTTP as http
+    component "Second Component" as comp2
+    comp1 - http
+}
+
+node "Other Groups" {
+    interface FTP as ftp
+    component "Third Component" as comp3
+    comp1 --> ftp
+    ftp - comp3
+}
+
+cloud Cloud {
+    component "Example1" as ex1
+    comp2 --> ex1
+}
+
+database MySQL {
+    folder "This is my folder" {
+        component "Folder1" as f1
+    }
+    frame Foo {
+        component "Folder2" as f2
+    }    
+    ex1 --> f1
+    f1 --> f2
+}
+
+footer also have "Rectangle" as group
+
+@enduml
