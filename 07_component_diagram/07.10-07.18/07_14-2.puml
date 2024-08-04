@@ -1,0 +1,21 @@
+@startuml
+
+skinparam BackgroundColor transparent
+skinparam componentStyle uml1
+
+component a
+component b
+a -> b
+
+component A {
+    component A.1
+    component A.2
+    component A.3
+    component A.44 {
+        component A4.1
+    }
+    component A.5
+    component A.6
+}
+
+@enduml
