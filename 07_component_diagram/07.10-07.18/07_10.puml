@@ -6,8 +6,8 @@ component comp1 [
     lines!
 ]
 interface int1
-component c1
+' component c1
 
 comp1 -> int1
-remove c1
+' remove c1
 @enduml
