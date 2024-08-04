@@ -1,0 +1,28 @@
+@startuml
+
+sprite $businessProcess [16x16/16] {
+0000000000000000
+000FFFFFFFFF0000
+00FF0000000FF000
+00F000000000FF00
+0FF00FF0FFF00F00
+0FF0FF0000F00F00
+0FF0000F00000F00
+00F0000F00000F00
+00F0000000000F00
+00F00F000F000F00
+00FF0FFFFF00F000
+000FF0000000F000
+0000FF0000FF0000
+000000FFFFF00000
+0000000000000000
+0000000000000000
+}
+
+rectangle " End to End\nBusiness Process" <<$businessProcess>> {
+    component "inner process1" <<$businessProcess>>
+    rectangle "inner process2" <<$businessProcess>>
+    "inner process1" -> "inner process2"
+}
+
+@enduml
