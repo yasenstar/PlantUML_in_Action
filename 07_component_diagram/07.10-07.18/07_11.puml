@@ -1,0 +1,7 @@
+@startuml
+component [Web Server] #Yellow
+component [App Server] #AAFFFF
+interface int1 #FFBBFF
+
+[Web Server] -> [App Server]
+@enduml

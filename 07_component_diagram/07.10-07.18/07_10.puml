@@ -1,0 +1,13 @@
+@startuml
+component comp1 [
+    This component
+    has a long comment
+    and name on multiple
+    lines!
+]
+interface int1
+component c1
+
+comp1 -> int1
+remove c1
+@enduml
