@@ -1,0 +1,13 @@
+@startuml
+title UML1 Notation on "Component"
+
+skinparam componentStyle uml1
+
+interface "Data Access" as DA
+interface HTTP
+component "First Component" as FC
+
+DA - FC: read
+FC .> HTTP: use
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+title UML2 Notation on "Component"
+
+interface "Data Access" as DA
+interface HTTP
+component "First Component" as FC
+
+DA - FC: read
+FC .> HTTP: use
+
+footer by default from v1.2020-13-14 UML2 will be used
+@enduml
