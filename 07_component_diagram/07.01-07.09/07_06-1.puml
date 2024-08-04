@@ -1,0 +1,12 @@
+@startuml
+component Component1
+component Component2
+interface Interface1
+interface Interface2
+interface Interface3
+
+Component1 --> Interface1
+Component1 -> Interface2
+Interface3 <. Component1
+Interface2 <.. Component2
+@enduml

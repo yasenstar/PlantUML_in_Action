@@ -1,0 +1,12 @@
+@startuml
+component Component as C
+interface up
+interface right
+interface left
+interface down
+
+C -le-> left
+C -up-> up
+C -ri-> right
+C -do-> down
+@enduml
