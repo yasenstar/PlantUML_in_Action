@@ -1,0 +1,30 @@
+@startuml
+
+skinparam interface {
+    backgroundColor RosyBrown
+    borderColor orange
+}
+
+skinparam component {
+    BackgroundColor<<Apache>> pink
+    BorderColor<<Apache>> #FF6655
+    BackgroundColor gold
+    borderColor #FF0000
+    FontSize 20
+    FontSize<<Apache>> 10
+    ArrowFontName Impact
+    ArrowFontSize 30
+    ArrowColor red
+    ArrowFontColor blue
+}
+
+interface "Data Access" as DA
+interface HTTP
+component "First Component" as FC
+component "Web Server" as WS <<Apache>>
+
+DA - FC
+FC ..> HTTP: use
+HTTP - WS
+
+@enduml

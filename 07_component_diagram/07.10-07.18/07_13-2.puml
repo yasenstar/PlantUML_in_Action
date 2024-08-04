@@ -1,0 +1,26 @@
+@startuml
+
+skinparam component {
+    backgroundColor<<static lib>> Brown
+    backgroundColor<<shared lib>> Green
+}
+
+skinparam node {
+    borderColor Green
+    borderColor<<shared node>> red
+    backgroundColor Yellow
+    backgroundColor<<shared node>> Magenta
+}
+
+skinparam database {
+    backgroundColor Aqua
+}
+
+component AA <<static lib>>
+component BB <<shared lib>>
+component CC <<static lib>>
+node node1
+node node2 <<shared node>>
+database Production
+
+@enduml

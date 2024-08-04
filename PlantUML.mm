@@ -568,11 +568,11 @@
 </node>
 <node TEXT="Styles" ID="ID_847280378" CREATED="1722684357999" MODIFIED="1722684360414">
 <node TEXT="7.06 Changing Arrows Direction" POSITION="bottom_or_right" ID="ID_1245075936" CREATED="1722684110389" MODIFIED="1722684116938"/>
-<node TEXT="7.10 Long Description" POSITION="bottom_or_right" ID="ID_380628654" CREATED="1722684182596" MODIFIED="1722684189489">
+<node TEXT="7.10 Long Description" FOLDED="true" POSITION="bottom_or_right" ID="ID_380628654" CREATED="1722684182596" MODIFIED="1722684189489">
 <node TEXT="Question raised to Forum: #19128" ID="ID_1193169317" CREATED="1722798569048" MODIFIED="1722798583748" LINK="https://forum.plantuml.net/19128/component-diagram-intepretered-corrected-having-description"/>
 </node>
 <node TEXT="7.11 Individual Colors" POSITION="bottom_or_right" ID="ID_1115182604" CREATED="1722684267920" MODIFIED="1722684281654"/>
-<node TEXT="7.12 Using Sprite in Stereotype" POSITION="bottom_or_right" ID="ID_1154842227" CREATED="1722684227541" MODIFIED="1722684287686">
+<node TEXT="7.12 Using Sprite in Stereotype" FOLDED="true" POSITION="bottom_or_right" ID="ID_1154842227" CREATED="1722684227541" MODIFIED="1722684287686">
 <node TEXT="Piskel - free online sprites editor" ID="ID_205936702" CREATED="1722797944489" MODIFIED="1722797963475" LINK="https://www.piskelapp.com/"/>
 <node TEXT="Only 4, 8, 16 graylevel are allowed" ID="ID_1077392006" CREATED="1722797984411" MODIFIED="1722798006752"/>
 </node>
