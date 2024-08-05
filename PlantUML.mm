@@ -329,7 +329,8 @@
 </node>
 </node>
 <node TEXT="Group 7: Arrows and Association" FOLDED="true" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
-<node TEXT="3.25 Lollipop Interface" FOLDED="true" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1717355692975">
+<node TEXT="3.25 Lollipop Interface" FOLDED="true" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1722874696556">
+<arrowlink DESTINATION="ID_599803988"/>
 <node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
 <node TEXT="Forum: #2259 - using circle" ID="ID_1009025671" CREATED="1718310941605" MODIFIED="1718310958769" LINK="https://forum.plantuml.net/2259/how-draw-the-lollipop-socket-symbol-class-diagram-consumes"/>
 <node TEXT="Ball and Socket by Martin Fowler" ID="ID_1917201758" CREATED="1718311294402" MODIFIED="1718311647210" LINK="https://martinfowler.com/bliki/BallAndSocket.html"/>
@@ -589,9 +590,24 @@
 <node TEXT="7.16 Hide, Remove or Restore Tagged Component or Wildcard" FOLDED="true" POSITION="bottom_or_right" ID="ID_1990986210" CREATED="1722684326660" MODIFIED="1722684344696">
 <node TEXT="Question on why cannot restore tag after &quot;remove *&quot;" ID="ID_1035790183" CREATED="1722816710045" MODIFIED="1722816730565"/>
 </node>
-<node TEXT="7.17 Display JSON Data on Component Diagram" POSITION="bottom_or_right" ID="ID_1321885849" CREATED="1722684421867" MODIFIED="1722684431888"/>
+<node TEXT="7.17 Display JSON Data on Component Diagram" POSITION="bottom_or_right" ID="ID_1321885849" CREATED="1722684421867" MODIFIED="1722684431888">
+<node TEXT="Question asked in Forum" ID="ID_441425024" CREATED="1722876362320" MODIFIED="1722876373697" LINK="https://forum.plantuml.net/19131/incorrect-interpretering-diagram-allowmixing-component"/>
 </node>
-<node TEXT="7.18 Port [port, portIn, portOut]" ID="ID_1418102515" CREATED="1722684442160" MODIFIED="1722684451070"/>
+</node>
+<node TEXT="7.18 Port [port, portIn, portOut]" ID="ID_1418102515" CREATED="1722684442160" MODIFIED="1722684451070">
+<node TEXT="Lollipop: ball and socket" ID="ID_599803988" CREATED="1722874680802" MODIFIED="1722874723000" LINK="https://martinfowler.com/bliki/BallAndSocket.html">
+<node TEXT="Interface symbols with a complete circle at their end represent an interface that the component provides - this &quot;lollipop&quot; symbol is shorthand for a realization relationship of an interface classifier" ID="ID_432090026" CREATED="1722874725124" MODIFIED="1722874790833">
+<node TEXT="[a] --0 [b]" ID="ID_1706972537" CREATED="1722874790842" MODIFIED="1722874839883"/>
+</node>
+<node TEXT="Interface symbols with only a half circle at their end (a.k.a sockets) represent a interface that the component require" ID="ID_863225877" CREATED="1722874841043" MODIFIED="1722874891877">
+<node TEXT="[a] --( [b]" ID="ID_1427597690" CREATED="1722874891885" MODIFIED="1722874903766"/>
+</node>
+<node TEXT="Interface combines half circle and complete circle in the middle" ID="ID_1407443759" CREATED="1722875806847" MODIFIED="1722875833298">
+<node TEXT="[a] --(0-- [b]" ID="ID_1090590831" CREATED="1722875833303" MODIFIED="1722875848558"/>
+</node>
+</node>
+<node TEXT="Sample: IBM - the component diagram - Figure 7" ID="ID_412354744" CREATED="1722875852618" MODIFIED="1722875884550" LINK="https://developer.ibm.com/articles/the-component-diagram/"/>
+</node>
 </node>
 <node TEXT="08 Deployment Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1720591157962" LINK="https://en.wikipedia.org/wiki/Deployment_diagram">
 <node TEXT="Declaring" ID="ID_143141775" CREATED="1722684794967" MODIFIED="1722684798936">
@@ -785,8 +801,8 @@
 </node>
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
-<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_652208197"/>
+<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_288741682"/>
 <arrowlink DESTINATION="ID_1961776223"/>
 </node>
@@ -937,8 +953,8 @@
 </node>
 <node TEXT="05 Activity Diagram (legacy)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1720591041912" LINK="https://en.wikipedia.org/wiki/Activity_diagram">
 <node TEXT="5.01 Simple Action" FOLDED="true" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1720770738713">
-<arrowlink DESTINATION="ID_511629604"/>
 <arrowlink WIDTH="2" DESTINATION="ID_1888938828" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink DESTINATION="ID_511629604"/>
 <node TEXT="use (*) for starting point and ending point" ID="ID_1213322656" CREATED="1718627051739" MODIFIED="1718627065590"/>
 <node TEXT="use (*top) to force starting point to be at the top" ID="ID_472095347" CREATED="1718627066076" MODIFIED="1718627081466"/>
 <node TEXT="use --&gt; for arrows" ID="ID_1661877154" CREATED="1718627081817" MODIFIED="1718627086368"/>
@@ -951,9 +967,9 @@
 <node TEXT="e.g. -down-&gt;" ID="ID_1622483910" CREATED="1718627138976" MODIFIED="1719297653097"/>
 </node>
 <node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1720771052725">
-<arrowlink DESTINATION="ID_1828622956"/>
-<arrowlink DESTINATION="ID_999052549"/>
 <arrowlink DESTINATION="ID_1131340221"/>
+<arrowlink DESTINATION="ID_999052549"/>
+<arrowlink DESTINATION="ID_1828622956"/>
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>

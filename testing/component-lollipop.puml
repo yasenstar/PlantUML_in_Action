@@ -1,0 +1,26 @@
+@startuml
+skinparam componentStyle uml2
+left to right direction
+
+component Store {
+    component Order
+    component Customer
+    component Product    
+    interface OrderEntryI
+    portIn OrderEntryPort
+    portOut AccountPort
+}
+
+interface OrderEntryE
+
+interface Account
+
+OrderEntryE -- OrderEntryPort
+OrderEntryPort --> OrderEntryI
+OrderEntryI -- Order: OrderENtry
+Order -(0- Product: OrderableItem
+Order -(0- Customer: Person
+Customer -( AccountPort
+AccountPort -- Account
+
+@enduml

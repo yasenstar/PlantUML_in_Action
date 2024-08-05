@@ -1,0 +1,19 @@
+@startuml
+[c]
+component C {
+    portIn p1
+    component c1
+}
+[d]
+
+c1 --> p1
+c -0)- c1
+p1 --(  d
+d <|.. c1
+c1 )-- d
+[e]
+c1 --0 e
+
+d --(0-- e
+d -0 [f]
+@enduml
