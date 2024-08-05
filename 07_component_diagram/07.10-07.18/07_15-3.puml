@@ -1,0 +1,11 @@
+@startuml
+component C1
+component C2
+component C3
+component C4
+interface i1
+
+C1 - C2
+
+remove @unlinked
+@enduml
