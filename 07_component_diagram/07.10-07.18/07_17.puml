@@ -1,0 +1,16 @@
+@startuml
+
+' allowmixing
+
+component Component
+interface Interface
+
+Component -> Interface: export
+
+json JSON {
+    "fruit": "Apple",
+    "size": "Large",
+    "color": ["Red", "Green", "Yellow"]
+}
+
+@enduml

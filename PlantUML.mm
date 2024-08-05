@@ -559,16 +559,17 @@
 <node TEXT="defined with the &quot;note&quot; and &quot;end note&quot; keyword, then link to other objects using the &quot;..&quot; symbol or arrow symbols" POSITION="bottom_or_right" ID="ID_482757627" CREATED="1722713784973" MODIFIED="1722713834033"/>
 </node>
 <node TEXT="7.05 Grouping Components" POSITION="bottom_or_right" ID="ID_1242935270" CREATED="1722684051513" MODIFIED="1722684060720"/>
-<node TEXT="Component Notation" FOLDED="true" ID="ID_1457280862" CREATED="1722684192083" MODIFIED="1722708390093" VGAP_QUANTITY="3 pt">
+<node TEXT="Component Notation" FOLDED="true" ID="ID_1457280862" CREATED="1722684192083" MODIFIED="1722814505948" VGAP_QUANTITY="3 pt">
+<arrowlink DESTINATION="ID_1493529758"/>
 <node TEXT="7.07 Use UML2 Notation" POSITION="bottom_or_right" ID="ID_173374377" CREATED="1722684121800" MODIFIED="1722684126838">
 <node TEXT="by default from v1.2020.13-14 UML2 notation is used" ID="ID_1158852256" CREATED="1722684133146" MODIFIED="1722684148700"/>
 </node>
 <node TEXT="7.08 Use UML1 Notation" POSITION="bottom_or_right" ID="ID_1633820862" CREATED="1722684151907" MODIFIED="1722708390093"/>
 <node TEXT="7.09 Use Rectangle Notation (remove UML notation)" POSITION="bottom_or_right" ID="ID_153271274" CREATED="1722684165134" MODIFIED="1722684181430"/>
 </node>
-<node TEXT="Styles" ID="ID_847280378" CREATED="1722684357999" MODIFIED="1722684360414">
+<node TEXT="Styles" FOLDED="true" ID="ID_847280378" CREATED="1722684357999" MODIFIED="1722684360414">
 <node TEXT="7.06 Changing Arrows Direction" POSITION="bottom_or_right" ID="ID_1245075936" CREATED="1722684110389" MODIFIED="1722684116938"/>
-<node TEXT="7.10 Long Description" FOLDED="true" POSITION="bottom_or_right" ID="ID_380628654" CREATED="1722684182596" MODIFIED="1722684189489">
+<node TEXT="7.10 Long Description" POSITION="bottom_or_right" ID="ID_380628654" CREATED="1722684182596" MODIFIED="1722684189489">
 <node TEXT="Question raised to Forum: #19128" ID="ID_1193169317" CREATED="1722798569048" MODIFIED="1722798583748" LINK="https://forum.plantuml.net/19128/component-diagram-intepretered-corrected-having-description"/>
 </node>
 <node TEXT="7.11 Individual Colors" POSITION="bottom_or_right" ID="ID_1115182604" CREATED="1722684267920" MODIFIED="1722684281654"/>
@@ -579,9 +580,15 @@
 <node TEXT="7.13 Skinparam" POSITION="bottom_or_right" ID="ID_1297466326" CREATED="1722684288408" MODIFIED="1722684295918"/>
 <node TEXT="7.14 Specific SkinParameter" POSITION="bottom_or_right" ID="ID_1493529758" CREATED="1722684299471" MODIFIED="1722684309164"/>
 </node>
-<node TEXT="Display Related" FOLDED="true" ID="ID_1863171373" CREATED="1722684348133" MODIFIED="1722684352612">
-<node TEXT="7.15 Hide or Remove Unlinked Component" POSITION="bottom_or_right" ID="ID_1933376505" CREATED="1722684312459" MODIFIED="1722684323730"/>
-<node TEXT="7.16 Hide, Remove or Restore Tagged Component or Wildcard" POSITION="bottom_or_right" ID="ID_1990986210" CREATED="1722684326660" MODIFIED="1722684344696"/>
+<node TEXT="Display Related" ID="ID_1863171373" CREATED="1722684348133" MODIFIED="1722684352612">
+<node TEXT="7.15 Hide or Remove Unlinked Component" FOLDED="true" POSITION="bottom_or_right" ID="ID_1933376505" CREATED="1722684312459" MODIFIED="1722684323730">
+<node TEXT="By default, all components are displayed" ID="ID_93929591" CREATED="1722815230942" MODIFIED="1722815238045"/>
+<node TEXT="Can hide @unlinked components" ID="ID_804895767" CREATED="1722815241648" MODIFIED="1722815253432"/>
+<node TEXT="Or can remove @unlinked components" ID="ID_807510883" CREATED="1722815255999" MODIFIED="1722815269215"/>
+</node>
+<node TEXT="7.16 Hide, Remove or Restore Tagged Component or Wildcard" FOLDED="true" POSITION="bottom_or_right" ID="ID_1990986210" CREATED="1722684326660" MODIFIED="1722684344696">
+<node TEXT="Question on why cannot restore tag after &quot;remove *&quot;" ID="ID_1035790183" CREATED="1722816710045" MODIFIED="1722816730565"/>
+</node>
 <node TEXT="7.17 Display JSON Data on Component Diagram" POSITION="bottom_or_right" ID="ID_1321885849" CREATED="1722684421867" MODIFIED="1722684431888"/>
 </node>
 <node TEXT="7.18 Port [port, portIn, portOut]" ID="ID_1418102515" CREATED="1722684442160" MODIFIED="1722684451070"/>
@@ -621,7 +628,7 @@
 </node>
 </node>
 <node TEXT="Behavioral (Dynamic) UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
-<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
+<node TEXT="01 Sequence Diagram" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
 <node TEXT="Characteristics of Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1437830674" CREATED="1716734224598" MODIFIED="1716737761423" VGAP_QUANTITY="3 pt">
 <node TEXT="Intuitive Syntax" ID="ID_1858398428" CREATED="1716734238455" MODIFIED="1716734246623"/>
