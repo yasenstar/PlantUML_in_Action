@@ -1,0 +1,19 @@
+@startuml
+' left to right direction
+component component as c
+component C {
+    component c1
+    interface i1
+    portIn p1
+    portIn p2
+    portIn p3
+}
+
+c --> p1
+c --> p2
+c --> p3
+p1 --> c1
+p2 --> i1
+i1 -> c1
+
+@enduml

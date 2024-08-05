@@ -329,7 +329,7 @@
 </node>
 </node>
 <node TEXT="Group 7: Arrows and Association" FOLDED="true" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
-<node TEXT="3.25 Lollipop Interface" FOLDED="true" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1722874696556">
+<node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1722874696556">
 <arrowlink DESTINATION="ID_599803988"/>
 <node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
 <node TEXT="Forum: #2259 - using circle" ID="ID_1009025671" CREATED="1718310941605" MODIFIED="1718310958769" LINK="https://forum.plantuml.net/2259/how-draw-the-lollipop-socket-symbol-class-diagram-consumes"/>
@@ -546,7 +546,7 @@
 <arrowlink DESTINATION="ID_588971608"/>
 </node>
 </node>
-<node TEXT="07 Component Diagram" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
+<node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
 <node TEXT="Basis" FOLDED="true" ID="ID_290864243" CREATED="1722684210284" MODIFIED="1722684215937">
 <node TEXT="7.01 Components" POSITION="bottom_or_right" ID="ID_1036640811" CREATED="1718642734800" MODIFIED="1718642739809">
 <node TEXT="7.01.01 Naming Exceptions" ID="ID_762125154" CREATED="1718642742723" MODIFIED="1718642749622"/>
@@ -581,7 +581,7 @@
 <node TEXT="7.13 Skinparam" POSITION="bottom_or_right" ID="ID_1297466326" CREATED="1722684288408" MODIFIED="1722684295918"/>
 <node TEXT="7.14 Specific SkinParameter" POSITION="bottom_or_right" ID="ID_1493529758" CREATED="1722684299471" MODIFIED="1722684309164"/>
 </node>
-<node TEXT="Display Related" ID="ID_1863171373" CREATED="1722684348133" MODIFIED="1722684352612">
+<node TEXT="Display Related" FOLDED="true" ID="ID_1863171373" CREATED="1722684348133" MODIFIED="1722684352612">
 <node TEXT="7.15 Hide or Remove Unlinked Component" FOLDED="true" POSITION="bottom_or_right" ID="ID_1933376505" CREATED="1722684312459" MODIFIED="1722684323730">
 <node TEXT="By default, all components are displayed" ID="ID_93929591" CREATED="1722815230942" MODIFIED="1722815238045"/>
 <node TEXT="Can hide @unlinked components" ID="ID_804895767" CREATED="1722815241648" MODIFIED="1722815253432"/>
@@ -609,7 +609,7 @@
 <node TEXT="Sample: IBM - the component diagram - Figure 7" ID="ID_412354744" CREATED="1722875852618" MODIFIED="1722875884550" LINK="https://developer.ibm.com/articles/the-component-diagram/"/>
 </node>
 </node>
-<node TEXT="08 Deployment Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1720591157962" LINK="https://en.wikipedia.org/wiki/Deployment_diagram">
+<node TEXT="08 Deployment Diagram" POSITION="bottom_or_right" ID="ID_1574141853" CREATED="1716658785650" MODIFIED="1720591157962" LINK="https://en.wikipedia.org/wiki/Deployment_diagram">
 <node TEXT="Declaring" ID="ID_143141775" CREATED="1722684794967" MODIFIED="1722684798936">
 <node TEXT="8.01 Declaring Element" POSITION="bottom_or_right" ID="ID_619971608" CREATED="1722684457500" MODIFIED="1722684465507"/>
 <node TEXT="8.02 Declaring Element (using short form)" POSITION="bottom_or_right" ID="ID_1246692484" CREATED="1722684475913" MODIFIED="1722684488073"/>
@@ -639,7 +639,7 @@
 <node TEXT="Others" ID="ID_30065214" CREATED="1722684865183" MODIFIED="1722684866882">
 <node TEXT="8.17 Display JSON Data on Deployment Diagram" POSITION="bottom_or_right" ID="ID_1386582686" CREATED="1722684724911" MODIFIED="1722684741419"/>
 <node TEXT="8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram" POSITION="bottom_or_right" ID="ID_1618848251" CREATED="1722684747993" MODIFIED="1722684772569"/>
-<node TEXT="9.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1722684785887"/>
+<node TEXT="8.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1722879446716"/>
 </node>
 </node>
 </node>

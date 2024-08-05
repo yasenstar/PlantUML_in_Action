@@ -1,0 +1,23 @@
+@startuml
+
+left to right direction
+
+interface OrderEntry
+interface Account
+
+component Store {
+    component Order
+    component Customer
+    component Product
+    portIn OrderEntryPort
+    portOut AccountPort
+}
+
+OrderEntry -- OrderEntryPort
+OrderEntryPort 0-- Order
+Order --(0-- Customer
+Order -l(0- Product
+Customer --( AccountPort
+AccountPort -- Account
+
+@enduml
