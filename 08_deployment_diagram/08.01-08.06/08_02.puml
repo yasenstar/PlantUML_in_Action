@@ -1,0 +1,13 @@
+@startuml
+actor actor1
+:actor2:
+
+component component1
+[component2]
+
+interface interface1
+() interface2
+
+usecase usecase1
+(usecase2)
+@enduml

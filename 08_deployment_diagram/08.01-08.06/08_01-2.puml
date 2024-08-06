@@ -1,0 +1,38 @@
+@startuml
+folder folder [
+    This is a <b>folder</b>
+    ----
+    You can use separator
+    ====
+    of different kind
+    ....
+    and style
+]
+node node [
+    This is a <b>node</b>
+    ----
+    You can use separator
+    ====
+    of different kind
+    ....
+    and style
+]
+agent agent [
+    This is a <b>agent</b>
+    ----
+    You can use separator
+    ====
+    of different kind
+    ....
+    and style
+]
+actor actor [
+    This is a <b>actor</b>
+    ----
+    You can use separator
+    ====
+    of different kind
+    ....
+    and style
+]
+@enduml
