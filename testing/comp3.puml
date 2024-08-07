@@ -1,0 +1,13 @@
+@startuml
+
+rectangle "1" {
+  component A
+}
+rectangle "2" {
+  component B
+}
+
+A -> B: request
+A <- B: response
+
+@enduml

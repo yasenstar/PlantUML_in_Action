@@ -1,0 +1,9 @@
+@startuml
+
+component A
+component B
+
+A -> B: request
+B -> A: response
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+artifact a1
+artifact a2
+artifact a3
+artifact a4
+artifact a5
+artifact a6
+artifact a7
+artifact a8
+artifact a9
+artifact a10
+
+a1 ~~> a2
+a1 --* a3
+a1 --o a4
+a1 --+ a5
+a1 --# a6
+a2 -->> a7
+a3 --0 a8
+a4 --^ a9
+a5 --(0 a10
+@enduml

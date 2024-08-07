@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+cloud c1
+cloud c2
+cloud c3
+cloud c4
+cloud c5
+
+c1 -0- c2
+c1 -(0- c3
+c1 -0)- c4
+c1 -(0)- c5
+@enduml

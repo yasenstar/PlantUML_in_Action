@@ -1,0 +1,21 @@
+@startuml
+
+left to right direction
+
+rectangle "1" {
+  component A {
+    portOut a1
+    portOut a2
+  }
+}
+rectangle "2" {
+  component B {
+    portIn b1
+    portIn b2
+  }
+}
+
+a1 --> b1: request
+b2 --> a2: response
+
+@enduml

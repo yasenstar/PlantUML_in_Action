@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.971">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -107,7 +107,7 @@
 </node>
 <node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
 <node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
-<node TEXT="02 Use Case Diagram" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
+<node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1722945943083">
 <arrowlink DESTINATION="ID_1124259456"/>
@@ -182,7 +182,7 @@
 <node TEXT="Work with JSON" ID="ID_193319873" CREATED="1717787392901" MODIFIED="1717787397629" LINK="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON"/>
 </node>
 </node>
-<node TEXT="03 Class Diagram" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1720591127978" LINK="https://en.wikipedia.org/wiki/Class_diagram">
+<node TEXT="03 Class Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1534579784" CREATED="1716658606406" MODIFIED="1720591127978" LINK="https://en.wikipedia.org/wiki/Class_diagram">
 <node TEXT="Group 1: Notation Definition" ID="ID_6284272" CREATED="1717795525178" MODIFIED="1717795543084">
 <node TEXT="3.01 Declaring Element" POSITION="bottom_or_right" ID="ID_1138859544" CREATED="1717355364987" MODIFIED="1717355370658">
 <node TEXT="Class" ID="ID_1723635227" CREATED="1722945970465" MODIFIED="1722945972278"/>
@@ -555,7 +555,7 @@
 <arrowlink DESTINATION="ID_588971608"/>
 </node>
 </node>
-<node TEXT="07 Component Diagram" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
+<node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
 <node TEXT="Basis" ID="ID_290864243" CREATED="1722684210284" MODIFIED="1722684215937">
 <node TEXT="7.01 Components" POSITION="bottom_or_right" ID="ID_1036640811" CREATED="1718642734800" MODIFIED="1722946001736">
 <arrowlink DESTINATION="ID_1989039435"/>
@@ -660,8 +660,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Behavioral (Dynamic) UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
-<node TEXT="01 Sequence Diagram" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
+<node TEXT="Behavioral (Dynamic) UML Modeling" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
+<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
 <node TEXT="Characteristics of Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1437830674" CREATED="1716734224598" MODIFIED="1716737761423" VGAP_QUANTITY="3 pt">
 <node TEXT="Intuitive Syntax" ID="ID_1858398428" CREATED="1716734238455" MODIFIED="1716734246623"/>
