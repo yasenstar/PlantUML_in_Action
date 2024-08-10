@@ -1,0 +1,8 @@
+@startuml
+title Bracketed line color
+node Node
+Node --> bar0
+Node -[#red]-> bar1
+Node -[#green]-> bar2 : [green]
+Node -[#FF0000]-> bar3
+@enduml

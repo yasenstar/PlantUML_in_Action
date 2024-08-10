@@ -1,0 +1,9 @@
+@startuml
+title Bracketed Line ArrowThickness
+node Node
+node foo
+Node --> bar0
+Node -[thickness=1]-> bar1
+Node -[thickness=2]-> bar2
+Node -[thickness=17]-> foo
+@enduml

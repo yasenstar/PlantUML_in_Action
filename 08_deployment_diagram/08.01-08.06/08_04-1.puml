@@ -1,0 +1,25 @@
+@startuml
+node Node
+title Bracketed line style
+
+' left to right direction
+
+Node -up-> baru1
+Node -down-> bard1 : null
+
+Node -up[bold]-> baru2
+Node -do[bold]-> bard2 : [bold]
+
+Node -u[dashed]-> baru3
+Node -d[dashed]-> bard3 : [dashed]
+
+Node -u[dotted]-> baru4
+Node -d[dotted]-> bard4 : [dotted]
+
+Node -u[hidden]-> baru5
+Node -d[hidden]-> bard5 : [hidden]
+
+Node -u[plain]-> baru6
+Node -d[plain]-> bard6 : [plain]
+
+@enduml

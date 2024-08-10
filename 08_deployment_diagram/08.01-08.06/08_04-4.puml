@@ -1,0 +1,8 @@
+@startuml
+title Bracketed Line Style mix
+node Node
+node Node1
+Node --> bar : null
+Node -[dashed,#red,thickness=4]-> bar1 : mixed styles
+Node -[#blue;#green;#red,thickness=10]-> Node1
+@enduml
