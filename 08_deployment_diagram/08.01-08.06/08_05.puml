@@ -1,0 +1,8 @@
+@startuml
+title change arrow style inline
+node foo
+foo --> bar0 : normal
+foo --> bar1 #line:red;line.bold;text:red : red bold
+foo --> bar2 #green;line.dashed;text:green : green dashed
+foo --> bar3 #line:blue;line.dotted;text:blue : blue dotted
+@enduml
