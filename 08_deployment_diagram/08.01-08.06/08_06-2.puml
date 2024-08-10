@@ -1,0 +1,10 @@
+@startuml
+agent a #line:red;
+cloud c #pink;line:red;line.bold {
+    component c1
+    component c2
+}
+frame f {
+    node n #line.dotted;text:blue;back:aliceblue
+}
+@enduml

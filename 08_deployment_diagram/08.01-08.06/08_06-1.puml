@@ -1,0 +1,6 @@
+@startuml
+agent a #lightblue
+cloud c #back:palegreen;line:green;line.dashed;text:orange
+file f #pink;line:blue;line.dotted;text:purple
+node n #line.dashed;text:red
+@enduml
