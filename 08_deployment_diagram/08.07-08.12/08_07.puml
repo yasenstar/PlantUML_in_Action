@@ -1,0 +1,51 @@
+@startuml
+title Nestable Elements
+allowmixing
+
+artifact artifact {
+}
+card card {
+}
+
+cloud cloud {
+}
+component comp0 {
+    component comp1
+}
+interface interface {
+    interface i2
+}
+database db {
+
+}
+file file {
+
+}
+folder folder {
+
+}
+frame frame {
+
+}
+hexagon hexagon {
+
+}
+node node {
+
+}
+package package  {
+
+}
+queue queue {
+
+}
+rectangle rectangle {
+
+}
+stack stack {
+
+}
+storage storage {
+
+}
+@enduml

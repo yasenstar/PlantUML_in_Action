@@ -1,0 +1,33 @@
+@startuml
+artifact artifact {
+    card card {
+        cloud cloud {
+            component component {
+                database database {
+                    file file {
+                        folder folder {
+                            frame frame  {
+                                hexagon hexagon {
+                                    node node {
+                                        package package {
+                                            queue queue {
+                                                rectangle recontagle {
+                                                    stack stack {
+                                                        storange storage {
+                                                            
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@enduml
