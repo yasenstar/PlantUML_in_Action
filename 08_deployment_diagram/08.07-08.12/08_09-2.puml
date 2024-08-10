@@ -1,0 +1,9 @@
+@startuml
+title long alias
+actor "actor" as actorVeryLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOg
+agent agentVeryLOOOOOOOOOOOOOOOOg as "agent"
+artifact "artifactVeryLOOOOOOOOOOOOOOOOg" as artifact
+package "package" as packageVeryLOOOOOOOOOOOOOOOOOOg
+
+actorVeryLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOg --> packageVeryLOOOOOOOOOOOOOOOOOOg
+@enduml
