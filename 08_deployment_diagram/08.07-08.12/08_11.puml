@@ -1,0 +1,12 @@
+@startuml
+skinparam roundCorner 50
+actor actor
+agent agent
+artifact artifact
+boundary boundary
+card card
+circle circle
+cloud cloud
+component component
+control control
+@enduml

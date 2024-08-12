@@ -1,0 +1,17 @@
+@startuml
+title 08-10 round corner
+
+skinparam rectangle {
+    roundCorner<<concept>> 25
+}
+
+skinparam component {
+    roundCorner 40
+}
+
+rectangle "Concept Model" <<Concept>> {
+    rectangle "Another Element"
+    rectangle "Example 1" <<concept>> as ex1
+    component cmp1
+}
+@enduml
