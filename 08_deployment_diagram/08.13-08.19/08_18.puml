@@ -1,0 +1,21 @@
+@startuml
+
+allowmixing
+
+skinparam nodesep 2
+
+abstract Abstract
+abstract class "Abstract Class"
+annotation annotation
+circle circle
+()  circle_short_form
+class class
+interface interface
+node Node
+component component
+
+json JSON {
+    "size":"Large"
+}
+
+@enduml

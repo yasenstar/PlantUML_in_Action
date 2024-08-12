@@ -1,0 +1,25 @@
+@startuml
+title display JSON
+
+allowmixing
+
+interface Interface
+() new
+
+class Class
+
+component Component
+node Node
+cloud Cloud
+
+json JSON_Data {
+    "fruit":"Aplle",
+    "size":"Large",
+    "color":["Red", "Green", "Purple"]
+}
+
+actor Actor
+usecase Usecase
+
+
+@enduml
