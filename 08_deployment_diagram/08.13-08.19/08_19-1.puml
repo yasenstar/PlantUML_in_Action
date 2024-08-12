@@ -1,0 +1,26 @@
+@startuml
+title Port in Deployment Diagram
+component c
+component d
+
+component comp {
+    file f1
+    port p1
+    port p2
+    port p3
+    port p4
+}
+
+' c --> f1: 1st
+' c --> f1: 2nd
+' c --> f1: 3rd
+
+c --> p1
+c --> p2
+c --> p3
+p1 --> f1
+p2 --> f1
+f1 --> p4
+p4 --> d
+
+@enduml
