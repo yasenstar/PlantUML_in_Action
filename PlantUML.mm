@@ -828,9 +828,9 @@
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
 <arrowlink DESTINATION="ID_652208197"/>
+<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_288741682"/>
 <arrowlink DESTINATION="ID_1961776223"/>
-<arrowlink DESTINATION="ID_1235100678"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -838,8 +838,8 @@
 </node>
 <node TEXT="Part 9" FOLDED="true" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
 <node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1717364077035">
-<arrowlink DESTINATION="ID_125886615"/>
 <arrowlink DESTINATION="ID_1063219866"/>
+<arrowlink DESTINATION="ID_125886615"/>
 <node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
 </node>
 <node TEXT="1.28 Shortcut Syntax" FOLDED="true" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">
@@ -1231,8 +1231,137 @@
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
 </node>
-<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine"/>
-<node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)"/>
+<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
+<node TEXT="9.01 Simple State" ID="ID_816130613" CREATED="1723962813484" MODIFIED="1723962820615">
+<node TEXT="What is State?" ID="ID_1298518317" CREATED="1723987204398" MODIFIED="1723987210287">
+<node TEXT="Rumbaugh defines that: &quot;A State is an abstraction of the attribute values and links of an object. Sets of values are grouped together into a state according to properties that affect the gross behavior of the object.&quot;" ID="ID_669825173" CREATED="1723987210287" MODIFIED="1723987278082"/>
+</node>
+<node TEXT="State Notation" ID="ID_92751715" CREATED="1723987285929" MODIFIED="1723987318397">
+<hook URI="../../../C:/Users/v0cn037/Pictures/202408/state-notation.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="State Diagram vs Activity Diagram" ID="ID_38243012" CREATED="1723987333922" MODIFIED="1723987373371">
+<hook URI="../../../C:/Users/v0cn037/Pictures/202408/state-vs-activity.png" SIZE="0.63559324" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="9.02 Change State Rendering" ID="ID_1319769466" CREATED="1723962823916" MODIFIED="1723962831190"/>
+<node TEXT="9.03 Compsite State" FOLDED="true" ID="ID_1396453207" CREATED="1723962832052" MODIFIED="1723962839022">
+<node TEXT="Internal Sub-state" ID="ID_1409237680" CREATED="1723962919607" MODIFIED="1723962925895"/>
+<node TEXT="Sub-state to sub-state" ID="ID_1631503807" CREATED="1723962929558" MODIFIED="1723962936278"/>
+</node>
+<node TEXT="9.04 Long Name" ID="ID_567296231" CREATED="1723962940156" MODIFIED="1723962944510"/>
+<node TEXT="9.05 History [[H], [H*]]" ID="ID_1170657627" CREATED="1723962945069" MODIFIED="1723986889810">
+<hook URI="../../../C:/Users/v0cn037/Pictures/202408/history-state.png" SIZE="1.0" NAME="ExternalObject"/>
+<node ID="ID_1802423505" CREATED="1723986740479" MODIFIED="1723986799080"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Unless otherwise specified, when a transition enters a composition state, the action of <span style="font-weight: bold;">the nested state machine starts over again at the initial state</span><span style="font-weight: normal;">&#xa0;(unless the transition targets a substate directly)</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_905835830" CREATED="1723986799774" MODIFIED="1723986839859"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      History states allow the state machine to <span style="font-weight: bold;">re-enter the last substate that was active prior to leaving</span><span style="font-weight: normal;">&#xa0;&#xa0;the composition state.</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="9.06 Fork [fork, join]" ID="ID_1715926827" CREATED="1723962976100" MODIFIED="1723962983214"/>
+<node TEXT="9.07 Concurrent State [--, ||]" FOLDED="true" ID="ID_1515604596" CREATED="1723962988245" MODIFIED="1723963027919">
+<node TEXT="Horizontal separator --" ID="ID_558721006" CREATED="1723963007372" MODIFIED="1723963013199"/>
+<node TEXT="Vertical separator ||" ID="ID_1385294032" CREATED="1723963015549" MODIFIED="1723963036591"/>
+</node>
+<node TEXT="9.08 Conditional [choice]" ID="ID_1932173925" CREATED="1723963040390" MODIFIED="1723963047615"/>
+<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1723963078625"/>
+<node TEXT="9.10 Point [entryPoint, exitPoint]" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
+<node TEXT="9.11 Pin [inputPin, outputPin]" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
+<node TEXT="9.12 Expansion [expansionInput, expansionOutput]" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
+<node TEXT="styles" FOLDED="true" ID="ID_1411663180" CREATED="1723963160718" MODIFIED="1723963163279">
+<node TEXT="9.13 Arrow direction" POSITION="bottom_or_right" ID="ID_1037973777" CREATED="1723963123037" MODIFIED="1723963128448"/>
+<node TEXT="9.14 Change line color and style" POSITION="bottom_or_right" ID="ID_1404922541" CREATED="1723963131557" MODIFIED="1723963138134"/>
+<node TEXT="9.18 Inline color" POSITION="bottom_or_right" ID="ID_738063173" CREATED="1723963183934" MODIFIED="1723963189111"/>
+<node TEXT="9.19 Skinparam" POSITION="bottom_or_right" ID="ID_296396693" CREATED="1723963192493" MODIFIED="1723963196527"/>
+<node TEXT="9.20 Changing style" POSITION="bottom_or_right" ID="ID_478812190" CREATED="1723963212335" MODIFIED="1723963217487"/>
+<node TEXT="9.21 Change state color and style (inline style)" POSITION="bottom_or_right" ID="ID_239288160" CREATED="1723963222958" MODIFIED="1723963234943"/>
+</node>
+<node TEXT="notes" FOLDED="true" ID="ID_941694790" CREATED="1723963168917" MODIFIED="1723963172511">
+<node TEXT="9.15 Note" POSITION="bottom_or_right" ID="ID_1159186616" CREATED="1723963139541" MODIFIED="1723963142727"/>
+<node TEXT="9.16 Note on link" POSITION="bottom_or_right" ID="ID_1523084652" CREATED="1723963145453" MODIFIED="1723963149590"/>
+<node TEXT="9.17 More in Notes" POSITION="bottom_or_right" ID="ID_856058291" CREATED="1723963152197" MODIFIED="1723963157535"/>
+</node>
+<node TEXT="9.22 Alias" ID="ID_1206319746" CREATED="1723963243253" MODIFIED="1723963246800"/>
+<node TEXT="9.23 Display JSON Data on State diagram" ID="ID_853699593" CREATED="1723964930653" MODIFIED="1723964943064"/>
+</node>
+<node TEXT="10 Timing Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)">
+<node TEXT="10.01 Declaring element or participant" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463"/>
+<node TEXT="10.02 Binary and Clock" ID="ID_816365292" CREATED="1723964975276" MODIFIED="1723964995703"/>
+<node TEXT="10.03 Adding message" ID="ID_219323644" CREATED="1723964987932" MODIFIED="1723965000949"/>
+<node TEXT="10.04 Relative time" ID="ID_411316852" CREATED="1723965001386" MODIFIED="1723965005024"/>
+<node TEXT="10.05 Anchor Points" ID="ID_1519568400" CREATED="1723965008196" MODIFIED="1723965012743"/>
+<node TEXT="10.06 Participant Oriented" ID="ID_953686888" CREATED="1723965242501" MODIFIED="1723965250590"/>
+<node TEXT="10.07 Setting Scale" ID="ID_1462100651" CREATED="1723965250782" MODIFIED="1723965255688"/>
+<node TEXT="10.08 Initial state" ID="ID_220874239" CREATED="1723965259381" MODIFIED="1723965270167"/>
+<node TEXT="10.09 Intricated state" ID="ID_1085563474" CREATED="1723965418710" MODIFIED="1723965426399"/>
+<node TEXT="10.10 Hidden state" ID="ID_131369442" CREATED="1723965427023" MODIFIED="1723965437335"/>
+<node TEXT="10.11 Hide time axis" ID="ID_1859047507" CREATED="1723965437927" MODIFIED="1723965445824"/>
+<node TEXT="10.12 Using Time and Date" ID="ID_383036611" CREATED="1723965445973" MODIFIED="1723965457912"/>
+<node TEXT="10.13 Adding constraint" ID="ID_920328967" CREATED="1723965458256" MODIFIED="1723965469183"/>
+<node TEXT="10.14 Highlighted period" ID="ID_1043561928" CREATED="1723965471374" MODIFIED="1723965476183"/>
+<node TEXT="10.15 Using Notes" ID="ID_600756445" CREATED="1723965479061" MODIFIED="1723965482936"/>
+<node TEXT="10.16 Adding Texts" ID="ID_1639419166" CREATED="1723965486078" MODIFIED="1723965490528"/>
+<node TEXT="10.17 Complete example" ID="ID_864920290" CREATED="1723965493990" MODIFIED="1723965503936"/>
+<node TEXT="10.18 Digital Example" ID="ID_1044844432" CREATED="1723965508575" MODIFIED="1723965514092"/>
+<node TEXT="10.19 Adding Color" ID="ID_933088185" CREATED="1723965527206" MODIFIED="1723965531512"/>
+<node TEXT="10.20 Using (global) style" ID="ID_274065047" CREATED="1723965536591" MODIFIED="1723965543935"/>
+<node TEXT="10.21 Applying Colors to specific lines" ID="ID_237312707" CREATED="1723965547669" MODIFIED="1723965556849"/>
+<node TEXT="10.22 Compact mode" ID="ID_1048997909" CREATED="1723965560293" MODIFIED="1723965569086">
+<node TEXT="By default" ID="ID_1890957067" CREATED="1723965569088" MODIFIED="1723965573560"/>
+<node ID="ID_88200352" CREATED="1723965576638" MODIFIED="1723965590743"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Global mode with mode <span style="font-weight: bold;">compact</span>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1039466299" CREATED="1723965594430" MODIFIED="1723965606092"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Local model with only <span style="font-weight: bold;">compact</span><span style="font-weight: normal;">&#xa0;&#xa0;on element</span>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
