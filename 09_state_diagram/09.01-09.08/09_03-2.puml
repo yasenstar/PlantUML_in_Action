@@ -1,0 +1,18 @@
+@startuml
+
+state A {
+    state P
+    state X
+    state Y
+    state C
+}
+
+state B {
+    state Z
+}
+
+X --> Z
+Z --> Y
+Y -> C
+
+@enduml
