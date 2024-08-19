@@ -1,0 +1,22 @@
+@startuml
+[*] -> State1
+State1 --> State2 : Succeeded
+State2 --> [*] : Aborted
+State1 --> [*] : Aborted
+
+State2 --> State3 : Succeeded
+State3 --> State3 : Failed
+
+state State3 {
+    state "Accumulate Enough Data\nLong State Name\nMultiLine" as long1
+    long1 : Just a test
+    long1 : Another test
+    [*] --> long1
+    long1 --> ProcessDate : Enough Data
+    long1 --> long1 : New Data
+}
+
+State3 --> [*] : Succeeded / Save Result
+State3 --> [*] : Aborted
+
+@enduml
