@@ -1,0 +1,13 @@
+@startuml
+[*] -> State0
+state fork_state <<fork>>
+State0 --> fork_state
+fork_state --> State2
+State2 --> State3
+fork_state --> State4
+state join_state <<join>>
+State3 --> join_state
+State4 --> join_state
+join_state --> State5
+State5 -> [*]
+@enduml
