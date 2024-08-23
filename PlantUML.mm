@@ -1289,7 +1289,7 @@
 <node TEXT="Question about &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1281027968" CREATED="1724394250051" MODIFIED="1724394290278" LINK="https://forum.plantuml.net/19174/is-there-a-list-of-things-like-sdlreceive"/>
 <node TEXT="Source code for &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1144188138" CREATED="1724394263093" MODIFIED="1724394283910" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/svek/GeneralImageBuilder.java#L141"/>
 </node>
-<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" FOLDED="true" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1724394633448">
+<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1724394633448">
 <node TEXT="/plantuml/statediagram/command/CommandCreateState.java" ID="ID_1525739727" CREATED="1724394592349" MODIFIED="1724394628276" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/statediagram/command/CommandCreateState.java">
 <node TEXT="&lt;&lt;start&gt;&gt;: LeafType.CIRCLE_START" POSITION="bottom_or_right" ID="ID_702774502" CREATED="1724394307550" MODIFIED="1724394553703"/>
 <node TEXT="&lt;&lt;choice&gt;&gt;: LeafType.STATE_CHOICE" POSITION="bottom_or_right" ID="ID_1598831104" CREATED="1724394311350" MODIFIED="1724394503366"/>

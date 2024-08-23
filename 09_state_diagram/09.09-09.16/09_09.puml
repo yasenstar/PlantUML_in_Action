@@ -1,0 +1,21 @@
+@startuml
+state start1 <<start>>
+state start2 <<start>>
+state end1 <<end>>
+state end2 <<end>>
+state choice1 <<choice>>
+state fork1 <<fork>>
+state join1 <<join>>
+state history1 <<history>>
+state history2 <<history*>>
+
+start1 --> choice1
+start2 --> choice1
+choice1 --> end1
+choice1 --> fork1
+fork1 --> State1
+fork1 --> State2
+State1 --> end2
+State2 --> join1
+choice1 --> join1
+@enduml
