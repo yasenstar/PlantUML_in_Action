@@ -1,0 +1,15 @@
+@startuml
+state "Not Shooting State" as NotShooting
+[*] --> NotShooting
+
+state NotShooting {
+    state "Idle Mode" as Idle
+    state "Configuring Mode" as Configuring
+    [*] --> Idle
+    Idle --> Configuring : EvConfig
+    Configuring --> Idle : EvResponse
+}
+
+note top of NotShooting : This is a note\non a composite state
+
+@enduml

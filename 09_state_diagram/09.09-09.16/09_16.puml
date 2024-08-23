@@ -1,0 +1,19 @@
+@startuml
+[*] -u-> State1
+
+note on link
+    a note
+end note
+
+State1 --> State2
+
+note on link
+    a note
+end note
+
+State2 --> State3
+
+note on link
+    a note
+end note
+@enduml
