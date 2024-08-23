@@ -1,0 +1,12 @@
+@startuml
+state Idle <<sdlreceive>>
+state "Req(Id)" as ReqId <<sdlreceive>>
+state c <<choice>>
+state "Minor(Id)" as MinorId
+state "Major(Id)" as MajorId
+
+Idle -> ReqId
+ReqId --> c
+c --> MinorId : [Id <= 10]
+c --> MajorId : [Id > 10]
+@enduml

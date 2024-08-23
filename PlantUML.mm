@@ -827,10 +827,10 @@
 </node>
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
-<arrowlink DESTINATION="ID_652208197"/>
+<arrowlink DESTINATION="ID_1961776223"/>
 <arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_288741682"/>
-<arrowlink DESTINATION="ID_1961776223"/>
+<arrowlink DESTINATION="ID_652208197"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -993,9 +993,9 @@
 <node TEXT="e.g. -down-&gt;" ID="ID_1622483910" CREATED="1718627138976" MODIFIED="1719297653097"/>
 </node>
 <node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1720771052725">
-<arrowlink DESTINATION="ID_1828622956"/>
-<arrowlink DESTINATION="ID_999052549"/>
 <arrowlink DESTINATION="ID_1131340221"/>
+<arrowlink DESTINATION="ID_999052549"/>
+<arrowlink DESTINATION="ID_1828622956"/>
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>
@@ -1076,8 +1076,9 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Branches" FOLDED="true" ID="ID_342101877" CREATED="1720771065460" MODIFIED="1720771068741">
-<node TEXT="6.03 Conditional" FOLDED="true" POSITION="bottom_or_right" ID="ID_999052549" CREATED="1718627414396" MODIFIED="1718627419370">
+<node TEXT="Branches" ID="ID_342101877" CREATED="1720771065460" MODIFIED="1720771068741">
+<node TEXT="6.03 Conditional" FOLDED="true" POSITION="bottom_or_right" ID="ID_999052549" CREATED="1718627414396" MODIFIED="1724388263807">
+<arrowlink DESTINATION="ID_1932173925"/>
 <node TEXT="Basic Syntax" ID="ID_336411191" CREATED="1720770565923" MODIFIED="1720770575012">
 <node TEXT="if (...) then (...)" ID="ID_1596817279" CREATED="1720770575015" MODIFIED="1720770585477"/>
 <node TEXT="if (...) is (...) then" ID="ID_710145311" CREATED="1720770746899" MODIFIED="1720770775208"/>
@@ -1232,7 +1233,7 @@
 </node>
 </node>
 <node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
-<node TEXT="9.01 Simple State" ID="ID_816130613" CREATED="1723962813484" MODIFIED="1723962820615">
+<node TEXT="9.01 Simple State" FOLDED="true" ID="ID_816130613" CREATED="1723962813484" MODIFIED="1723962820615">
 <node TEXT="What is State?" ID="ID_1298518317" CREATED="1723987204398" MODIFIED="1723987210287">
 <node TEXT="Rumbaugh defines that: &quot;A State is an abstraction of the attribute values and links of an object. Sets of values are grouped together into a state according to properties that affect the gross behavior of the object.&quot;" ID="ID_669825173" CREATED="1723987210287" MODIFIED="1723987278082"/>
 </node>
@@ -1249,8 +1250,7 @@
 <node TEXT="Sub-state to sub-state" ID="ID_1631503807" CREATED="1723962929558" MODIFIED="1723962936278"/>
 </node>
 <node TEXT="9.04 Long Name" ID="ID_567296231" CREATED="1723962940156" MODIFIED="1723962944510"/>
-<node TEXT="9.05 History [[H], [H*]]" ID="ID_1170657627" CREATED="1723962945069" MODIFIED="1723986889810">
-<hook URI="../../../C:/Users/v0cn037/Pictures/202408/history-state.png" SIZE="1.0" NAME="ExternalObject"/>
+<node TEXT="9.05 History [[H], [H*]]" FOLDED="true" ID="ID_1170657627" CREATED="1723962945069" MODIFIED="1724336583026">
 <node ID="ID_1802423505" CREATED="1723986740479" MODIFIED="1723986799080"><richcontent TYPE="NODE">
 
 <html>
@@ -1263,7 +1263,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_905835830" CREATED="1723986799774" MODIFIED="1723986839859"><richcontent TYPE="NODE">
@@ -1278,7 +1277,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1287,8 +1285,24 @@
 <node TEXT="Horizontal separator --" ID="ID_558721006" CREATED="1723963007372" MODIFIED="1723963013199"/>
 <node TEXT="Vertical separator ||" ID="ID_1385294032" CREATED="1723963015549" MODIFIED="1723963036591"/>
 </node>
-<node TEXT="9.08 Conditional [choice]" ID="ID_1932173925" CREATED="1723963040390" MODIFIED="1723963047615"/>
-<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1723963078625"/>
+<node TEXT="9.08 Conditional [choice]" FOLDED="true" ID="ID_1932173925" CREATED="1723963040390" MODIFIED="1723963047615">
+<node TEXT="Question about &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1281027968" CREATED="1724394250051" MODIFIED="1724394290278" LINK="https://forum.plantuml.net/19174/is-there-a-list-of-things-like-sdlreceive"/>
+<node TEXT="Source code for &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1144188138" CREATED="1724394263093" MODIFIED="1724394283910" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/svek/GeneralImageBuilder.java#L141"/>
+</node>
+<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" FOLDED="true" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1724394633448">
+<node TEXT="/plantuml/statediagram/command/CommandCreateState.java" ID="ID_1525739727" CREATED="1724394592349" MODIFIED="1724394628276" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/statediagram/command/CommandCreateState.java">
+<node TEXT="&lt;&lt;start&gt;&gt;: LeafType.CIRCLE_START" POSITION="bottom_or_right" ID="ID_702774502" CREATED="1724394307550" MODIFIED="1724394553703"/>
+<node TEXT="&lt;&lt;choice&gt;&gt;: LeafType.STATE_CHOICE" POSITION="bottom_or_right" ID="ID_1598831104" CREATED="1724394311350" MODIFIED="1724394503366"/>
+<node TEXT="&lt;&lt;fork&gt;&gt;: LeafType.STATE_FORK_JOIN" POSITION="bottom_or_right" ID="ID_1672628983" CREATED="1724394314141" MODIFIED="1724394512482"/>
+<node TEXT="&lt;&lt;join&gt;&gt;: LeafType.STATE_FORK_JOIN" POSITION="bottom_or_right" ID="ID_722258211" CREATED="1724394318269" MODIFIED="1724394520481"/>
+<node TEXT="&lt;&lt;end&gt;&gt;: LeafType.CIRCLE_END" POSITION="bottom_or_right" ID="ID_1911867260" CREATED="1724394320629" MODIFIED="1724394546145"/>
+<node TEXT="&lt;&lt;history&gt;&gt;: LeafType.PSEUDO_STATE" POSITION="bottom_or_right" ID="ID_1970918023" CREATED="1724394333453" MODIFIED="1724394569631"/>
+<node TEXT="&lt;&lt;history*&gt;&gt;: LeafType.DEEP_HISTORY" POSITION="bottom_or_right" ID="ID_822414932" CREATED="1724394343709" MODIFIED="1724394578591"/>
+</node>
+<node TEXT="/plantuml/svek/GeneralImageBuilder.java" ID="ID_619818361" CREATED="1724394717686" MODIFIED="1724394735453" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/svek/GeneralImageBuilder.java">
+<node TEXT="&lt;&lt;sdlreceive&gt;&gt;: EntityImageState2(leaf, skinParam, umlDiagramType.getStyleName())" POSITION="bottom_or_right" ID="ID_1490106488" CREATED="1724394324909" MODIFIED="1724394783817"/>
+</node>
+</node>
 <node TEXT="9.10 Point [entryPoint, exitPoint]" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
 <node TEXT="9.11 Pin [inputPin, outputPin]" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
 <node TEXT="9.12 Expansion [expansionInput, expansionOutput]" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
