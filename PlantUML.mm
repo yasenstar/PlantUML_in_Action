@@ -1306,7 +1306,7 @@
 <node TEXT="&lt;&lt;sdlreceive&gt;&gt;: EntityImageState2(leaf, skinParam, umlDiagramType.getStyleName())" POSITION="bottom_or_right" ID="ID_1490106488" CREATED="1724394324909" MODIFIED="1724394783817"/>
 </node>
 </node>
-<node TEXT="Input &amp; Output notation" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413511978">
+<node TEXT="Input &amp; Output notation" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413654979" LINK="https://forum.plantuml.net/4309/missing-features-documentation?show=4309#q4309">
 <node TEXT="9.10 Point [entryPoint, exitPoint]" POSITION="bottom_or_right" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
 <node TEXT="9.11 Pin [inputPin, outputPin]" POSITION="bottom_or_right" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
 <node TEXT="9.12 Expansion [expansionInput, expansionOutput]" POSITION="bottom_or_right" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
