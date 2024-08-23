@@ -1,0 +1,22 @@
+@startuml
+
+' left to right direction
+
+state Somp {
+    state entry1 <<inputPin>>
+    state entry2 <<expansionInput>>
+    state sin1
+    state sin2
+    state exit1 <<outputPin>>
+    entry1 --> sin1
+    entry2 --> sin1
+    sin1 -> sin2
+    sin2 --> exit1
+}
+
+[*] --> entry1
+Foo1 --> entry2
+exit1 --> Foo2
+Foo2 -> [*]
+
+@enduml

@@ -662,10 +662,13 @@
 <node TEXT="8.15 Appendix: Test of style on all element" POSITION="bottom_or_right" ID="ID_1938971949" CREATED="1722684668140" MODIFIED="1722684680068"/>
 <node TEXT="8.16 Appendix: Test of stereotype with style on all element" POSITION="bottom_or_right" ID="ID_927353333" CREATED="1722684696166" MODIFIED="1722684711411"/>
 </node>
-<node TEXT="Others" FOLDED="true" ID="ID_30065214" CREATED="1722684865183" MODIFIED="1722684866882">
+<node TEXT="Others" ID="ID_30065214" CREATED="1722684865183" MODIFIED="1722684866882">
 <node TEXT="8.17 Display JSON Data on Deployment Diagram" POSITION="bottom_or_right" ID="ID_1386582686" CREATED="1722684724911" MODIFIED="1722684741419"/>
 <node TEXT="8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram" POSITION="bottom_or_right" ID="ID_1618848251" CREATED="1722684747993" MODIFIED="1722684772569"/>
-<node TEXT="8.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1722879446716"/>
+<node TEXT="8.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1724413473516">
+<arrowlink DESTINATION="ID_752866346"/>
+<arrowlink DESTINATION="ID_40322031"/>
+</node>
 </node>
 </node>
 </node>
@@ -1076,7 +1079,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Branches" ID="ID_342101877" CREATED="1720771065460" MODIFIED="1720771068741">
+<node TEXT="Branches" FOLDED="true" ID="ID_342101877" CREATED="1720771065460" MODIFIED="1720771068741">
 <node TEXT="6.03 Conditional" FOLDED="true" POSITION="bottom_or_right" ID="ID_999052549" CREATED="1718627414396" MODIFIED="1724397934793">
 <arrowlink DESTINATION="ID_1932173925" STARTINCLINATION="99.9 pt;0 pt;" ENDINCLINATION="100.2 pt;0 pt;"/>
 <node TEXT="Basic Syntax" ID="ID_336411191" CREATED="1720770565923" MODIFIED="1720770575012">
@@ -1289,7 +1292,7 @@
 <node TEXT="Question about &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1281027968" CREATED="1724394250051" MODIFIED="1724394290278" LINK="https://forum.plantuml.net/19174/is-there-a-list-of-things-like-sdlreceive"/>
 <node TEXT="Source code for &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1144188138" CREATED="1724394263093" MODIFIED="1724394283910" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/svek/GeneralImageBuilder.java#L141"/>
 </node>
-<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1724394633448">
+<node TEXT="9.09 Stereotypes full example [start, choice, fork, join, end]" FOLDED="true" ID="ID_95768450" CREATED="1723963050380" MODIFIED="1724394633448">
 <node TEXT="/plantuml/statediagram/command/CommandCreateState.java" ID="ID_1525739727" CREATED="1724394592349" MODIFIED="1724394628276" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/statediagram/command/CommandCreateState.java">
 <node TEXT="&lt;&lt;start&gt;&gt;: LeafType.CIRCLE_START" POSITION="bottom_or_right" ID="ID_702774502" CREATED="1724394307550" MODIFIED="1724394553703"/>
 <node TEXT="&lt;&lt;choice&gt;&gt;: LeafType.STATE_CHOICE" POSITION="bottom_or_right" ID="ID_1598831104" CREATED="1724394311350" MODIFIED="1724394503366"/>
@@ -1303,9 +1306,11 @@
 <node TEXT="&lt;&lt;sdlreceive&gt;&gt;: EntityImageState2(leaf, skinParam, umlDiagramType.getStyleName())" POSITION="bottom_or_right" ID="ID_1490106488" CREATED="1724394324909" MODIFIED="1724394783817"/>
 </node>
 </node>
-<node TEXT="9.10 Point [entryPoint, exitPoint]" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
-<node TEXT="9.11 Pin [inputPin, outputPin]" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
-<node TEXT="9.12 Expansion [expansionInput, expansionOutput]" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
+<node TEXT="Input &amp; Output notation" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413511978">
+<node TEXT="9.10 Point [entryPoint, exitPoint]" POSITION="bottom_or_right" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
+<node TEXT="9.11 Pin [inputPin, outputPin]" POSITION="bottom_or_right" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
+<node TEXT="9.12 Expansion [expansionInput, expansionOutput]" POSITION="bottom_or_right" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
+</node>
 <node TEXT="styles" FOLDED="true" ID="ID_1411663180" CREATED="1723963160718" MODIFIED="1723963163279">
 <node TEXT="9.13 Arrow direction" POSITION="bottom_or_right" ID="ID_1037973777" CREATED="1723963123037" MODIFIED="1723963128448"/>
 <node TEXT="9.14 Change line color and style" POSITION="bottom_or_right" ID="ID_1404922541" CREATED="1723963131557" MODIFIED="1723963138134"/>
