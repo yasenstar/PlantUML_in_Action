@@ -1,0 +1,21 @@
+@startuml
+
+state FooGraident #red/purple ##00FFFF
+
+state FooDashed #yellow-green ##[dashed]cyan {
+    state foo
+}
+
+state FooDotted #line.bold;line:red
+
+state Foo1 ##[dotted] {
+    state Inner1
+}
+
+state Foo2 ##[bold]green {
+    state Inner2
+}
+
+Inner1 -> Inner2
+
+@enduml
