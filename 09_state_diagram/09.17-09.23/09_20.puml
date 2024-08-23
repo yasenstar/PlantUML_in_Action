@@ -1,0 +1,29 @@
+@startuml
+
+<style>
+    stateDiagram {
+        BackgroundColor Peru
+        FontColor Blue
+        FontName Impact
+        arrow {
+            LineColor Green
+            FontSize 25
+            FontColor #008888
+        }
+    }
+</style>
+
+state "Not Shooting State" as NotShooting
+[*] --> NotShooting
+
+state NotShooting {
+    state "Idle Mode" as Idle <<Warning>>
+    state "Configuring Mode" as Configuring
+    [*] --> Idle : Starting
+    Idle --> Configuring : EvConfig
+    Configuring --> Idle : EvResponse
+}
+
+NotShooting --> [*]
+
+@enduml
