@@ -1,0 +1,9 @@
+@startuml
+
+[*] -up-> First
+First -ri-> Second
+Second ---> Third
+Third -> Fourth
+Third -l-> Last
+
+@enduml

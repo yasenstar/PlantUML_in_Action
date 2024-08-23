@@ -1,0 +1,12 @@
+@startuml
+state S1
+S1 -[#DD00AA]-> S2
+S1 -left[#yellow]-> S3
+S1 -u[#red,dashed]-> S4
+S1 -ri[dotted,#blue]-> S5
+
+X1 -[dashed,#purple]-> X2
+Z1 -[dotted]-> Z2
+Y1 -[bold,#red]-> Y2
+
+@enduml
