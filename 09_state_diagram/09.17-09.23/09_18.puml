@@ -1,0 +1,20 @@
+@startuml
+state CurrentSite #pink {
+    state HardwareSetup #lightblue {
+        state Site #darkblue
+        state Controller
+        state Devices
+        Site -[hidden]-> Controller
+        Controller -[hidden]-> Devices
+    }
+    state PresentationSetup {
+        state Groups
+        state PlansAndGraphics
+    }
+    state Trends #yellow
+    state Schedule #FF0000
+    state AlarmSupression
+}
+
+Schedule: plan1
+@enduml
