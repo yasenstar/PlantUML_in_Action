@@ -1,0 +1,21 @@
+@startuml
+
+skinparam State {
+    FontName Impact
+    FontSize 20
+    FontColor red
+    AttributeFontColor blue
+    BackgroundColor palegreen
+    ' StartColor silver
+}
+
+[*] -> A : start
+A -> B : a2b
+B -> [*] : end
+
+A : a a a
+A : a
+
+B : b b b\nb
+
+@enduml

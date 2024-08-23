@@ -1,0 +1,26 @@
+@startuml
+
+skinparam backgroundColor LightYellow
+
+skinparam State {
+    BackgroundColor Purple
+    BackgroundColor<<Warning>> Olive
+    ' StartColor MediumBlue
+    BorderColor Green
+    FontName Impact
+    FontSize<<Warning>> 20
+}
+
+state "Not Shooting State" as NotShooting
+[*] --> NotShooting
+
+state NotShooting {
+    state "Idle Mode" as Idle <<Warning>>
+    state "Configuring Mode" as Configuring
+    [*] --> Idle
+    Idle --> Configuring : EvConfig
+    Configuring --> Idle : EvResponse
+}
+
+NotShooting --> [*]
+@enduml
