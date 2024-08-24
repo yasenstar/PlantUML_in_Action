@@ -1,0 +1,19 @@
+@startuml
+title display JSON in State DiagramBorderColor
+
+state "A" as stateA
+state "C" as stateC {
+    State B
+}
+
+stateA --> B
+
+json jsonJ {
+    "fruit":"Apple",
+    "size":"Large",
+    "color": ["Red", "Green", "Yellow"]
+}
+
+stateC --> jsonJ
+
+@enduml
