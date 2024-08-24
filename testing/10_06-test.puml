@@ -1,0 +1,27 @@
+@startuml
+robust "Web Browser" as WB
+concise "Web User" as WU
+clock "Clock_1" as c1 with period 50 pulse 15 offset 10
+binary "Enable" as EN
+
+@WB
+0 is idle
++200 is Proc.
+-150 is Middle
++100 is Waiting
+
+@WU
+-100 is Waiting
++100 is OK
++100 is NOK
+
+@0
+EN is low
+
+@50
+EN is high
+
+@200
+EN is low
+
+@enduml

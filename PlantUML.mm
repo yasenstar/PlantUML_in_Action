@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.266">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1235,7 +1235,7 @@
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
 </node>
-<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
+<node TEXT="09 State Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
 <node TEXT="9.01 Simple State" FOLDED="true" ID="ID_816130613" CREATED="1723962813484" MODIFIED="1723962820615">
 <node TEXT="What is State?" ID="ID_1298518317" CREATED="1723987204398" MODIFIED="1723987210287">
 <node TEXT="Rumbaugh defines that: &quot;A State is an abstraction of the attribute values and links of an object. Sets of values are grouped together into a state according to properties that affect the gross behavior of the object.&quot;" ID="ID_669825173" CREATED="1723987210287" MODIFIED="1723987278082"/>
@@ -1306,12 +1306,12 @@
 <node TEXT="&lt;&lt;sdlreceive&gt;&gt;: EntityImageState2(leaf, skinParam, umlDiagramType.getStyleName())" POSITION="bottom_or_right" ID="ID_1490106488" CREATED="1724394324909" MODIFIED="1724394783817"/>
 </node>
 </node>
-<node TEXT="Input &amp; Output notation" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413654979" LINK="https://forum.plantuml.net/4309/missing-features-documentation?show=4309#q4309">
+<node TEXT="Input &amp; Output notation" FOLDED="true" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413654979" LINK="https://forum.plantuml.net/4309/missing-features-documentation?show=4309#q4309">
 <node TEXT="9.10 Point [entryPoint, exitPoint]" POSITION="bottom_or_right" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
 <node TEXT="9.11 Pin [inputPin, outputPin]" POSITION="bottom_or_right" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
 <node TEXT="9.12 Expansion [expansionInput, expansionOutput]" POSITION="bottom_or_right" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
 </node>
-<node TEXT="styles" ID="ID_1411663180" CREATED="1723963160718" MODIFIED="1723963163279">
+<node TEXT="styles" FOLDED="true" ID="ID_1411663180" CREATED="1723963160718" MODIFIED="1723963163279">
 <node TEXT="9.13 Arrow direction" POSITION="bottom_or_right" ID="ID_1037973777" CREATED="1723963123037" MODIFIED="1723963128448"/>
 <node TEXT="9.14 Change line color and style" POSITION="bottom_or_right" ID="ID_1404922541" CREATED="1723963131557" MODIFIED="1723963138134"/>
 <node TEXT="9.18 Inline color" POSITION="bottom_or_right" ID="ID_738063173" CREATED="1723963183934" MODIFIED="1723963189111"/>
@@ -1319,7 +1319,7 @@
 <node TEXT="9.20 Changing style" POSITION="bottom_or_right" ID="ID_478812190" CREATED="1723963212335" MODIFIED="1723963217487"/>
 <node TEXT="9.21 Change state color and style (inline style)" POSITION="bottom_or_right" ID="ID_239288160" CREATED="1723963222958" MODIFIED="1723963234943"/>
 </node>
-<node TEXT="notes" ID="ID_941694790" CREATED="1723963168917" MODIFIED="1723963172511">
+<node TEXT="notes" FOLDED="true" ID="ID_941694790" CREATED="1723963168917" MODIFIED="1723963172511">
 <node TEXT="9.15 Note" POSITION="bottom_or_right" ID="ID_1159186616" CREATED="1723963139541" MODIFIED="1723963142727"/>
 <node TEXT="9.16 Note on link" POSITION="bottom_or_right" ID="ID_1523084652" CREATED="1723963145453" MODIFIED="1723963149590"/>
 <node TEXT="9.17 More in Notes" POSITION="bottom_or_right" ID="ID_856058291" CREATED="1723963152197" MODIFIED="1723963157535"/>
@@ -1327,16 +1327,29 @@
 <node TEXT="9.22 Alias" ID="ID_1206319746" CREATED="1723963243253" MODIFIED="1723963246800"/>
 <node TEXT="9.23 Display JSON Data on State diagram" ID="ID_853699593" CREATED="1723964930653" MODIFIED="1723964943064"/>
 </node>
-<node TEXT="10 Timing Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)">
-<node TEXT="10.01 Declaring element or participant" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463"/>
+<node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)">
+<node TEXT="10.01 Declaring element or participant" FOLDED="true" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463">
+<node TEXT="analog" ID="ID_489833466" CREATED="1724462497685" MODIFIED="1724462503024"/>
+<node TEXT="binary" ID="ID_522265184" CREATED="1724462503188" MODIFIED="1724462505535"/>
+<node TEXT="clock" ID="ID_237331086" CREATED="1724462505716" MODIFIED="1724462506999"/>
+<node TEXT="concise" ID="ID_1030702166" CREATED="1724462507694" MODIFIED="1724462509439"/>
+<node TEXT="robust" ID="ID_461107578" CREATED="1724462509805" MODIFIED="1724462511407"/>
+<node TEXT="change: @" ID="ID_157904224" CREATED="1724462519669" MODIFIED="1724462525008"/>
+<node TEXT="verb: is" ID="ID_1691019530" CREATED="1724462525365" MODIFIED="1724462529793"/>
+</node>
 <node TEXT="10.02 Binary and Clock" ID="ID_816365292" CREATED="1723964975276" MODIFIED="1723964995703"/>
 <node TEXT="10.03 Adding message" ID="ID_219323644" CREATED="1723964987932" MODIFIED="1723965000949"/>
-<node TEXT="10.04 Relative time" ID="ID_411316852" CREATED="1723965001386" MODIFIED="1723965005024"/>
+<node TEXT="10.04 Relative time" FOLDED="true" ID="ID_411316852" CREATED="1723965001386" MODIFIED="1723965005024">
+<node TEXT="use relative time wiht @" ID="ID_1050789012" CREATED="1724466193714" MODIFIED="1724466198998"/>
+</node>
 <node TEXT="10.05 Anchor Points" ID="ID_1519568400" CREATED="1723965008196" MODIFIED="1723965012743"/>
 <node TEXT="10.06 Participant Oriented" ID="ID_953686888" CREATED="1723965242501" MODIFIED="1723965250590"/>
 <node TEXT="10.07 Setting Scale" ID="ID_1462100651" CREATED="1723965250782" MODIFIED="1723965255688"/>
 <node TEXT="10.08 Initial state" ID="ID_220874239" CREATED="1723965259381" MODIFIED="1723965270167"/>
-<node TEXT="10.09 Intricated state" ID="ID_1085563474" CREATED="1723965418710" MODIFIED="1723965426399"/>
+<node TEXT="10.09 Intricated state" ID="ID_1085563474" CREATED="1723965418710" MODIFIED="1723965426399">
+<node TEXT="Intricated or undefined robust state" ID="ID_1550019424" CREATED="1724470854887" MODIFIED="1724470865028"/>
+<node TEXT="Intricated or undefined binary state" ID="ID_744342566" CREATED="1724470868385" MODIFIED="1724470877579"/>
+</node>
 <node TEXT="10.10 Hidden state" ID="ID_131369442" CREATED="1723965427023" MODIFIED="1723965437335"/>
 <node TEXT="10.11 Hide time axis" ID="ID_1859047507" CREATED="1723965437927" MODIFIED="1723965445824"/>
 <node TEXT="10.12 Using Time and Date" ID="ID_383036611" CREATED="1723965445973" MODIFIED="1723965457912"/>
@@ -1349,7 +1362,7 @@
 <node TEXT="10.19 Adding Color" ID="ID_933088185" CREATED="1723965527206" MODIFIED="1723965531512"/>
 <node TEXT="10.20 Using (global) style" ID="ID_274065047" CREATED="1723965536591" MODIFIED="1723965543935"/>
 <node TEXT="10.21 Applying Colors to specific lines" ID="ID_237312707" CREATED="1723965547669" MODIFIED="1723965556849"/>
-<node TEXT="10.22 Compact mode" ID="ID_1048997909" CREATED="1723965560293" MODIFIED="1723965569086">
+<node TEXT="10.22 Compact mode" FOLDED="true" ID="ID_1048997909" CREATED="1723965560293" MODIFIED="1723965569086">
 <node TEXT="By default" ID="ID_1890957067" CREATED="1723965569088" MODIFIED="1723965573560"/>
 <node ID="ID_88200352" CREATED="1723965576638" MODIFIED="1723965590743"><richcontent TYPE="NODE">
 
@@ -1412,6 +1425,30 @@
 </node>
 <node TEXT="A Comprehensive Guide to Use Case Diagram" ID="ID_1865329574" CREATED="1717787119494" MODIFIED="1717787140171" LINK="https://guides.visual-paradigm.com/a-comprehensive-guide-to-use-case-modeling/">
 <arrowlink DESTINATION="ID_1749037007"/>
+</node>
+</node>
+<node TEXT="Other reference" FOLDED="true" POSITION="bottom_or_right" ID="ID_905635371" CREATED="1724463081294" MODIFIED="1724463087736">
+<node TEXT="UML Diagram Type (by visual paradigm)" ID="ID_965823985" CREATED="1724463087742" MODIFIED="1724463119758" LINK="https://www.visual-paradigm.com/">
+<node TEXT="Structureal Diagram" ID="ID_900537926" CREATED="1724463120878" MODIFIED="1724463126664">
+<node TEXT="Composite Structure Diagram" ID="ID_459278765" CREATED="1724463127959" MODIFIED="1724463135488"/>
+<node TEXT="Deployment Diagram" ID="ID_1595669356" CREATED="1724463135807" MODIFIED="1724463139489"/>
+<node TEXT="Package Diagram" ID="ID_1063483276" CREATED="1724463139726" MODIFIED="1724463143473"/>
+<node TEXT="Profile Diagram" ID="ID_1084848026" CREATED="1724463143734" MODIFIED="1724463147409"/>
+<node TEXT="Class Diagram" ID="ID_1497276376" CREATED="1724463147614" MODIFIED="1724463150496"/>
+<node TEXT="Object Diagram" ID="ID_1202453559" CREATED="1724463150711" MODIFIED="1724463154073"/>
+<node TEXT="Component Diagram" ID="ID_524790126" CREATED="1724463154254" MODIFIED="1724463158457"/>
+</node>
+<node TEXT="Behavioral Diagrams" ID="ID_1625116711" CREATED="1724463161078" MODIFIED="1724463167791">
+<node TEXT="Activity Diagram" ID="ID_839645775" CREATED="1724463167795" MODIFIED="1724463171625"/>
+<node TEXT="Use Case Diagram" ID="ID_1882921201" CREATED="1724463171798" MODIFIED="1724463176168"/>
+<node TEXT="State Machine Diagram" ID="ID_1202413822" CREATED="1724463176997" MODIFIED="1724463183121"/>
+<node TEXT="Interactiion Diagram" ID="ID_1685729751" CREATED="1724463183478" MODIFIED="1724463190833">
+<node TEXT="Sequence Diagram" ID="ID_162687234" CREATED="1724463194079" MODIFIED="1724463198097"/>
+<node TEXT="Communication Diagram" ID="ID_1212989462" CREATED="1724463198413" MODIFIED="1724463224152"/>
+<node TEXT="Interaction Overview Diagram" ID="ID_359508909" CREATED="1724463224358" MODIFIED="1724463229792"/>
+<node TEXT="Timing Diagram" ID="ID_1503495212" CREATED="1724463229959" MODIFIED="1724466014466" LINK="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-timing-diagram/"/>
+</node>
+</node>
 </node>
 </node>
 </node>
