@@ -1,0 +1,16 @@
+@startuml
+!include <office/Servers/application_server>
+
+nwdiag {
+    network dmz {
+        address = "210.x.x.x/24"
+        web01 [
+            address = "210.x.x.1, 210.x.x.20",
+            description = "<$application_server>\n web01"
+            ]
+    }
+    network internal {
+
+    }
+}
+@enduml

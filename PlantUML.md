@@ -49,11 +49,11 @@
 #### 2.01 Usecases
 
 ##### keyword: usecase
-
+ (see:usecase: ( u ))
 #### 2.02 Actors
 
 ##### keyword: actor
-
+ (see:actor: : a :)
 #### 2.03 Change Actor Style
 
 ##### skinparam actorStyle
@@ -152,6 +152,10 @@
 
 ##### 3.01 Declaring Element
 
+###### Class
+
+###### Interface
+ (see:interface: () i)
 ##### 3.02 Relations between Classes
 
 ###### Extension Relation
@@ -346,7 +350,7 @@ Pretty much all UML elements can be grouped into packages. Thus, classes, object
 #### Group 7: Arrows and Association
 
 ##### 3.25 Lollipop Interface
-
+ (see:Lollipop: ball and socket)
 ###### Discussion: Interface consumption socket
 
 ###### Forum: #2259 - using circle
@@ -511,21 +515,25 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 #### Basis
 
 ##### 7.01 Components
-
+ (see:component: [ e ])
 ###### 7.01.01 Naming Exceptions
 
-##### 7.02 Interfaces
+###### Ref: ArchiMate 3.2 Specification
 
+##### 7.02 Interfaces
+ (see:interface: () i)
 ##### 7.03 Basic Example
 
-#### Note and Description
+#### 7.04 Using Notes
 
-##### 7.04 Using Notes
+##### Use "note direction of" to define notes related to a single object
 
-##### 7.10 Long Description
+##### defined with the "note" and "end note" keyword, then link to other objects using the ".." symbol or arrow symbols
+
+#### 7.05 Grouping Components
 
 #### Component Notation
-
+ (see:7.14 Specific SkinParameter)
 ##### 7.07 Use UML2 Notation
 
 ###### by default from v1.2020.13-14 UML2 notation is used
@@ -536,27 +544,59 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 
 #### Styles
 
-##### 7.05 Grouping Components
-
 ##### 7.06 Changing Arrows Direction
+
+##### 7.10 Long Description
+
+###### Question raised to Forum: #19128
+
+##### 7.11 Individual Colors
+
+##### 7.12 Using Sprite in Stereotype
+
+###### Piskel - free online sprites editor
+
+###### Only 4, 8, 16 graylevel are allowed
 
 ##### 7.13 Skinparam
 
 ##### 7.14 Specific SkinParameter
 
-##### 7.12 Using Sprite in Stereotype
-
-##### 7.11 Individual Colors
-
 #### Display Related
 
 ##### 7.15 Hide or Remove Unlinked Component
 
+###### By default, all components are displayed
+
+###### Can hide @unlinked components
+
+###### Or can remove @unlinked components
+
 ##### 7.16 Hide, Remove or Restore Tagged Component or Wildcard
+
+###### Question on why cannot restore tag after "remove *"
 
 ##### 7.17 Display JSON Data on Component Diagram
 
+###### Question asked in Forum
+
 #### 7.18 Port [port, portIn, portOut]
+
+##### Lollipop: ball and socket
+
+###### Interface symbols with a complete circle at their end represent an interface that the component provides - this "lollipop" symbol is shorthand for a realization relationship of an interface classifier
+
+* [a] --0 [b]
+
+###### Interface symbols with only a half circle at their end (a.k.a sockets) represent a interface that the component require
+
+* [a] --( [b]
+
+###### Interface combines half circle and complete circle in the middle
+
+* [a] --(0-- [b]
+
+##### Sample: IBM - the component diagram - Figure 7
 
 ### 08 Deployment Diagram
 
@@ -566,11 +606,33 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 
 ##### 8.02 Declaring Element (using short form)
 
+###### actor: : a :
+
+###### component: [ e ]
+
+###### interface: () i
+
+###### usecase: ( u )
+
 #### Linking/Arrow and Arrow / Elements Styles
 
 ##### 8.03 Linking or Arrow
 
+###### Simple Link
+
+###### Link with Arrow
+
+###### Lollipop Style
+
 ##### 8.04 Bracketed Arrow Style
+
+###### Line Style: bold, dashed, dotted, hidden, plain
+
+###### Line Color: [#colorName]
+
+###### Line Thickness: [thickness=(1,2,4,8,16)]
+
+###### Mix in bracketed style portion
 
 ##### 8.05 Change Arrow Color and Style (inline style)
 
@@ -608,8 +670,8 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 
 ##### 8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram
 
-##### 9.19 Port [port, portIn, portOut]
-
+##### 8.19 Port [port, portIn, portOut]
+ (see:9.10 Point [entryPoint, exitPoint]9.11 Pin [inputPin, outputPin])
 ## Behavioral (Dynamic) UML Modeling
 
 ### 01 Sequence Diagram
@@ -945,7 +1007,7 @@ Examples of All Arrow Type
 ##### using [ and ] after --> for labeling on arrows
 
 #### 5.03 Changing Arrow Direction
-
+ (see:7.06 Changing Arrows Direction)
 ##### e.g. -down->
 
 #### 5.04 Branches
@@ -1014,7 +1076,7 @@ UseStoporEnd  to denote the end of a diagram
 #### Branches
 
 ##### 6.03 Conditional
-
+ (see:9.08 Conditional [choice])
 ###### Basic Syntax
 
 * if (...) then (...)
@@ -1191,17 +1253,333 @@ java -jar plantuml.jar -P useVerticalIf=on
 
 ### 09 State Diagram
 
+#### 9.01 Simple State
+
+##### What is State?
+
+###### Rumbaugh defines that: "A State is an abstraction of the attribute values and links of an object. Sets of values are grouped together into a state according to properties that affect the gross behavior of the object."
+
+##### State Notation
+
+##### State Diagram vs Activity Diagram
+
+#### 9.02 Change State Rendering
+
+#### 9.03 Compsite State
+
+##### Internal Sub-state
+
+##### Sub-state to sub-state
+
+#### 9.04 Long Name
+
+#### 9.05 History [[H], [H*]]
+ 
+Unless otherwise specified, when a transition enters a composition state, the action ofthe nested state machine starts over again at the initial state (unless the transition targets a substate directly)
+
+ 
+History states allow the state machine tore-enter the last substate that was active prior to leaving  the composition state.
+
+
+#### 9.06 Fork [fork, join]
+
+#### 9.07 Concurrent State [--, ||]
+
+##### Horizontal separator --
+
+##### Vertical separator ||
+
+#### 9.08 Conditional [choice]
+
+##### Question about <<sdlreceive>>
+
+##### Source code for <<sdlreceive>>
+
+#### 9.09 Stereotypes full example [start, choice, fork, join, end]
+
+##### /plantuml/statediagram/command/CommandCreateState.java
+
+###### <<start>>: LeafType.CIRCLE_START
+
+###### <<choice>>: LeafType.STATE_CHOICE
+
+###### <<fork>>: LeafType.STATE_FORK_JOIN
+
+###### <<join>>: LeafType.STATE_FORK_JOIN
+
+###### <<end>>: LeafType.CIRCLE_END
+
+###### <<history>>: LeafType.PSEUDO_STATE
+
+###### <<history*>>: LeafType.DEEP_HISTORY
+
+##### /plantuml/svek/GeneralImageBuilder.java
+
+###### <<sdlreceive>>: EntityImageState2(leaf, skinParam, umlDiagramType.getStyleName())
+
+#### Input & Output notation
+
+##### 9.10 Point [entryPoint, exitPoint]
+
+##### 9.11 Pin [inputPin, outputPin]
+
+##### 9.12 Expansion [expansionInput, expansionOutput]
+
+#### styles
+
+##### 9.13 Arrow direction
+
+##### 9.14 Change line color and style
+
+##### 9.18 Inline color
+
+##### 9.19 Skinparam
+
+##### 9.20 Changing style
+
+##### 9.21 Change state color and style (inline style)
+
+#### notes
+
+##### 9.15 Note
+
+##### 9.16 Note on link
+
+##### 9.17 More in Notes
+
+#### 9.22 Alias
+
+#### 9.23 Display JSON Data on State diagram
+
 ### 10 Timing Diagram
+
+#### 10.01 Declaring element or participant
+
+##### analog
+
+##### binary
+
+##### clock
+
+##### concise
+
+##### robust
+
+##### change: @
+
+##### verb: is
+
+#### 10.02 Binary and Clock
+
+#### 10.03 Adding message
+
+#### 10.04 Relative time
+
+##### use relative time wiht @
+
+#### 10.05 Anchor Points
+
+#### 10.06 Participant Oriented
+
+#### 10.07 Setting Scale
+
+#### 10.08 Initial state
+
+#### 10.09 Intricated state
+
+##### Intricated or undefined robust state
+
+##### Intricated or undefined binary state
+
+#### 10.10 Hidden state
+
+#### 10.11 Hide time axis
+
+#### 10.12 Using Time and Date
+
+#### 10.13 Adding constraint
+
+#### 10.14 Highlighted period
+
+#### 10.15 Using Notes
+
+#### 10.16 Adding Texts
+
+#### 10.17 Complete example
+
+#### 10.18 Digital Example
+
+#### 10.19 Adding Color
+
+#### 10.20 Using (global) style
+
+#### 10.21 Applying Colors to specific lines
+
+#### 10.22 Compact mode
+
+##### By default
+ 
+Global mode with modecompact
+
+ 
+Local model with onlycompact  on element
+
 
 # Non-UML Diagrams
 
 ## 11 Display JSON Data
 
+### 11.1 Complex Example
+
+### 11.2 Highlight Parts
+
+### 11.3 Using Different Styles for Highlight
+
+### 11.4 JSON Basic Element
+
+#### Synthesis of all JSON basic element
+
+### 11.5 JSON Array or Table
+
+#### Array Type
+
+#### Minimal Array or Table
+
+#### Number Array
+
+#### String Array
+
+#### Boolean Array
+
+### 11.6 JSON Numbers
+
+### 11.7 JSON Strings
+
+#### JSON Unicode
+
+#### JSON Two-Character Escape Sequence
+
+### 11.8 Minimal JSON Examples
+
+### 11.9 Empty Table or List
+
+### 11.10 Using (Global) Style
+
+### 11.11 Display JSON Data on Class or Object Diagram
+
+### 11.12 Display JSON Data on Deployment Diagram
+
+### 11.13 Display JSON Data on State Diagram
+
 ## 12 Display YAML Data
+
+### 12.1 Complex Example
+
+### 12.2 Specific Key (with symbols or unicode)
+
+### 12.3 Highlight Parts
+
+### 12.4 Using Different Styles for Highlight
+
+### 12.5 Using (Global) Style
 
 ## 13 Network Diagram (nwdiag)
 
+### 13.1 Simple Diagram
+
+#### Define a Network
+
+#### Define some Elements or Servers on a Network
+
+#### Full Example
+
+### 13.2 Define Multiple Addresses
+
+### 13.3 Grouping Nodes
+
+#### Define Group inside Network Definitions
+
+#### Define Group outside of Network Definitions
+
+#### Define Several Groups on Same Network
+
+##### Example with 2 Group
+
+##### Example with 3 Groups
+
+### 13.4 Extended Syntax (for network or group)
+
+#### Network
+
+#### Group
+
+### 13.5 Using Sprites
+
+### 13.6 Using OpenIconic
+
+### 13.7 Same Nodes on more than two Networks
+
+### 13.8 Peer Networks
+
+### 13.9 Peer Networks and Group
+
+#### Without Group
+
+#### Group on First
+
+#### Group on Second
+
+#### Group on Third
+
+### 13.10 Add Title, Captain, Header, Footer or Legend on Network Diagram
+
+### 13.11 With or Without Shadow
+
+### 13.12 Change Width of the Network
+
+### 13.13 Other Internal Networks
+
+### 13.14 Using (global) Style
+
+### 13.15 Appendix: Test of all Shapes on Network Diagram (nwdiag)
+
 ## 14 Salt (Wireframe)
+
+### 14.1 Basic Widgets
+
+### 14.2 Text Area
+
+### 14.3 Open, Close Droplist
+
+### 14.4 Using Grid [| and #, !, -, +]
+
+### 14.5 Group Box [^]
+
+### 14.6 Using Separator [.., ==, ~~, --]
+
+### 14.7 Tree Widget [T]
+
+### 14.8 Tree Table [T]
+
+### 14.9 Exclosing Brackets [{, }]
+
+### 14.10 Adding Tabs [/]
+
+### 14.11 Using Menu [*]
+
+### 14.12 Advanced Table
+
+### 14.13 Scroll Bars [S, SI, S-]
+
+### 14.14 Colors
+
+### 14.15 Creole on Salt
+
+### 14.16 Pseudo Sprite [<<, >>]
+
+### 14.17 OpenIconic
+
+### 14.18 Add Title, Header, Footer, Caption or Legend
 
 ## 15 Archimate Diagram
 
@@ -1241,3 +1619,40 @@ java -jar plantuml.jar -P useVerticalIf=on
  (see:01 Sequence Diagram)
 ## A Comprehensive Guide to Use Case Diagram
  (see:02 Use Case Diagram)
+# Other reference
+
+## UML Diagram Type (by visual paradigm)
+
+### Structureal Diagram
+
+#### Composite Structure Diagram
+
+#### Deployment Diagram
+
+#### Package Diagram
+
+#### Profile Diagram
+
+#### Class Diagram
+
+#### Object Diagram
+
+#### Component Diagram
+
+### Behavioral Diagrams
+
+#### Activity Diagram
+
+#### Use Case Diagram
+
+#### State Machine Diagram
+
+#### Interactiion Diagram
+
+##### Sequence Diagram
+
+##### Communication Diagram
+
+##### Interaction Overview Diagram
+
+##### Timing Diagram
