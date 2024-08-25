@@ -1,0 +1,17 @@
+@startuml
+
+concise "Web User" as WU
+robust "Web Browser" as WB
+
+@WU
+0 is idle
+100 is waiting
++300 is "reding\ncontent"
+
+@WB
+0 is idle
++100 is processing
++200 is waiting
++100 is idle
+
+@enduml
