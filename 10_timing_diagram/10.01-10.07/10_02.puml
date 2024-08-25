@@ -1,0 +1,17 @@
+@startuml
+
+clock "Clock1" as clk1 with period 1
+clock "Clock2" as lk2 with period 2
+clock "Clock3" as clk3 with period 3 pulse 1 offset 1
+binary "Enable" as EN
+
+@0
+EN is low
+
+@5
+EN is high
+
+@10
+EN is low
+
+@enduml

@@ -1340,7 +1340,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="10.01 Declaring element or participant" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463">
+<node TEXT="10.01 Declaring element or participant" FOLDED="true" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463">
 <node TEXT="analog" ID="ID_489833466" CREATED="1724462497685" MODIFIED="1724462503024"/>
 <node TEXT="binary" ID="ID_522265184" CREATED="1724462503188" MODIFIED="1724462505535"/>
 <node TEXT="clock" ID="ID_237331086" CREATED="1724462505716" MODIFIED="1724462506999"/>
@@ -1349,7 +1349,10 @@
 <node TEXT="change: @" ID="ID_157904224" CREATED="1724462519669" MODIFIED="1724462525008"/>
 <node TEXT="verb: is" ID="ID_1691019530" CREATED="1724462525365" MODIFIED="1724462529793"/>
 </node>
-<node TEXT="10.02 Binary and Clock" ID="ID_816365292" CREATED="1723964975276" MODIFIED="1723964995703"/>
+<node TEXT="10.02 Binary and Clock" ID="ID_816365292" CREATED="1723964975276" MODIFIED="1723964995703">
+<node TEXT="Clock: many digital waveforms are synchronized with a basic timing waveform called the clock" ID="ID_1539040995" CREATED="1724559559307" MODIFIED="1724559632937" LINK="https://www.slideshare.net/slideshow/is-151-lecture-2/28168852"/>
+<node TEXT="The clock is a periodic waveform in which each internal between pulses equals one bit time" POSITION="bottom_or_right" ID="ID_526029153" CREATED="1724559583572" MODIFIED="1724559690695" LINK="https://www.slideserve.com/mika/chapter-1"/>
+</node>
 <node TEXT="10.03 Adding message" ID="ID_219323644" CREATED="1723964987932" MODIFIED="1723965000949"/>
 <node TEXT="10.04 Relative time" FOLDED="true" ID="ID_411316852" CREATED="1723965001386" MODIFIED="1723965005024">
 <node TEXT="use relative time wiht @" ID="ID_1050789012" CREATED="1724466193714" MODIFIED="1724466198998"/>
