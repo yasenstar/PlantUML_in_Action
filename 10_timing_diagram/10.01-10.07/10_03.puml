@@ -1,0 +1,35 @@
+@startuml
+
+robust "Web Server" as WS
+robust "Web Browser" as WB
+concise "Web User" as WU
+
+@0
+WU is Idle
+WB is Idle
+WS is Idle
+
+@100
+WU is Waiting
+WU -> WB : Send URL
+WB is Processing
+
+@200
+WB is Waiting
+WB -> WS : Requst
+WS is Processing
+
+@400
+WS is Idle
+WS -> WB : Response
+WB is Processing
+
+@700
+WB is Idle
+WB -> WU : Show in Browser
+WU is Browsing
+
+@1000
+WU is Idle
+
+@enduml
