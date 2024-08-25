@@ -1,0 +1,28 @@
+@startuml
+
+clock "Clock1" as clk with period 1
+binary "Enable" as EN
+concise "DataBus" as DB
+
+@0 as :start
+@5 as :en_high
+@10 as :en_low
+@:en_high-2 as :en_highMinus2
+
+@:start
+EN is low
+DB is "0x0000"
+
+@:en_high
+EN is high
+
+@:en_low
+EN is low
+
+@:en_highMinus2
+DB is "0xf23a"
+
+@:en_high+6
+DB is 0x0000
+
+@enduml
