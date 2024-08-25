@@ -1,0 +1,22 @@
+@startuml
+
+scale 2592000 as 50 pixels
+' scale 31104000 as 50 pixels
+
+concise "Season" as S
+
+@2024/02/01
+S is "Spring"
+
+@2024/05/01
+S is "Summer"
+
+@2024/08/01
+S is "Autumn"
+
+@2024/11/01
+S is "Winter"
+
+@2025/02/01
+S is "Spring again"
+@enduml

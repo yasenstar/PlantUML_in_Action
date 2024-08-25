@@ -1,0 +1,10 @@
+@startuml
+
+scale 100 as 50 pixels
+
+concise "Web User" as WU
+
+@WU
+0 is Waiting
++500 is OK
+@enduml
