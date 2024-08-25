@@ -672,8 +672,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Behavioral (Dynamic) UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
-<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1720591271102" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
+<node TEXT="Behavioral (Dynamic) UML Modeling" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
+<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1724503634518" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
+<arrowlink DESTINATION="ID_1726192803"/>
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
 <node TEXT="Characteristics of Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1437830674" CREATED="1716734224598" MODIFIED="1716737761423" VGAP_QUANTITY="3 pt">
 <node TEXT="Intuitive Syntax" ID="ID_1858398428" CREATED="1716734238455" MODIFIED="1716734246623"/>
@@ -1327,8 +1328,19 @@
 <node TEXT="9.22 Alias" ID="ID_1206319746" CREATED="1723963243253" MODIFIED="1723963246800"/>
 <node TEXT="9.23 Display JSON Data on State diagram" ID="ID_853699593" CREATED="1723964930653" MODIFIED="1723964943064"/>
 </node>
-<node TEXT="10 Timing Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1720591261937" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)">
-<node TEXT="10.01 Declaring element or participant" FOLDED="true" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463">
+<node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1724503914887" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Think of a timing diagram as an inverted sequence diagram. In a timing diagram, time passes on the x-axis from left to right, with different components of the system that interact with each other on the y-axis. Timing diagrams show how long each step of a process takes. Use them to identify which steps of a process require too much time and to find areas for improvement.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="10.01 Declaring element or participant" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463">
 <node TEXT="analog" ID="ID_489833466" CREATED="1724462497685" MODIFIED="1724462503024"/>
 <node TEXT="binary" ID="ID_522265184" CREATED="1724462503188" MODIFIED="1724462505535"/>
 <node TEXT="clock" ID="ID_237331086" CREATED="1724462505716" MODIFIED="1724462506999"/>
@@ -1396,7 +1408,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
+<node TEXT="Non-UML Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
 <node TEXT="11 Display JSON Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1716658810975">
 <node TEXT="11.1 Complex Example" ID="ID_467136993" CREATED="1724480062540" MODIFIED="1724480072885"/>
 <node TEXT="11.2 Highlight Parts" ID="ID_149102319" CREATED="1724480073034" MODIFIED="1724480079830"/>
@@ -1594,7 +1606,7 @@
 <node TEXT="20.03 Complete Example" ID="ID_1650709577" CREATED="1724485862296" MODIFIED="1724485867049"/>
 </node>
 </node>
-<node TEXT="PlantUML as a Language" POSITION="bottom_or_right" ID="ID_477277390" CREATED="1716664231822" MODIFIED="1716664245146">
+<node TEXT="PlantUML as a Language" FOLDED="true" POSITION="bottom_or_right" ID="ID_477277390" CREATED="1716664231822" MODIFIED="1716664245146">
 <node TEXT="21 Common Commands in PlantUML" POSITION="bottom_or_right" ID="ID_793883633" CREATED="1716658903496" MODIFIED="1716658912203"/>
 <node TEXT="22 Creole" POSITION="bottom_or_right" ID="ID_816118123" CREATED="1716658917930" MODIFIED="1716658923516"/>
 <node TEXT="23 Defining the using sprites" POSITION="bottom_or_right" ID="ID_1151666197" CREATED="1716658925872" MODIFIED="1716658935291"/>
@@ -1628,7 +1640,7 @@
 <node TEXT="Activity Diagram" ID="ID_839645775" CREATED="1724463167795" MODIFIED="1724463171625"/>
 <node TEXT="Use Case Diagram" ID="ID_1882921201" CREATED="1724463171798" MODIFIED="1724463176168"/>
 <node TEXT="State Machine Diagram" ID="ID_1202413822" CREATED="1724463176997" MODIFIED="1724463183121"/>
-<node TEXT="Interactiion Diagram" ID="ID_1685729751" CREATED="1724463183478" MODIFIED="1724463190833">
+<node TEXT="Interaction Diagram" ID="ID_1685729751" CREATED="1724463183478" MODIFIED="1724508118797">
 <node TEXT="Sequence Diagram" ID="ID_162687234" CREATED="1724463194079" MODIFIED="1724463198097"/>
 <node TEXT="Communication Diagram" ID="ID_1212989462" CREATED="1724463198413" MODIFIED="1724463224152"/>
 <node TEXT="Interaction Overview Diagram" ID="ID_359508909" CREATED="1724463224358" MODIFIED="1724463229792"/>
