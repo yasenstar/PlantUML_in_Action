@@ -1289,7 +1289,7 @@
 <node TEXT="Horizontal separator --" ID="ID_558721006" CREATED="1723963007372" MODIFIED="1723963013199"/>
 <node TEXT="Vertical separator ||" ID="ID_1385294032" CREATED="1723963015549" MODIFIED="1723963036591"/>
 </node>
-<node TEXT="9.08 Conditional [choice]" FOLDED="true" ID="ID_1932173925" CREATED="1723963040390" MODIFIED="1723963047615">
+<node TEXT="9.08 Conditional [choice]" ID="ID_1932173925" CREATED="1723963040390" MODIFIED="1723963047615">
 <node TEXT="Question about &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1281027968" CREATED="1724394250051" MODIFIED="1724394290278" LINK="https://forum.plantuml.net/19174/is-there-a-list-of-things-like-sdlreceive"/>
 <node TEXT="Source code for &lt;&lt;sdlreceive&gt;&gt;" ID="ID_1144188138" CREATED="1724394263093" MODIFIED="1724394283910" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/svek/GeneralImageBuilder.java#L141"/>
 </node>
@@ -1307,7 +1307,7 @@
 <node TEXT="&lt;&lt;sdlreceive&gt;&gt;: EntityImageState2(leaf, skinParam, umlDiagramType.getStyleName())" POSITION="bottom_or_right" ID="ID_1490106488" CREATED="1724394324909" MODIFIED="1724394783817"/>
 </node>
 </node>
-<node TEXT="Input &amp; Output notation" FOLDED="true" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413654979" LINK="https://forum.plantuml.net/4309/missing-features-documentation?show=4309#q4309">
+<node TEXT="Input &amp; Output notation" ID="ID_1070587483" CREATED="1724413503238" MODIFIED="1724413654979" LINK="https://forum.plantuml.net/4309/missing-features-documentation?show=4309#q4309">
 <node TEXT="9.10 Point [entryPoint, exitPoint]" POSITION="bottom_or_right" ID="ID_752866346" CREATED="1723963079053" MODIFIED="1723963088895"/>
 <node TEXT="9.11 Pin [inputPin, outputPin]" POSITION="bottom_or_right" ID="ID_40322031" CREATED="1723963091390" MODIFIED="1723963102807"/>
 <node TEXT="9.12 Expansion [expansionInput, expansionOutput]" POSITION="bottom_or_right" ID="ID_141904495" CREATED="1723963107677" MODIFIED="1723963119921"/>
@@ -1366,7 +1366,7 @@
 <node TEXT="Intricated or undefined binary state" ID="ID_744342566" CREATED="1724470868385" MODIFIED="1724470877579"/>
 </node>
 <node TEXT="10.10 Hidden state" ID="ID_131369442" CREATED="1723965427023" MODIFIED="1723965437335"/>
-<node TEXT="10.11 Hide time axis" ID="ID_1859047507" CREATED="1723965437927" MODIFIED="1723965445824"/>
+<node TEXT="10.11 Hide time axis" ID="ID_1859047507" CREATED="1723965437927" MODIFIED="1724649824550" LINK="https://github.com/plantuml/plantuml/blob/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/timingdiagram/command/CommandHideTimeAxis.java"/>
 <node TEXT="10.12 Using Time and Date" ID="ID_383036611" CREATED="1723965445973" MODIFIED="1723965457912"/>
 <node TEXT="10.13 Adding constraint" ID="ID_920328967" CREATED="1723965458256" MODIFIED="1723965469183"/>
 <node TEXT="10.14 Highlighted period" ID="ID_1043561928" CREATED="1723965471374" MODIFIED="1723965476183"/>
