@@ -1,0 +1,17 @@
+@startuml
+robust "Web Browser" as WB
+concise "Web User" as WU
+
+WB is Initialize
+
+@1:15:00
+WU is Idle
+WB is Idle
+
+@1:16:0
+WU is Waiting : some note
+
+@1:20:00
+WB is Checking
+
+@enduml

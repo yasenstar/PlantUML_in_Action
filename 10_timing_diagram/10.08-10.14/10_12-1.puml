@@ -1,0 +1,17 @@
+@startuml
+robust "Web Browser" as WB
+concise "Web User" as WU
+
+@2024/08/26
+WU is Idle
+WB is Idle
+
+@2024/08/28
+WU is Waiting : some note
+WB is Processing : notes
+WU -> WB : request
+
+@2024/08/31
+WB is Waiting
+
+@enduml
