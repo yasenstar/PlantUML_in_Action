@@ -1,0 +1,13 @@
+@startuml
+
+hide time-axis
+
+concise "Web User" as WU
+
+WU is Absent
+
+@WU
+0 is Waiting
++500 is OK
++800 is Idle
+@enduml

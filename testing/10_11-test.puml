@@ -1,0 +1,5 @@
+@startuml
+' hide time-axis
+manual time-axis
+concise "WebUser" as WU
+@enduml
