@@ -1,0 +1,30 @@
+@startuml
+
+concise "Web User" as WU
+robust "Web Browser" as WB
+analog "Web Server" as WS
+
+@0
+' WU is A0
+WU is {-}
+WB is Idle
+WS is 2
+@100
+WU is A1
+WB is {hidden}
+' WS is {hidden}
+@200
+' WU is A2
+WU is {-}
+WB is Processing
+WS is 5
+@300
+' WU is New
+WU is {hidden}
+@400
+WU is A3
+@500
+WU is {-}
+WB is {hidden}
+
+@enduml

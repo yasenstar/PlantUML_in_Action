@@ -1,0 +1,41 @@
+@startuml
+
+scale 1 as 50 pixels
+
+concise state0
+concise substate1
+robust bit1
+binary "Binary2" as bit2
+
+bit1 has High,Medium,Low
+
+@state0
+0 is 18_start
+6 is s_dPause
+8 is 10_data
+14 is {hidden}
+
+@substate1
+0 is sSeq
+4 is sPause
+6 is {-}
+8 is dSeq
+12 is dPause
+14 is {hidden}
+
+@bit1
+0 is High
+2 is Low
+4 is {hidden}
+8 is Medium
+10 is Low
+12 is {hidden}
+
+@bit2
+' No hidden for Binary
+0 is High
+1 is Low
+5 is {hidden}
+7 is High
+
+@enduml
