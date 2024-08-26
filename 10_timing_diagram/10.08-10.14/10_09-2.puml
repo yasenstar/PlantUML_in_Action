@@ -1,0 +1,20 @@
+@startuml
+clock "Clock" as C with period 2
+binary "Enable" as EN
+
+@0
+EN is low
+
+@1
+EN is {1,0}
+
+@3
+EN is 1
+
+@5
+EN is {low,high}
+
+@10
+EN is high
+
+@enduml
