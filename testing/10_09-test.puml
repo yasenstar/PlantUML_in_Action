@@ -1,0 +1,10 @@
+@startuml
+analog "concise" as c
+' c has 0,1,2,3
+@0
+c is 0
+@100
+c is {2,3}
+@300
+c is 1
+@enduml

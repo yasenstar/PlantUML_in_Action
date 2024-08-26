@@ -1,0 +1,49 @@
+@startuml
+
+robust "Web Server" as WS
+robust "Web Browser" as WB
+binary "check" as BI
+concise "Web User" as WU
+
+WB is Initializing
+WU is Absent
+WS is Sleeping
+BI is high
+
+@0
+WU is Idle
+WB is Idle
+WS is Idle
+
+@100
+WU is Waiting
+WU -> WB : Send URL
+WB is Processing
+BI is high
+
+@200
+WB is Waiting
+WB -> WS : Requst
+WS is Processing
+BI is low
+
+@300
+BI is high
+
+@400
+WS is Idle
+WS -> WB : Response
+WB is Processing
+
+@700
+WB is Idle
+WB -> WU : Show in Browser
+WU is Browsing
+
+@800
+BI is low
+
+@1000
+WU is Idle
+
+@enduml
