@@ -1,0 +1,24 @@
+@startuml
+robust "Web Browser" as WB
+concise "Web User" as WU
+
+WB has Waiting,Proc.,Idle
+
+@WB
+0 is Idle
+200 is Proc.
+300 is Waiting
+700 is Idle
+
+@WU
+0 is Idle
+100 is Waiting #LightCyan;Line:Aqua
+WU -> WB : URL
+WU@300 -> WB@+250 : URL2
+500 is OK
+
+highlight 200 to 450 #Gold;line:Red : highlight
+highlight 600 to 700 : This is a\nhighlight
+
+
+@enduml
