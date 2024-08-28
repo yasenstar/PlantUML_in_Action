@@ -1,4 +1,9 @@
 @startuml
+caption some caption
+legend
+AAA
+BBB
+end legend
 skinparam PackageStyle frame
 
 namespace foo1.foo2 {

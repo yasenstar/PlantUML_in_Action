@@ -1,0 +1,26 @@
+@startuml
+
+title This is my Title - __add texts__
+header some header
+footer some footer
+legend
+WU - Web User
+WB - Web Browser
+end legend
+caption some caption for descriptions
+
+robust "Web Browser" as WB
+concise "Web User" as WU
+
+@0
+WU is Idle
+WB is Idle
+
+@100
+WU is Waiting
+WB is Processing
+
+@300
+WB is Waiting
+
+@enduml
