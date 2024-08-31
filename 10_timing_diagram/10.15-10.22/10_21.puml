@@ -1,0 +1,58 @@
+@startuml
+
+' style
+<style>
+    timingDiagram {
+        BackgroundColor cyan
+        .red {
+            LineColor red
+        }
+        .yellow {
+            LineColor yellow
+            LineThickness 5
+        }
+    }
+</style>
+
+' Definition
+clock clk with period 1
+binary "Input Signal 1" as IS1 <<yellow>>
+binary "Input Signal 2" as IS2 <<red>>
+binary "Output Signal" as OS1 <<yellow>>
+robust "Web Browser" as WB
+analog "Indicator" as IN <<red>>
+
+@0
+IS1 is low
+IS2 is high
+OS1 is low
+WB is "Idle"
+IN is 3.0
+
+@2
+IS2 is low
+OS1 is high
+WB is "Sending Request"
+IN is 5.0 : nice
+
+@4
+IS1 is high
+OS1 is low
+WB is "waiting"
+IN is 2.0
+
+@5
+IS1 is low
+OS1 is high
+WB is "Idle"
+IN is 6.0
+
+@6
+IS2 is low
+
+@10
+IS1 is high
+WB is "Sleeping"
+IN is 3.0
+
+@enduml
