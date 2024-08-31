@@ -1417,6 +1417,11 @@
 </node>
 <node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
 <node TEXT="11 Display JSON Data" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
+<node TEXT="About JSON" ID="ID_286028917" CREATED="1725094087206" MODIFIED="1725094091664">
+<node TEXT="json.org" ID="ID_1650992224" CREATED="1725094091670" MODIFIED="1725094095036" LINK="https://www.json.org/json-en.html"/>
+<node TEXT="Developer Mozilla about JSON" ID="ID_1467130442" CREATED="1725094189906" MODIFIED="1725094209146" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"/>
+<node TEXT="JSON Introduction in W3C" ID="ID_857577058" CREATED="1725094270960" MODIFIED="1725094281562" LINK="https://www.w3schools.com/js/js_json_intro.asp"/>
+</node>
 <node TEXT="11.1 Complex Example" ID="ID_467136993" CREATED="1724480062540" MODIFIED="1724480072885"/>
 <node TEXT="11.2 Highlight Parts" FOLDED="true" ID="ID_149102319" CREATED="1724480073034" MODIFIED="1724480079830">
 <node TEXT="key word: #highlight" ID="ID_1814745072" CREATED="1725088016659" MODIFIED="1725088027508"/>
