@@ -106,7 +106,7 @@
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>
 <node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
-<node TEXT="Structural (Static) UML Modeling" FOLDED="true" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
+<node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
 <node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1722945943083">
@@ -286,7 +286,7 @@
 <node TEXT="remove @unlinked" ID="ID_1809962139" CREATED="1717946397320" MODIFIED="1717946400986"/>
 </node>
 </node>
-<node TEXT="Group 5: Use Generics and Specific Spot" FOLDED="true" ID="ID_179415901" CREATED="1717797220732" MODIFIED="1717797235608">
+<node TEXT="Group 5: Use Generics and Specific Spot" ID="ID_179415901" CREATED="1717797220732" MODIFIED="1717797235608">
 <node TEXT="3.19 Use Generics" POSITION="bottom_or_right" ID="ID_1092095371" CREATED="1717355640729" MODIFIED="1717355645859">
 <node TEXT="Usually generics are represented as classifier&apos;s template parameter." ID="ID_1483948521" CREATED="1718228697677" MODIFIED="1718228721642"/>
 <node TEXT="Generics in Java have been around for a while but support for mapping generically specified artifacts in UML to their Ecore representation is new to UML2 2.1" ID="ID_803902111" CREATED="1718228849110" MODIFIED="1718228935605" LINK="https://www.eclipse.org/articles/article/?file=Article-Defining-Generics-with-UML-Templates/index.html"/>
@@ -337,7 +337,7 @@
 <node TEXT="disable automatic namespace creation: set separator none" ID="ID_143571617" CREATED="1718239118296" MODIFIED="1718239138528"/>
 </node>
 </node>
-<node TEXT="Group 7: Arrows and Association" FOLDED="true" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
+<node TEXT="Group 7: Arrows and Association" ID="ID_1632962443" CREATED="1717797321212" MODIFIED="1717797339251">
 <node TEXT="3.25 Lollipop Interface" POSITION="bottom_or_right" ID="ID_1349782464" CREATED="1717355686087" MODIFIED="1722874696556">
 <arrowlink DESTINATION="ID_599803988"/>
 <node TEXT="Discussion: Interface consumption socket" ID="ID_178996798" CREATED="1718310668538" MODIFIED="1718310685418" LINK="https://github.com/plantuml/plantuml-server/issues/94"/>
@@ -501,8 +501,8 @@
 <node TEXT="3.39.3 GroupInheritance 3 (grouping only from 3)" ID="ID_59972583" CREATED="1717355960021" MODIFIED="1717355976104"/>
 <node TEXT="3.39.4 GroupInheritance 4 (grouping only from 4)" ID="ID_1612598053" CREATED="1717356019488" MODIFIED="1717356034785"/>
 </node>
-<node TEXT="3.40 Display JSON Data on Class or Object Diagram" POSITION="bottom_or_right" ID="ID_932845064" CREATED="1717356037751" MODIFIED="1717797803168">
-<arrowlink DESTINATION="ID_588971608"/>
+<node TEXT="3.40 Display JSON Data on Class or Object Diagram" POSITION="bottom_or_right" ID="ID_932845064" CREATED="1717356037751" MODIFIED="1725090700976">
+<arrowlink DESTINATION="ID_752972901"/>
 </node>
 <node TEXT="3.41 Packages and Namespaces Enhancement" POSITION="bottom_or_right" ID="ID_1561440010" CREATED="1717356242409" MODIFIED="1717356252983"/>
 </node>
@@ -551,8 +551,8 @@
 <node TEXT="4.07 Program (or project) evaluation and review technique (PERT) with Map" ID="ID_270515488" CREATED="1717356329907" MODIFIED="1720581458454" LINK="https://asana.com/resources/pert-chart">
 <node TEXT="Sample PERT" ID="ID_331424546" CREATED="1720583240106" MODIFIED="1720583249359" LINK="https://clickup.com/blog/pert-chart-examples/"/>
 </node>
-<node TEXT="4.08 Display JSON Data on Class or Object Diagram" ID="ID_689661337" CREATED="1718547148066" MODIFIED="1720583116186">
-<arrowlink DESTINATION="ID_588971608"/>
+<node TEXT="4.08 Display JSON Data on Class or Object Diagram" ID="ID_689661337" CREATED="1718547148066" MODIFIED="1725090723881">
+<arrowlink DESTINATION="ID_752972901"/>
 </node>
 </node>
 <node TEXT="07 Component Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1822778668" CREATED="1716658775733" MODIFIED="1720591146010" LINK="https://en.wikipedia.org/wiki/Component_diagram">
@@ -663,7 +663,9 @@
 <node TEXT="8.16 Appendix: Test of stereotype with style on all element" POSITION="bottom_or_right" ID="ID_927353333" CREATED="1722684696166" MODIFIED="1722684711411"/>
 </node>
 <node TEXT="Others" ID="ID_30065214" CREATED="1722684865183" MODIFIED="1722684866882">
-<node TEXT="8.17 Display JSON Data on Deployment Diagram" POSITION="bottom_or_right" ID="ID_1386582686" CREATED="1722684724911" MODIFIED="1722684741419"/>
+<node TEXT="8.17 Display JSON Data on Deployment Diagram" POSITION="bottom_or_right" ID="ID_1386582686" CREATED="1722684724911" MODIFIED="1725090818465">
+<arrowlink DESTINATION="ID_1146125503"/>
+</node>
 <node TEXT="8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram" POSITION="bottom_or_right" ID="ID_1618848251" CREATED="1722684747993" MODIFIED="1722684772569"/>
 <node TEXT="8.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1724413473516">
 <arrowlink DESTINATION="ID_40322031"/>
@@ -1236,7 +1238,7 @@
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
 </node>
-<node TEXT="09 State Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
+<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
 <node TEXT="9.01 Simple State" FOLDED="true" ID="ID_816130613" CREATED="1723962813484" MODIFIED="1723962820615">
 <node TEXT="What is State?" ID="ID_1298518317" CREATED="1723987204398" MODIFIED="1723987210287">
 <node TEXT="Rumbaugh defines that: &quot;A State is an abstraction of the attribute values and links of an object. Sets of values are grouped together into a state according to properties that affect the gross behavior of the object.&quot;" ID="ID_669825173" CREATED="1723987210287" MODIFIED="1723987278082"/>
@@ -1326,9 +1328,11 @@
 <node TEXT="9.17 More in Notes" POSITION="bottom_or_right" ID="ID_856058291" CREATED="1723963152197" MODIFIED="1723963157535"/>
 </node>
 <node TEXT="9.22 Alias" ID="ID_1206319746" CREATED="1723963243253" MODIFIED="1723963246800"/>
-<node TEXT="9.23 Display JSON Data on State diagram" ID="ID_853699593" CREATED="1723964930653" MODIFIED="1723964943064"/>
+<node TEXT="9.23 Display JSON Data on State diagram" ID="ID_853699593" CREATED="1723964930653" MODIFIED="1725090936533">
+<arrowlink DESTINATION="ID_1759750484"/>
 </node>
-<node TEXT="10 Timing Diagram" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1724503914887" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)"><richcontent TYPE="NOTE">
+</node>
+<node TEXT="10 Timing Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1726192803" CREATED="1716658798143" MODIFIED="1724503914887" LINK="https://en.wikipedia.org/wiki/Timing_diagram_(Unified_Modeling_Language)"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1411,15 +1415,17 @@
 </node>
 </node>
 </node>
-<node TEXT="Non-UML Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
-<node TEXT="11 Display JSON Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1716658810975">
+<node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
+<node TEXT="11 Display JSON Data" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
 <node TEXT="11.1 Complex Example" ID="ID_467136993" CREATED="1724480062540" MODIFIED="1724480072885"/>
-<node TEXT="11.2 Highlight Parts" ID="ID_149102319" CREATED="1724480073034" MODIFIED="1724480079830"/>
+<node TEXT="11.2 Highlight Parts" FOLDED="true" ID="ID_149102319" CREATED="1724480073034" MODIFIED="1724480079830">
+<node TEXT="key word: #highlight" ID="ID_1814745072" CREATED="1725088016659" MODIFIED="1725088027508"/>
+</node>
 <node TEXT="11.3 Using Different Styles for Highlight" ID="ID_1826103417" CREATED="1724480086018" MODIFIED="1724480094206"/>
-<node TEXT="11.4 JSON Basic Element" ID="ID_214784723" CREATED="1724480100027" MODIFIED="1724480106891">
+<node TEXT="11.4 JSON Basic Element" FOLDED="true" ID="ID_214784723" CREATED="1724480100027" MODIFIED="1724480106891">
 <node TEXT="Synthesis of all JSON basic element" ID="ID_986703272" CREATED="1724480106893" MODIFIED="1724480118421"/>
 </node>
-<node TEXT="11.5 JSON Array or Table" ID="ID_88647841" CREATED="1724480124755" MODIFIED="1724480131108">
+<node TEXT="11.5 JSON Array or Table" FOLDED="true" ID="ID_88647841" CREATED="1724480124755" MODIFIED="1724480131108">
 <node TEXT="Array Type" ID="ID_1080179176" CREATED="1724480131111" MODIFIED="1724480134646"/>
 <node TEXT="Minimal Array or Table" ID="ID_1879190497" CREATED="1724480138186" MODIFIED="1724480145230"/>
 <node TEXT="Number Array" ID="ID_1637455220" CREATED="1724480145436" MODIFIED="1724480148615"/>
@@ -1427,7 +1433,7 @@
 <node TEXT="Boolean Array" ID="ID_805107513" CREATED="1724480155518" MODIFIED="1724480159694"/>
 </node>
 <node TEXT="11.6 JSON Numbers" ID="ID_1150866361" CREATED="1724480163644" MODIFIED="1724480167998"/>
-<node TEXT="11.7 JSON Strings" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
+<node TEXT="11.7 JSON Strings" FOLDED="true" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
 <node TEXT="JSON Unicode" ID="ID_617785468" CREATED="1724480182819" MODIFIED="1724480187079"/>
 <node TEXT="JSON Two-Character Escape Sequence" ID="ID_1658625161" CREATED="1724480189836" MODIFIED="1724480200142"/>
 </node>
@@ -1438,7 +1444,7 @@
 <node TEXT="11.12 Display JSON Data on Deployment Diagram" ID="ID_1146125503" CREATED="1724480256029" MODIFIED="1724480267351"/>
 <node TEXT="11.13 Display JSON Data on State Diagram" ID="ID_1759750484" CREATED="1724480273800" MODIFIED="1724480282864"/>
 </node>
-<node TEXT="12 Display YAML Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_430003065" CREATED="1716658813635" MODIFIED="1716658819766">
+<node TEXT="12 Display YAML Data" POSITION="bottom_or_right" ID="ID_430003065" CREATED="1716658813635" MODIFIED="1716658819766">
 <node TEXT="12.1 Complex Example" ID="ID_172368455" CREATED="1724480300423" MODIFIED="1724480305791"/>
 <node TEXT="12.2 Specific Key (with symbols or unicode)" ID="ID_344394250" CREATED="1724480312189" MODIFIED="1724480325007"/>
 <node TEXT="12.3 Highlight Parts" ID="ID_1579098047" CREATED="1724480328013" MODIFIED="1724480332567"/>
