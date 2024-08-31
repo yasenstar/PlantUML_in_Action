@@ -1,0 +1,16 @@
+@startuml
+concise LR
+concise ST
+
+LR is AtPlace #palegreen
+ST is AtLoad #gray
+
+@LR
+0 is Lowering #FF0000
+100 is Lowered #pink
+350 is Releasing
+
+@ST
+200 is Moving
+
+@enduml

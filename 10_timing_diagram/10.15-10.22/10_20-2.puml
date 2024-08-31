@@ -1,0 +1,35 @@
+@startuml
+
+<style>
+    timingDiagram {
+        document {
+            BackgroundColor SandyBrown
+        }
+    }
+    constraintArrow {
+        LineColor Blue
+        LineThickness 3
+        FontColor Black
+        FontSize 20
+        LineStyle 2-1
+    }
+</style>
+
+robust "Web Browser" as WB
+concise "Web User" as WU
+
+WB is Initializing
+WU is Absent #white
+
+@WB
+0 is Idle
+200 is Processing
+300 is Waiting
+WB@0 <-> @50 : {50 ms lag}
+
+@WU
+0 is Waiting #yellow
+500 is OK
+WU@200 <-> @+150 : {150 ms}
+
+@enduml
