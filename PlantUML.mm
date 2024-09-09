@@ -107,7 +107,7 @@
 </node>
 <node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
 <node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
-<node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
+<node TEXT="02 Use Case Diagram" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1722945943083">
 <arrowlink DESTINATION="ID_1124259456"/>
@@ -144,7 +144,7 @@
 </node>
 <node TEXT="Mapping to ArchiMate&apos;s Specialization Relationship" ID="ID_1126743015" CREATED="1717632255644" MODIFIED="1717632739632" LINK="https://pubs.opengroup.org/architecture/archimate31-doc/chap05.html"/>
 </node>
-<node TEXT="2.08 Using notes" FOLDED="true" ID="ID_1538085943" CREATED="1717355003453" MODIFIED="1717355009326">
+<node TEXT="2.08 Using notes" ID="ID_1538085943" CREATED="1717355003453" MODIFIED="1717355009326">
 <node TEXT="note left of" ID="ID_12138803" CREATED="1717355012351" MODIFIED="1717355017211"/>
 <node TEXT="note right of" ID="ID_1976777050" CREATED="1717355017409" MODIFIED="1717355021654"/>
 <node TEXT="note top of" ID="ID_388548736" CREATED="1717355022446" MODIFIED="1717355025398"/>
@@ -674,8 +674,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Behavioral (Dynamic) UML Modeling" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
-<node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1724503634518" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
+<node TEXT="Behavioral (Dynamic) UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
+<node TEXT="01 Sequence Diagram" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1724503634518" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
 <arrowlink DESTINATION="ID_1726192803"/>
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
 <node TEXT="Characteristics of Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1437830674" CREATED="1716734224598" MODIFIED="1716737761423" VGAP_QUANTITY="3 pt">
@@ -705,7 +705,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Part 3" ID="ID_811495031" CREATED="1716734580964" MODIFIED="1716734583219">
+<node TEXT="Part 3" FOLDED="true" ID="ID_811495031" CREATED="1716734580964" MODIFIED="1716734583219">
 <node TEXT="1.7 Change Arrow Style" POSITION="bottom_or_right" ID="ID_1206176874" CREATED="1716689135993" MODIFIED="1717375430517">
 <arrowlink DESTINATION="ID_1870176038"/>
 </node>
@@ -727,7 +727,7 @@
 <node TEXT="keyword: header, footer" ID="ID_996784743" CREATED="1716747447535" MODIFIED="1716747457974"/>
 </node>
 </node>
-<node TEXT="Part 4" ID="ID_819959443" CREATED="1716734589295" MODIFIED="1716734592476">
+<node TEXT="Part 4" FOLDED="true" ID="ID_819959443" CREATED="1716734589295" MODIFIED="1716734592476">
 <node TEXT="1.11 Splitting Diagrams" POSITION="bottom_or_right" ID="ID_1416405706" CREATED="1716689194722" MODIFIED="1717355153553">
 <arrowlink DESTINATION="ID_759772187"/>
 <node TEXT="keyword: newpage" ID="ID_630654812" CREATED="1716747579820" MODIFIED="1716747583697"/>
@@ -1238,7 +1238,7 @@
 <node TEXT="6.25.02 With Style" ID="ID_1498752255" CREATED="1718642708124" MODIFIED="1718642712816"/>
 </node>
 </node>
-<node TEXT="09 State Diagram" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
+<node TEXT="09 State Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_98532341" CREATED="1716658790775" MODIFIED="1720591253171" LINK="https://en.wikipedia.org/wiki/UML_state_machine">
 <node TEXT="9.01 Simple State" FOLDED="true" ID="ID_816130613" CREATED="1723962813484" MODIFIED="1723962820615">
 <node TEXT="What is State?" ID="ID_1298518317" CREATED="1723987204398" MODIFIED="1723987210287">
 <node TEXT="Rumbaugh defines that: &quot;A State is an abstraction of the attribute values and links of an object. Sets of values are grouped together into a state according to properties that affect the gross behavior of the object.&quot;" ID="ID_669825173" CREATED="1723987210287" MODIFIED="1723987278082"/>
@@ -1415,9 +1415,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
-<node TEXT="11 Display JSON Data" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
-<node TEXT="About JSON" ID="ID_286028917" CREATED="1725094087206" MODIFIED="1725094091664">
+<node TEXT="Non-UML Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
+<node TEXT="11 Display JSON Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
+<node TEXT="About JSON" FOLDED="true" ID="ID_286028917" CREATED="1725094087206" MODIFIED="1725094091664">
 <node TEXT="json.org" ID="ID_1650992224" CREATED="1725094091670" MODIFIED="1725094095036" LINK="https://www.json.org/json-en.html"/>
 <node TEXT="Developer Mozilla about JSON" ID="ID_1467130442" CREATED="1725094189906" MODIFIED="1725094209146" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"/>
 <node TEXT="JSON Introduction in W3C" ID="ID_857577058" CREATED="1725094270960" MODIFIED="1725094281562" LINK="https://www.w3schools.com/js/js_json_intro.asp"/>
