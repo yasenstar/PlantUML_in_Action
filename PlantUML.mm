@@ -105,8 +105,8 @@
 </node>
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>
-<node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
-<node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
+<node TEXT="UML Related Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
+<node TEXT="Structural (Static) UML Modeling" FOLDED="true" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
 <node TEXT="02 Use Case Diagram" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1722945943083">
@@ -668,8 +668,8 @@
 </node>
 <node TEXT="8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram" POSITION="bottom_or_right" ID="ID_1618848251" CREATED="1722684747993" MODIFIED="1722684772569"/>
 <node TEXT="8.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1724413473516">
-<arrowlink DESTINATION="ID_40322031"/>
 <arrowlink DESTINATION="ID_752866346"/>
+<arrowlink DESTINATION="ID_40322031"/>
 </node>
 </node>
 </node>
@@ -834,9 +834,9 @@
 <node TEXT="Part 8" FOLDED="true" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
 <arrowlink DESTINATION="ID_1235100678"/>
-<arrowlink DESTINATION="ID_288741682"/>
 <arrowlink DESTINATION="ID_652208197"/>
 <arrowlink DESTINATION="ID_1961776223"/>
+<arrowlink DESTINATION="ID_288741682"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -985,8 +985,8 @@
 </node>
 <node TEXT="05 Activity Diagram (legacy)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1720591041912" LINK="https://en.wikipedia.org/wiki/Activity_diagram">
 <node TEXT="5.01 Simple Action" FOLDED="true" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1720770738713">
-<arrowlink WIDTH="2" DESTINATION="ID_1888938828" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <arrowlink DESTINATION="ID_511629604"/>
+<arrowlink WIDTH="2" DESTINATION="ID_1888938828" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <node TEXT="use (*) for starting point and ending point" ID="ID_1213322656" CREATED="1718627051739" MODIFIED="1718627065590"/>
 <node TEXT="use (*top) to force starting point to be at the top" ID="ID_472095347" CREATED="1718627066076" MODIFIED="1718627081466"/>
 <node TEXT="use --&gt; for arrows" ID="ID_1661877154" CREATED="1718627081817" MODIFIED="1718627086368"/>
@@ -999,9 +999,9 @@
 <node TEXT="e.g. -down-&gt;" ID="ID_1622483910" CREATED="1718627138976" MODIFIED="1719297653097"/>
 </node>
 <node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1720771052725">
+<arrowlink DESTINATION="ID_999052549"/>
 <arrowlink DESTINATION="ID_1828622956"/>
 <arrowlink DESTINATION="ID_1131340221"/>
-<arrowlink DESTINATION="ID_999052549"/>
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>
@@ -1342,8 +1342,7 @@
       Think of a timing diagram as an inverted sequence diagram. In a timing diagram, time passes on the x-axis from left to right, with different components of the system that interact with each other on the y-axis. Timing diagrams show how long each step of a process takes. Use them to identify which steps of a process require too much time and to find areas for improvement.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="10.01 Declaring element or participant" FOLDED="true" ID="ID_1049003918" CREATED="1723964953501" MODIFIED="1723964964463">
 <node TEXT="analog" ID="ID_489833466" CREATED="1724462497685" MODIFIED="1724462503024"/>
 <node TEXT="binary" ID="ID_522265184" CREATED="1724462503188" MODIFIED="1724462505535"/>
@@ -1415,8 +1414,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Non-UML Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
-<node TEXT="11 Display JSON Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
+<node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
+<node TEXT="11 Display JSON Data" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
 <node TEXT="About JSON" FOLDED="true" ID="ID_286028917" CREATED="1725094087206" MODIFIED="1725094091664">
 <node TEXT="json.org" ID="ID_1650992224" CREATED="1725094091670" MODIFIED="1725094095036" LINK="https://www.json.org/json-en.html"/>
 <node TEXT="Developer Mozilla about JSON" ID="ID_1467130442" CREATED="1725094189906" MODIFIED="1725094209146" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"/>
@@ -1449,7 +1448,7 @@
 <node TEXT="11.12 Display JSON Data on Deployment Diagram" ID="ID_1146125503" CREATED="1724480256029" MODIFIED="1724480267351"/>
 <node TEXT="11.13 Display JSON Data on State Diagram" ID="ID_1759750484" CREATED="1724480273800" MODIFIED="1724480282864"/>
 </node>
-<node TEXT="12 Display YAML Data" POSITION="bottom_or_right" ID="ID_430003065" CREATED="1716658813635" MODIFIED="1716658819766">
+<node TEXT="12 Display YAML Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_430003065" CREATED="1716658813635" MODIFIED="1716658819766">
 <node TEXT="12.1 Complex Example" ID="ID_172368455" CREATED="1724480300423" MODIFIED="1724480305791"/>
 <node TEXT="12.2 Specific Key (with symbols or unicode)" ID="ID_344394250" CREATED="1724480312189" MODIFIED="1724480325007"/>
 <node TEXT="12.3 Highlight Parts" ID="ID_1579098047" CREATED="1724480328013" MODIFIED="1724480332567"/>
