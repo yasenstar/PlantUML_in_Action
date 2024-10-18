@@ -14,7 +14,7 @@
 
 Learning and practice PlantUML languange and its modeling
 
-|![logl](img/PlantUML-Logo.png)|![PlantUML in Action TOC](img/PlantUML-in-action.jpg)|
+|![logo](img/PlantUML-Logo.png)|![PlantUML in Action TOC](img/PlantUML-in-action.jpg)|
 |---|---|
 
 ## Videos/Course on Diagramming Practice
@@ -25,7 +25,9 @@ For access full contents without waiting publishing gradually in YouTube, welcom
 
 [![PlantUML in Action](img/udemy-cover.png)](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196)
 
-thanks for your supporting and appreciation to my work!
+If you want to view and learn this in structured course manner, and get certificate for your completion of the learning, welcome to visit [this course in Udemy](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196) and enroll, thanks for your supporting and appreciation to my work!
+
+You can learn [What's New?](https://plantuml.com/news) from PlantUML homepage, thanks for Arnaud's encouragement and posting my practices in the page. It's my pleasure that I can have chance to contribute back to the community!
 
 ---
 
