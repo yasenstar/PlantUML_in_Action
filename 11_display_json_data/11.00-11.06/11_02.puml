@@ -1,0 +1,34 @@
+@startjson
+
+#highlight "lastName"
+#highlight "address" / "city"
+
+{
+    "firstName":"John",
+    "lastName":"Smith",
+    "isAlive": true,
+    "age": 27,
+    "address": {
+        "streeAddress":"21 2nd Street",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10021-3100"
+    },
+    "phoneNumber": [
+        {
+            "type": "home",
+            "number": "212 555-1234"
+        },
+        {
+            "type": "mobile",
+            "number": "646 555-4567"
+        }
+    ],
+    "children": [{}],
+    "spouse": null
+}
+
+#highlight "phoneNumber" / "1" / "number"
+#highlight "children" / "0"
+
+@endjson
