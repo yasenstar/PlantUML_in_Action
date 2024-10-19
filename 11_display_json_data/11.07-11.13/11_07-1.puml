@@ -1,0 +1,9 @@
+@startjson
+{
+    "<color:blue>code": "<color:green>value",
+    "a\u005Cb":"a\u005Cb",
+    "\uFDFD":"\uFBFA",
+    "\u263A":"\u2639",
+    "\u2639": "\u263B"
+}
+@endjson

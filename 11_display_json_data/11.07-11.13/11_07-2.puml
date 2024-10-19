@@ -1,0 +1,40 @@
+@startjson
+{
+    "**legend**: character name": [
+        "**two-character escape sequence**",
+        "example (between 'a' and 'b')"
+    ],
+    "quotation mark character (U+0022)": [
+        "\\\"",
+        "a\"b",
+        "a\u0022b"
+    ],
+    "reverse solidus character (U+005C)": [
+        "\\\/",
+        "\\/",
+        "a/b",
+        "a\/b"
+    ],
+    "backspace character (U+0008)": [
+        "\\b",
+        "a\\bb\\b"
+        ' this is not working for \u0008
+    ],
+    "form feed character (U+000C)": [
+        "\\f"
+        ' "a\fb"
+    ],
+    "line feed character (U+000A)": [
+        "\\n",
+        "a\nb"
+    ],
+    "carriage returen character (U+000D)": [
+        "\\r",
+        "a\rb"
+    ],
+    "character tabulation character (U+0009)": [
+        "\\t",
+        "a\tb"
+    ]
+}
+@endjson
