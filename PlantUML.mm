@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.749">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -105,9 +105,9 @@
 </node>
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>
-<node TEXT="UML Related Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
-<node TEXT="Structural (Static) UML Modeling" FOLDED="true" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
-<node TEXT="02 Use Case Diagram" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
+<node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
+<node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
+<node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1722945943083">
 <arrowlink DESTINATION="ID_1124259456"/>
@@ -1415,7 +1415,7 @@
 </node>
 </node>
 <node TEXT="Non-UML Diagrams" POSITION="bottom_or_right" ID="ID_1336631505" CREATED="1716664199661" MODIFIED="1716664204623">
-<node TEXT="11 Display JSON Data" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
+<node TEXT="11 Display JSON Data" FOLDED="true" POSITION="bottom_or_right" ID="ID_588971608" CREATED="1716658805537" MODIFIED="1725092355281" LINK="https://github.com/plantuml/plantuml/tree/dac564a687e9ff851803abb580ce9a057d24fe30/src/net/sourceforge/plantuml/json">
 <node TEXT="About JSON" FOLDED="true" ID="ID_286028917" CREATED="1725094087206" MODIFIED="1725094091664">
 <node TEXT="json.org" ID="ID_1650992224" CREATED="1725094091670" MODIFIED="1725094095036" LINK="https://www.json.org/json-en.html"/>
 <node TEXT="Developer Mozilla about JSON" ID="ID_1467130442" CREATED="1725094189906" MODIFIED="1725094209146" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"/>
@@ -1437,8 +1437,10 @@
 <node TEXT="Boolean Array" ID="ID_805107513" CREATED="1724480155518" MODIFIED="1724480159694"/>
 </node>
 <node TEXT="11.6 JSON Numbers" ID="ID_1150866361" CREATED="1724480163644" MODIFIED="1724480167998"/>
-<node TEXT="11.7 JSON Strings" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
-<node TEXT="JSON Unicode" ID="ID_617785468" CREATED="1724480182819" MODIFIED="1724480187079"/>
+<node TEXT="11.7 JSON Strings" FOLDED="true" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
+<node TEXT="JSON Unicode" ID="ID_617785468" CREATED="1724480182819" MODIFIED="1724480187079">
+<node TEXT="Unicode Table (sample)" ID="ID_1443864622" CREATED="1729326178897" MODIFIED="1729326185081" LINK="https://symbl.cc/en/unicode-table/"/>
+</node>
 <node TEXT="JSON Two-Character Escape Sequence" ID="ID_1658625161" CREATED="1724480189836" MODIFIED="1724480200142"/>
 <node TEXT="Bug: \\\\ resolves to just \" ID="ID_68385545" CREATED="1729324583805" MODIFIED="1729324603583" LINK="https://forum.plantuml.net/13066"/>
 </node>
