@@ -1,0 +1,48 @@
+@startjson
+<style>
+jsonDiagram {
+    node {
+        BackgroundColor Khaki
+        LineColor lightblue
+        FontName Impact
+        FontColor blue
+        FontSize 25
+        FontStyle bold
+        RoundCorner 30
+        LineThickness 5
+        LineStyle 10-5
+        separator {
+            LineThickness 8
+            LineColor pink
+            LineStyle 1-5
+        }
+    }
+    arrow {
+        BackgroundColor lightblue
+        LineColor green
+        LineThickness 2
+        LineStyle 2-5
+    }
+    highlight {
+        BackgroundColor red
+        fontcolor white
+        fontstyle italic
+    }
+}
+</style>
+#highlight "1"
+#highlight "2" / "hr"
+[
+    {
+        "name": "Mark McGwire",
+        "hr": 65,
+        "avg": 0.278
+    },
+    "aa",
+    {
+        "name": "Sammy Sosa",
+        "hr": 63,
+        "avg": 0.288
+    }
+]
+@endjson
