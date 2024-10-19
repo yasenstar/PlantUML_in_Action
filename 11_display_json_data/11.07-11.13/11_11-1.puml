@@ -1,0 +1,19 @@
+@startuml
+class Class
+object Object
+json JSON {
+    "fruit":"Apple",
+    "size":"Large",
+    "location": [
+        "China",
+        "US",
+        "Korea",
+        "Australia",
+        [
+            1,
+            2,
+            3
+        ]
+    ]
+}
+@enduml
