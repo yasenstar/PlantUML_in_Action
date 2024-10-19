@@ -1,0 +1,7 @@
+@startjson
+{
+    "Integer Number": [-1, 0, 1],
+    "Floating Number . Digits": [-1.12, 0.53, 1.32],
+    "Scientific Numbering": [1E6, 1.5E54]
+}
+@endjson
