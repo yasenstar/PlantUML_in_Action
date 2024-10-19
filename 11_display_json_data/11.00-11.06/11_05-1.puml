@@ -1,0 +1,17 @@
+@startjson
+{
+    "Numeric": [1, 2, 3],
+    "String": [
+        "v1a",
+        "v2b",
+        "v3c",
+        "v4d"
+    ],
+    "Boolean": [
+        true,
+        false,
+        true,
+        true
+    ]
+}
+@endjson
