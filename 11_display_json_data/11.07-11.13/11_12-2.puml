@@ -1,0 +1,21 @@
+@startuml
+
+agent Agent
+database Database
+
+stack Stack {
+    json JSON1 {
+        "fruit": "Apple",
+        "size": "Large"
+    }
+    json JSON2 {
+        "fruit": "Apple",
+        "size": "Large"
+    }
+}
+
+Agent -> JSON1
+JSON1 -> JSON2
+JSON2 -> Database
+
+@enduml
