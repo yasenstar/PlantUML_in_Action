@@ -1,0 +1,12 @@
+@startjson
+{
+    "empty_tab":[
+        "name",
+        "age"
+    ],
+    "empty_list":{
+        "name":"Bob",
+        "gender": "male"
+    }
+}
+@endjson
