@@ -1,11 +1,9 @@
 @startuml
 
-component Component
-actor Actor
-usecase Usecase
-() Interface
-node Node
-cloud Cloud
+state "A" as stateA
+state "C" as stateC {
+    state "B" as StateB
+}
 
 json JSON {
     "fruit": "Apple"

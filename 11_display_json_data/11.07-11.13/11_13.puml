@@ -1,0 +1,13 @@
+@startuml
+
+component Component
+actor Actor
+usecase Usecase
+() Interface
+node Node
+cloud Cloud
+
+json JSON {
+    "fruit": "Apple"
+}
+@enduml
