@@ -1,0 +1,36 @@
+@startyaml
+<style>
+    yamlDiagram {
+        arrow {
+            ' BackgroundColor lightblue
+            LineColor green
+            LineThickness 5
+            LineStyle 1-5
+        }
+        node {
+            ' BackgroundColor lightblue
+            LineColor lightblue
+            FontName Impact
+            FontSize 18
+            FontStyle bold
+            LineThickness 5
+            LineStyle 10-5
+            RoundCorner 0
+            BackgroundColor Khaki
+            separator {
+                LineColor red
+                LineThickness 3
+                LineStyle 2-5
+            }
+        }
+    }
+</style>
+-
+    name: Mark McGwire
+    hr: 65
+    avg: 0.278
+-
+    name: Sammy Sosa
+    hr: 63
+    avg: 0.288
+@endyaml
