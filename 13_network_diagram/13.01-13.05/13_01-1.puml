@@ -1,0 +1,7 @@
+@startuml
+nwdiag {
+    network dmz {
+        address = "210.x.x.x/24"
+    }
+}
+@enduml
