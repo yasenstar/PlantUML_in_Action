@@ -1,0 +1,10 @@
+@startyaml
+fruit: Apple
+size: Large
+color:
+    - Red
+    - Green
+    - new1 : abc
+    - new2
+class: good
+@endyaml

@@ -1,0 +1,21 @@
+@startyaml
+doe: "a deer, a female deer"
+ray: "a drop of golden sun"
+pi: 3.1415926
+xmas: true
+frechn-hens: 3
+calling-birds:
+    - huey
+    - dewvey
+    - louie
+    - fred
+xmas-fifty-day:
+    calling-birds: four
+    french-hens: 3
+    golden-rings: 5
+    partridges: 
+        count: 1
+        location: "a pear tree"
+    turtle-doves: two
+abc: def
+@endyaml
