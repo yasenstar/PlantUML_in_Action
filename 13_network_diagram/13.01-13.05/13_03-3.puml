@@ -1,0 +1,26 @@
+@startuml
+nwdiag {
+    network DMZ {
+        address = "210.x.x.x/24"
+        web01 [address = "210.x.x.10"]
+        web02 [address = "201.x.x.11"]
+    }
+    network Internal {
+        address = "172.x.x.x/24"
+        web01 [address = "172.x.x.10"]
+        web02 [address = "172.x.x.11"]
+        db01
+        db02
+    }
+    group app01 {
+        color = "#FFAAAA"
+        web01
+        db01
+    }
+    group app02 {
+        web02
+        db02
+        color = "AAAAFF"
+    }
+}
+@enduml

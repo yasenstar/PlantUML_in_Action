@@ -1,0 +1,25 @@
+@startuml
+nwdiag {
+    network DMZ {
+        web01
+        web02
+        web03
+    }
+    network internal {
+        web01
+        web02
+        db01
+        db02
+        group db {
+            ' db01
+            db02
+        }
+    }
+    group app01 {
+        color = "#FFAAAA"
+        web01
+        web03
+        db01
+    }
+}
+@enduml
