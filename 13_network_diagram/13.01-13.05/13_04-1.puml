@@ -1,0 +1,28 @@
+@startuml
+nwdiag {
+    network Sample_front {
+        ' description = "DMZ"
+        address = "192.168.10.0/24"
+        color = "red"
+
+        group web {
+            web01 [address = ".1, .2", shape = "node"]
+            web02 [address = ".3, .4"]
+        }
+
+    }
+    network Sample_back {
+        address = "192.168.20.0/24"
+        color = "palegreen"
+
+        web01 [address = ".10"]
+        web02 [address = ".11"]
+
+        group db {
+            db01 [address = ".101"]
+            db02 [address = ".102", shape = "database"]
+        }
+
+    }
+}
+@enduml
