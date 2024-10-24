@@ -1,0 +1,26 @@
+@startuml
+nwdiag {
+    network dmz {
+        color = pink
+        web01
+        web02
+    }
+    network internal1 {
+        web01
+        web02
+        db01
+    }
+    network internal2 {
+        color = lightgreen
+        web01
+        web02
+        db01 [shape = database]
+    }
+    group app {
+        color = "5555CC"
+        web01
+        web02
+        db01
+    }
+}
+@enduml
