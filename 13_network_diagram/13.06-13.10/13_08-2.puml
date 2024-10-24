@@ -1,0 +1,19 @@
+@startuml
+nwdiag {
+    network {
+        client1
+        client2
+        client3
+    }
+    network internet {
+        client1
+        client2
+        client3
+        server1
+    }
+    network company {
+        server1
+    }
+
+}
+@enduml

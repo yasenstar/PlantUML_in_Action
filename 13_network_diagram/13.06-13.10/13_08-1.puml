@@ -1,0 +1,12 @@
+@startuml
+nwdiag {
+    internet [shape = cloud]
+    internet -- router
+
+    network {
+        router
+        web01
+        web02
+    }
+}
+@enduml
