@@ -1,0 +1,23 @@
+@startuml
+!include <office/Servers/application_server>
+!include <office/Servers/application_server_ghosted>
+!include <office/Servers/database_server>
+!include <office/Servers/database_server_green>
+!include <C4/C4_Container>
+
+nwdiag {
+    Network dmz {
+        address = "210.x.x.x/24"
+        web01 [address = ".1, .20", description = "<$application_server>\nweb01"]
+        web02 [address = ".2", description = "<$application_server_ghosted>\nweb02"]
+        comp01 [description = "<$person>\ncomp01"]
+    }
+    network internal {
+        address = "172.x.x.x/24"
+        web01 [address = ".1", ]
+        web02 [address = ".2", ]
+        db01 [address = ".100", description = "<$database_server>\ndb01"]
+        db02 [address = ".101", description = "<$database_server_green\ndb01>"]
+    }
+}
+@enduml
