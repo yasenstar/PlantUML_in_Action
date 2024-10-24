@@ -1,0 +1,30 @@
+@startuml
+!include <office/Servers/application_server>
+!include <office/Servers/application_server_ghosted>
+!include <office/Servers/database_server>
+!include <office/Servers/database_server_green>
+!include <C4/C4_Container>
+nwdiag {
+    network dmz {
+        address = "210.x.x.x/24"
+        user1 [description = "<&people*4>\nUser1"]
+        ' web01 [ address = "210.x.x.1, 210.x.x.20", description = "<&cog*4>\nweb01" ]
+        web01 [address = ".1, .20", description = "<$application_server>\nweb01"]
+        web02 [address = "210.x.x.2", description = "<&globe*4>\nweb02"]
+    }
+    network internal {
+        address = "172.x.x.x/24"
+        web01 [address = "172.x.x.1"]
+        web02 [address = "172.x.x.2"]
+        db02 [address = "172.x.x.101", description = "<&spreadsheet*4>\ndb02"]
+        pb01 [address = "172.x.x.110", description = "<&print*4>\npb01"]
+        db01 [address = "172.x.x.100", description = "<&lightbulb*4>\nweb01"]
+    }
+    group nightly {
+        description = "<&clock> Restarated Nightly <&clock>"
+        color = "#FFAAAA"
+        web02
+        db01
+    }
+}
+@enduml
