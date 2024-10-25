@@ -1,0 +1,18 @@
+@startuml
+nwdiag {
+    network NETWROK_BASE {
+        width = full
+        dev_A
+        dev_B
+    }
+    network IntNET1 {
+        width = full
+        dev_B
+        dev_M
+    }
+    network InetNET2 {
+        dev_M
+        dev_B
+    }
+}
+@enduml
