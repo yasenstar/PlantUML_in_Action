@@ -1,0 +1,51 @@
+@startuml
+<style>
+    nwdiagDiagram {
+        network {
+            BackgroundColor AAFFAA
+            LineColor red
+            ' LineThickness 10.0
+            FontName Impact
+            FontSize 18
+            FontColor navy
+        }
+        server {
+            BackgroundColor pink
+            LineColor yellow
+            LineThickness 5.0
+        }
+        arrow {
+            FontSize 20
+            FontName Monospaced
+            LineColor blue
+        }
+        group {
+            BackgroundColor cadetblue
+            ' LineColor red
+            ' LineThickness 20.0
+            FontSize 15
+            FontStyle bold
+            Margin 50
+            Padding 50
+        }
+    }
+</style>
+nwdiag {
+    network DMZ {
+        address = "y.x.x.x/24"
+        web01 [address = "y.x.x.1"]
+        web02 [address = "y.x.x.2"]
+    }
+    network Internal {
+        web01
+        web02
+        db01 [address = "w.x.x.z" shape = database]
+    }
+    group {
+        description = "long gorup label"
+        web01
+        web02
+        db01
+    }
+}
+@enduml
