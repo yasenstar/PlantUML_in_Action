@@ -1,0 +1,9 @@
+@startuml
+nwdiag {
+    network nw {
+        color = "FFAAAA"
+        server
+        internet [shape = cloud]
+    }
+}
+@enduml

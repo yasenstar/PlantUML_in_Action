@@ -1,0 +1,14 @@
+@startuml
+<style>
+    root {
+        shadowing 0
+    }
+</style>
+nwdiag {
+    network nw {
+        color = "AAFFAA"
+        server
+        internet [shape = cloud]
+    }
+}
+@enduml
