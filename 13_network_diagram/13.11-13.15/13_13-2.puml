@@ -1,0 +1,17 @@
+@startuml
+!include <office/Devices/device_printer>
+!include <office/Devices/switch>
+nwdiag {
+    network LAN1 {
+        a [address = "a1"]
+    }
+    network LAN2 {
+        a [address = "a2"]
+        switch [address = "e2" description = "<$switch>\nSwitch"]
+    }
+    switch -- equip
+    equip [address = "e3"]
+    equip -- printer
+    printer [address = "USB" description = "<$device_printer>\nPrinter"]
+}
+@enduml
