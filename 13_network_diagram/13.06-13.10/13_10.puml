@@ -1,0 +1,30 @@
+@startuml
+
+title My Network Diagram
+
+header network diagram header
+footer some footer
+
+nwdiag {
+    ' title My Diagram
+    ' header some header
+    network inet {
+        web01
+    }
+    network internal {
+        web01
+    }
+    ' legend
+    ' - [web01] Web Server
+    ' - [db01] DB Server
+    ' end legend
+}
+
+legend
+    - [web01] Web Server
+    - DB Server
+end legend
+
+caption This is a caption
+
+@enduml
