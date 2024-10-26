@@ -1,0 +1,15 @@
+@startsalt
+{
+    {T
+        +Region     | Population    | Age
+        + World     | 7.13 billion  | 30
+        ++ Amreica  | 964 million   | 30
+        +++ Canada  | 35 million    | 30
+        +++ US      | 319 million   | 30
+        ++++ NYC    | 8 million     | 30
+        +++ Mexico  | 117 million   | 30
+        ++ Europe   | 601 million   | 30
+        +++ Italy   | 61 million    | 30
+    }
+}
+@endsalt
