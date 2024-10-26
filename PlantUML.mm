@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.266">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1678,6 +1678,7 @@
 <node TEXT="sketch.com: Guide for wireframe" ID="ID_1440685524" CREATED="1729909147526" MODIFIED="1729909167447" LINK="https://www.sketch.com/blog/how-to-create-a-wireframe/"/>
 <node TEXT="Moqups: Wireframe, Diagram &amp; Whiteboard Online" ID="ID_839531472" CREATED="1729908411655" MODIFIED="1729908442685" LINK="https://moqups.com/"/>
 <node TEXT="draw.io for wireframes" ID="ID_929371732" CREATED="1729908474086" MODIFIED="1729908483495" LINK="https://app.diagrams.net/"/>
+<node TEXT="WireGen.ai: Generate UI wireframes with AI" ID="ID_1502800911" CREATED="1729911763502" MODIFIED="1729911778611" LINK="https://wiregen.ai/"/>
 </node>
 <node TEXT="14.1 Basic Widgets" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
 <node TEXT="PlantUML Salt GUI Wireframe) cheat sheet" ID="ID_78975803" CREATED="1729863436800" MODIFIED="1729863493462" LINK="https://gist.github.com/wonderstory/31b8b32a2843f3475398a377c41aee52"/>
