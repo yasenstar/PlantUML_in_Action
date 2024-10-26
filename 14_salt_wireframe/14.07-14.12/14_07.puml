@@ -1,0 +1,21 @@
+@startsalt
+title My Wireframe
+footer 2024-10-26
+{
+    This is a Tree Widget
+    {T
+        + World
+        ++ America
+        +++ USA
+        ++++ New York
+        +++ Canada
+        ++++ Montreal
+        ++ Europe
+        +++ UK
+        ++ Asia
+        +++ China
+        ++ Africa
+    }
+    [  OK  ]
+}
+@endsalt

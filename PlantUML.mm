@@ -1680,7 +1680,7 @@
 <node TEXT="draw.io for wireframes" ID="ID_929371732" CREATED="1729908474086" MODIFIED="1729908483495" LINK="https://app.diagrams.net/"/>
 <node TEXT="WireGen.ai: Generate UI wireframes with AI" ID="ID_1502800911" CREATED="1729911763502" MODIFIED="1729911778611" LINK="https://wiregen.ai/"/>
 </node>
-<node TEXT="14.1 Basic Widgets" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
+<node TEXT="14.1 Basic Widgets" FOLDED="true" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
 <node TEXT="PlantUML Salt GUI Wireframe) cheat sheet" ID="ID_78975803" CREATED="1729863436800" MODIFIED="1729863493462" LINK="https://gist.github.com/wonderstory/31b8b32a2843f3475398a377c41aee52"/>
 <node TEXT="Button using [ and ]" ID="ID_362922857" CREATED="1729926181209" MODIFIED="1729926191520"/>
 <node TEXT="Radio button using ( and ), checked using (X), X is Capital case" ID="ID_738233456" CREATED="1729926191971" MODIFIED="1729926231707"/>
@@ -1688,10 +1688,12 @@
 <node TEXT="User text area using &quot;  &quot;" ID="ID_1002992801" CREATED="1729926235267" MODIFIED="1729926262612">
 <arrowlink DESTINATION="ID_1606825004"/>
 </node>
-<node TEXT="Droplist using ^ ^" ID="ID_1987045264" CREATED="1729926250316" MODIFIED="1729926257654"/>
+<node TEXT="Droplist using ^ ^" ID="ID_1987045264" CREATED="1729926250316" MODIFIED="1729928147118">
+<arrowlink DESTINATION="ID_1491407438"/>
 </node>
-<node TEXT="14.2 Text Area" ID="ID_1606825004" CREATED="1724482936917" MODIFIED="1724482940456">
-<node TEXT="Using + to start a text area" ID="ID_1209686344" CREATED="1729926265716" MODIFIED="1729926291037">
+</node>
+<node TEXT="14.2 Text Area" FOLDED="true" ID="ID_1606825004" CREATED="1724482936917" MODIFIED="1724482940456">
+<node TEXT="Using + to start a text area" FOLDED="true" ID="ID_1209686344" CREATED="1729926265716" MODIFIED="1729926291037">
 <node TEXT="dot (.) to fill up vertical space" ID="ID_1340154247" CREATED="1729926291041" MODIFIED="1729926305093"/>
 <node TEXT="last line of space &quot;  &quot; to make the area wider" ID="ID_1561387411" CREATED="1729926305268" MODIFIED="1729926317070"/>
 </node>
@@ -1703,8 +1705,18 @@
 <node TEXT="Can open one droplist, by adding values enclosed by ^" ID="ID_579633332" CREATED="1729926360620" MODIFIED="1729926394990"/>
 <node TEXT="Separate different droplist by |" ID="ID_1533757975" CREATED="1729926395803" MODIFIED="1729926402725"/>
 </node>
-<node TEXT="14.4 Using Grid [| and #, !, -, +]" ID="ID_1681416577" CREATED="1724482985677" MODIFIED="1724483002512"/>
-<node TEXT="14.5 Group Box [^]" ID="ID_585848731" CREATED="1724483007975" MODIFIED="1724483017344"/>
+<node TEXT="14.4 Using Grid [| and #, !, -, +]" FOLDED="true" ID="ID_1681416577" CREATED="1724482985677" MODIFIED="1724483002512">
+<node TEXT="A table is automatically created when you use an opening bracket {. And you have to use | to separate columns" ID="ID_1257185531" CREATED="1729941514969" MODIFIED="1729941542112"/>
+<node TEXT="Symbol: # (display all vertical and horizontal lines)" ID="ID_512584138" CREATED="1729941543529" MODIFIED="1729941580577"/>
+<node TEXT="Symbol: ! (display all vertical lines)" ID="ID_178118116" CREATED="1729941565143" MODIFIED="1729941576330"/>
+<node TEXT="Symbol: - (display all horizontal lines)" ID="ID_700004417" CREATED="1729941582110" MODIFIED="1729941593362"/>
+<node TEXT="Symbol: + (display external lines)" ID="ID_1438519049" CREATED="1729941593535" MODIFIED="1729941606633">
+<node TEXT="Using ^ without anything display external lines, same as +" ID="ID_161055540" CREATED="1729941606637" MODIFIED="1729941626225"/>
+</node>
+</node>
+<node TEXT="14.5 Group Box [^]" FOLDED="true" ID="ID_585848731" CREATED="1724483007975" MODIFIED="1724483017344">
+<node TEXT="Use ^ with Group Name string to add Group box" ID="ID_960011361" CREATED="1729941630073" MODIFIED="1729941655154"/>
+</node>
 <node TEXT="14.6 Using Separator [.., ==, ~~, --]" ID="ID_1108964201" CREATED="1724483020638" MODIFIED="1724483035864"/>
 <node TEXT="14.7 Tree Widget [T]" ID="ID_876953153" CREATED="1724483037550" MODIFIED="1724483044591"/>
 <node TEXT="14.8 Tree Table [T]" ID="ID_870330294" CREATED="1724483052437" MODIFIED="1724483059832"/>

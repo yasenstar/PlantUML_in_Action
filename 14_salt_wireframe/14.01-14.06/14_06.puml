@@ -1,0 +1,14 @@
+@startuml
+salt
+{#
+    Text1
+    ..
+    "Some field"
+    ==
+    Note on usage
+    ~~
+    Anothr text
+    --
+    [  OK  ]
+}
+@enduml
