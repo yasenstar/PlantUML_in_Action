@@ -464,7 +464,7 @@ Interfaces can extend one or more other interfaces. A UML generalization relatio
 ###### 3.39.4 GroupInheritance 4 (grouping only from 4)
 
 ##### 3.40 Display JSON Data on Class or Object Diagram
- (see:11 Display JSON Data)
+ (see:11.11 Display JSON Data on Class or Object Diagram)
 ##### 3.41 Packages and Namespaces Enhancement
 
 ### 04 Object Diagram
@@ -509,7 +509,7 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 ##### Sample PERT
 
 #### 4.08 Display JSON Data on Class or Object Diagram
- (see:11 Display JSON Data)
+ (see:11.11 Display JSON Data on Class or Object Diagram)
 ### 07 Component Diagram
 
 #### Basis
@@ -667,7 +667,7 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 #### Others
 
 ##### 8.17 Display JSON Data on Deployment Diagram
-
+ (see:11.12 Display JSON Data on Deployment Diagram)
 ##### 8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram
 
 ##### 8.19 Port [port, portIn, portOut]
@@ -675,7 +675,7 @@ It provides asnapshot of the system's structure, capturing thestatic view of the
 ## Behavioral (Dynamic) UML Modeling
 
 ### 01 Sequence Diagram
-
+ (see:10 Timing Diagram)
 #### Part 1 - Basis
 
 ##### Characteristics of Sequence Diagram
@@ -1350,8 +1350,11 @@ History states allow the state machine tore-enter the last substate that was act
 #### 9.22 Alias
 
 #### 9.23 Display JSON Data on State diagram
-
+ (see:11.13 Display JSON Data on State Diagram)
 ### 10 Timing Diagram
+
+Think of a timing diagram as an inverted sequence diagram. In a timing diagram, time passes on the x-axis from left to right, with different components of the system that interact with each other on the y-axis. Timing diagrams show how long each step of a process takes. Use them to identify which steps of a process require too much time and to find areas for improvement.
+
 
 #### 10.01 Declaring element or participant
 
@@ -1371,6 +1374,10 @@ History states allow the state machine tore-enter the last substate that was act
 
 #### 10.02 Binary and Clock
 
+##### Clock: many digital waveforms are synchronized with a basic timing waveform called the clock
+
+##### The clock is a periodic waveform in which each internal between pulses equals one bit time
+
 #### 10.03 Adding message
 
 #### 10.04 Relative time
@@ -1386,6 +1393,7 @@ History states allow the state machine tore-enter the last substate that was act
 #### 10.08 Initial state
 
 #### 10.09 Intricated state
+复杂状态
 
 ##### Intricated or undefined robust state
 
@@ -1429,9 +1437,19 @@ Local model with onlycompact  on element
 
 ## 11 Display JSON Data
 
+### About JSON
+
+#### json.org
+
+#### Developer Mozilla about JSON
+
+#### JSON Introduction in W3C
+
 ### 11.1 Complex Example
 
 ### 11.2 Highlight Parts
+
+#### key word: #highlight
 
 ### 11.3 Using Different Styles for Highlight
 
@@ -1457,7 +1475,11 @@ Local model with onlycompact  on element
 
 #### JSON Unicode
 
+##### Unicode Table (sample)
+ (see:12.2 Specific Key (with symbols or unicode))
 #### JSON Two-Character Escape Sequence
+
+#### Bug: \\\\ resolves to just \
 
 ### 11.8 Minimal JSON Examples
 
@@ -1471,7 +1493,25 @@ Local model with onlycompact  on element
 
 ### 11.13 Display JSON Data on State Diagram
 
+### Add-on
+
+#### tool: json2puml
+
 ## 12 Display YAML Data
+
+### About YAML
+
+#### YAML: YAML Ain't Markup Language
+
+##### Configuration Files
+
+##### Internet Messaging
+
+##### Object Persistence
+
+##### Data Auditing and Visualization
+
+#### The official YAML Site: yaml.org
 
 ### 12.1 Complex Example
 
@@ -1511,11 +1551,27 @@ Local model with onlycompact  on element
 
 #### Network
 
+##### addresses (separated by comma)
+
+##### color
+
+##### description
+
+##### shape
+
 #### Group
+
+##### color
+
+##### description
 
 ### 13.5 Using Sprites
 
+#### githum.com/plantuml/plantuml-stdlib
+
 ### 13.6 Using OpenIconic
+
+#### github.com/iconic/open-iconic
 
 ### 13.7 Same Nodes on more than two Networks
 
@@ -1545,7 +1601,259 @@ Local model with onlycompact  on element
 
 ## 14 Salt (Wireframe)
 
+### 14.0 About Salt (Wireframe)
+
+#### Wikipedia: Website Wireframe
+
+##### A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website
+
+#### Lucidchart: About Website Wireframes
+
+##### What is Website Wireframe
+
+###### Originally, the term "wireframe" meant a visual representation of three-dimensional object, like those used in product design and development. Now it is also used to describe 3D modeling in computer animation and in the design and development of 2D web pages and mobile apps
+
+###### In web design, a wireframe or wireframe diagram is a gray-scale visual representation of the structure and functionality of a single web page or a mobile app screen. Wireframe are used early in the development process to establish the basic structure of a page before visual design and content is added, and can be created using paper, straight into HTML/CSS or using software apps
+
+###### Wireframes replace the abstract nature of the sitemap, which is usually the first step in site development, with something more tangible and understandable
+
+##### Purposes of wireframes
+
+###### Ensuring the site or app is built according to goals
+
+* Seeing features clearly with minimal creative influence allows stakeholders to focus on other aspects of the project.
+
+* Wireframing sets expectations about how features will be implemented by showing how features will work, where they will be located and how much benefit they'll provide
+
+* A feature may be pulled out because it doesn't fit into your site's goals
+
+###### Focusing on usability
+
+* Wireframing provides an objective look at link names, paths to conversion, ease of use, navigation, and the placement of features.
+
+* Wireframes help you identify flaws in site architecture or features and show you how well it flows from a use perspective
+
+###### Content growth capacity
+
+* If you know your site will grow in the near future, your website needs to be able to accommodate that growth with minimal impact to the site architecture, usability, and design.
+
+* Wireframing can reveal these important opportunities for content growth and how to fit them in
+
+###### Feedback and painless iteration
+
+* Instead of merging the full functionality, layout and creative elements into a single step, wireframes guarantee that these considerations are taken on separately.
+
+* This allows stakeholders to provide feedback much sooner in the process.
+
+* Creating wireframes using software makes the iterative process inherent in web design much less of a chore
+
+##### Value of wireframes for website and app development
+
+###### Wireframes put every participant in website development on the same page.
+
+###### Saving time and money
+
+#### Figma: About Wireframing
+
+##### What is a wireframe?
+
+###### Wireframes are basic blueprints that help team align on requirements, keeping UX design conversations focused and constructive.
+
+###### Think of your wireframe as the skeleton of your app, websites, or other final product.
+
+###### Your wireframes shows the design team and stakeholders the bare-bones outlined of essential webpages, components, and features, including:
+
+* Screen layouts
+
+* Navigation bars
+
+* Components of UX and UI design
+
+* Interactive elements
+
+##### Three types of wireframe designs
+
+###### Low-fidelity wireframes
+
+* the basic wireframes focused on layout, navigation, and information architecture.
+
+* show what the interface will look like, illustrating user flows with key UI design elements.
+
+###### Mid-fidelity wireframes
+
+* help designers iterate and shape the final design.
+
+* design team may add annotations and content as they try out different approaches to user flows and UI design elements, mapping out core functionality and key interactions.
+
+* this enables teams to settle on the final wireframe design framework before adding visual design components
+
+###### High-fidelity wireframes
+
+* look like early product mockups, with interactive and visual design elements -- but without the functionality of low-fidelity prototypes.
+
+* at this point of the design process, you may wan tot add brand elements like fonts, colors, and logos.
+
+* you can capture the look and feel of the final product for user testing
+
+##### Seven best practives in wireframe design
+
+###### 1. Identify your design goals
+
+###### 2. Choose the right size of your wireframe
+
+* Mobile: 393 pixels wide by 852 pixels tall
+
+* 11" Tablet: 834 pixels wide by 1194 pixels tall
+
+* Desktop: 1440 pixels wides by 1024 pixels tall
+
+###### 3. Keep your wireframe design simple
+
+###### 4. Maintain design consistency
+
+###### 5. Make navigation obvious
+
+###### 6. Don't get too attached to your wireframe
+
+###### 7. Leverage wireframing tools
+
+##### Wireframe design checklist
+
+###### What screens are essential to meet user needs
+
+###### User flow thorugh conversion funnels
+
+###### Usability considerations, including navigation and organization
+
+###### Main goals and user flows for each screen
+
+###### Key UI design elements, plus content and interactive features on each screen
+
+###### How design components fit together to form screen templates
+
+#### Visme: what is wireframe
+
+##### Wireframes are the backbone of every website and app you use.
+
+##### User experience and use interaction designers use wireframes to sketch out a visual idea that can be customized easily until it's ready to be built and developed
+
+##### A wireframe is the first step in the UX design workflow of a website or mobile application. The concept of creating a wireframe is similar to how architects start with blueprint drawings and engineers sketch mechanical diagrams.
+
+##### Wireframe vs. Prototype
+
+###### What they are?
+
+* Wireframe: a wireframe is a low-fidelity (低保真), basic outline or blueprint of a product or interface
+
+* Prototype: a prototype, on the other hand, is a high-fidelity, interactive mockup of the product or interface
+
+###### What they used for?
+
+* Wireframe: it focuses on the layout, structure, and functionality of the design and is used to communicate the basic structure and functionality to stakeholders, clients, and development teams
+
+* Prototype: it focuses on the overall design and is used to test and refine the design, user experience, and functionality
+
+###### Structure
+
+* Wireframe: are usually static and don't have interactive features or detailed visual design element
+
+* Prototype: can be interactive and may include animations, detailed visual design elements, and functionality that simulates the final product
+
+###### When they are created?
+
+* Wireframe: are created at the beginning of the design process to establish the basic structure and functionality of the design
+
+* Prototype: they are created after the wireframe stage and are used to test and refine the design before it is devleoped
+
+##### Benefits of Wireframing
+
+###### 1. It gets a project started faster
+
+###### 2. It saves your money
+
+###### 3. It's easier to conduct UX testing before the final UI is designed
+
+###### 4. It's faster and easier to create iterations before the final design
+
+###### 5. It helps determine the overall developoment requirements
+
+###### 6. Wireframes help create and use design systems
+
+#### Gliffy: About Wireframes
+
+##### What is a Wireframe?
+
+###### A wireframe is a diagram that visualizes how a webpage or application will look in the same way you'd use a blueprint for a house.
+
+###### It's a sketch of the interface's structure, usually without any color, images, or other visual design choices made or inserted.
+
+###### You'd create a wireframe to map out your content strategy, to allow for collaboration, and to visually assess if your ideas will work
+
+##### Steps to create Wireframe Diagram
+
+###### 1. Start with a Wireframe Template in Gliffy
+
+###### 2. Put the Device Shape on it's Own Layer
+
+###### 3. Add Shapes to Represent Elements of Your Website
+
+###### 4. Add Images or Logos to Finish Your Wireframe
+
+#### Venngage: create wireframe
+
+##### Basics of wireframing
+
+###### Wireframing serves as a foundational element in the design and development lifecycle of websites and applications
+
+###### Typlically presented as a basic diagram, a wireframe outlines the layout and interaction patterns of a page, without the distractions of visual design elements like colors or detailed graphics
+
+###### Wireframing provides a clear view of the site or app's architecture, helping designers, developers and stakeholders undrestand the workflow and content hierarchy
+
+###### Wireframing not only helps in visualizing the structure and layout of a project but also serves as a roadmap that guides the entire team through the development process
+
+##### Steps of creating a wireframe
+
+###### 1. Conduct your research
+
+###### 2. Ensure your user flow is well-defined
+
+###### 3. Create a grid or layout: Sketch them
+
+###### 4. Add additional components
+
+###### 5. Review and revise
+
+###### 6. User testing
+
+###### 7. Finalize and document
+
+###### 8. Proceed with mockup or prototype
+
+##### Five different types of wireframe
+
+###### Homepage wireframe
+
+###### Website wireframe
+
+###### Microsite wireframe
+
+###### Landing page wireframe
+
+###### Mobile wireframe
+
+#### Miro: Using visual workspace for wireframing magic
+
+#### sketch.com: Guide for wireframe
+
+#### Moqups: Wireframe, Diagram & Whiteboard Online
+
+#### draw.io for wireframes
+
+#### WireGen.ai: Generate UI wireframes with AI
+
 ### 14.1 Basic Widgets
+
+#### PlantUML Salt GUI Wireframe) cheat sheet
 
 ### 14.2 Text Area
 
@@ -1581,17 +1889,197 @@ Local model with onlycompact  on element
 
 ### 14.18 Add Title, Header, Footer, Caption or Legend
 
+### 14.19 Zoom, DPI
+
+### 14.20 Include Salt "on Activity Diagram"
+
+### 14.21 Include Salt "on While Condition of Activity Diagram"
+
+### 14.22 Include Salt "on Repeat While Condition of Activity Diagram"
+
+### 14.23 Skinparam
+
+### 14.24 Style
+
 ## 15 Archimate Diagram
+
+### 15.01 ArchiMate Keyword
+
+### 15.02 Defining Junctions
+
+### 15.03 ArchiMate Example 1
+
+### 15.04 ArchiMate Example 2
+
+### 15.04 List Possible Sprite
+
+### 15.05 List Possible Sprites
+
+#### "listsprite"
+
+### 15.06 ArchiMate Macros
+
+#### ArchiMate Macros and Library
+
+#### ArchiMate Elements
+
+#### ArchiMate Relationships
+
+#### Appendice: Examples of All ArchiMate RelationTypes
 
 ## 16 Gantt Diagram
 
+### 16.1 Declaring Tasks
+
+#### Duration
+
+#### Start
+
+#### End
+
+#### Start / End
+
+### 16.2 One-Line Declaration (with the and conjunction)
+
+### 16.3 Adding Constraints
+
+### 16.4 Short Names
+
+### 16.5 Customize Colors
+
+### 16.6 Completion Status
+
+#### Adding Completion Depending Percentage
+
+#### Change Colour of Completion (by style)
+
+### 16.7 Milestone
+
+#### Relative Milestone (use of constraints)
+
+#### Absolute Milestone (use of fixed date)
+
+### 16.8 Hyperlinks
+
+### 16.9 Calendar
+
+### 16.10 Coloring Days
+
+### 16.11 Changing Scale
+
+### 16.12 Zoom (example for all scale)
+
+### 16.13 Weekscale with Weeknumbers or Calendar Date
+
+### 16.14 Close Day
+
+### 16.15 Definition of a Week Depending of Closed Days
+
+### 16.16 Working Days
+
+### 16.17 Simplified Task Succession
+
+### 16.18 Working with Resources
+
+### 16.19 Hide Resources
+
+### 16.20 Horizontal Separator
+
+### 16.21 Vertical Separator
+
+### 16.22 Complex Example
+
+### 16.23 Comments
+
+### 16.24 Using Style
+
+### 16.25 Adding Notes
+
+### 16.26 Pause Tasks
+
+### 16.27 Change Link Colors
+
+### 16.28 Tasks or Milestones on the Same Line
+
+### 16.29 Highlight Today
+
+### 16.30 Task between Two Milestones
+
+### 16.31 Grammar and Verbal Form
+
+### 16.32 Add Title, Header, Footer, Captain or Legend
+
+### 16.33 Removing Foot Boxes (example for all scale)
+
+### 16.34 Language of the Calendar
+
+### 16.35 Delete Tasks or Milestones
+
+### 16.36 Start a Project, a Task or a Milestone a Number of Days before or after today
+
+### 16.37 Change Label Position
+
 ## 17 Mindmap
+
+### 17.01 OrgMode Syntax
+
+### 17.02 Markdown Syntax
+
+### 17.03 Arithmetic Notation
+
+### 17.04 MultiLines
+
+### 17.05 MultiRoot Mindmap
+
+### 17.06 Colors
+
+### 17.07 Removing Box
+
+### 17.08 Changing Diagram Direction
+
+### 17.09 Complete Example
+
+### 17.10 Changing Style
+
+### 17.11 Word Wrap
+
+### 17.12 Creole on Mindmap Diagram
 
 ## 18 Work Breakdown Structure (WBS)
 
+### 18.01 OrgMode Syntax
+
+### 18.02 Change Direction
+
+### 18.03 Arithmetic Notation
+
+### 18.04 MultiLines
+
+### 18.05 Removing Box
+
+### 18.06 Colors (with inline or style color)
+
+### 18.07 Using Style
+
+### 18.08 Word Wrap
+
+### 18.09 Add Arrows between WBS Elements
+
+### 18.10 Creole on WBS Diagram
+
 ## 19 Maths
 
+### 19.01 Standalone Diagram
+
+### 19.02 How is this working?
+
 ## 20 Entity Relationship Diagram
+
+### 20.01 Information Engineeing Relations
+
+### 20.02 Entities
+
+### 20.03 Complete Example
 
 # PlantUML as a Language
 
@@ -1647,7 +2135,7 @@ Local model with onlycompact  on element
 
 #### State Machine Diagram
 
-#### Interactiion Diagram
+#### Interaction Diagram
 
 ##### Sequence Diagram
 
@@ -1656,3 +2144,9 @@ Local model with onlycompact  on element
 ##### Interaction Overview Diagram
 
 ##### Timing Diagram
+
+## PlantUML for Confluence
+
+## PlantUML on JavaScript
+
+### PlantUML.js Playground

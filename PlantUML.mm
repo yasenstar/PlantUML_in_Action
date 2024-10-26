@@ -1521,12 +1521,12 @@
 <node TEXT="13.15 Appendix: Test of all Shapes on Network Diagram (nwdiag)" ID="ID_695226988" CREATED="1724482850212" MODIFIED="1724482865351"/>
 </node>
 <node TEXT="14 Salt (Wireframe)" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
-<node TEXT="14.0 About Salt (Wireframe)" ID="ID_1541854388" CREATED="1729904104907" MODIFIED="1729904120135">
+<node TEXT="14.0 About Salt (Wireframe)" FOLDED="true" ID="ID_1541854388" CREATED="1729904104907" MODIFIED="1729904120135">
 <node TEXT="Wikipedia: Website Wireframe" FOLDED="true" ID="ID_309965618" CREATED="1729907570121" MODIFIED="1729907587873" LINK="https://en.wikipedia.org/wiki/Website_wireframe">
 <node TEXT="A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website" ID="ID_474582546" CREATED="1729907593530" MODIFIED="1729907654989"/>
 </node>
 <node TEXT="Lucidchart: About Website Wireframes" FOLDED="true" ID="ID_196501101" CREATED="1729905934589" MODIFIED="1729905986370" LINK="https://www.lucidchart.com/pages/wireframe">
-<node TEXT="What is Websote Wireframe" POSITION="bottom_or_right" ID="ID_1895556731" CREATED="1729904120140" MODIFIED="1729905991498">
+<node TEXT="What is Website Wireframe" POSITION="bottom_or_right" ID="ID_1895556731" CREATED="1729904120140" MODIFIED="1729912666106">
 <node TEXT="Originally, the term &quot;wireframe&quot; meant a visual representation of three-dimensional object, like those used in product design and development. Now it is also used to describe 3D modeling in computer animation and in the design and development of 2D web pages and mobile apps" ID="ID_416800482" CREATED="1729904152988" MODIFIED="1729904214504"/>
 <node TEXT="In web design, a wireframe or wireframe diagram is a gray-scale visual representation of the structure and functionality of a single web page or a mobile app screen. Wireframe are used early in the development process to establish the basic structure of a page before visual design and content is added, and can be created using paper, straight into HTML/CSS or using software apps" ID="ID_907088307" CREATED="1729904218618" MODIFIED="1729904413030"/>
 <node TEXT="Wireframes replace the abstract nature of the sitemap, which is usually the first step in site development, with something more tangible and understandable" ID="ID_696326323" CREATED="1729905266652" MODIFIED="1729905303283"/>
@@ -1680,7 +1680,7 @@
 <node TEXT="draw.io for wireframes" ID="ID_929371732" CREATED="1729908474086" MODIFIED="1729908483495" LINK="https://app.diagrams.net/"/>
 <node TEXT="WireGen.ai: Generate UI wireframes with AI" ID="ID_1502800911" CREATED="1729911763502" MODIFIED="1729911778611" LINK="https://wiregen.ai/"/>
 </node>
-<node TEXT="14.1 Basic Widgets" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
+<node TEXT="14.1 Basic Widgets" FOLDED="true" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
 <node TEXT="PlantUML Salt GUI Wireframe) cheat sheet" ID="ID_78975803" CREATED="1729863436800" MODIFIED="1729863493462" LINK="https://gist.github.com/wonderstory/31b8b32a2843f3475398a377c41aee52"/>
 </node>
 <node TEXT="14.2 Text Area" ID="ID_1606825004" CREATED="1724482936917" MODIFIED="1724482940456"/>
