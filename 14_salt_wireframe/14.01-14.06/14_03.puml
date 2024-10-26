@@ -1,0 +1,15 @@
+@startuml
+salt
+{
+    ^This is a closed droplist^
+    .
+    ^This is an open droplist^^ Item 1^^ Item 2^ | 
+    ^This is an open droplist^^ Item 1^^ Item 2^ | 
+    ^This is an open droplist^^ Item 1^^ Item 2^
+    .
+    .
+    .
+
+    ^This is an open droplist^^ Item 1^^ Item 2^
+}
+@enduml
