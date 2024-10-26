@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.266">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1472,7 +1472,7 @@
 <node TEXT="12.4 Using Different Styles for Highlight" ID="ID_623238382" CREATED="1724480336877" MODIFIED="1724480345783"/>
 <node TEXT="12.5 Using (Global) Style" ID="ID_1252474188" CREATED="1724480349438" MODIFIED="1724480355951"/>
 </node>
-<node TEXT="13 Network Diagram (nwdiag)" POSITION="bottom_or_right" ID="ID_1607808120" CREATED="1716658821719" MODIFIED="1716658834915">
+<node TEXT="13 Network Diagram (nwdiag)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1607808120" CREATED="1716658821719" MODIFIED="1716658834915">
 <node TEXT="13.1 Simple Diagram" FOLDED="true" ID="ID_548273651" CREATED="1724480364764" MODIFIED="1724480371906">
 <node TEXT="Define a Network" ID="ID_1658787168" CREATED="1724480373541" MODIFIED="1724480378406"/>
 <node TEXT="Define some Elements or Servers on a Network" ID="ID_31791907" CREATED="1724480384374" MODIFIED="1724480393784"/>
@@ -1488,8 +1488,16 @@
 </node>
 </node>
 <node TEXT="13.4 Extended Syntax (for network or group)" FOLDED="true" ID="ID_723438458" CREATED="1724480502696" MODIFIED="1724480514232">
-<node TEXT="Network" ID="ID_365417380" CREATED="1724480514235" MODIFIED="1724480516833"/>
-<node TEXT="Group" ID="ID_1255666077" CREATED="1724480521102" MODIFIED="1724480523178"/>
+<node TEXT="Network" ID="ID_365417380" CREATED="1724480514235" MODIFIED="1724480516833">
+<node TEXT="addresses (separated by comma)" ID="ID_1428695330" CREATED="1729679791559" MODIFIED="1729679805612"/>
+<node TEXT="color" ID="ID_1864390817" CREATED="1729679806180" MODIFIED="1729679807723"/>
+<node TEXT="description" ID="ID_434927037" CREATED="1729679807890" MODIFIED="1729679810705"/>
+<node TEXT="shape" ID="ID_1217187937" CREATED="1729679810864" MODIFIED="1729679813155"/>
+</node>
+<node TEXT="Group" ID="ID_1255666077" CREATED="1724480521102" MODIFIED="1724480523178">
+<node TEXT="color" ID="ID_433772960" CREATED="1729679813745" MODIFIED="1729679816071"/>
+<node TEXT="description" ID="ID_164631577" CREATED="1729679816536" MODIFIED="1729679819362"/>
+</node>
 </node>
 <node TEXT="13.5 Using Sprites" FOLDED="true" ID="ID_1320158215" CREATED="1724480526878" MODIFIED="1724480531521">
 <node TEXT="githum.com/plantuml/plantuml-stdlib" ID="ID_1750541371" CREATED="1729426199694" MODIFIED="1729426214753" LINK="https://github.com/plantuml/plantuml-stdlib"/>
@@ -1512,8 +1520,168 @@
 <node TEXT="13.14 Using (global) Style" ID="ID_432882069" CREATED="1724482837980" MODIFIED="1724482844142"/>
 <node TEXT="13.15 Appendix: Test of all Shapes on Network Diagram (nwdiag)" ID="ID_695226988" CREATED="1724482850212" MODIFIED="1724482865351"/>
 </node>
-<node TEXT="14 Salt (Wireframe)" FOLDED="true" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
-<node TEXT="14.1 Basic Widgets" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304"/>
+<node TEXT="14 Salt (Wireframe)" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
+<node TEXT="14.0 About Salt (Wireframe)" ID="ID_1541854388" CREATED="1729904104907" MODIFIED="1729904120135">
+<node TEXT="Wikipedia: Website Wireframe" FOLDED="true" ID="ID_309965618" CREATED="1729907570121" MODIFIED="1729907587873" LINK="https://en.wikipedia.org/wiki/Website_wireframe">
+<node TEXT="A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website" ID="ID_474582546" CREATED="1729907593530" MODIFIED="1729907654989"/>
+</node>
+<node TEXT="Lucidchart: About Website Wireframes" FOLDED="true" ID="ID_196501101" CREATED="1729905934589" MODIFIED="1729905986370" LINK="https://www.lucidchart.com/pages/wireframe">
+<node TEXT="What is Websote Wireframe" POSITION="bottom_or_right" ID="ID_1895556731" CREATED="1729904120140" MODIFIED="1729905991498">
+<node TEXT="Originally, the term &quot;wireframe&quot; meant a visual representation of three-dimensional object, like those used in product design and development. Now it is also used to describe 3D modeling in computer animation and in the design and development of 2D web pages and mobile apps" ID="ID_416800482" CREATED="1729904152988" MODIFIED="1729904214504"/>
+<node TEXT="In web design, a wireframe or wireframe diagram is a gray-scale visual representation of the structure and functionality of a single web page or a mobile app screen. Wireframe are used early in the development process to establish the basic structure of a page before visual design and content is added, and can be created using paper, straight into HTML/CSS or using software apps" ID="ID_907088307" CREATED="1729904218618" MODIFIED="1729904413030"/>
+<node TEXT="Wireframes replace the abstract nature of the sitemap, which is usually the first step in site development, with something more tangible and understandable" ID="ID_696326323" CREATED="1729905266652" MODIFIED="1729905303283"/>
+</node>
+<node TEXT="Purposes of wireframes" POSITION="bottom_or_right" ID="ID_410377673" CREATED="1729905304370" MODIFIED="1729905319050">
+<node TEXT="Ensuring the site or app is built according to goals" ID="ID_1985769136" CREATED="1729905319053" MODIFIED="1729905331667">
+<node TEXT="Seeing features clearly with minimal creative influence allows stakeholders to focus on other aspects of the project." ID="ID_1174420979" CREATED="1729905357672" MODIFIED="1729905397123"/>
+<node TEXT="Wireframing sets expectations about how features will be implemented by showing how features will work, where they will be located and how much benefit they&apos;ll provide" ID="ID_1789558598" CREATED="1729905397609" MODIFIED="1729905431204"/>
+<node TEXT="A feature may be pulled out because it doesn&apos;t fit into your site&apos;s goals" ID="ID_1883911645" CREATED="1729905431374" MODIFIED="1729905446994"/>
+</node>
+<node TEXT="Focusing on usability" ID="ID_639425809" CREATED="1729905331825" MODIFIED="1729905336491">
+<node TEXT="Wireframing provides an objective look at link names, paths to conversion, ease of use, navigation, and the placement of features." ID="ID_931084334" CREATED="1729905448820" MODIFIED="1729905479820"/>
+<node TEXT="Wireframes help you identify flaws in site architecture or features and show you how well it flows from a use perspective" ID="ID_1410090923" CREATED="1729905479979" MODIFIED="1729905508389"/>
+</node>
+<node TEXT="Content growth capacity" ID="ID_762483413" CREATED="1729905336673" MODIFIED="1729905341645">
+<node TEXT="If you know your site will grow in the near future, your website needs to be able to accommodate that growth with minimal impact to the site architecture, usability, and design." ID="ID_1089170660" CREATED="1729905510120" MODIFIED="1729905548300"/>
+<node TEXT="Wireframing can reveal these important opportunities for content growth and how to fit them in" ID="ID_176680068" CREATED="1729905548425" MODIFIED="1729905579227"/>
+</node>
+<node TEXT="Feedback and painless iteration" ID="ID_523775464" CREATED="1729905341808" MODIFIED="1729905350250">
+<node TEXT="Instead of merging the full functionality, layout and creative elements into a single step, wireframes guarantee that these considerations are taken on separately." ID="ID_52038622" CREATED="1729905617722" MODIFIED="1729905649798"/>
+<node TEXT="This allows stakeholders to provide feedback much sooner in the process." ID="ID_511152051" CREATED="1729905649955" MODIFIED="1729905663785"/>
+<node TEXT="Creating wireframes using software makes the iterative process inherent in web design much less of a chore" ID="ID_22508973" CREATED="1729905663921" MODIFIED="1729905689300"/>
+</node>
+</node>
+<node TEXT="Value of wireframes for website and app development" POSITION="bottom_or_right" ID="ID_703139709" CREATED="1729905699841" MODIFIED="1729905710310">
+<node TEXT="Wireframes put every participant in website development on the same page." ID="ID_1282632223" CREATED="1729905710312" MODIFIED="1729905725917"/>
+<node TEXT="Saving time and money" ID="ID_480824854" CREATED="1729905835469" MODIFIED="1729905839805"/>
+</node>
+</node>
+<node TEXT="Figma: About Wireframing" FOLDED="true" ID="ID_1430852722" CREATED="1729906012196" MODIFIED="1729906027588" LINK="https://www.figma.com/resource-library/what-is-wireframing/">
+<node TEXT="What is a wireframe?" ID="ID_1076028298" CREATED="1729906047405" MODIFIED="1729906054078">
+<node TEXT="Wireframes are basic blueprints that help team align on requirements, keeping UX design conversations focused and constructive." ID="ID_118169736" CREATED="1729906054081" MODIFIED="1729906083544"/>
+<node TEXT="Think of your wireframe as the skeleton of your app, websites, or other final product." ID="ID_567332986" CREATED="1729906083979" MODIFIED="1729906101454"/>
+<node TEXT="Your wireframes shows the design team and stakeholders the bare-bones outlined of essential webpages, components, and features, including:" ID="ID_1883663445" CREATED="1729906101607" MODIFIED="1729906133766">
+<node TEXT="Screen layouts" ID="ID_1387358885" CREATED="1729906133771" MODIFIED="1729906139062"/>
+<node TEXT="Navigation bars" ID="ID_1578361458" CREATED="1729906139227" MODIFIED="1729906142006"/>
+<node TEXT="Components of UX and UI design" ID="ID_1583150808" CREATED="1729906144594" MODIFIED="1729906151231"/>
+<node TEXT="Interactive elements" ID="ID_425663280" CREATED="1729906151450" MODIFIED="1729906156669"/>
+</node>
+</node>
+<node TEXT="Three types of wireframe designs" ID="ID_1946238098" CREATED="1729906165102" MODIFIED="1729906172823">
+<node TEXT="Low-fidelity wireframes" ID="ID_1451083173" CREATED="1729906172826" MODIFIED="1729906179520">
+<node TEXT="the basic wireframes focused on layout, navigation, and information architecture." ID="ID_1927674363" CREATED="1729906195939" MODIFIED="1729906214336"/>
+<node TEXT="show what the interface will look like, illustrating user flows with key UI design elements." ID="ID_1548982608" CREATED="1729906214483" MODIFIED="1729906237365"/>
+</node>
+<node TEXT="Mid-fidelity wireframes" ID="ID_21769338" CREATED="1729906179636" MODIFIED="1729906186261">
+<node TEXT="help designers iterate and shape the final design." ID="ID_1415729574" CREATED="1729906249341" MODIFIED="1729906260759"/>
+<node TEXT="design team may add annotations and content as they try out different approaches to user flows and UI design elements, mapping out core functionality and key interactions." ID="ID_1409821382" CREATED="1729906261502" MODIFIED="1729906294337"/>
+<node TEXT="this enables teams to settle on the final wireframe design framework before adding visual design components" ID="ID_1718363846" CREATED="1729906294541" MODIFIED="1729906315717"/>
+</node>
+<node TEXT="High-fidelity wireframes" ID="ID_796129169" CREATED="1729906186427" MODIFIED="1729906193061">
+<node TEXT="look like early product mockups, with interactive and visual design elements -- but without the functionality of low-fidelity prototypes." ID="ID_283777112" CREATED="1729906316380" MODIFIED="1729906352270"/>
+<node TEXT="at this point of the design process, you may wan tot add brand elements like fonts, colors, and logos." ID="ID_819351185" CREATED="1729906352427" MODIFIED="1729906384415"/>
+<node TEXT="you can capture the look and feel of the final product for user testing" ID="ID_436575483" CREATED="1729906384772" MODIFIED="1729906398085"/>
+</node>
+</node>
+<node TEXT="Seven best practives in wireframe design" ID="ID_956916379" CREATED="1729906407188" MODIFIED="1729906421586">
+<node TEXT="1. Identify your design goals" ID="ID_24649891" CREATED="1729906613567" MODIFIED="1729906654127"/>
+<node TEXT="2. Choose the right size of your wireframe" ID="ID_1697375436" CREATED="1729906654278" MODIFIED="1729906661280">
+<node TEXT="Mobile: 393 pixels wide by 852 pixels tall" ID="ID_231874763" CREATED="1729906703751" MODIFIED="1729906717386"/>
+<node TEXT="11&quot; Tablet: 834 pixels wide by 1194 pixels tall" ID="ID_191797583" CREATED="1729906717508" MODIFIED="1729906733776"/>
+<node TEXT="Desktop: 1440 pixels wides by 1024 pixels tall" ID="ID_1932193918" CREATED="1729906733902" MODIFIED="1729906748152"/>
+</node>
+<node TEXT="3. Keep your wireframe design simple" ID="ID_1325326871" CREATED="1729906749142" MODIFIED="1729906760235"/>
+<node TEXT="4. Maintain design consistency" ID="ID_25228783" CREATED="1729906799137" MODIFIED="1729906808513"/>
+<node TEXT="5. Make navigation obvious" ID="ID_38757287" CREATED="1729906822767" MODIFIED="1729906830652"/>
+<node TEXT="6. Don&apos;t get too attached to your wireframe" ID="ID_282109234" CREATED="1729906858376" MODIFIED="1729906866520"/>
+<node TEXT="7. Leverage wireframing tools" ID="ID_1011966959" CREATED="1729906866687" MODIFIED="1729906881300"/>
+</node>
+<node TEXT="Wireframe design checklist" ID="ID_846379624" CREATED="1729906919736" MODIFIED="1729906928535">
+<node TEXT="What screens are essential to meet user needs" ID="ID_1021276731" CREATED="1729906928537" MODIFIED="1729906947793"/>
+<node TEXT="User flow thorugh conversion funnels" ID="ID_278776127" CREATED="1729906967175" MODIFIED="1729906975839"/>
+<node TEXT="Usability considerations, including navigation and organization" ID="ID_1743356479" CREATED="1729906976006" MODIFIED="1729906985882"/>
+<node TEXT="Main goals and user flows for each screen" ID="ID_480969797" CREATED="1729906986031" MODIFIED="1729906994507"/>
+<node TEXT="Key UI design elements, plus content and interactive features on each screen" ID="ID_715687030" CREATED="1729906994680" MODIFIED="1729907008422"/>
+<node TEXT="How design components fit together to form screen templates" ID="ID_1846234168" CREATED="1729907008710" MODIFIED="1729907020284"/>
+</node>
+</node>
+<node TEXT="Visme: what is wireframe" FOLDED="true" ID="ID_268820026" CREATED="1729907725945" MODIFIED="1729907739068" LINK="https://visme.co/blog/what-is-a-wireframe/">
+<node TEXT="Wireframes are the backbone of every website and app you use." ID="ID_1903319592" CREATED="1729907747499" MODIFIED="1729907771459"/>
+<node TEXT="User experience and use interaction designers use wireframes to sketch out a visual idea that can be customized easily until it&apos;s ready to be built and developed" ID="ID_105480157" CREATED="1729907771609" MODIFIED="1729907807221"/>
+<node TEXT="A wireframe is the first step in the UX design workflow of a website or mobile application. The concept of creating a wireframe is similar to how architects start with blueprint drawings and engineers sketch mechanical diagrams." ID="ID_1125632672" CREATED="1729907828618" MODIFIED="1729907831478"/>
+<node TEXT="Wireframe vs. Prototype" FOLDED="true" ID="ID_1409108234" CREATED="1729907876116" MODIFIED="1729907884871">
+<node TEXT="What they are?" ID="ID_1586500550" CREATED="1729907884874" MODIFIED="1729907889213">
+<node TEXT="Wireframe: a wireframe is a low-fidelity (低保真), basic outline or blueprint of a product or interface" ID="ID_867945954" CREATED="1729907908838" MODIFIED="1729907973668"/>
+<node TEXT="Prototype: a prototype, on the other hand, is a high-fidelity, interactive mockup of the product or interface" ID="ID_1844936768" CREATED="1729907980817" MODIFIED="1729908010341"/>
+</node>
+<node TEXT="What they used for?" ID="ID_1032104029" CREATED="1729907889363" MODIFIED="1729907893233">
+<node TEXT="Wireframe: it focuses on the layout, structure, and functionality of the design and is used to communicate the basic structure and functionality to stakeholders, clients, and development teams" ID="ID_721995352" CREATED="1729908012087" MODIFIED="1729908052708"/>
+<node TEXT="Prototype: it focuses on the overall design and is used to test and refine the design, user experience, and functionality" ID="ID_901248050" CREATED="1729908052889" MODIFIED="1729908073145"/>
+</node>
+<node TEXT="Structure" ID="ID_1651638474" CREATED="1729907895559" MODIFIED="1729907897340">
+<node TEXT="Wireframe: are usually static and don&apos;t have interactive features or detailed visual design element" ID="ID_1083860972" CREATED="1729908073943" MODIFIED="1729908097056"/>
+<node TEXT="Prototype: can be interactive and may include animations, detailed visual design elements, and functionality that simulates the final product" ID="ID_1831356759" CREATED="1729908097222" MODIFIED="1729908122694"/>
+</node>
+<node TEXT="When they are created?" ID="ID_1067544872" CREATED="1729907897498" MODIFIED="1729907904652">
+<node TEXT="Wireframe: are created at the beginning of the design process to establish the basic structure and functionality of the design" ID="ID_680514884" CREATED="1729908123525" MODIFIED="1729908147275"/>
+<node TEXT="Prototype: they are created after the wireframe stage and are used to test and refine the design before it is devleoped" ID="ID_1763917572" CREATED="1729908147532" MODIFIED="1729908169775"/>
+</node>
+</node>
+<node TEXT="Benefits of Wireframing" ID="ID_1647870514" CREATED="1729908201524" MODIFIED="1729908211369">
+<node TEXT="1. It gets a project started faster" ID="ID_1851701099" CREATED="1729908211371" MODIFIED="1729908219111"/>
+<node TEXT="2. It saves your money" ID="ID_1901234315" CREATED="1729908219244" MODIFIED="1729908224207"/>
+<node TEXT="3. It&apos;s easier to conduct UX testing before the final UI is designed" ID="ID_525561686" CREATED="1729908224723" MODIFIED="1729908264031"/>
+<node TEXT="4. It&apos;s faster and easier to create iterations before the final design" ID="ID_1266267327" CREATED="1729908300504" MODIFIED="1729908314038"/>
+<node TEXT="5. It helps determine the overall developoment requirements" ID="ID_263288884" CREATED="1729908317845" MODIFIED="1729908384647"/>
+<node TEXT="6. Wireframes help create and use design systems" ID="ID_1277659188" CREATED="1729908388932" MODIFIED="1729908398590"/>
+</node>
+</node>
+<node TEXT="Gliffy: About Wireframes" FOLDED="true" ID="ID_414290279" CREATED="1729908491846" MODIFIED="1729908507864" LINK="https://www.gliffy.com/blog/how-to-create-a-wireframe">
+<node TEXT="What is a Wireframe?" ID="ID_1351035580" CREATED="1729908517437" MODIFIED="1729908522614">
+<node TEXT="A wireframe is a diagram that visualizes how a webpage or application will look in the same way you&apos;d use a blueprint for a house." ID="ID_645300672" CREATED="1729908522616" MODIFIED="1729908551208"/>
+<node TEXT="It&apos;s a sketch of the interface&apos;s structure, usually without any color, images, or other visual design choices made or inserted." ID="ID_1606804940" CREATED="1729908551352" MODIFIED="1729908593481"/>
+<node TEXT="You&apos;d create a wireframe to map out your content strategy, to allow for collaboration, and to visually assess if your ideas will work" ID="ID_1936362405" CREATED="1729908605982" MODIFIED="1729908685332"/>
+</node>
+<node TEXT="Steps to create Wireframe Diagram" ID="ID_791118371" CREATED="1729908695320" MODIFIED="1729908702808">
+<node TEXT="1. Start with a Wireframe Template in Gliffy" ID="ID_59730369" CREATED="1729908702811" MODIFIED="1729908711666"/>
+<node TEXT="2. Put the Device Shape on it&apos;s Own Layer" ID="ID_743459272" CREATED="1729908715495" MODIFIED="1729908724828"/>
+<node TEXT="3. Add Shapes to Represent Elements of Your Website" ID="ID_781053064" CREATED="1729908728047" MODIFIED="1729908738754"/>
+<node TEXT="4. Add Images or Logos to Finish Your Wireframe" ID="ID_668959424" CREATED="1729908739334" MODIFIED="1729908751013"/>
+</node>
+</node>
+<node TEXT="Venngage: create wireframe" FOLDED="true" ID="ID_1692300655" CREATED="1729908757473" MODIFIED="1729908777401" LINK="https://venngage.com/blog/how-to-create-a-wireframe/">
+<node TEXT="Basics of wireframing" ID="ID_1014534423" CREATED="1729908791776" MODIFIED="1729908797848">
+<node TEXT="Wireframing serves as a foundational element in the design and development lifecycle of websites and applications" ID="ID_1749658712" CREATED="1729908797851" MODIFIED="1729908827683"/>
+<node TEXT="Typlically presented as a basic diagram, a wireframe outlines the layout and interaction patterns of a page, without the distractions of visual design elements like colors or detailed graphics" ID="ID_137641837" CREATED="1729908831930" MODIFIED="1729908868162"/>
+<node TEXT="Wireframing provides a clear view of the site or app&apos;s architecture, helping designers, developers and stakeholders undrestand the workflow and content hierarchy" ID="ID_449776814" CREATED="1729908869502" MODIFIED="1729908899105"/>
+<node TEXT="Wireframing not only helps in visualizing the structure and layout of a project but also serves as a roadmap that guides the entire team through the development process" ID="ID_242931504" CREATED="1729908906369" MODIFIED="1729908935308"/>
+</node>
+<node TEXT="Steps of creating a wireframe" ID="ID_774770022" CREATED="1729908962507" MODIFIED="1729908968696">
+<node TEXT="1. Conduct your research" ID="ID_313030370" CREATED="1729908968701" MODIFIED="1729908974209"/>
+<node TEXT="2. Ensure your user flow is well-defined" ID="ID_69031316" CREATED="1729908974353" MODIFIED="1729908990360"/>
+<node TEXT="3. Create a grid or layout: Sketch them" ID="ID_557919964" CREATED="1729908990486" MODIFIED="1729909001540"/>
+<node TEXT="4. Add additional components" ID="ID_1217291295" CREATED="1729909004343" MODIFIED="1729909012129"/>
+<node TEXT="5. Review and revise" ID="ID_42623220" CREATED="1729909012374" MODIFIED="1729909020201"/>
+<node TEXT="6. User testing" ID="ID_1079416049" CREATED="1729909020390" MODIFIED="1729909024643"/>
+<node TEXT="7. Finalize and document" ID="ID_1916622386" CREATED="1729909024805" MODIFIED="1729909035842"/>
+<node TEXT="8. Proceed with mockup or prototype" ID="ID_1695700360" CREATED="1729909038600" MODIFIED="1729909047668"/>
+</node>
+<node TEXT="Five different types of wireframe" ID="ID_511118648" CREATED="1729909053728" MODIFIED="1729909064935">
+<node TEXT="Homepage wireframe" ID="ID_360908206" CREATED="1729909064938" MODIFIED="1729909070250"/>
+<node TEXT="Website wireframe" ID="ID_560472570" CREATED="1729909075894" MODIFIED="1729909080151"/>
+<node TEXT="Microsite wireframe" ID="ID_12706746" CREATED="1729909088806" MODIFIED="1729909095929"/>
+<node TEXT="Landing page wireframe" ID="ID_414280560" CREATED="1729909105336" MODIFIED="1729909109995"/>
+<node TEXT="Mobile wireframe" ID="ID_1856020473" CREATED="1729909114318" MODIFIED="1729909119439"/>
+</node>
+</node>
+<node TEXT="Miro: Using visual workspace for wireframing magic" ID="ID_130125242" CREATED="1729907673625" MODIFIED="1729907719850" LINK="https://miro.com/aq/ps/wireframing/?utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=S%7CBNG%7CNB%7CSCND%7CEN-EN%7CExact%7CPareto-NS&amp;utm_adgroup=1153388662969711&amp;utm_term=kwd-72087473034564:loc-174&amp;matchtype=e&amp;utm_content=&amp;device=c&amp;location=153541&amp;msclkid=dcc76912226e1c3463390e0e1f2b9c74"/>
+<node TEXT="sketch.com: Guide for wireframe" ID="ID_1440685524" CREATED="1729909147526" MODIFIED="1729909167447" LINK="https://www.sketch.com/blog/how-to-create-a-wireframe/"/>
+<node TEXT="Moqups: Wireframe, Diagram &amp; Whiteboard Online" ID="ID_839531472" CREATED="1729908411655" MODIFIED="1729908442685" LINK="https://moqups.com/"/>
+<node TEXT="draw.io for wireframes" ID="ID_929371732" CREATED="1729908474086" MODIFIED="1729908483495" LINK="https://app.diagrams.net/"/>
+</node>
+<node TEXT="14.1 Basic Widgets" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
+<node TEXT="PlantUML Salt GUI Wireframe) cheat sheet" ID="ID_78975803" CREATED="1729863436800" MODIFIED="1729863493462" LINK="https://gist.github.com/wonderstory/31b8b32a2843f3475398a377c41aee52"/>
+</node>
 <node TEXT="14.2 Text Area" ID="ID_1606825004" CREATED="1724482936917" MODIFIED="1724482940456"/>
 <node TEXT="14.3 Open, Close Droplist" ID="ID_1491407438" CREATED="1724482945181" MODIFIED="1724482952526"/>
 <node TEXT="14.4 Using Grid [| and #, !, -, +]" ID="ID_1681416577" CREATED="1724482985677" MODIFIED="1724483002512"/>
@@ -1640,7 +1808,7 @@
 <node TEXT="20.03 Complete Example" ID="ID_1650709577" CREATED="1724485862296" MODIFIED="1724485867049"/>
 </node>
 </node>
-<node TEXT="PlantUML as a Language" POSITION="bottom_or_right" ID="ID_477277390" CREATED="1716664231822" MODIFIED="1716664245146">
+<node TEXT="PlantUML as a Language" FOLDED="true" POSITION="bottom_or_right" ID="ID_477277390" CREATED="1716664231822" MODIFIED="1716664245146">
 <node TEXT="21 Common Commands in PlantUML" POSITION="bottom_or_right" ID="ID_793883633" CREATED="1716658903496" MODIFIED="1716658912203"/>
 <node TEXT="22 Creole" POSITION="bottom_or_right" ID="ID_816118123" CREATED="1716658917930" MODIFIED="1716658923516"/>
 <node TEXT="23 Defining the using sprites" POSITION="bottom_or_right" ID="ID_1151666197" CREATED="1716658925872" MODIFIED="1716658935291"/>
@@ -1659,8 +1827,8 @@
 <arrowlink DESTINATION="ID_1749037007"/>
 </node>
 </node>
-<node TEXT="Other reference" FOLDED="true" POSITION="bottom_or_right" ID="ID_905635371" CREATED="1724463081294" MODIFIED="1724463087736">
-<node TEXT="UML Diagram Type (by visual paradigm)" ID="ID_965823985" CREATED="1724463087742" MODIFIED="1724463119758" LINK="https://www.visual-paradigm.com/">
+<node TEXT="Other reference" POSITION="bottom_or_right" ID="ID_905635371" CREATED="1724463081294" MODIFIED="1724463087736">
+<node TEXT="UML Diagram Type (by visual paradigm)" FOLDED="true" ID="ID_965823985" CREATED="1724463087742" MODIFIED="1724463119758" LINK="https://www.visual-paradigm.com/">
 <node TEXT="Structureal Diagram" ID="ID_900537926" CREATED="1724463120878" MODIFIED="1724463126664">
 <node TEXT="Composite Structure Diagram" ID="ID_459278765" CREATED="1724463127959" MODIFIED="1724463135488"/>
 <node TEXT="Deployment Diagram" ID="ID_1595669356" CREATED="1724463135807" MODIFIED="1724463139489"/>
@@ -1681,6 +1849,10 @@
 <node TEXT="Timing Diagram" ID="ID_1503495212" CREATED="1724463229959" MODIFIED="1724466014466" LINK="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-timing-diagram/"/>
 </node>
 </node>
+</node>
+<node TEXT="PlantUML for Confluence" ID="ID_583483784" CREATED="1729901732807" MODIFIED="1729901750039" LINK="https://avono-support.atlassian.net/wiki/spaces/PUML/overview?homepageId=9699365"/>
+<node TEXT="PlantUML on JavaScript" ID="ID_1381235842" CREATED="1729902280874" MODIFIED="1729902290091" LINK="https://github.com/plantuml/plantuml.js">
+<node TEXT="PlantUML.js Playground" ID="ID_871178129" CREATED="1729902298855" MODIFIED="1729902307012" LINK="https://plantuml.github.io/plantuml.js/"/>
 </node>
 </node>
 </node>
