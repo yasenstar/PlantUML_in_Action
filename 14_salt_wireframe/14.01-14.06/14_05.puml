@@ -1,0 +1,7 @@
+@startsalt
+{^"My Gorup Box"
+    Login | "MyName    "
+    Password | "*********    "
+    [ Cancel ] | [   OK   ]
+}
+@endsalt
