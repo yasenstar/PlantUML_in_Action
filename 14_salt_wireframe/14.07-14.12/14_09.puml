@@ -1,0 +1,18 @@
+@startsalt
+{
+    Name        | "name           "
+    Modifiers:  | {
+        (X) Public
+        () default | () private
+        () protected
+        [] abstract | [] final | [] static
+    }
+    Superclass  | {
+        "java.lang.Object " | [Browse...]
+    }
+    Modifiers:  | {
+        (X) Public | () default | () private | () protected
+        [] abstract | [] final | [] static
+    }
+}
+@endsalt
