@@ -1,0 +1,20 @@
+@startsalt
+{
+    {^==Creole
+        This is **bold**
+        Thsi is //italics//
+        This is ""monospeaced""
+        This is --stricken-out--
+        This is __underlined__
+        This is ~~wave-underlined~~
+        --test Unicode and icons--
+        This is <U+221E> long
+        This is a <&code> icon
+        Use image: <img:logo.gif>
+    } |
+    {} |
+    {} |
+    {} |
+    {}
+}
+@endsalt
