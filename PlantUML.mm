@@ -1699,7 +1699,9 @@
 </node>
 <node TEXT="SI: Vertical Scroll Bar" ID="ID_1582782598" CREATED="1729926318011" MODIFIED="1729926332685"/>
 <node TEXT="S-: Horizontal Scroll Bar" ID="ID_174329418" CREATED="1729926332874" MODIFIED="1729926341142"/>
-<node TEXT="Question: 19364" ID="ID_1762632630" CREATED="1729928088501" MODIFIED="1729928097190" LINK="https://forum.plantuml.net/19364/both-vertical-horizontal-scroll-text-area-wireframe-diagram"/>
+<node TEXT="Question: 19364" ID="ID_1762632630" CREATED="1729928088501" MODIFIED="1729997141874" LINK="https://forum.plantuml.net/19364/both-vertical-horizontal-scroll-text-area-wireframe-diagram">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node TEXT="14.3 Open, Close Droplist" FOLDED="true" ID="ID_1491407438" CREATED="1724482945181" MODIFIED="1724482952526">
 <node TEXT="Can open one droplist, by adding values enclosed by ^" ID="ID_579633332" CREATED="1729926360620" MODIFIED="1729926394990"/>
@@ -1714,11 +1716,14 @@
 <node TEXT="Symbol: + (display external lines)" ID="ID_1438519049" CREATED="1729941593535" MODIFIED="1729941606633">
 <node TEXT="Using ^ without anything display external lines, same as +" ID="ID_161055540" CREATED="1729941606637" MODIFIED="1729941626225"/>
 </node>
+<node TEXT="Question #19365 on numbers of * displaying" ID="ID_391331044" CREATED="1729997218673" MODIFIED="1729997243657" LINK="https://forum.plantuml.net/19365/salt-wireframe-strange-display-result-on-numbers-text-area"/>
 </node>
 <node TEXT="14.5 Group Box [^]" FOLDED="true" ID="ID_585848731" CREATED="1724483007975" MODIFIED="1724483017344">
 <node TEXT="Use ^ with Group Name string to add Group box" ID="ID_960011361" CREATED="1729941630073" MODIFIED="1729941655154"/>
 </node>
-<node TEXT="14.6 Using Separator [.., ==, ~~, --]" ID="ID_1108964201" CREATED="1724483020638" MODIFIED="1724483035864"/>
+<node TEXT="14.6 Using Separator [.., ==, ~~, --]" FOLDED="true" ID="ID_1108964201" CREATED="1724483020638" MODIFIED="1724483035864">
+<node TEXT="Question #19366" ID="ID_1403801865" CREATED="1729997111106" MODIFIED="1729997127984" LINK="https://forum.plantuml.net/19366/salt-wirefrme-showing-waved-line-thick-straight-line-instead"/>
+</node>
 <node TEXT="14.7 Tree Widget [T]" ID="ID_876953153" CREATED="1724483037550" MODIFIED="1724483044591"/>
 <node TEXT="14.8 Tree Table [T]" ID="ID_870330294" CREATED="1724483052437" MODIFIED="1724483059832"/>
 <node TEXT="14.9 Exclosing Brackets [{, }]" FOLDED="true" ID="ID_1327520578" CREATED="1724483069446" MODIFIED="1724483081970">
@@ -1727,7 +1732,9 @@
 <node TEXT="14.10 Adding Tabs [/]" FOLDED="true" ID="ID_66304824" CREATED="1724483086712" MODIFIED="1729996528256" VGAP_QUANTITY="3 pt">
 <node TEXT="You can add tabs using {/ notation" ID="ID_1605523198" CREATED="1729996352000" MODIFIED="1729996528252"/>
 </node>
-<node TEXT="14.11 Using Menu [*]" ID="ID_398321565" CREATED="1724483096537" MODIFIED="1724483101953"/>
+<node TEXT="14.11 Using Menu [*]" FOLDED="true" ID="ID_398321565" CREATED="1724483096537" MODIFIED="1724483101953">
+<node TEXT="Question 19376: how to add right click pop up menu" ID="ID_1396409648" CREATED="1730000892192" MODIFIED="1730000916765" LINK="https://forum.plantuml.net/19376/salt-how-to-add-right-client-pop-up-menu"/>
+</node>
 <node TEXT="14.12 Advanced Table" FOLDED="true" ID="ID_1616374694" CREATED="1724483106239" MODIFIED="1724483110401">
 <node TEXT="* to indicate that a cell with span with left" ID="ID_101334102" CREATED="1729996662142" MODIFIED="1729996674584"/>
 <node TEXT=". to denotate an empty cell" ID="ID_244601587" CREATED="1729996675387" MODIFIED="1729996688094"/>

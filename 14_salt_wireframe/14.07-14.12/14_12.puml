@@ -1,0 +1,7 @@
+@startsalt
+{#
+    . | Column 2 | Column 3
+    Row Header 1 | . | Value 2
+    Row Header 2 | A long long long cell | *
+}
+@endsalt
