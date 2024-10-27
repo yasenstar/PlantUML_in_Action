@@ -1,0 +1,9 @@
+@startsalt
+skinparam dpi 96
+' by default, looks like dpi = 96
+{
+    <&person> Login     | "MyName    "
+    <&key> Password     | "****      "
+    [<&circle-x> Cancel] | [ <&account-login> OK   ]
+}
+@endsalt
