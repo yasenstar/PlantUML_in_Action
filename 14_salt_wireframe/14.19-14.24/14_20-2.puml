@@ -1,0 +1,51 @@
+@startuml
+
+!unquoted procedure SALT($x)
+"{{
+salt
+%invoke_prodecure("_"+$x)
+}}" as $x
+!endprocedure
+
+!procedure _choose()
+{+
+    <b>an example
+    choose one option
+    () one
+    () two
+    [  OK  ]
+}
+!endprocedure
+
+!procedure _wait()
+    {+
+        <b>please wait
+        operation in progress
+        <&clock*2>
+        [Cancel]
+    }
+!endprocedure
+
+!procedure _success()
+    {+
+        <b>success
+        congratulations!
+        [  OK  ]
+    }
+!endprocedure
+
+!procedure _error()
+    {+
+        <b>error
+        failed, sorry
+        [  OK  ]
+    }
+!endprocedure
+
+(*) --> ABC
+' (*) --> SALT(choose)
+' -right-> SALT(wait)
+' wait -right-> SALT(success)
+' wait --> SALT(error)
+
+@enduml

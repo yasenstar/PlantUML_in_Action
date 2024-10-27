@@ -1,0 +1,53 @@
+@startuml
+
+
+
+(*) --> "
+{{
+salt
+{+
+    <b>an example
+    choose one option
+    () one
+    () two
+    [  OK  ]
+}
+}}
+" as choose
+
+choose -r-> "
+{{
+    salt
+    {+
+        <b>please wait
+        operation in progress
+        <&clock*2>
+        [Cancel]
+    }
+}}
+" as wait
+
+wait -r-> "
+{{
+    salt
+    {+
+        <b>success
+        congratulations!
+        [  OK  ]
+    }
+}}
+" as success
+
+wait --> "
+{{
+    salt
+    {+
+        <b>error
+        failed, sorry~
+        [  OK  ]
+    }
+}}
+" as failure
+
+
+@enduml

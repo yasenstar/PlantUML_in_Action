@@ -1,0 +1,14 @@
+@startuml
+start
+while (\n{{\nsalt\n{+\nPassword | "****    "\n[Cancel] | [  OK  ]}\n}}\n) is (Incorrect)
+:log attempt;
+:attempt_count++;
+if (attempt_count > 4) then (yes)
+    :increase dealy timer;
+    :wait for timer to expire;
+else (no)
+endif
+endwhile (correct)
+:log request;
+:disable serivce;
+@enduml
