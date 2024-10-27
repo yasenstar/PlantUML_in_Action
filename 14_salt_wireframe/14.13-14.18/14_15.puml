@@ -11,8 +11,26 @@
         This is <U+221E> long
         This is a <&code> icon
         Use image: <img:logo.gif>
+        ' Use online image: <img:https://github.com/yasenstar/PlantUML_in_Action/blob/main/14_salt_wireframe/14.13-14.18/logo.gif>
     } |
-    {} |
+    {^<b>HTML Creole
+        This is <b>bold</b>
+        This is <i>italics</i>
+        This is <font:impact>Impact</font>
+        This is <s>stroked</s>
+        This is <u>underlined</u>
+        This is <w>waved</w>
+        This is <s:green>stroked</s>
+        This is <s><color:green>Stroked</color></s>
+        This is <u:red>underlined</u>
+        This is <u><color:red>underlined</color></u>
+        This is <w:#0000FF>waved</w>
+        This is <w><color::#0000FF>waved</color></w>
+        -- other examples --
+        This is <color:blue>Blue</color>
+        This is <back:orange>Orange Background</back>
+        This is <size:20>big</size>
+    } |
     {} |
     {} |
     {}
