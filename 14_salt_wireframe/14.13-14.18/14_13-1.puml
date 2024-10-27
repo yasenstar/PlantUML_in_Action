@@ -1,0 +1,13 @@
+@startuml
+salt
+{S
+    Message
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+}
+@enduml
