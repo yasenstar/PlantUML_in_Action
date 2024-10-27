@@ -1,0 +1,51 @@
+@startsalt
+{
+    {^Creole Line
+        You canhave horizontal line
+        --
+        ----
+        Or double line
+        ==
+        ====
+        Or strong line
+        ~~
+        ~~~~
+        Or dotted line
+        .. My title ..
+        Or dotted title
+        //and title...//
+        ==Title==
+        Or double-line title
+        --another title--
+        Or single-line title
+        Enjoy!
+    } |
+    {^Creole list item
+        **test list 1**
+        * Bullet list
+        * Second item
+        ** Sub item
+        *** Sub sub list
+        * Third item
+        ----
+        **test list 2**
+        # Numbered list
+        # second item
+        ## Sub item
+        ## another sub item
+        # third item
+    } |
+    {^Mix on salt
+        ==<color:Blue>Just plant text
+        [this is my default button]
+        [<color:green><b>This is my green button]
+        [---<color:#9a9a9a>This is my disabled button--]
+        [] <size:20><color:red>Unchecked Box
+        [X] <color:green>Checked box
+        "//Enter text here//    "
+        ^This is a droplist^
+        ^<color:#9a9a9a>This is a disabled droplist^
+        ^<color:red><b><i>This is a red droplist^
+    }
+}
+@endsalt
