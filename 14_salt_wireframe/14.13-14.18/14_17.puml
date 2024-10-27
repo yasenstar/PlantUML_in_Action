@@ -1,0 +1,7 @@
+@startsalt
+{
+    Login<&person>       | "//MyName// <&menu>"
+    Password <&key>    | "****      "
+    [Cancel <&circle-x>]    | [  OK <&account-login>  ] | [Print <&print>]
+}
+@endsalt

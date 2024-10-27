@@ -1502,7 +1502,8 @@
 <node TEXT="13.5 Using Sprites" FOLDED="true" ID="ID_1320158215" CREATED="1724480526878" MODIFIED="1724480531521">
 <node TEXT="githum.com/plantuml/plantuml-stdlib" ID="ID_1750541371" CREATED="1729426199694" MODIFIED="1729426214753" LINK="https://github.com/plantuml/plantuml-stdlib"/>
 </node>
-<node TEXT="13.6 Using OpenIconic" FOLDED="true" ID="ID_704511968" CREATED="1724482687173" MODIFIED="1724482696295">
+<node TEXT="13.6 Using OpenIconic" ID="ID_704511968" CREATED="1724482687173" MODIFIED="1730014887789">
+<arrowlink DESTINATION="ID_1784075797"/>
 <node TEXT="github.com/iconic/open-iconic" ID="ID_1832963795" CREATED="1729425871244" MODIFIED="1729425883148" LINK="https://github.com/iconic/open-iconic"/>
 </node>
 <node TEXT="13.7 Same Nodes on more than two Networks" ID="ID_1342072909" CREATED="1724482701573" MODIFIED="1724482710262"/>
@@ -1513,7 +1514,9 @@
 <node TEXT="Group on Second" ID="ID_564235758" CREATED="1724482747516" MODIFIED="1724482754910"/>
 <node TEXT="Group on Third" ID="ID_1078288124" CREATED="1724482759132" MODIFIED="1724482763966"/>
 </node>
-<node TEXT="13.10 Add Title, Captain, Header, Footer or Legend on Network Diagram" ID="ID_544358504" CREATED="1724482768084" MODIFIED="1724482784238"/>
+<node TEXT="13.10 Add Title, Captain, Header, Footer or Legend on Network Diagram" ID="ID_544358504" CREATED="1724482768084" MODIFIED="1730015391230">
+<arrowlink DESTINATION="ID_1873672870"/>
+</node>
 <node TEXT="13.11 With or Without Shadow" ID="ID_904072941" CREATED="1724482786886" MODIFIED="1724482793159"/>
 <node TEXT="13.12 Change Width of the Network" ID="ID_925043552" CREATED="1724482800924" MODIFIED="1724482814048"/>
 <node TEXT="13.13 Other Internal Networks" ID="ID_1720802079" CREATED="1724482821620" MODIFIED="1724482829143"/>
@@ -1717,7 +1720,9 @@
 <node TEXT="Symbol: + (display external lines)" ID="ID_1438519049" CREATED="1729941593535" MODIFIED="1729941606633">
 <node TEXT="Using ^ without anything display external lines, same as +" ID="ID_161055540" CREATED="1729941606637" MODIFIED="1729941626225"/>
 </node>
-<node TEXT="Question #19365 on numbers of * displaying" ID="ID_391331044" CREATED="1729997218673" MODIFIED="1729997243657" LINK="https://forum.plantuml.net/19365/salt-wireframe-strange-display-result-on-numbers-text-area"/>
+<node TEXT="Question #19365 on numbers of * displaying" ID="ID_391331044" CREATED="1729997218673" MODIFIED="1730009368613" LINK="https://forum.plantuml.net/19365/salt-wireframe-strange-display-result-on-numbers-text-area">
+<arrowlink DESTINATION="ID_1027403192"/>
+</node>
 </node>
 <node TEXT="14.5 Group Box [^]" FOLDED="true" POSITION="bottom_or_right" ID="ID_585848731" CREATED="1724483007975" MODIFIED="1724483017344">
 <node TEXT="Use ^ with Group Name string to add Group box" ID="ID_960011361" CREATED="1729941630073" MODIFIED="1729941655154"/>
@@ -1752,7 +1757,9 @@
 <node TEXT="14.14 Colors" POSITION="bottom_or_right" ID="ID_359917058" CREATED="1724483145600" MODIFIED="1724483149442"/>
 <node TEXT="14.15 Creole on Salt" POSITION="bottom_or_right" ID="ID_1027403192" CREATED="1724483152448" MODIFIED="1724483157546"/>
 <node TEXT="14.16 Pseudo Sprite [&lt;&lt;, &gt;&gt;]" POSITION="bottom_or_right" ID="ID_990842340" CREATED="1724483163728" MODIFIED="1724483177514"/>
-<node TEXT="14.17 OpenIconic" POSITION="bottom_or_right" ID="ID_1784075797" CREATED="1724483177648" MODIFIED="1724483181746"/>
+<node TEXT="14.17 OpenIconic" POSITION="bottom_or_right" ID="ID_1784075797" CREATED="1724483177648" MODIFIED="1724483181746">
+<node TEXT="Question #19377: library URL" ID="ID_1352319931" CREATED="1730015684520" MODIFIED="1730015704453" LINK="https://forum.plantuml.net/19377/salt-14-17-openiconic-url-is-not-valid"/>
+</node>
 <node TEXT="14.18 Add Title, Header, Footer, Caption or Legend" POSITION="bottom_or_right" ID="ID_1873672870" CREATED="1724483357771" MODIFIED="1724483370526"/>
 <node TEXT="14.19 Zoom, DPI" FOLDED="true" POSITION="bottom_or_right" ID="ID_860382541" CREATED="1724483383979" MODIFIED="1724483390015">
 <node TEXT="Zoom - Scale" ID="ID_1723715487" CREATED="1730006538779" MODIFIED="1730006543908"/>
