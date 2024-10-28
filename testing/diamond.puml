@@ -1,0 +1,17 @@
+@startuml
+' skinparam ConditionEndStyle hline
+!pragma useVerticalIf on
+start
+
+if (Cond 0) then
+  if (Condition 1) then (true)
+    :Do something;
+    kill
+  elseif (Condition 2) then (true)
+    :Do something else;
+    kill
+  endif
+endif
+:next step;
+:Cond 1;
+@enduml

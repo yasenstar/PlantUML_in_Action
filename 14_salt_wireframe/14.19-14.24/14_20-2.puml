@@ -42,8 +42,8 @@ salt
     }
 !endprocedure
 
-(*) --> ABC
-' (*) --> SALT(choose)
+' (*) --> ABC
+(*) --> SALT(choose)
 ' -right-> SALT(wait)
 ' wait -right-> SALT(success)
 ' wait --> SALT(error)

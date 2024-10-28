@@ -105,8 +105,8 @@
 </node>
 <node TEXT="PlantUML Forum" ID="ID_1873009394" CREATED="1716688814798" MODIFIED="1716688823694" LINK="https://forum.plantuml.net/"/>
 </node>
-<node TEXT="UML Related Diagrams" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
-<node TEXT="Structural (Static) UML Modeling" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
+<node TEXT="UML Related Diagrams" FOLDED="true" POSITION="bottom_or_right" ID="ID_591115615" CREATED="1716664169250" MODIFIED="1716664183424">
+<node TEXT="Structural (Static) UML Modeling" FOLDED="true" ID="ID_969869672" CREATED="1717549562242" MODIFIED="1720591176189">
 <node TEXT="02 Use Case Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1749037007" CREATED="1716658601040" MODIFIED="1720591221991" LINK="https://en.wikipedia.org/wiki/Use_case_diagram">
 <node TEXT="2.01 Usecases" ID="ID_733083345" CREATED="1717354780718" MODIFIED="1717354927517">
 <node TEXT="keyword: usecase" ID="ID_1546560540" CREATED="1717354794447" MODIFIED="1722945943083">
@@ -674,7 +674,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Behavioral (Dynamic) UML Modeling" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
+<node TEXT="Behavioral (Dynamic) UML Modeling" FOLDED="true" ID="ID_1943231580" CREATED="1717549572125" MODIFIED="1722684075035">
 <node TEXT="01 Sequence Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_871591616" CREATED="1716658484028" MODIFIED="1724503634518" LINK="https://en.wikipedia.org/wiki/Sequence_diagram">
 <arrowlink DESTINATION="ID_1726192803"/>
 <node TEXT="Part 1 - Basis" FOLDED="true" ID="ID_937540168" CREATED="1716734450557" MODIFIED="1716734570289">
@@ -1049,7 +1049,7 @@
 </node>
 <node TEXT="5.12 Complete Example" ID="ID_151629836" CREATED="1718627336567" MODIFIED="1718627341562"/>
 </node>
-<node TEXT="06 Activity Diagram (New Syntax)" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
+<node TEXT="06 Activity Diagram (New Syntax)" FOLDED="true" POSITION="bottom_or_right" ID="ID_345095188" CREATED="1716658762353" MODIFIED="1716658775583">
 <node TEXT="6.01 Simple Action" FOLDED="true" ID="ID_1888938828" CREATED="1718627347868" MODIFIED="1718627381652">
 <node TEXT="Activities label starts with : and ends with ;" ID="ID_866524595" CREATED="1718627385335" MODIFIED="1720770343113"/>
 </node>
@@ -1138,7 +1138,7 @@
 <node TEXT="goto &lt;label_name&gt;" ID="ID_1178039538" CREATED="1720874214423" MODIFIED="1720874221178"/>
 </node>
 </node>
-<node TEXT="Looping" ID="ID_229670327" CREATED="1720771077524" MODIFIED="1720771079590">
+<node TEXT="Looping" FOLDED="true" ID="ID_229670327" CREATED="1720771077524" MODIFIED="1720771079590">
 <node TEXT="6.06 Repeat Loop" POSITION="bottom_or_right" ID="ID_116022607" CREATED="1718627555132" MODIFIED="1718627560718">
 <node TEXT="6.06.01 Simple Repeat Loop" FOLDED="true" ID="ID_1907248696" CREATED="1718627560720" MODIFIED="1718627567971">
 <node TEXT="&quot;repeat&quot; and &quot;repeat while&quot; keyword" ID="ID_1326346702" CREATED="1720873529424" MODIFIED="1720873552023"/>
@@ -1181,7 +1181,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Styling and Formatting" FOLDED="true" ID="ID_367874788" CREATED="1722544474768" MODIFIED="1722544492166">
+<node TEXT="Styling and Formatting" ID="ID_367874788" CREATED="1722544474768" MODIFIED="1722544492166">
 <node TEXT="6.12 Notes" POSITION="bottom_or_right" ID="ID_237537806" CREATED="1718629180201" MODIFIED="1718629188219"/>
 <node TEXT="6.13 Colors" FOLDED="true" POSITION="bottom_or_right" ID="ID_192173558" CREATED="1722059126317" MODIFIED="1722059133816">
 <node TEXT="Can specify a color for some activities" ID="ID_1662629611" CREATED="1722059152788" MODIFIED="1722059161297"/>
@@ -1209,7 +1209,7 @@
 <node TEXT="Alias: |[#&lt;color&gt;|]&lt;swimlane_alias&gt;| &lt;swimlane_title&gt;" ID="ID_1660059142" CREATED="1718642362897" MODIFIED="1718642433541"/>
 </node>
 <node TEXT="6.20 Detach or Kill [detach, kill]" ID="ID_1677620132" CREATED="1718642437570" MODIFIED="1718642446182"/>
-<node TEXT="6.21 SDL (Specification and Decription Language)" FOLDED="true" ID="ID_512326598" CREATED="1718642450742" MODIFIED="1722624163761" LINK="https://en.wikipedia.org/wiki/Specification_and_Description_Language">
+<node TEXT="6.21 SDL (Specification and Decription Language)" ID="ID_512326598" CREATED="1718642450742" MODIFIED="1722624163761" LINK="https://en.wikipedia.org/wiki/Specification_and_Description_Language">
 <node TEXT="SDL Forum" ID="ID_1140309223" CREATED="1722629246456" MODIFIED="1722629252050" LINK="https://www.sdl-forum.org/"/>
 <node TEXT="Overview of SDL" ID="ID_1046079973" CREATED="1722625308133" MODIFIED="1722625315674" LINK="https://www.sdl-forum.org/SDL/Overview_of_SDL.pdf">
 <node TEXT="Also available in GitHub" ID="ID_1188917420" CREATED="1722625336507" MODIFIED="1722625350393" LINK="https://github.com/yasenstar/PlantUML_in_Action/blob/main/docs/activity-diagram/Overview_of_SDL.pdf"/>
@@ -1219,7 +1219,7 @@
 <node TEXT="6.21.03 SLD using Normal separator and Stereotype (Current official form)" ID="ID_1141199301" CREATED="1718642489407" MODIFIED="1718642511184"/>
 </node>
 <node TEXT="6.22 Complete Example" ID="ID_1670166274" CREATED="1718642515338" MODIFIED="1718642519992"/>
-<node TEXT="6.23 Condition Style" FOLDED="true" ID="ID_1222213733" CREATED="1718642524794" MODIFIED="1718642531013">
+<node TEXT="6.23 Condition Style" ID="ID_1222213733" CREATED="1718642524794" MODIFIED="1718642531013">
 <node TEXT="6.23.01 Inside Sytle (by default)" ID="ID_1593384294" CREATED="1718642531014" MODIFIED="1718642539067"/>
 <node TEXT="6.23.02 Diamond Style" ID="ID_227940643" CREATED="1718642542480" MODIFIED="1718642548725">
 <node TEXT="skinparam conditionStyle diamond" ID="ID_632353062" CREATED="1718642587689" MODIFIED="1718642596738"/>
@@ -1228,7 +1228,7 @@
 <node TEXT="skinparam conditionStyle InsideDiamond" ID="ID_171492708" CREATED="1718642599895" MODIFIED="1718642608410"/>
 </node>
 </node>
-<node TEXT="6.24 Condition End Style" FOLDED="true" ID="ID_1529685893" CREATED="1718642612140" MODIFIED="1718642617206">
+<node TEXT="6.24 Condition End Style" ID="ID_1529685893" CREATED="1718642612140" MODIFIED="1718642617206">
 <node TEXT="6.24.01 Diamond Style (by default)" ID="ID_1775823415" CREATED="1718642621564" MODIFIED="1718642640900">
 <node TEXT="skinparam ConditionEndStyle diamond" ID="ID_841178913" CREATED="1718642640902" MODIFIED="1718642654610"/>
 </node>
@@ -1744,7 +1744,7 @@
 <node TEXT="14.11 Using Menu [*]" FOLDED="true" POSITION="bottom_or_right" ID="ID_398321565" CREATED="1724483096537" MODIFIED="1724483101953">
 <node TEXT="Question 19376: how to add right click pop up menu" ID="ID_1396409648" CREATED="1730000892192" MODIFIED="1730000916765" LINK="https://forum.plantuml.net/19376/salt-how-to-add-right-client-pop-up-menu"/>
 </node>
-<node TEXT="14.12 Advanced Table" FOLDED="true" POSITION="bottom_or_right" ID="ID_1616374694" CREATED="1724483106239" MODIFIED="1724483110401">
+<node TEXT="14.12 Advanced Table" POSITION="bottom_or_right" ID="ID_1616374694" CREATED="1724483106239" MODIFIED="1724483110401">
 <node TEXT="* to indicate that a cell with span with left" ID="ID_101334102" CREATED="1729996662142" MODIFIED="1729996674584"/>
 <node TEXT=". to denotate an empty cell" ID="ID_244601587" CREATED="1729996675387" MODIFIED="1729996688094"/>
 </node>
