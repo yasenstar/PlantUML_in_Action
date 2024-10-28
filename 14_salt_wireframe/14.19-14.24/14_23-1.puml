@@ -1,0 +1,8 @@
+@startsalt
+skinparam BackgroundColor palegreen
+{+
+    Login       | "MyName     "
+    Password    | "****       "
+    [Cancel]    | [  OK  ]
+}
+@endsalt

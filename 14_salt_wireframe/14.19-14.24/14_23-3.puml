@@ -1,0 +1,11 @@
+@startsalt
+skinparam BackgroundColor palegreen
+skinparam Handwritten true
+skinparam DefaultFontName monospaced
+skinparam DefaultFontStyle bold
+{+
+    Login       | "MyName     "
+    Password    | "****       "
+    [Cancel]    | [  OK  ]
+}
+@endsalt

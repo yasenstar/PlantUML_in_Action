@@ -3,7 +3,7 @@
 !unquoted procedure SALT($x)
 "{{
 salt
-%invoke_prodecure("_"+$x)
+%invoke_procedure("_"+$x)
 }}" as $x
 !endprocedure
 
@@ -42,10 +42,9 @@ salt
     }
 !endprocedure
 
-' (*) --> ABC
 (*) --> SALT(choose)
-' -right-> SALT(wait)
-' wait -right-> SALT(success)
-' wait --> SALT(error)
+-right-> SALT(wait)
+wait -right-> SALT(success)
+wait --> SALT(error)
 
 @enduml
