@@ -1760,7 +1760,7 @@
 <node TEXT="14.14 Colors" POSITION="bottom_or_right" ID="ID_359917058" CREATED="1724483145600" MODIFIED="1724483149442"/>
 <node TEXT="14.15 Creole on Salt" POSITION="bottom_or_right" ID="ID_1027403192" CREATED="1724483152448" MODIFIED="1724483157546"/>
 <node TEXT="14.16 Pseudo Sprite [&lt;&lt;, &gt;&gt;]" POSITION="bottom_or_right" ID="ID_990842340" CREATED="1724483163728" MODIFIED="1724483177514"/>
-<node TEXT="14.17 OpenIconic" POSITION="bottom_or_right" ID="ID_1784075797" CREATED="1724483177648" MODIFIED="1724483181746">
+<node TEXT="14.17 OpenIconic" FOLDED="true" POSITION="bottom_or_right" ID="ID_1784075797" CREATED="1724483177648" MODIFIED="1724483181746">
 <node TEXT="Question #19377: library URL" ID="ID_1352319931" CREATED="1730015684520" MODIFIED="1730015704453" LINK="https://forum.plantuml.net/19377/salt-14-17-openiconic-url-is-not-valid"/>
 </node>
 <node TEXT="14.18 Add Title, Header, Footer, Caption or Legend" POSITION="bottom_or_right" ID="ID_1873672870" CREATED="1724483357771" MODIFIED="1724483370526"/>
@@ -1769,7 +1769,9 @@
 <node TEXT="DPI" ID="ID_1126347706" CREATED="1730006544074" MODIFIED="1730006545759"/>
 </node>
 <node TEXT="14.20 Include Salt &quot;on Activity Diagram&quot;" POSITION="bottom_or_right" ID="ID_33347869" CREATED="1724483395706" MODIFIED="1724483406331">
-<node TEXT="Error, question #19381" ID="ID_1384379515" CREATED="1730032834433" MODIFIED="1730032843812" LINK="https://forum.plantuml.net/19381/salt-14-20-the-2nd-sample-using-procedure-leads-to-error"/>
+<node TEXT="Error, question #19381: typo error" ID="ID_1384379515" CREATED="1730032834433" MODIFIED="1730081616667" LINK="https://forum.plantuml.net/19381/salt-14-20-the-2nd-sample-using-procedure-leads-to-error">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node TEXT="14.21 Include Salt &quot;on While Condition of Activity Diagram&quot;" POSITION="bottom_or_right" ID="ID_1497732684" CREATED="1724483411770" MODIFIED="1724483426995"/>
 <node TEXT="14.22 Include Salt &quot;on Repeat While Condition of Activity Diagram&quot;" POSITION="bottom_or_right" ID="ID_1508424481" CREATED="1724483430833" MODIFIED="1724483455380"/>
