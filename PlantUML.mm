@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.443">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1526,7 +1526,7 @@
 <node TEXT="13.14 Using (global) Style" ID="ID_432882069" CREATED="1724482837980" MODIFIED="1724482844142"/>
 <node TEXT="13.15 Appendix: Test of all Shapes on Network Diagram (nwdiag)" ID="ID_695226988" CREATED="1724482850212" MODIFIED="1724482865351"/>
 </node>
-<node TEXT="14 Salt (Wireframe)" FOLDED="true" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
+<node TEXT="14 Salt (Wireframe)" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
 <node TEXT="14.0 About Salt (Wireframe)" FOLDED="true" ID="ID_1541854388" CREATED="1729904104907" MODIFIED="1729904120135">
 <node TEXT="Wikipedia: Website Wireframe" FOLDED="true" ID="ID_309965618" CREATED="1729907570121" MODIFIED="1729907587873" LINK="https://en.wikipedia.org/wiki/Website_wireframe">
 <node TEXT="A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website" ID="ID_474582546" CREATED="1729907593530" MODIFIED="1729907654989"/>
@@ -1686,7 +1686,7 @@
 <node TEXT="draw.io for wireframes" ID="ID_929371732" CREATED="1729908474086" MODIFIED="1729908483495" LINK="https://app.diagrams.net/"/>
 <node TEXT="WireGen.ai: Generate UI wireframes with AI" ID="ID_1502800911" CREATED="1729911763502" MODIFIED="1729911778611" LINK="https://wiregen.ai/"/>
 </node>
-<node TEXT="Part 1: Salt Syntax (Grammer)" FOLDED="true" ID="ID_133041555" CREATED="1730007446047" MODIFIED="1730008088930">
+<node TEXT="Part 1: Salt Syntax (Grammer)" ID="ID_133041555" CREATED="1730007446047" MODIFIED="1730008088930">
 <node TEXT="14.1 Basic Widgets" FOLDED="true" POSITION="bottom_or_right" ID="ID_337532663" CREATED="1724482886183" MODIFIED="1724482893304">
 <node TEXT="PlantUML Salt GUI Wireframe) cheat sheet" ID="ID_78975803" CREATED="1729863436800" MODIFIED="1729863493462" LINK="https://gist.github.com/wonderstory/31b8b32a2843f3475398a377c41aee52"/>
 <node TEXT="Button using [ and ]" ID="ID_362922857" CREATED="1729926181209" MODIFIED="1729926191520"/>
@@ -1756,7 +1756,7 @@
 <node TEXT="{S-: for horizontal scrollbar only" ID="ID_469062087" CREATED="1729996913895" MODIFIED="1729996921801"/>
 </node>
 </node>
-<node TEXT="Part 2: Salt Styles" FOLDED="true" ID="ID_352803077" CREATED="1730007472007" MODIFIED="1730008093794">
+<node TEXT="Part 2: Salt Styles" ID="ID_352803077" CREATED="1730007472007" MODIFIED="1730008093794">
 <node TEXT="14.14 Colors" POSITION="bottom_or_right" ID="ID_359917058" CREATED="1724483145600" MODIFIED="1724483149442"/>
 <node TEXT="14.15 Creole on Salt" POSITION="bottom_or_right" ID="ID_1027403192" CREATED="1724483152448" MODIFIED="1724483157546"/>
 <node TEXT="14.16 Pseudo Sprite [&lt;&lt;, &gt;&gt;]" POSITION="bottom_or_right" ID="ID_990842340" CREATED="1724483163728" MODIFIED="1724483177514"/>
@@ -1779,7 +1779,7 @@
 <node TEXT="14.24 Style" POSITION="bottom_or_right" ID="ID_892502473" CREATED="1724483465882" MODIFIED="1724483470116"/>
 </node>
 </node>
-<node TEXT="15 Archimate Diagram" POSITION="bottom_or_right" ID="ID_1220791201" CREATED="1716658842919" MODIFIED="1716658851311">
+<node TEXT="15 Archimate Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1220791201" CREATED="1716658842919" MODIFIED="1716658851311">
 <node TEXT="15.01 ArchiMate Keyword" ID="ID_25745630" CREATED="1724483475218" MODIFIED="1724483484575"/>
 <node TEXT="15.02 Defining Junctions" ID="ID_1708995545" CREATED="1724483507659" MODIFIED="1724483544109"/>
 <node TEXT="15.03 ArchiMate Example 1" ID="ID_1520363855" CREATED="1724483604386" MODIFIED="1724483610964"/>
