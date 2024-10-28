@@ -1,0 +1,16 @@
+@startsalt
+<style>
+    saltDiagram {
+        FontName Impact
+        FontSize 20
+        FontStyle italic
+        LineThickness 0.5
+        LineColor red
+    }
+</style>
+{+
+    Login       | "MyName     "
+    Password    | "****       "
+    [Cancel]    | [  OK  ]
+}
+@endsalt
