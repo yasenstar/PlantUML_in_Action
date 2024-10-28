@@ -1,0 +1,11 @@
+@startuml
+
+archimate #Technology "VPN Server" as vpnServer <<technology-device>>
+archimate #Technology "System" as App <<technology-node>>
+archimate #Strategy "Finance Management" as FinMgmt <<strategy-capability>>
+archimate #Application "CRM Web Server" as WebServer <<application-component>>
+
+archimate #Business "Country" as Site <<location>>
+
+rectangle GO #lightgreen
+@enduml

@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.443">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -668,8 +668,8 @@
 </node>
 <node TEXT="8.18 Mixing Deployment (Usecase, Component, Deployment) element within a Class or Object Diagram" POSITION="bottom_or_right" ID="ID_1618848251" CREATED="1722684747993" MODIFIED="1722684772569"/>
 <node TEXT="8.19 Port [port, portIn, portOut]" POSITION="bottom_or_right" ID="ID_1388367769" CREATED="1722684777660" MODIFIED="1724413473516">
-<arrowlink DESTINATION="ID_40322031"/>
 <arrowlink DESTINATION="ID_752866346"/>
+<arrowlink DESTINATION="ID_40322031"/>
 </node>
 </node>
 </node>
@@ -833,10 +833,10 @@
 </node>
 <node TEXT="Part 8" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
-<arrowlink DESTINATION="ID_652208197"/>
 <arrowlink DESTINATION="ID_1961776223"/>
-<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_288741682"/>
+<arrowlink DESTINATION="ID_652208197"/>
+<arrowlink DESTINATION="ID_1235100678"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -844,8 +844,8 @@
 </node>
 <node TEXT="Part 9" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
 <node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1717364077035">
-<arrowlink DESTINATION="ID_125886615"/>
 <arrowlink DESTINATION="ID_1063219866"/>
+<arrowlink DESTINATION="ID_125886615"/>
 <node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
 </node>
 <node TEXT="1.28 Shortcut Syntax" FOLDED="true" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">
@@ -985,8 +985,8 @@
 </node>
 <node TEXT="05 Activity Diagram (legacy)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1755393633" CREATED="1716658754444" MODIFIED="1720591041912" LINK="https://en.wikipedia.org/wiki/Activity_diagram">
 <node TEXT="5.01 Simple Action" FOLDED="true" ID="ID_664311433" CREATED="1718627042025" MODIFIED="1720770738713">
-<arrowlink DESTINATION="ID_511629604"/>
 <arrowlink WIDTH="2" DESTINATION="ID_1888938828" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink DESTINATION="ID_511629604"/>
 <node TEXT="use (*) for starting point and ending point" ID="ID_1213322656" CREATED="1718627051739" MODIFIED="1718627065590"/>
 <node TEXT="use (*top) to force starting point to be at the top" ID="ID_472095347" CREATED="1718627066076" MODIFIED="1718627081466"/>
 <node TEXT="use --&gt; for arrows" ID="ID_1661877154" CREATED="1718627081817" MODIFIED="1718627086368"/>
@@ -999,10 +999,10 @@
 <node TEXT="e.g. -down-&gt;" ID="ID_1622483910" CREATED="1718627138976" MODIFIED="1719297653097"/>
 </node>
 <node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1730036512713">
-<arrowlink DESTINATION="ID_999052549"/>
-<arrowlink DESTINATION="ID_1131340221"/>
 <arrowlink DESTINATION="ID_1828622956"/>
 <arrowlink DESTINATION="ID_33347869"/>
+<arrowlink DESTINATION="ID_1131340221"/>
+<arrowlink DESTINATION="ID_999052549"/>
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>
@@ -1151,8 +1151,8 @@
 </node>
 <node TEXT="6.07 Break on a Repeat Loop [break]" POSITION="bottom_or_right" ID="ID_832639314" CREATED="1718627589114" MODIFIED="1718627598429"/>
 <node TEXT="6.09 While Loop" POSITION="bottom_or_right" ID="ID_40925453" CREATED="1718627621911" MODIFIED="1730036578397">
-<arrowlink DESTINATION="ID_1497732684"/>
 <arrowlink DESTINATION="ID_1508424481"/>
+<arrowlink DESTINATION="ID_1497732684"/>
 <node TEXT="6.09.01 Simple While Loop" ID="ID_248391736" CREATED="1718627627453" MODIFIED="1718627633198">
 <node TEXT="use while and endwhile keywords" ID="ID_1341134953" CREATED="1718627635341" MODIFIED="1718627642744"/>
 </node>
@@ -1526,7 +1526,7 @@
 <node TEXT="13.14 Using (global) Style" ID="ID_432882069" CREATED="1724482837980" MODIFIED="1724482844142"/>
 <node TEXT="13.15 Appendix: Test of all Shapes on Network Diagram (nwdiag)" ID="ID_695226988" CREATED="1724482850212" MODIFIED="1724482865351"/>
 </node>
-<node TEXT="14 Salt (Wireframe)" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
+<node TEXT="14 Salt (Wireframe)" FOLDED="true" POSITION="bottom_or_right" ID="ID_469160178" CREATED="1716658835390" MODIFIED="1716658842755">
 <node TEXT="14.0 About Salt (Wireframe)" FOLDED="true" ID="ID_1541854388" CREATED="1729904104907" MODIFIED="1729904120135">
 <node TEXT="Wikipedia: Website Wireframe" FOLDED="true" ID="ID_309965618" CREATED="1729907570121" MODIFIED="1729907587873" LINK="https://en.wikipedia.org/wiki/Website_wireframe">
 <node TEXT="A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website" ID="ID_474582546" CREATED="1729907593530" MODIFIED="1729907654989"/>
@@ -1779,16 +1779,15 @@
 <node TEXT="14.24 Style" POSITION="bottom_or_right" ID="ID_892502473" CREATED="1724483465882" MODIFIED="1724483470116"/>
 </node>
 </node>
-<node TEXT="15 Archimate Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1220791201" CREATED="1716658842919" MODIFIED="1716658851311">
+<node TEXT="15 Archimate Diagram" POSITION="bottom_or_right" ID="ID_1220791201" CREATED="1716658842919" MODIFIED="1716658851311">
 <node TEXT="15.01 ArchiMate Keyword" ID="ID_25745630" CREATED="1724483475218" MODIFIED="1724483484575"/>
 <node TEXT="15.02 Defining Junctions" ID="ID_1708995545" CREATED="1724483507659" MODIFIED="1724483544109"/>
 <node TEXT="15.03 ArchiMate Example 1" ID="ID_1520363855" CREATED="1724483604386" MODIFIED="1724483610964"/>
 <node TEXT="15.04 ArchiMate Example 2" ID="ID_1279645581" CREATED="1724483623084" MODIFIED="1724483629548"/>
-<node TEXT="15.04 List Possible Sprite" ID="ID_714093673" CREATED="1724483639212" MODIFIED="1724483646046"/>
-<node TEXT="15.05 List Possible Sprites" ID="ID_1288942982" CREATED="1724484232918" MODIFIED="1724484245454">
+<node TEXT="15.05 List Possible Sprites" FOLDED="true" ID="ID_1288942982" CREATED="1724484232918" MODIFIED="1724484245454">
 <node TEXT="&quot;listsprite&quot;" ID="ID_1108848208" CREATED="1724484245456" MODIFIED="1724484250472"/>
 </node>
-<node TEXT="15.06 ArchiMate Macros" FOLDED="true" ID="ID_1874858106" CREATED="1724484253078" MODIFIED="1724484266282">
+<node TEXT="15.06 ArchiMate Macros" ID="ID_1874858106" CREATED="1724484253078" MODIFIED="1724484266282">
 <node TEXT="ArchiMate Macros and Library" ID="ID_428229565" CREATED="1724484266286" MODIFIED="1724484273055"/>
 <node TEXT="ArchiMate Elements" ID="ID_1006634840" CREATED="1724484273220" MODIFIED="1724484279847"/>
 <node TEXT="ArchiMate Relationships" ID="ID_937477177" CREATED="1724484280543" MODIFIED="1724484290089"/>
