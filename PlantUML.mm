@@ -1768,7 +1768,7 @@
 <node TEXT="Zoom - Scale" ID="ID_1723715487" CREATED="1730006538779" MODIFIED="1730006543908"/>
 <node TEXT="DPI" ID="ID_1126347706" CREATED="1730006544074" MODIFIED="1730006545759"/>
 </node>
-<node TEXT="14.20 Include Salt &quot;on Activity Diagram&quot;" POSITION="bottom_or_right" ID="ID_33347869" CREATED="1724483395706" MODIFIED="1724483406331">
+<node TEXT="14.20 Include Salt &quot;on Activity Diagram&quot;" FOLDED="true" POSITION="bottom_or_right" ID="ID_33347869" CREATED="1724483395706" MODIFIED="1724483406331">
 <node TEXT="Error, question #19381: typo error" ID="ID_1384379515" CREATED="1730032834433" MODIFIED="1730081616667" LINK="https://forum.plantuml.net/19381/salt-14-20-the-2nd-sample-using-procedure-leads-to-error">
 <icon BUILTIN="button_ok"/>
 </node>
