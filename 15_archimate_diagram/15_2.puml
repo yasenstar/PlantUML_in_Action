@@ -1,0 +1,23 @@
+@startuml
+!define Junction_Or circle #whitesmoke
+!define Junction_And circle #black
+
+Junction_And JunctionAnd
+Junction_Or JunctionOr
+
+archimate #Business "Step 1" as Step1 <<business-process>>
+archimate #Business "Step 2" as Step2 <<business-process>>
+archimate #Business "Step 3" as Step3 <<business-process>>
+archimate #Business "Step 4" as Step4 <<business-process>>
+archimate #Business "Step 5" as Step5 <<business-process>>
+archimate #Business "Step 6" as Step6 <<business-process>>
+
+Step1 -> Step3
+Step1 --> JunctionAnd
+Step2 --> JunctionAnd
+JunctionAnd --> Step4
+JunctionAnd -> JunctionOr
+Step5 --> JunctionOr
+JunctionOr -> Step6
+
+@enduml
