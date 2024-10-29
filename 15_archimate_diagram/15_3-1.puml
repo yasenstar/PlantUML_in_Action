@@ -1,0 +1,67 @@
+@startuml
+title Business process and Application Cross-Layer Mapping
+
+skinparam rectangle<<behavior>> {
+    roundCorner 25
+}
+
+sprite $bProcess jar:archimate/business-process
+sprite $aService jar:archimate/application-service
+sprite $aComponent jar:archimate/application-component
+
+rectangle "L0 Handle Claim" as HC <<$bProcess>><<behavior>> #Business
+rectangle "L1.1 Capture Information" as CI <<$bProcess>><<behavior>> #Business
+rectangle "L1.2 Notify\nAddiontal Stakeholder" as NAS <<$bProcess>><<behavior>> #Business
+rectangle "L1.3 Validate" as V <<$bProcess>><<behavior>> #Business
+rectangle "L1.4 Investigate" as I <<$bProcess>><<behavior>> #Business
+rectangle "L1.5 Pay" as P <<$bProcess>><<behavior>> #Business
+
+HC *-down- CI
+HC *-down- NAS
+HC *-down- V
+HC *-down- I
+HC *-down- P
+
+CI -right->> NAS
+NAS -right->> V
+V -right->> I
+I -right->> P
+
+rectangle "Customer Administratoin" as CUA <<$aService>><<behavior>> #Application
+rectangle "Scanning" as S <<$aService>><<behavior>> #Application
+rectangle "Claim Administratoin" as CLA <<$aService>><<behavior>> #Application
+rectangle "Printing" as PRN <<$aService>><<behavior>> #Application
+rectangle "Payment" as Payment <<$aService>><<behavior>> #Application
+
+CUA -up-> CI
+S -up-> CI
+CLA -up-> NAS
+CLA -up-> V
+CLA -up-> I
+PRN -up-> V
+PRN -up-> P
+Payment -up-> P
+
+rectangle "General\nCRM\nSystem" as CRM <<$aComponent>> #Application
+rectangle "Home & Away\nPolicy\nAdministration" as HAPA <<$aComponent>> #Application
+rectangle "Document\nManagement\nSystem" as DMS <<$aComponent>> #Application
+rectangle "Home & Away\nFinancial\Administration" as HFPA <<$aComponent>> #Application
+
+CRM .up.|> CUA
+DMS .up.|> S
+DMS .up.|> PRN
+HAPA .up.|> CLA
+HFPA .up.|> Payment
+
+legend left
+Example from the "ArchiSurance Case Stud" (OpenGroup)
+See
+====
+<$bProcess> : business process
+----
+<$aService> : application service
+----
+<$aComponent> : application component
+endlegend
+
+@enduml
