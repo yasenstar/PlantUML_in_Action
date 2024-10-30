@@ -1,0 +1,9 @@
+@startuml
+' method 1
+skinparam roundcorner 25
+rectangle "Capture Information" as CI <<$archimate/business-process>> #Business
+
+' method 2
+archimate #Business "Delivery Inforemation" as DI <<business-process>>
+
+@enduml
