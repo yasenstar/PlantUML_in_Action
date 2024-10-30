@@ -1,0 +1,63 @@
+@startuml
+title Business process and Application Cross-Layer Mapping
+
+sprite $bProcess jar:archimate/business-process
+sprite $aService jar:archimate/application-service
+sprite $aComponent jar:archimate/application-component
+
+archimate #Business "L0 Handle Claim" as HC <<business-process>>
+archimate #Business "L1.1 Capture Information" as CI <<business-process>>
+archimate #Business "L1.2 Notify\nAddiontal Stakeholder" as NAS <<business-process>>
+archimate #Business "L1.3 Validate" as V <<business-process>>
+archimate #Business "L1.4 Investigate" as I <<business-process>>
+archimate #Business "L1.5 Pay" as P <<business-process>>
+
+HC *-down- CI
+HC *-down- NAS
+HC *-down- V
+HC *-down- I
+HC *-down- P
+
+CI -right->> NAS
+NAS -right->> V
+V -right->> I
+I -right->> P
+
+archimate #Application "Customer Administratoin" as CUA <<application-service>>
+archimate #Application "Scanning" as S <<application-service>>
+archimate #Application "Claim Administratoin" as CLA <<application-service>>
+archimate #Application "Printing" as PRN <<application-service>>
+archimate #Application "Payment" as Payment <<application-service>>
+
+CUA -up-> CI
+S -up-> CI
+CLA -up-> NAS
+CLA -up-> V
+CLA -up-> I
+PRN -up-> V
+PRN -up-> P
+Payment -up-> P
+
+archimate #Application "General\nCRM\nSystem" as CRM <<application-component>>
+archimate #Application "Home & Away\nPolicy\nAdministration" as HAPA <<application-component>>
+archimate #Application "Document\nManagement\nSystem" as DMS <<application-component>>
+archimate #Application "Home & Away\nFinancial\Administration" as HFPA <<application-component>>
+
+CRM .up.|> CUA
+DMS .up.|> S
+DMS .up.|> PRN
+HAPA .up.|> CLA
+HFPA .up.|> Payment
+
+legend left
+Example from the "ArchiSurance Case Stud" (OpenGroup)
+See
+====
+<$bProcess> : business process
+----
+<$aService> : application service
+----
+<$aComponent> : application component
+endlegend
+
+@enduml
