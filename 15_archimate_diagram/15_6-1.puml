@@ -1,0 +1,7 @@
+@startuml
+!include <archimate/Archimate>
+
+Motivation_Stakeholder(StakeholderElement, "Stakeholder\nDescription")
+
+Business_Service(BusinessService, "Business\nService")
+@enduml
