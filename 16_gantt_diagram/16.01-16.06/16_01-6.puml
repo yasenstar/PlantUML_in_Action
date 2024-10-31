@@ -1,0 +1,8 @@
+@startgantt
+Project starts 2020-07-01
+
+[Prototype Design] starts 2020-07-01
+[Prototype Design] ends 2020-07-15
+[Test Prototype] starts 2020-07-16
+[Test Prototype] ends 2020-07-25
+@endgantt

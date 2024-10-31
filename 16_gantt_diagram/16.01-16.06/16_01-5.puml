@@ -1,0 +1,7 @@
+@startgantt
+[Prototype Design] lasts 15 days
+[Test Prototype] lasts 10 days
+
+[Prototype Design] ends D+14
+[Test Prototype] ends D+24
+@endgantt

@@ -1,0 +1,8 @@
+@startgantt
+[Prototype Design] lasts 15 days
+[Test Prototype] lasts 10 days
+
+Project starts 2020-07-01
+[Prototype Design] starts 2020-07-01
+[Test Prototype] starts 2020-07-16
+@endgantt
