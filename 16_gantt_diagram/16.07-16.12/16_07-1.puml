@@ -1,0 +1,12 @@
+@startgantt
+[Test Prototype] lasts 10 days
+
+
+' Milestone: [Prototype Completed]
+[Prototype Completed] happens at [Test Prototype]'s end
+
+[Setup Assembly Line] lasts 12 days
+[Setup Assembly Line] starts at [Test Prototype]'s end
+
+' [Prototype Completed] happens at [Setup Assembly Line]'s start
+@endgantt

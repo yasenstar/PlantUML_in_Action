@@ -1,0 +1,17 @@
+@startgantt
+Project starts 2020-07-01
+
+[Test Prototype] lasts 10 days
+
+
+' Milestone: [Prototype Completed]
+' [Prototype Completed] happens at 2020-07-12
+' [Prototype Completed] happens at 2020-07-10
+[Prototype Completed] happens at D+8
+
+[Setup Assembly Line] lasts 12 days
+[Setup Assembly Line] starts at [Test Prototype]'s end
+
+
+
+@endgantt
