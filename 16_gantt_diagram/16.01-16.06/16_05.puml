@@ -1,0 +1,13 @@
+@startgantt
+' Task Declaration
+[Prototype Design] as [PD] lasts 10 days
+[Prototype Test] as [PT] lasts 7 days
+
+' Task Constraints
+[PT] starts at [PD]'s end
+
+' Add colors
+[PD] is colored in Yellow/Red
+[PT] is colored in GreenYellow/Green
+
+@endgantt
