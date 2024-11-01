@@ -1,0 +1,12 @@
+@startgantt
+
+[Prototype Design] lasts 10 days
+[Code Prototype] lasts 10 days
+[Write Tests] lasts 5 days
+[Test Prototype] lasts 6 days
+
+[Code Prototype] starts at [Prototype Design]'s end
+[Write Tests] starts at [Code Prototype]'s start
+[Test Prototype] ends at [Code Prototype]'s end
+
+@endgantt
