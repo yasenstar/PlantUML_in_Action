@@ -1,0 +1,12 @@
+@startgantt
+Project starts at 2020-09-01
+
+2020/09/07 is colored in salmon
+2020-09-13 to 2020/09/16 are colored in lightblue
+
+[Prototype Design] lasts 12 days
+[Prototype Design] is colored in Orange/Blue
+[Prototype Test] lasts 10 days and starts at [Prototype Design]'s end
+' Define Milestone [Prototype Completed]
+[Prototype Completed] happens at [Prototype Test]'s end
+@endgantt
