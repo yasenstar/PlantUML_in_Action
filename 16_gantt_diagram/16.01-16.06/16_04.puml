@@ -1,0 +1,8 @@
+@startgantt
+[Prototype Design] as [PD] lasts 15 days
+[Prototype Test] as [PT] lasts 10 days
+
+' [PD] ends at [PT]'s start
+[PT] starts at [PD]'s end
+
+@endgantt
