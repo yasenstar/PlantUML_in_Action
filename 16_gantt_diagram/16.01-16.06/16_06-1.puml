@@ -1,0 +1,10 @@
+@startgantt
+[foo] lasts 21 days
+[foo] is 41% completed
+
+[bar] lasts 30 days and is 10% completed
+
+[new] is 30% completed and lasts 20 days
+
+[old] starts at D+3 and ends at D+10 and is 50% completed
+@endgantt

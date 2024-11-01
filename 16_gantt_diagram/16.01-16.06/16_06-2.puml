@@ -1,0 +1,30 @@
+@startgantt
+
+<style>
+ganttDiagram {
+    task {
+        BackgroundColor Green
+        Linecolor Green
+        unstarted {
+            BackgroundColor Red
+            LineColor FireBrick
+        }
+    }
+}
+</style>
+
+[Prototype Design] lasts 2 days
+
+[Prototype Test 0] lasts 10 days and starts at [Prototype Design]'s end and is 0% complete
+[Prototype Test 10] lasts 10 days and starts at [Prototype Design]'s end and is 10% complete
+[Prototype Test 20] lasts 10 days and starts at [Prototype Design]'s end and is 20% complete
+[Prototype Test 30] lasts 10 days and starts at [Prototype Design]'s end and is 30% complete
+[Prototype Test 40] lasts 10 days and starts at [Prototype Design]'s end and is 40% complete
+[Prototype Test 50] lasts 10 days and starts at [Prototype Design]'s end and is 50% complete
+[Prototype Test 60] lasts 10 days and starts at [Prototype Design]'s end and is 60% complete
+[Prototype Test 70] lasts 10 days and starts at [Prototype Design]'s end and is 70% complete
+[Prototype Test 80] lasts 10 days and starts at [Prototype Design]'s end and is 80% complete
+[Prototype Test 90] lasts 10 days and starts at [Prototype Design]'s end and is 90% complete
+[Prototype Test 100] lasts 10 days and starts at [Prototype Design]'s end and is 100% complete
+
+@endgantt
