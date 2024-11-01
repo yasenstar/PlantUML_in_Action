@@ -1,0 +1,9 @@
+@startgantt
+Project starts at the 20th of september 2017
+' Project starts the 20th of september 2017
+' Project starts at 2017-09-20
+' Project starts 2017-09-20
+[Prototype Design] as [TASK1] lasts 20 days
+[TASK1] is colored in #FFAAAA/#AAAAFF
+[TASK2] starts at D+3 and lasts 5 days
+@endgantt
