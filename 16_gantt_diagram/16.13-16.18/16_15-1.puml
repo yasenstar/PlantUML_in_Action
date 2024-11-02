@@ -1,0 +1,12 @@
+@startgantt
+Project starts at 2021-03-29
+
+saturday are closed
+sunday are closed
+wednesday are closed
+2021-04-08 is closed
+
+[Review 01] happens at 2020-03-29
+[Review 02 - 3 weeks] happens on 3 weeks after [Review 01]'s end
+[Review 03 - 21 days] happens on 21 days after [Review 01]'s end
+@endgantt
