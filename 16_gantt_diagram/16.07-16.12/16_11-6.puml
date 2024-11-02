@@ -1,0 +1,16 @@
+@startgantt
+title Project Schedule in Weekly Scale
+projectscale quarterly
+saturday are closed
+sunday are closed
+
+Project starts at the 1st of january 2021
+
+[Prototype Design End] as [TASK1] lasts 400 days
+[TASK1] is colored in Lavender/LighBlue
+[Testing] lasts 180 days and starts at 2022-12-01
+[TASK1]->[Testing]
+
+2021-01-18 to 2021-01-22 are named [End's committee] and are colored in salmon
+
+@endgantt
