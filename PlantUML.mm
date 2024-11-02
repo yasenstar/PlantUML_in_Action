@@ -1872,15 +1872,41 @@
 <node TEXT="yearly" ID="ID_820251228" CREATED="1730473223935" MODIFIED="1730473225608"/>
 </node>
 </node>
-<node TEXT="16.12 Zoom (example for all scale)" POSITION="bottom_or_right" ID="ID_1090959834" CREATED="1724484571117" MODIFIED="1724484579294">
+<node TEXT="16.12 Zoom (example for all scale)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1090959834" CREATED="1724484571117" MODIFIED="1724484579294">
+<node TEXT="Zoom: Integer or Floating both are accepted" ID="ID_1725331525" CREATED="1730515299479" MODIFIED="1730515318609">
+<font BOLD="true"/>
+</node>
 <node TEXT="Zoom on (variable) Scale" ID="ID_1709938543" CREATED="1730512419966" MODIFIED="1730513692923">
 <node TEXT="Without Zoom: printscale daily" ID="ID_1258646920" CREATED="1730512427247" MODIFIED="1730512459534"/>
 <node TEXT="With Zoom: printscale daily zoom 2" ID="ID_1521008600" CREATED="1730512437435" MODIFIED="1730512449736"/>
 </node>
+<node TEXT="Question on improving the TOC in Reference guide: #19411" ID="ID_655670572" CREATED="1730513816001" MODIFIED="1730513839261" LINK="https://forum.plantuml.net/19411/reference-guide-16-12-comments-on-table-of-content"/>
 </node>
-<node TEXT="16.13 Weekscale with Weeknumbers or Calendar Date" POSITION="bottom_or_right" ID="ID_561121834" CREATED="1724484594192" MODIFIED="1724484611583"/>
+<node TEXT="16.13 Weekscale with Weeknumbers or Calendar Date" POSITION="bottom_or_right" ID="ID_561121834" CREATED="1724484594192" MODIFIED="1724484611583">
+<node TEXT="With Weeknumbers (by default)" ID="ID_1302978004" CREATED="1730516488145" MODIFIED="1730516499749">
+<node TEXT="printscale weekly" ID="ID_1271643686" CREATED="1730516499750" MODIFIED="1730516505745"/>
 </node>
-<node TEXT="Part 3: Calendar and Resourse" FOLDED="true" ID="ID_1181841927" CREATED="1730291113717" MODIFIED="1730291132439">
+<node TEXT="With Calendar Date" ID="ID_640673547" CREATED="1730516506709" MODIFIED="1730516513285">
+<node ID="ID_1819222049" CREATED="1730516513285" MODIFIED="1730516529713"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      printscale weekly <span style="font-weight: bold;">with calendar date</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="the first day of the calendar week is Monday" ID="ID_979219025" CREATED="1730517076235" MODIFIED="1730517092256"/>
+</node>
+</node>
+</node>
+<node TEXT="Part 3: Calendar and Resourse" ID="ID_1181841927" CREATED="1730291113717" MODIFIED="1730291132439">
 <node TEXT="16.14 Close Day" POSITION="bottom_or_right" ID="ID_835785800" CREATED="1724484614644" MODIFIED="1724484620262"/>
 <node TEXT="16.15 Definition of a Week Depending of Closed Days" POSITION="bottom_or_right" ID="ID_97679471" CREATED="1724484646148" MODIFIED="1724484657537"/>
 <node TEXT="16.16 Working Days" POSITION="bottom_or_right" ID="ID_78579498" CREATED="1724484657828" MODIFIED="1724484665440"/>

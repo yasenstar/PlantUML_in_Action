@@ -1,0 +1,10 @@
+@startgantt
+
+printscale weekly with calendar date zoom 4
+
+Project starts at 2020/07/08
+[Task1] lasts 5 weeks
+[Task2] lasts 2 weeks
+then [Task3] lasts 10 days
+
+@endgantt
