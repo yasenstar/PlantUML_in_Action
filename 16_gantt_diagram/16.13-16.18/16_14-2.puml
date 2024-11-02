@@ -1,0 +1,11 @@
+@startgantt
+Project starts at 2020/07/01
+
+2020-07-07 to 2020-07-17 are close
+2020-07-13 is opened
+2020-07-08 to 2020-07-10 are opened
+
+[Prototype Design] lasts 14 days
+[Test Propotype] lasts 4 day and starts at [Prototype Design]'s end
+
+@endgantt

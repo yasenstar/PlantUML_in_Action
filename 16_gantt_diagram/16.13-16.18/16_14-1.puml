@@ -1,0 +1,13 @@
+@startgantt
+Project starts at 2018/04/09
+
+saturday are closed
+sunday are closed
+
+2018/05/01 is closed
+2018/04/17 to 2018/04/19 are closed
+
+[Prototype Design] lasts 14 days
+[Test Propotype] lasts 4 day and starts at [Prototype Design]'s end
+
+@endgantt
