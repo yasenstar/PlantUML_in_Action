@@ -1,0 +1,15 @@
+@startgantt
+printscale weekly zoom 4
+saturday are closed
+sunday are closed
+' 2021-01-05 is closed
+
+Project starts 2021-01-01
+[Prototype Design End] as [TASK1] lasts 19 days
+[TASK1] is colored in Yellow/Blue
+[Testing] lasts 14 days
+[TASK1] -> [Testing]
+
+2021-01-18 to 2021-01-22 are named [End's committee]
+2021-01-18 to 2021-01-22 are colored in salmon
+@endgantt
