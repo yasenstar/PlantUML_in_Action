@@ -1,0 +1,11 @@
+@startgantt
+Project starts at 2022-06-27
+
+saturday are closed
+sundary are closed
+2022-07-04 to 2022-07-15 are closed
+
+[task1] lasts 1 week
+[task2] starts 2 working days after [task1]'s end and lasts 3 days
+
+@endgantt
