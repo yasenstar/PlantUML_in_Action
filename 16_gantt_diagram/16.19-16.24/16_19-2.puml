@@ -1,0 +1,7 @@
+@startgantt
+hide resources name
+[Task1] on {Alice} lasts 10 days
+[Task2] on {Bob:50%} lasts 2 days
+then [Task3] on {Alice:25%} lasts 1 day
+then [Task4] on {Alice:25%} {Bob} lasts 1 day
+@endgantt
