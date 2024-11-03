@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.266">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1907,7 +1907,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Part 3: Calendar and Resourse" ID="ID_1181841927" CREATED="1730291113717" MODIFIED="1730291132439">
+<node TEXT="Part 3: Calendar and Resourse" FOLDED="true" ID="ID_1181841927" CREATED="1730291113717" MODIFIED="1730291132439">
 <node TEXT="16.14 Close Day" FOLDED="true" POSITION="bottom_or_right" ID="ID_835785800" CREATED="1724484614644" MODIFIED="1724484620262">
 <node TEXT="Weekend" ID="ID_1792816937" CREATED="1730534716161" MODIFIED="1730534719942">
 <node TEXT="saturday are closed" ID="ID_1305772873" CREATED="1730534719944" MODIFIED="1730534730940"/>
@@ -1957,11 +1957,15 @@
 <node TEXT="16.29 Highlight Today" POSITION="bottom_or_right" ID="ID_1612504105" CREATED="1724484778276" MODIFIED="1724484783567"/>
 <node TEXT="16.30 Task between Two Milestones" POSITION="bottom_or_right" ID="ID_1890593422" CREATED="1724484786069" MODIFIED="1724484795189"/>
 </node>
-<node TEXT="Part 6: Meta-Data on Gantt" FOLDED="true" ID="ID_1993956778" CREATED="1730291239814" MODIFIED="1730291253330">
+<node TEXT="Part 6: Meta-Data on Gantt" ID="ID_1993956778" CREATED="1730291239814" MODIFIED="1730291253330">
 <node TEXT="16.31 Grammar and Verbal Form" POSITION="bottom_or_right" ID="ID_1793369173" CREATED="1724484798444" MODIFIED="1724484805192"/>
 <node TEXT="16.32 Add Title, Header, Footer, Captain or Legend" POSITION="bottom_or_right" ID="ID_714688193" CREATED="1724484805406" MODIFIED="1724484816841"/>
 <node TEXT="16.33 Removing Foot Boxes (example for all scale)" POSITION="bottom_or_right" ID="ID_1907032422" CREATED="1724484819525" MODIFIED="1724484829840"/>
-<node TEXT="16.34 Language of the Calendar" POSITION="bottom_or_right" ID="ID_535039002" CREATED="1724484834958" MODIFIED="1724484841815"/>
+<node TEXT="16.34 Language of the Calendar" FOLDED="true" POSITION="bottom_or_right" ID="ID_535039002" CREATED="1724484834958" MODIFIED="1724484841815">
+<node TEXT="ISO 639 Language Code" ID="ID_240848939" CREATED="1730638881803" MODIFIED="1730638895077" LINK="https://www.iso.org/iso-639-language-code">
+<node TEXT="ISO 639.2" ID="ID_1069744928" CREATED="1730638897913" MODIFIED="1730638922985" LINK="https://www.loc.gov/standards/iso639-2/php/code_list.php"/>
+</node>
+</node>
 <node TEXT="16.35 Delete Tasks or Milestones" POSITION="bottom_or_right" ID="ID_111109410" CREATED="1724484852525" MODIFIED="1724484859544"/>
 <node TEXT="16.36 Start a Project, a Task or a Milestone a Number of Days before or after today" POSITION="bottom_or_right" ID="ID_862098530" CREATED="1724484865764" MODIFIED="1724484887799"/>
 <node TEXT="16.37 Change Label Position" POSITION="bottom_or_right" ID="ID_1875188251" CREATED="1724484887981" MODIFIED="1724484897582"/>
