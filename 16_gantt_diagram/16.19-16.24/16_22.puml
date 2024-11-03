@@ -1,0 +1,7 @@
+@startgantt
+[Prototype Design] lasts 13 days and is colored in Lavender/Blue
+[Prototype Test] lasts 9 days and starts 3 days after [Prototype Design]'s end and is colored in Coral/Green
+[Write Tests] lasts 5 days and ends at [Prototype Design]'s end
+[Hire Tests Writers] lasts 6 days and ends at [Write Tests]'s start
+[Init and Write Tests Report] starts 1 day before [Prototype Test]'s start and ends at [Prototype Test]'s end and is colored in Coral/Green
+@endgantt

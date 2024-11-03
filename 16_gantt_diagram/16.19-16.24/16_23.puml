@@ -1,0 +1,10 @@
+@startgantt
+' This is a comment
+[T1] lasts 3 days
+' Another comments
+then [T2] lasts 2 days
+/' this comment
+is on several
+lines '/
+then [T3] lasts 4 days
+@endgantt
