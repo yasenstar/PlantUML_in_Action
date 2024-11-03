@@ -1,0 +1,13 @@
+@startgantt
+Project starts at 2024-11-03
+saturday are closed
+sunday are closed
+
+[task1] lasts 1 week
+[task2] starts 20 days after [task1]'s end and lasts 3 days
+
+Separator just at [task1]'s end
+Separator just 2 days after [task1]'s end
+Separator just at [task2]'s start
+Separator just 1 week before [task2]'s start
+@endgantt
