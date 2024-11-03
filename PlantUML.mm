@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="1.266">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -833,10 +833,10 @@
 </node>
 <node TEXT="Part 8" ID="ID_116307912" CREATED="1716734648860" MODIFIED="1716734651571">
 <node TEXT="1.25 Lifeline Activation and Destruction" POSITION="bottom_or_right" ID="ID_1063219866" CREATED="1716689335135" MODIFIED="1717358834332">
+<arrowlink DESTINATION="ID_1235100678"/>
 <arrowlink DESTINATION="ID_1961776223"/>
 <arrowlink DESTINATION="ID_288741682"/>
 <arrowlink DESTINATION="ID_652208197"/>
-<arrowlink DESTINATION="ID_1235100678"/>
 </node>
 <node TEXT="1.26 Return" POSITION="bottom_or_right" ID="ID_1591314091" CREATED="1716689345176" MODIFIED="1716689364390">
 <node TEXT="syntax: return label" ID="ID_1925812395" CREATED="1717290594629" MODIFIED="1717290606632"/>
@@ -844,8 +844,8 @@
 </node>
 <node TEXT="Part 9" ID="ID_495099569" CREATED="1716734661959" MODIFIED="1716734665488">
 <node TEXT="1.27 Participant Creation" POSITION="bottom_or_right" ID="ID_940373559" CREATED="1716689368388" MODIFIED="1717364077035">
-<arrowlink DESTINATION="ID_1063219866"/>
 <arrowlink DESTINATION="ID_125886615"/>
+<arrowlink DESTINATION="ID_1063219866"/>
 <node TEXT="keyword: create" ID="ID_371715159" CREATED="1717345330116" MODIFIED="1717345341216"/>
 </node>
 <node TEXT="1.28 Shortcut Syntax" FOLDED="true" POSITION="bottom_or_right" ID="ID_1264147822" CREATED="1716689375296" MODIFIED="1717345240761">
@@ -999,10 +999,10 @@
 <node TEXT="e.g. -down-&gt;" ID="ID_1622483910" CREATED="1718627138976" MODIFIED="1719297653097"/>
 </node>
 <node TEXT="5.04 Branches" FOLDED="true" ID="ID_1376320152" CREATED="1718627152505" MODIFIED="1730036512713">
-<arrowlink DESTINATION="ID_1828622956"/>
-<arrowlink DESTINATION="ID_33347869"/>
 <arrowlink DESTINATION="ID_1131340221"/>
 <arrowlink DESTINATION="ID_999052549"/>
+<arrowlink DESTINATION="ID_1828622956"/>
+<arrowlink DESTINATION="ID_33347869"/>
 <node TEXT="use if/then/else keyword" ID="ID_1877809105" CREATED="1718627158497" MODIFIED="1718627169523"/>
 </node>
 <node TEXT="5.05 More on Branches" ID="ID_1795887075" CREATED="1718627174541" MODIFIED="1718627179159"/>
@@ -1151,8 +1151,8 @@
 </node>
 <node TEXT="6.07 Break on a Repeat Loop [break]" POSITION="bottom_or_right" ID="ID_832639314" CREATED="1718627589114" MODIFIED="1718627598429"/>
 <node TEXT="6.09 While Loop" POSITION="bottom_or_right" ID="ID_40925453" CREATED="1718627621911" MODIFIED="1730036578397">
-<arrowlink DESTINATION="ID_1508424481"/>
 <arrowlink DESTINATION="ID_1497732684"/>
+<arrowlink DESTINATION="ID_1508424481"/>
 <node TEXT="6.09.01 Simple While Loop" ID="ID_248391736" CREATED="1718627627453" MODIFIED="1718627633198">
 <node TEXT="use while and endwhile keywords" ID="ID_1341134953" CREATED="1718627635341" MODIFIED="1718627642744"/>
 </node>
@@ -1845,7 +1845,7 @@
 <node TEXT="e.g. 20th of september 2017" ID="ID_113854101" CREATED="1730458374171" MODIFIED="1730458389556"/>
 </node>
 </node>
-<node TEXT="Part 2: Customize Gantt Formats" ID="ID_25655701" CREATED="1730291055264" MODIFIED="1730291067171">
+<node TEXT="Part 2: Customize Gantt Formats" FOLDED="true" ID="ID_25655701" CREATED="1730291055264" MODIFIED="1730291067171">
 <node TEXT="16.10 Coloring Days" FOLDED="true" POSITION="bottom_or_right" ID="ID_1280696137" CREATED="1724484547502" MODIFIED="1724484551365">
 <node TEXT="coloring day(s)" ID="ID_20754624" CREATED="1730473356258" MODIFIED="1730473377797">
 <node TEXT="yyyy-mm-dd is colored in ColorName" ID="ID_1294496473" CREATED="1730473377801" MODIFIED="1730473394904"/>
@@ -1880,13 +1880,15 @@
 <node TEXT="Without Zoom: printscale daily" ID="ID_1258646920" CREATED="1730512427247" MODIFIED="1730512459534"/>
 <node TEXT="With Zoom: printscale daily zoom 2" ID="ID_1521008600" CREATED="1730512437435" MODIFIED="1730512449736"/>
 </node>
-<node TEXT="Question on improving the TOC in Reference guide: #19411" ID="ID_655670572" CREATED="1730513816001" MODIFIED="1730513839261" LINK="https://forum.plantuml.net/19411/reference-guide-16-12-comments-on-table-of-content"/>
+<node TEXT="Question on improving the TOC in Reference guide: #19411" ID="ID_655670572" CREATED="1730513816001" MODIFIED="1730625430032" LINK="https://forum.plantuml.net/19411/reference-guide-16-12-comments-on-table-of-content">
+<icon BUILTIN="button_ok"/>
 </node>
-<node TEXT="16.13 Weekscale with Weeknumbers or Calendar Date" POSITION="bottom_or_right" ID="ID_561121834" CREATED="1724484594192" MODIFIED="1724484611583">
+</node>
+<node TEXT="16.13 Weekscale with Weeknumbers or Calendar Date" FOLDED="true" POSITION="bottom_or_right" ID="ID_561121834" CREATED="1724484594192" MODIFIED="1730517285444" VGAP_QUANTITY="3 pt">
 <node TEXT="With Weeknumbers (by default)" ID="ID_1302978004" CREATED="1730516488145" MODIFIED="1730516499749">
 <node TEXT="printscale weekly" ID="ID_1271643686" CREATED="1730516499750" MODIFIED="1730516505745"/>
 </node>
-<node TEXT="With Calendar Date" ID="ID_640673547" CREATED="1730516506709" MODIFIED="1730516513285">
+<node TEXT="With Calendar Date" ID="ID_640673547" CREATED="1730516506709" MODIFIED="1730517285443">
 <node ID="ID_1819222049" CREATED="1730516513285" MODIFIED="1730516529713"><richcontent TYPE="NODE">
 
 <html>
@@ -1899,7 +1901,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="the first day of the calendar week is Monday" ID="ID_979219025" CREATED="1730517076235" MODIFIED="1730517092256"/>
@@ -1907,12 +1908,39 @@
 </node>
 </node>
 <node TEXT="Part 3: Calendar and Resourse" ID="ID_1181841927" CREATED="1730291113717" MODIFIED="1730291132439">
-<node TEXT="16.14 Close Day" POSITION="bottom_or_right" ID="ID_835785800" CREATED="1724484614644" MODIFIED="1724484620262"/>
-<node TEXT="16.15 Definition of a Week Depending of Closed Days" POSITION="bottom_or_right" ID="ID_97679471" CREATED="1724484646148" MODIFIED="1724484657537"/>
+<node TEXT="16.14 Close Day" FOLDED="true" POSITION="bottom_or_right" ID="ID_835785800" CREATED="1724484614644" MODIFIED="1724484620262">
+<node TEXT="Weekend" ID="ID_1792816937" CREATED="1730534716161" MODIFIED="1730534719942">
+<node TEXT="saturday are closed" ID="ID_1305772873" CREATED="1730534719944" MODIFIED="1730534730940"/>
+<node TEXT="sunday are closed" ID="ID_1003482476" CREATED="1730534731642" MODIFIED="1730534741474"/>
+</node>
+<node TEXT="Single Day" ID="ID_1520804823" CREATED="1730530769898" MODIFIED="1730530774063">
+<node TEXT="yyyy-mm-dd is/are closed" ID="ID_956044399" CREATED="1730530779986" MODIFIED="1730534706924"/>
+<node TEXT="yyyy-mm-dd is/are open" POSITION="bottom_or_right" ID="ID_449961427" CREATED="1730530800103" MODIFIED="1730534711600"/>
+</node>
+<node TEXT="Days Duration" ID="ID_1488199379" CREATED="1730530774391" MODIFIED="1730530778221">
+<node TEXT="yyyy-mm-dd to yyyy-mm-dd are/is closed" POSITION="bottom_or_right" ID="ID_1587011455" CREATED="1730530786012" MODIFIED="1730534715516"/>
+<node TEXT="yyyy-mm-dd to yyyy-mm-dd are/is open" POSITION="bottom_or_right" ID="ID_99158765" CREATED="1730530786012" MODIFIED="1730530823987"/>
+</node>
+<node TEXT="Close or Closed, Open or Opened are both valid" ID="ID_615630690" CREATED="1730534939991" MODIFIED="1730534952506"/>
+</node>
+<node TEXT="16.15 Definition of a Week Depending of Closed Days" FOLDED="true" POSITION="bottom_or_right" ID="ID_97679471" CREATED="1724484646148" MODIFIED="1724484657537">
+<node TEXT="[task] happens on x weeks/days after [another task]&apos;s end" ID="ID_1285061865" CREATED="1730530853638" MODIFIED="1730530887209"/>
+</node>
 <node TEXT="16.16 Working Days" POSITION="bottom_or_right" ID="ID_78579498" CREATED="1724484657828" MODIFIED="1724484665440"/>
-<node TEXT="16.17 Simplified Task Succession" POSITION="bottom_or_right" ID="ID_605668047" CREATED="1724484671700" MODIFIED="1724484679085"/>
-<node TEXT="16.18 Working with Resources" POSITION="bottom_or_right" ID="ID_1315508371" CREATED="1724484682164" MODIFIED="1724484687550"/>
-<node TEXT="16.19 Hide Resources" POSITION="bottom_or_right" ID="ID_937665553" CREATED="1724484690301" MODIFIED="1724484695543"/>
+<node TEXT="16.17 Simplified Task Succession" FOLDED="true" POSITION="bottom_or_right" ID="ID_605668047" CREATED="1724484671700" MODIFIED="1724484679085">
+<node TEXT="keyword: then" ID="ID_1888426793" CREATED="1730531274902" MODIFIED="1730531288982"/>
+<node TEXT="Or use -&gt;" ID="ID_249470997" CREATED="1730531337407" MODIFIED="1730531348465"/>
+</node>
+<node TEXT="16.18 Working with Resources" POSITION="bottom_or_right" ID="ID_1315508371" CREATED="1724484682164" MODIFIED="1724484687550">
+<node TEXT="[Task] on {resource} lasts xx days" ID="ID_442754068" CREATED="1730531402757" MODIFIED="1730531421234"/>
+<node TEXT="[Task] on {resource:xx%} lasts xx days" ID="ID_1658093899" CREATED="1730531422631" MODIFIED="1730531436840"/>
+<node TEXT="[Task] on {resource1} {resource2} lasts xx days" ID="ID_648014510" CREATED="1730531440361" MODIFIED="1730531456252"/>
+<node TEXT="{resource} is off on yyyy-mm-dd to yyyy-mm-dd" ID="ID_510151542" CREATED="1730531463241" MODIFIED="1730531478284"/>
+</node>
+<node TEXT="16.19 Hide Resources" FOLDED="true" POSITION="bottom_or_right" ID="ID_937665553" CREATED="1724484690301" MODIFIED="1724484695543">
+<node TEXT="hide resources names" ID="ID_214668942" CREATED="1730531674075" MODIFIED="1730531691220"/>
+<node TEXT="hide resources footbox" ID="ID_1071089401" CREATED="1730531757189" MODIFIED="1730531762424"/>
+</node>
 </node>
 <node TEXT="Part 4: Gantt Styles" FOLDED="true" ID="ID_1487530764" CREATED="1730291171008" MODIFIED="1730291190304">
 <node TEXT="16.20 Horizontal Separator" POSITION="bottom_or_right" ID="ID_1349963543" CREATED="1724484701541" MODIFIED="1724484707345"/>

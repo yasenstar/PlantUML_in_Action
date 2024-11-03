@@ -1,0 +1,5 @@
+@startgantt
+[Task1] on {Alice} {Bob:50%} {Scott:50%} lasts 20 days
+{Alice} is off on D+0 to D+6
+{Bob} is off on D+7
+@endgantt

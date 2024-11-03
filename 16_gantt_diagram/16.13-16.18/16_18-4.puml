@@ -1,0 +1,7 @@
+@startgantt
+Project starts on 2020-06-19
+[Task1] on {Alice} {Bob:50%} {Scott:50%} lasts 20 days
+{Alice} is off on 2020-06-20
+{Alice} is off on 2020-06-27
+{Bob} is off on 2020-06-22 to 2020-06-27
+@endgantt
