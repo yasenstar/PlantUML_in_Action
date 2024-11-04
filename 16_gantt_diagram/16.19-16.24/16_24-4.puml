@@ -1,0 +1,21 @@
+@startgantt
+
+<style>
+ganttDiagram {
+    timeline {
+        LineColor transparent
+        FontColor transparent
+    }
+}
+</style>
+
+hide footbox
+[Test Prototype] lasts 7 Days
+[Prototype Completed] happens at [Test Prototype]'s end
+[Setup Assembly Line] lasts 9 days and starts at [Test Prototype]'s end
+then [Setup] lasts 5 days
+[T2] lasts 2 days and starts at [Test Prototype]'s end
+then [T3] lasts 3 days
+-- end task --
+then [T4] lasts 2 days
+@endgantt

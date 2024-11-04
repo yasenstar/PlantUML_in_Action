@@ -1,0 +1,28 @@
+@startgantt
+
+<style>
+ganttDiagram {
+    timeline {
+        LineColor transparent
+        FontColor transparent
+    }
+    closed {
+        FontColor transparent
+    }
+}
+</style>
+
+hide footbox
+project starts at 2018/04/09
+saturday are closed
+sunday are closed
+2018/05/01 is closed
+2018/04/17 to 2018/04/19 are closed
+
+[Prototype Design] lasts 9 days
+then [Test Prototype] lasts 5 days
+
+[Prototype Design] is colored in Fuchsia/FireBrick
+[Test Prototype] is colored in GreenYellow/Green
+
+@endgantt
