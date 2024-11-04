@@ -1,0 +1,68 @@
+@startgantt
+
+<style>
+ganttDiagram {
+    task {
+        FontName Impact
+        FontColor red
+        FontSize 18
+        FontStyle italic
+        BackgroundColor GreenYellow
+        LineColor blue
+    }
+    milestone {
+        FontColor blue
+        FontSize 25
+        FontStyle bold
+        BackgroundColor yellow
+        LineColor red
+    }
+    note {
+        FontColor DarkGreen
+        FontSize 15
+        LineColor red
+    }
+    arrow {
+        FontColor red
+        LineColor green
+        LineStyle 4.0;20.0
+        LineThickness 3.0
+    }
+    separator {
+        BackgroundColor lightGreen
+        LineStyle 8.0;3.0
+        LineColor blue
+        LineThickness 3.0
+        FontSize 16
+        FontStyle bold
+        FontColor purple
+        Margin 5
+        Padding 20
+    }
+}
+</style>
+
+Project starts at 2020-12-01
+sunday are closed
+[Task1] lasts 10 days
+note bottom
+    memo1 ...
+    memo2 ...
+    explanation1 ...
+    explanation2 ...
+end note
+[Task2] starts 10 days after [Task1]'s end and lasts 20 days
+-- Separator title --
+[M1] happens on 5 days after [Task1]'s end
+
+<style>
+separator {
+    LineColor yellow
+    Margin 50
+    Padding 0
+}
+</style>
+
+-- End --
+Separator just at [Task1]'s end
+@endgantt
