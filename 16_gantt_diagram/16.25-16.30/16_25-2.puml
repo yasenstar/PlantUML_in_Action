@@ -1,0 +1,12 @@
+@startgantt
+[task01] lasts 15 days
+note bottom
+    memo1 ...
+    memo2 ...
+    explanation1
+    2ndline
+end note
+' [task03] starts at D+8 and lasts 5 days
+[task03] lasts 5 days
+[task01] -> [task02]
+@endgantt

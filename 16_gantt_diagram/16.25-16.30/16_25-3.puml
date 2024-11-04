@@ -1,0 +1,24 @@
+@startgantt
+-- test 01 --
+[task01] lasts 4 days
+note bottom
+    memo1 ...
+    memo2 ...
+    explanation1 ......
+    2ndline
+end note
+
+then [task02] lasts 8 days
+note bottom
+    memo1 ...
+    memo2 ...
+    explanation1 ......
+    2ndline
+end note
+
+-- test02 --
+
+[task03] as [t3] lasts 7 days
+[t3] -> [t4]
+
+@endgantt
