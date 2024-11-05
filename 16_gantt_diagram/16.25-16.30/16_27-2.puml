@@ -1,0 +1,20 @@
+@startgantt
+
+<style>
+ganttDiagram {
+    arrow {
+        LineColor blue
+    }
+}
+</style>
+
+[Prototype Design] lasts 7 days
+[Build Prototype] lasts 4 days
+[Prepare Test] lasts 6 days
+[Run Test] lasts 4 days
+
+[Prototype Design] -[#FFAAAA]-> [Build Prototype]
+[Prototype Design] -[#AAAAFF,dotted]-> [Prepare Test]
+[Prepare Test] -[dashed]-> [Run Test]
+
+@endgantt
