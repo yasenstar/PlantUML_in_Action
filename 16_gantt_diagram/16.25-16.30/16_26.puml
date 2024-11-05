@@ -1,0 +1,12 @@
+@startgantt
+Project starts at 2018-12-05
+saturday are closed
+sunday are closed
+2018-12-29 is opened
+
+[Prototype Design] on {Alice} lasts 17 days
+[Prototype Design] pauses on 2018-12-13
+[Prototype Design] pauses on 2018-12-14
+[Prototype Design] pauses on monday
+then [Test Prototype] lasts 2 weeks
+@endgantt
