@@ -1,0 +1,22 @@
+@startmindmap
+* OS
+
+++ Linux/Debian
++++ Ubuntu
+++++ Linux Mint
+++++ Kubuntu
+++++ Lubuntu
+++++ KDE Neon
++++ LMDE
++++ SolydXK
++++ SteamOS
++++ Raspbian
+
+-- Windows
+--- Windows 3.1
+--- Windwos 95
+--- Windows 98
+--- Windows NT
+---- Windows 8
+---- Windows 10
+@endmindmap
