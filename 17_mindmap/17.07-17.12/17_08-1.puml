@@ -1,0 +1,23 @@
+@startmindmap
+title change direction in OrgMode syntax
+* count
+** 100
+*** 101
+*** 102
+** 200
+*** 201
+
+left side
+
+** A
+*** AA
+*** BB
+
+right side
+
+** B
+
+left side
+
+** C
+@endmindmap

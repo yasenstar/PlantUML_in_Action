@@ -1,0 +1,16 @@
+@startmindmap
+title change direction in Markdown syntax
+* count
+    * 100
+        * 101
+        * 102
+    * 200
+    left side
+    * A
+        * AA
+        * AB
+    right side
+    * B
+    left side
+    * C
+@endmindmap
