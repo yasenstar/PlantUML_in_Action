@@ -1,0 +1,19 @@
+@startmindmap
+* Root 1
+** Foo
+** Bar
+*** Bar1
+* Root 2
+** Lorem
+** Ipsum
++ New
+** New 1
+++ New 2
+-- New 3
+- Another
+++ x-ray
+-- abc
+** def
+--- dfda
+-- dfaf
+@endmindmap
