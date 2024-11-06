@@ -1,0 +1,11 @@
+@startgantt
+
+language ja
+
+Project starts at 2021-01-01
+saturday are closed
+sunday are closed
+
+[Prototype Design End] lasts 19 days
+then [Testing] lasts 14 days
+@endgantt
