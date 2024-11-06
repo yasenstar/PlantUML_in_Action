@@ -1,0 +1,26 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+    .root {
+        BackgroundColor purple
+        FontColor Yellow
+        FontName Impact
+    }
+    .green {
+        BackgroundColor lightgreen
+    }
+    .rose {
+        BackgroundColor #FFBBCC
+    }
+    .your_style_name {
+        BackgroundColor LightBlue
+    }
+}
+</style>
+
+* Colors <<root>>
+++ Green <<green>>
+++ Rose <<rose>>
+-- Blue <<your_style_name>>
+@endmindmap

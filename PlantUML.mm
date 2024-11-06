@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.749">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1979,20 +1979,85 @@
 </node>
 </node>
 <node TEXT="17 Mindmap" POSITION="bottom_or_right" ID="ID_1016353481" CREATED="1716658858336" MODIFIED="1716658864947">
-<node TEXT="17.01 OrgMode Syntax" ID="ID_754702886" CREATED="1724484907220" MODIFIED="1724484913858"/>
-<node TEXT="17.02 Markdown Syntax" ID="ID_243809332" CREATED="1724485401549" MODIFIED="1724485409139"/>
-<node TEXT="17.03 Arithmetic Notation" ID="ID_735871570" CREATED="1724485446510" MODIFIED="1724485455719"/>
-<node TEXT="17.04 MultiLines" ID="ID_1782217089" CREATED="1724485456249" MODIFIED="1724485462510"/>
+<node TEXT="17.01 OrgMode Syntax" FOLDED="true" ID="ID_754702886" CREATED="1724484907220" MODIFIED="1730875330388">
+<arrowlink DESTINATION="ID_1446832660"/>
+<node TEXT="syntax compable with OrgMode" ID="ID_652182805" CREATED="1730872520670" MODIFIED="1730872533124"/>
+<node TEXT="@startmindmap   @endmindmap" ID="ID_864023564" CREATED="1730872544100" MODIFIED="1730872554389"/>
+</node>
+<node TEXT="17.02 Markdown Syntax" FOLDED="true" ID="ID_243809332" CREATED="1724485401549" MODIFIED="1724485409139">
+<node TEXT="syntax compatible with Markdown" ID="ID_266663889" CREATED="1730872706212" MODIFIED="1730872721469"/>
+<node TEXT="question #19428" POSITION="bottom_or_right" ID="ID_646613390" CREATED="1730875769129" MODIFIED="1730875779609" LINK="https://forum.plantuml.net/19428/question-markdown-syntax-mindmap-doesnt-show-correct-result"/>
+</node>
+<node TEXT="17.03 Arithmetic Notation" FOLDED="true" ID="ID_735871570" CREATED="1724485446510" MODIFIED="1730875338679">
+<arrowlink DESTINATION="ID_1926487890"/>
+<node TEXT="+: right side" ID="ID_846448279" CREATED="1730872891119" MODIFIED="1730872900913"/>
+<node TEXT="-: left side" ID="ID_253545121" CREATED="1730872901059" MODIFIED="1730872905865"/>
+</node>
+<node TEXT="17.04 MultiLines" FOLDED="true" ID="ID_1782217089" CREATED="1724485456249" MODIFIED="1730875342423">
+<arrowlink DESTINATION="ID_396638971"/>
+<node TEXT="Use : and ; to have multilines box" ID="ID_1179112648" CREATED="1730873113327" MODIFIED="1730873133139"/>
+</node>
 <node TEXT="17.05 MultiRoot Mindmap" ID="ID_242185975" CREATED="1724485472182" MODIFIED="1724485480201"/>
-<node TEXT="17.06 Colors" ID="ID_203769013" CREATED="1724485486046" MODIFIED="1724485500175"/>
-<node TEXT="17.07 Removing Box" ID="ID_1818708176" CREATED="1724485519869" MODIFIED="1724485528703"/>
-<node TEXT="17.08 Changing Diagram Direction" ID="ID_310811197" CREATED="1724485534166" MODIFIED="1724485542175"/>
+<node TEXT="17.06 Colors" ID="ID_203769013" CREATED="1724485486046" MODIFIED="1724485500175">
+<node TEXT="With Inline Color" ID="ID_1290460400" CREATED="1730898639295" MODIFIED="1730898644549">
+<node TEXT="OrgMode Syntax" ID="ID_347281021" CREATED="1730898644558" MODIFIED="1730898650842"/>
+<node TEXT="Markdown syntax" ID="ID_402293057" CREATED="1730898651007" MODIFIED="1730898660181"/>
+<node TEXT="Arithmetic notation syntax" ID="ID_192638619" CREATED="1730898660356" MODIFIED="1730898666784"/>
+</node>
+<node TEXT="With style Color" ID="ID_1843444933" CREATED="1730898673709" MODIFIED="1730898681717">
+<node TEXT="OrgMode Syntax" POSITION="bottom_or_right" ID="ID_1250383477" CREATED="1730898644558" MODIFIED="1730898650842"/>
+<node TEXT="Markdown syntax" POSITION="bottom_or_right" ID="ID_485358977" CREATED="1730898651007" MODIFIED="1730898660181"/>
+<node TEXT="Arithmetic notation syntax" POSITION="bottom_or_right" ID="ID_811077349" CREATED="1730898660356" MODIFIED="1730898666784"/>
+</node>
+<node TEXT="Apply style to a branch" POSITION="bottom_or_right" ID="ID_1594908344" CREATED="1730898681722" MODIFIED="1730898704890"/>
+</node>
+<node TEXT="17.07 Removing Box" FOLDED="true" ID="ID_1818708176" CREATED="1724485519869" MODIFIED="1730875347160">
+<arrowlink DESTINATION="ID_65157930"/>
+<node POSITION="bottom_or_right" ID="ID_894790684" CREATED="1730873870969" MODIFIED="1730873881756"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      remove box drawing using an <span style="font-weight: bold;">underscore</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="17.08 Changing Diagram Direction" FOLDED="true" ID="ID_310811197" CREATED="1724485534166" MODIFIED="1724485542175">
+<node TEXT="use &quot;left side&quot; keyword" ID="ID_600498036" CREATED="1730874554873" MODIFIED="1730874562072"/>
+</node>
 <node TEXT="17.09 Complete Example" ID="ID_1630469734" CREATED="1724485546158" MODIFIED="1724485552303"/>
-<node TEXT="17.10 Changing Style" ID="ID_1210255375" CREATED="1724485556853" MODIFIED="1724485561451"/>
-<node TEXT="17.11 Word Wrap" ID="ID_581580033" CREATED="1724485565926" MODIFIED="1724485571071"/>
+<node TEXT="17.10 Changing Style" FOLDED="true" ID="ID_1210255375" CREATED="1724485556853" MODIFIED="1724485561451">
+<node TEXT="node, depth" ID="ID_1456020215" CREATED="1730874810738" MODIFIED="1730874818460"/>
+<node TEXT="boxless" ID="ID_931154627" CREATED="1730874818876" MODIFIED="1730874821437"/>
+</node>
+<node TEXT="17.11 Word Wrap" FOLDED="true" ID="ID_581580033" CREATED="1724485565926" MODIFIED="1730875352359">
+<arrowlink DESTINATION="ID_994392495"/>
+<node ID="ID_1225578903" CREATED="1730875046261" MODIFIED="1730875075907"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      use <span style="font-weight: bold;">MaximumWidth</span><span style="font-weight: normal;">&#xa0;setting for control automatic word wrap, unit is pixel</span>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 <node TEXT="17.12 Creole on Mindmap Diagram" ID="ID_136378849" CREATED="1724485575238" MODIFIED="1724485587791"/>
 </node>
-<node TEXT="18 Work Breakdown Structure (WBS)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1852462131" CREATED="1716658865221" MODIFIED="1716658881382">
+<node TEXT="18 Work Breakdown Structure (WBS)" POSITION="bottom_or_right" ID="ID_1852462131" CREATED="1716658865221" MODIFIED="1716658881382">
 <node TEXT="18.01 OrgMode Syntax" ID="ID_1446832660" CREATED="1724485595687" MODIFIED="1724485604377"/>
 <node TEXT="18.02 Change Direction" ID="ID_1981075646" CREATED="1724485610006" MODIFIED="1724485615288"/>
 <node TEXT="18.03 Arithmetic Notation" ID="ID_1926487890" CREATED="1724485622637" MODIFIED="1724485628854"/>

@@ -1,0 +1,27 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+    .root {
+        BackgroundColor purple
+        FontColor Yellow
+        FontName Impact
+    }
+    .green {
+        BackgroundColor lightgreen
+    }
+    .rose {
+        BackgroundColor #FFBBCC
+    }
+    .your_style_name {
+        BackgroundColor LightBlue
+    }
+}
+</style>
+
+* root node <<root>>
+    * some first level node <<green>>
+        * Second level node <<your_style_name>>
+        * another second level node <<rose>>
+    * another first level node <<green>>
+@endmindmap
