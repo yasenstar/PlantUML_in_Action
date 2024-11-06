@@ -1,0 +1,7 @@
+@startmindmap
+' no space between * and [#color]
+*[#Orange] Colors
+**[#lightgreen] Green
+**[#FFBBCC] Rose
+**[#lightblue] Blue
+@endmindmap

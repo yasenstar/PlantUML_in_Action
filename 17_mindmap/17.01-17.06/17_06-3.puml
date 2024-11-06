@@ -1,0 +1,6 @@
+@startmindmap
+*[#orange] Colors
+++[#lightgreen] Green
+--[#lightblue] Blue
+++[#FFBBCC] Rose
+@endmindmap

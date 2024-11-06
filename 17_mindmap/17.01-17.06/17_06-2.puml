@@ -1,0 +1,7 @@
+@startmindmap
+*[#orange] root node
+    *[#lightgreen] some first level node
+        *[#FFBBCC] second lvel node
+        *[#lightblue] another second level node
+    *[#lightgreen] another first level node
+@endmindmap
