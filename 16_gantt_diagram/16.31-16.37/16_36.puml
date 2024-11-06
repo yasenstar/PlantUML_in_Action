@@ -1,0 +1,23 @@
+@startgantt
+
+hide footbox
+
+title Today is %date("YYYY-MM-dd")
+
+header %now()
+
+!$now = %now()
+!$past = %date("YYYY-MM-dd", $now - 14*24*3600)
+
+Project starts at $past
+
+today is colored in pink
+
+[foo] lasts 10 days
+[bar] lasts 5 days
+[bar] starts at %date("YYYY-MM-dd", $now + 4*24*3600)
+
+[The day after tomorrow] happens at %date("YYYY-MM-dd", $now + 2*24*3600)
+
+footer $now %date("YYYY-MM-dd", $now) $past
+@endgantt
