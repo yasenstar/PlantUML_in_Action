@@ -1,0 +1,8 @@
+@startgantt
+Project starts at 2020/07/01
+[P_start] happens at 2020/07/03
+[P_end] happens at 2020/07/13
+[P_end] displays on same row as [P_start]
+[Prototype Design] occurs from [P_start] to [P_end]
+' [Prototype Design] displays on same row as [P_start]
+@endgantt
