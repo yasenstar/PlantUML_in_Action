@@ -1,0 +1,14 @@
+@startgantt
+
+hide footbox
+
+title Foot Box Removed
+
+Project starts at 2017-09-20
+
+printscale monthly
+saturday are closed
+
+[Prototype Design] lasts 145 days
+then [Test Prototype] lasts 50 days
+@endgantt

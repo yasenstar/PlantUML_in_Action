@@ -1,0 +1,9 @@
+@startgantt
+
+hide footbox
+
+title Foot Box Removed
+
+[Prototype Design] lasts 15 days
+then [Test Prototype] lasts 5 days
+@endgantt

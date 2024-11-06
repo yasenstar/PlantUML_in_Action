@@ -1,0 +1,11 @@
+@startgantt
+
+hide footbox
+
+title Foot Box Removed
+
+Project starts at 2017-09-20
+
+[Prototype Design] lasts 15 days
+then [Test Prototype] lasts 5 days
+@endgantt
