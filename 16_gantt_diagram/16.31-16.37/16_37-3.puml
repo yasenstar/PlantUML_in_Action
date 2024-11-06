@@ -1,0 +1,17 @@
+@startgantt
+
+Label on first column and right aligned
+
+[Task1] lasts 1 Day
+then [Task2_long_long_long_name] as [T2] lasts 2 days
+-- Phase Two --
+then [Task3] as [T3] lasts 2 days
+[Task4] as [T4] lasts 1 day
+[Task5] as [T5] lasts 2 days
+[T2] -> [T4]
+[T2] -> [T5]
+[Task6_long-Long-Long] as [T6] lasts 4 days
+[T3] -> [T6]
+[T5] -> [T6]
+[End] happens at 1 day after [T6]'s end
+@endgantt
