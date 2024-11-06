@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.749">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1794,7 +1794,7 @@
 <node TEXT="Appendice: Examples of All ArchiMate RelationTypes" ID="ID_1838118167" CREATED="1724484296879" MODIFIED="1724484313726"/>
 </node>
 </node>
-<node TEXT="16 Gantt Diagram" POSITION="bottom_or_right" ID="ID_1346116652" CREATED="1716658851471" MODIFIED="1730297924189" LINK="https://en.wikipedia.org/wiki/Gantt_chart">
+<node TEXT="16 Gantt Diagram" FOLDED="true" POSITION="bottom_or_right" ID="ID_1346116652" CREATED="1716658851471" MODIFIED="1730297924189" LINK="https://en.wikipedia.org/wiki/Gantt_chart">
 <node TEXT="Part 1: Key Gantt Components" FOLDED="true" ID="ID_1862242227" CREATED="1730291018808" MODIFIED="1730291035025">
 <node TEXT="16.1 Declaring Tasks" FOLDED="true" POSITION="bottom_or_right" ID="ID_484909595" CREATED="1724484323884" MODIFIED="1724484332309">
 <node TEXT="Duration: lasts xx days" ID="ID_187256938" CREATED="1724484332312" MODIFIED="1730292629440"/>
@@ -1942,7 +1942,7 @@
 <node TEXT="hide resources footbox" ID="ID_1071089401" CREATED="1730531757189" MODIFIED="1730531762424"/>
 </node>
 </node>
-<node TEXT="Part 4: Gantt Styles" ID="ID_1487530764" CREATED="1730291171008" MODIFIED="1730291190304">
+<node TEXT="Part 4: Gantt Styles" FOLDED="true" ID="ID_1487530764" CREATED="1730291171008" MODIFIED="1730291190304">
 <node TEXT="16.20 Horizontal Separator" POSITION="bottom_or_right" ID="ID_1349963543" CREATED="1724484701541" MODIFIED="1724484707345">
 <node TEXT="-- TEXT --" ID="ID_928380423" CREATED="1730640924186" MODIFIED="1730640932628"/>
 </node>
@@ -1968,7 +1968,7 @@
 <node TEXT="16.31 Grammar and Verbal Form" POSITION="bottom_or_right" ID="ID_1793369173" CREATED="1724484798444" MODIFIED="1724484805192"/>
 <node TEXT="16.32 Add Title, Header, Footer, Captain or Legend" POSITION="bottom_or_right" ID="ID_714688193" CREATED="1724484805406" MODIFIED="1724484816841"/>
 <node TEXT="16.33 Removing Foot Boxes (example for all scale)" POSITION="bottom_or_right" ID="ID_1907032422" CREATED="1724484819525" MODIFIED="1724484829840"/>
-<node TEXT="16.34 Language of the Calendar" FOLDED="true" POSITION="bottom_or_right" ID="ID_535039002" CREATED="1724484834958" MODIFIED="1724484841815">
+<node TEXT="16.34 Language of the Calendar" POSITION="bottom_or_right" ID="ID_535039002" CREATED="1724484834958" MODIFIED="1724484841815">
 <node TEXT="ISO 639 Language Code" ID="ID_240848939" CREATED="1730638881803" MODIFIED="1730638895077" LINK="https://www.iso.org/iso-639-language-code">
 <node TEXT="ISO 639.2" ID="ID_1069744928" CREATED="1730638897913" MODIFIED="1730638922985" LINK="https://www.loc.gov/standards/iso639-2/php/code_list.php"/>
 </node>
@@ -1978,7 +1978,7 @@
 <node TEXT="16.37 Change Label Position" POSITION="bottom_or_right" ID="ID_1875188251" CREATED="1724484887981" MODIFIED="1724484897582"/>
 </node>
 </node>
-<node TEXT="17 Mindmap" FOLDED="true" POSITION="bottom_or_right" ID="ID_1016353481" CREATED="1716658858336" MODIFIED="1716658864947">
+<node TEXT="17 Mindmap" POSITION="bottom_or_right" ID="ID_1016353481" CREATED="1716658858336" MODIFIED="1716658864947">
 <node TEXT="17.01 OrgMode Syntax" ID="ID_754702886" CREATED="1724484907220" MODIFIED="1724484913858"/>
 <node TEXT="17.02 Markdown Syntax" ID="ID_243809332" CREATED="1724485401549" MODIFIED="1724485409139"/>
 <node TEXT="17.03 Arithmetic Notation" ID="ID_735871570" CREATED="1724485446510" MODIFIED="1724485455719"/>
