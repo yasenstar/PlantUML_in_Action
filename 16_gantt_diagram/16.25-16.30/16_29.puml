@@ -1,0 +1,11 @@
+@startgantt
+Project starts at 2018-09-20
+sunday are closed
+2018-09-21 to 2018-09-23 are colored in salmon
+2018-09-21 to 2018-09-23 are named [Vacation in the Bahamas]
+2018-09-22 to 2018-09-22 are named [more holiday]
+
+today is 30 days after start and is colored in #AAF
+[Foo] happens 40 days after start
+[Dummy] lasts 10 days and starts 5 days after start
+@endgantt
