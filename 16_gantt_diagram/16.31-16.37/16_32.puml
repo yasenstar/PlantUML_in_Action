@@ -1,0 +1,16 @@
+@startgantt
+title My Title
+header some header
+
+[Prototype Design] lasts 13 days
+
+legend
+    The Legend
+    - 1st type
+    - 2nd type
+end legend
+
+caption This is caption
+
+footer some footer
+@endgantt
