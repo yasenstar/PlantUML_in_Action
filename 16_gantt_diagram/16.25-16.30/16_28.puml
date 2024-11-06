@@ -1,0 +1,16 @@
+@startgantt
+[Prototype Design] lasts 13 days
+[Test Prototype] lasts 4 days and 1 week
+[Test Prototype] starts 1 week and 2 days after [Prototype Design]'s end
+[Hire Tester] starts at [Prototype Design]'s end and lasts 5 days
+[Test Prototype] displays on same row as [Prototype Design]
+
+[r1] happens on 5 days after [Prototype Design]'s end
+[r2] happens on 5 days after [r1]'s end
+[r3] happens on 4 days after [r2]'s end
+[r2] displays on same row as [r1]
+
+[r3] displays on same row as [Test Prototype]
+[Hire Tester] displays on same row as [r1]
+
+@endgantt
