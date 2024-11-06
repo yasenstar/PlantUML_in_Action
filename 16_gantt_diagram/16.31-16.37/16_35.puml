@@ -1,0 +1,10 @@
+@startgantt
+[Prototype Design] lasts 7 days
+then [Prototype Completed] lasts 4 days
+[End Prototype Completed] happens at [Prototype Completed]'s end
+then [Test Prototype] lasts 5 days
+[End Test Prototype] happens at [Test Prototype]'s end
+
+[Prototype Completed] is deleted
+[End Prototype Completed] is deleted
+@endgantt
