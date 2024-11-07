@@ -1,0 +1,31 @@
+@startmindmap
+Title Changing Style on Node, Depth
+
+<style>
+mindmapDiagram {
+    node {
+        BackgroundColor lightgreen
+    }
+    :depth(3) {
+        BackgroundColor yellow
+    }
+    .Ubuntu {
+        BackgroundColor orange
+    }
+}
+</style>
+
+* Linux
+    * NixOS
+        * new
+            * new
+    left side
+    * Debian
+        * Ubuntu <<Ubuntu>>
+            * Linux Mint
+            * Kubuntu
+            * Lubuntu
+            * KDE Neon
+        * another
+        * new
+@endmindmap

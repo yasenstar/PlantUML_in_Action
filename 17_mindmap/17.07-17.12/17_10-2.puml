@@ -1,0 +1,26 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+    boxless {
+        FontColor darkgreen
+        FontName Impact
+        FontSize 30
+    }
+}
+</style>
+
+*_ Linux
+    *_ NixOS
+        * new
+            *_ new
+    * Debian
+        *_ Ubuntu
+            * Linux Mint
+            * Kubuntu
+            *_ Lubuntu
+            * KDE Neon
+        * another
+        * new
+
+@endmindmap
