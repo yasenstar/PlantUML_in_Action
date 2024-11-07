@@ -1,0 +1,34 @@
+@startmindmap
+title My Super Title
+
+left header
+    My Super Header
+    Complete Example
+endheader
+
+*[#FFAAAA] <&flag>Debian
+** <&globe>Ubuntu
+*** Linux Mint
+*** Kubuntu
+*** Lubuntu
+*** KDE Neon
+** <&graph>LMDE
+** <&pulse>SolydXK
+** <&people>SteamOS
+**: <&star>Raspbian with
+a very long name;
+*** <s>Raspmbe</s> => OSMC
+*** <s>Raspfi</s> => Volumio
+
+legend right
+    Short
+    Legend
+endlegend
+
+caption
+ Test Sample For New Diagram
+endcaption
+
+right footer My Footer
+
+@endmindmap
