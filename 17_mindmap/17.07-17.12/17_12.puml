@@ -1,0 +1,69 @@
+@startmindmap
+* Creole on Mindmap
+
+**:==Creole Line
+You can have horizontal line
+--single line--
+Or double line
+==double line==
+Or strong line
+__strong line__
+____
+Or dotted line
+..dotted line..
+//and title...//
+==Title==
+Or double-line title
+--Single Line Title--
+Enjoy!;
+
+**:==Creole List Item
+**test list 1**
+* Bullet list
+* Second item
+** Sub Item
+*** Third level Item
+** another sub item
+----
+**test list 2 - Numbering List**
+# Numbered List
+# Another Level 1 Item
+## Sub Item
+## new
+### again
+# Third;
+
+left side
+
+**:==Creole
+This is **bold**
+This is //italics//
+This is ""monospaced""
+This is --stricken-out--
+This is __underlined__
+This is ~~wave-underlined~~
+--test Unicode and Icons--
+This is <U+221E> long
+This is a <U+0024> icon
+This is a <&code> icon
+This is a <&globe> icon
+Use Image: <img:PlantUML-Logo.png>;
+
+**:==HTML Creole
+This is <b>bold</b>
+This is <i>italics</i>
+This is <font:impact>Impact</font>
+This is <s>stroked</s>
+This is <u>underlined</u>
+This is <w>waved line</w>
+This is <s:green>stroked</s>
+' above line is not in color green
+This is <s><color:green>Green Stroked</color></s>
+This is <u:red>underlined</u>
+This is <u><color:red>Red Underlined</color></u>
+This is <w><color:#0000FF>Waved</color></w>
+-- other examples --
+This is <color:blue>Blue</color>
+This is <back:orange>Orange Background</back>
+This is <size:30>big</size>;
+@endmindmap
