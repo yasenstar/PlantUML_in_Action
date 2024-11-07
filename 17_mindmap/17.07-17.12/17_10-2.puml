@@ -7,6 +7,10 @@ mindmapDiagram {
         FontName Impact
         FontSize 30
     }
+    .root {
+        FontStyle italic
+        FontColor red
+    }
 }
 </style>
 
@@ -22,5 +26,6 @@ mindmapDiagram {
             * KDE Neon
         * another
         * new
+*_ Another Root <<root>>
 
 @endmindmap

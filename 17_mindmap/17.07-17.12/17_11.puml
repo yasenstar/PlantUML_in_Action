@@ -1,0 +1,23 @@
+@startmindmap
+
+<style>
+node {
+    MaximumWidth 80
+}
+:depth(2) {
+    MaximumWidth 200
+}
+.biggerBox {
+    MaximumWidth 150
+}
+</style>
+
+
+* Hi =) <&people>
+** sometimes i have node in which i want to write a long text
+*** this is the results in really huge diagram
+**** of course, I can\nexplicitly split with a new line
+**** but it could be cool if PlantUML was able to split long lines, maybe with an automatic option <<biggerBox>>
+***** thanks PlantUML
+
+@endmindmap
