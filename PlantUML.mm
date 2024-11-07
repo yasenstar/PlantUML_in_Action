@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.576">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1442,9 +1442,10 @@
 <node TEXT="11.6 JSON Numbers" ID="ID_1150866361" CREATED="1724480163644" MODIFIED="1724480167998"/>
 <node TEXT="11.7 JSON Strings" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
 <node TEXT="JSON Unicode" ID="ID_617785468" CREATED="1724480182819" MODIFIED="1724480187079">
-<node TEXT="Unicode Table (sample)" ID="ID_1443864622" CREATED="1729326178897" MODIFIED="1729409946863" LINK="https://symbl.cc/en/unicode-table/">
+<node TEXT="Unicode Table (sample) (invalid: 2024/11/07" ID="ID_1443864622" CREATED="1729326178897" MODIFIED="1730958343482" LINK="https://symbl.cc/en/unicode-table/">
 <arrowlink DESTINATION="ID_344394250"/>
 </node>
+<node TEXT="Unicode Table" ID="ID_608517867" CREATED="1730958344043" MODIFIED="1730958351203" LINK="https://www.rapidtables.com/code/text/unicode-characters.html"/>
 </node>
 <node TEXT="JSON Two-Character Escape Sequence" ID="ID_1658625161" CREATED="1724480189836" MODIFIED="1724480200142"/>
 <node TEXT="Bug: \\\\ resolves to just \" ID="ID_68385545" CREATED="1729324583805" MODIFIED="1729324603583" LINK="https://forum.plantuml.net/13066"/>
@@ -2034,7 +2035,7 @@
 <node TEXT="use &quot;left side&quot; keyword" ID="ID_600498036" CREATED="1730874554873" MODIFIED="1730874562072"/>
 </node>
 <node TEXT="17.09 Complete Example" ID="ID_1630469734" CREATED="1724485546158" MODIFIED="1724485552303"/>
-<node TEXT="17.10 Changing Style" ID="ID_1210255375" CREATED="1724485556853" MODIFIED="1724485561451">
+<node TEXT="17.10 Changing Style" FOLDED="true" ID="ID_1210255375" CREATED="1724485556853" MODIFIED="1724485561451">
 <node TEXT="node, depth" ID="ID_1456020215" CREATED="1730874810738" MODIFIED="1730874818460"/>
 <node TEXT="boxless" ID="ID_931154627" CREATED="1730874818876" MODIFIED="1730874821437">
 <node TEXT="Issue: #19431" ID="ID_494816417" CREATED="1730949987774" MODIFIED="1730949995973" LINK="https://forum.plantuml.net/19431/reference-guide-the-boxless-style-cannot-apply-root-element"/>
@@ -2060,7 +2061,7 @@
 </node>
 <node TEXT="17.12 Creole on Mindmap Diagram" ID="ID_136378849" CREATED="1724485575238" MODIFIED="1724485587791"/>
 </node>
-<node TEXT="18 Work Breakdown Structure (WBS)" POSITION="bottom_or_right" ID="ID_1852462131" CREATED="1716658865221" MODIFIED="1716658881382">
+<node TEXT="18 Work Breakdown Structure (WBS)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1852462131" CREATED="1716658865221" MODIFIED="1716658881382">
 <node TEXT="18.01 OrgMode Syntax" ID="ID_1446832660" CREATED="1724485595687" MODIFIED="1724485604377"/>
 <node TEXT="18.02 Change Direction" ID="ID_1981075646" CREATED="1724485610006" MODIFIED="1724485615288"/>
 <node TEXT="18.03 Arithmetic Notation" ID="ID_1926487890" CREATED="1724485622637" MODIFIED="1724485628854"/>
@@ -2084,7 +2085,9 @@
 </node>
 <node TEXT="PlantUML as a Language" FOLDED="true" POSITION="bottom_or_right" ID="ID_477277390" CREATED="1716664231822" MODIFIED="1716664245146">
 <node TEXT="21 Common Commands in PlantUML" POSITION="bottom_or_right" ID="ID_793883633" CREATED="1716658903496" MODIFIED="1716658912203"/>
-<node TEXT="22 Creole" POSITION="bottom_or_right" ID="ID_816118123" CREATED="1716658917930" MODIFIED="1716658923516"/>
+<node TEXT="22 Creole" POSITION="bottom_or_right" ID="ID_816118123" CREATED="1716658917930" MODIFIED="1730957370113">
+<arrowlink DESTINATION="ID_136378849"/>
+</node>
 <node TEXT="23 Defining the using sprites" POSITION="bottom_or_right" ID="ID_1151666197" CREATED="1716658925872" MODIFIED="1716658935291"/>
 <node TEXT="24 Skinparam command" POSITION="bottom_or_right" ID="ID_1854221921" CREATED="1716658936241" MODIFIED="1716658943002"/>
 <node TEXT="25 Preprocessing" POSITION="bottom_or_right" ID="ID_1111858564" CREATED="1716658948339" MODIFIED="1716658953613"/>
