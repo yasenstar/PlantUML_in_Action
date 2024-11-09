@@ -1,0 +1,18 @@
+@startwbs
+* Business Process Modelling WBS
+** Launch the project
+*** Complete Stakeholder Research
+*** Initial Implementation Plan
+** Design Phase
+*** Model of As-Is Porcesses Completed
+****< Model of As-Is Processes Completed1
+**** Model of As-Is Processes Completed2
+***** New 1
+***** New 2
+*****< New 3
+******< New 31
+****< Model of As-Is Processes Completed3
+***< Measure As-Is Performance Metrics
+***< Identify Quick Wins
+** New
+@endwbs
