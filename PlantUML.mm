@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.576">
+<node TEXT="PlantUML" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1716662380897" LINK="https://plantuml.com/" VGAP_QUANTITY="3 pt"><hook NAME="MapStyle" background="#d6e8e8" zoom="0.974">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sky_element_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -1440,12 +1440,12 @@
 <node TEXT="Boolean Array" ID="ID_805107513" CREATED="1724480155518" MODIFIED="1724480159694"/>
 </node>
 <node TEXT="11.6 JSON Numbers" ID="ID_1150866361" CREATED="1724480163644" MODIFIED="1724480167998"/>
-<node TEXT="11.7 JSON Strings" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
+<node TEXT="11.7 JSON Strings" FOLDED="true" ID="ID_1179750547" CREATED="1724480171317" MODIFIED="1724480182814">
 <node TEXT="JSON Unicode" ID="ID_617785468" CREATED="1724480182819" MODIFIED="1724480187079">
 <node TEXT="Unicode Table (sample) (invalid: 2024/11/07" ID="ID_1443864622" CREATED="1729326178897" MODIFIED="1730958343482" LINK="https://symbl.cc/en/unicode-table/">
 <arrowlink DESTINATION="ID_344394250"/>
 </node>
-<node TEXT="Unicode Table" ID="ID_608517867" CREATED="1730958344043" MODIFIED="1730958351203" LINK="https://www.rapidtables.com/code/text/unicode-characters.html"/>
+<node TEXT="Unicode Table (RapidTables)" ID="ID_608517867" CREATED="1730958344043" MODIFIED="1731150907716" LINK="https://www.rapidtables.com/code/text/unicode-characters.html"/>
 </node>
 <node TEXT="JSON Two-Character Escape Sequence" ID="ID_1658625161" CREATED="1724480189836" MODIFIED="1724480200142"/>
 <node TEXT="Bug: \\\\ resolves to just \" ID="ID_68385545" CREATED="1729324583805" MODIFIED="1729324603583" LINK="https://forum.plantuml.net/13066"/>
@@ -1456,7 +1456,7 @@
 <node TEXT="11.11 Display JSON Data on Class or Object Diagram" ID="ID_752972901" CREATED="1724480236684" MODIFIED="1724480251151"/>
 <node TEXT="11.12 Display JSON Data on Deployment Diagram" ID="ID_1146125503" CREATED="1724480256029" MODIFIED="1724480267351"/>
 <node TEXT="11.13 Display JSON Data on State Diagram" ID="ID_1759750484" CREATED="1724480273800" MODIFIED="1724480282864"/>
-<node TEXT="Add-on" ID="ID_1883498109" CREATED="1729226452077" MODIFIED="1729226456137">
+<node TEXT="Add-on" FOLDED="true" ID="ID_1883498109" CREATED="1729226452077" MODIFIED="1729226456137">
 <node TEXT="tool: json2puml" ID="ID_1276431220" CREATED="1729226456144" MODIFIED="1729226481929" LINK="https://github.com/jfudickar/json2puml"/>
 </node>
 </node>
@@ -1980,7 +1980,7 @@
 <node TEXT="16.37 Change Label Position" POSITION="bottom_or_right" ID="ID_1875188251" CREATED="1724484887981" MODIFIED="1724484897582"/>
 </node>
 </node>
-<node TEXT="17 Mindmap" POSITION="bottom_or_right" ID="ID_1016353481" CREATED="1716658858336" MODIFIED="1716658864947">
+<node TEXT="17 Mindmap" FOLDED="true" POSITION="bottom_or_right" ID="ID_1016353481" CREATED="1716658858336" MODIFIED="1716658864947">
 <node TEXT="17.01 OrgMode Syntax" FOLDED="true" ID="ID_754702886" CREATED="1724484907220" MODIFIED="1730875330388">
 <arrowlink DESTINATION="ID_1446832660"/>
 <node TEXT="syntax compable with OrgMode" ID="ID_652182805" CREATED="1730872520670" MODIFIED="1730872533124"/>
@@ -2061,7 +2061,7 @@
 </node>
 <node TEXT="17.12 Creole on Mindmap Diagram" ID="ID_136378849" CREATED="1724485575238" MODIFIED="1724485587791"/>
 </node>
-<node TEXT="18 Work Breakdown Structure (WBS)" FOLDED="true" POSITION="bottom_or_right" ID="ID_1852462131" CREATED="1716658865221" MODIFIED="1716658881382">
+<node TEXT="18 Work Breakdown Structure (WBS)" POSITION="bottom_or_right" ID="ID_1852462131" CREATED="1716658865221" MODIFIED="1716658881382">
 <node TEXT="18.01 OrgMode Syntax" ID="ID_1446832660" CREATED="1724485595687" MODIFIED="1724485604377"/>
 <node TEXT="18.02 Change Direction" ID="ID_1981075646" CREATED="1724485610006" MODIFIED="1724485615288"/>
 <node TEXT="18.03 Arithmetic Notation" ID="ID_1926487890" CREATED="1724485622637" MODIFIED="1724485628854"/>
