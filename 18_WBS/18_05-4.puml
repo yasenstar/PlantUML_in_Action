@@ -1,0 +1,11 @@
+@startwbs
+*_ World
+**_ America
+***_ Canada
+***_ USA
+***_ Mexico
+**_ Europe
+***_ England
+***_ Germany
+***_ Spain
+@endwbs
