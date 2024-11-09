@@ -1,0 +1,17 @@
+@startwbs
+
+<style>
+wbsDiagram {
+    .pink {
+        BackgroundColor pink
+    }
+    .your_style_name {
+        BackgroundColor SkyBlue
+    }
+}
+</style>
+
++ this is the partner workpackage <<pink>>
+++ this is my workpackage <<your_style_name>>
+++ thsi is another workpackage
+@endwbs

@@ -1,0 +1,5 @@
+@startwbs
++[#FFAAAA] this is the partner workpackage
+++[#pink] this is my workpackage
+++[#SkyBlue] thsi is another workpackage
+@endwbs
