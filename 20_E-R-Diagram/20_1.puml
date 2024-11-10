@@ -1,0 +1,19 @@
+@startuml
+title Information Engineering Relations
+
+entity Entity01 {
+    * Identifying_Attribute
+    --
+    * mandatory_attribute
+    optional_attribute
+}
+
+Entity01 }|..|| Entity02
+
+Entity03 }o..o| Entity04
+
+Entity05 ||--o{ Entity06
+
+Entity07 |o--|| Entity08
+
+@enduml
