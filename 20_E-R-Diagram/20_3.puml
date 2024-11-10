@@ -1,0 +1,41 @@
+@startuml
+
+skinparam linetype ortho
+
+' Entity Definition
+
+entity "Entity01" as e01 {
+    * e1_id : number <<generated>>
+    --
+    * **name : text**
+    description : text
+}
+
+entity "Entity02" as e02 {
+    * e2_id : number <<generated>>
+    --
+    * e1_id : number <<FK>>
+    other_detail : text
+}
+
+entity "Entity03" as e03 {
+    * e3_id : number <<generated>>
+    --
+    * e1_id : number <<FK>>
+    other_details : text
+}
+
+entity "Entity04" as e04 {
+    * e4_id : number <<generated>>
+    --
+    * e1_id : number <<FK>>
+    other_details : text
+}
+
+' Entity Relationship
+
+e01 ||..|{ e02
+e01 |o..o{ e03
+e01 |o..o{ e04
+
+@enduml
