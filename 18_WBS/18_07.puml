@@ -1,0 +1,53 @@
+@startwbs
+title WBS diagram with style
+
+<style>
+wbsDiagram {
+    Linecolor blue
+    BackgroundColor lightyellow
+    arrow {
+        LineColor green
+    }
+    :depth(1) {
+        BackgroundColor #FFAAAA
+        RoundCorner 50
+        LineColor red
+        FontName Impact
+        FontSize 15
+    }
+    arrow {
+        :depth(1) {
+            LineColor black
+            LineStyle 10
+            LineThickness 5
+        }
+    }
+    node {
+        BackgroundColor lightgreen
+        :depth(2) {
+            BackgroundColor yellow
+        }
+    }
+    boxless {
+        FontColor darkblue
+        FontStyle bold
+        FontSize 26
+        FontName Impact
+    }
+}
+</style>
+
+* World
+** America
+*** Canada
+***< Mexico
+****_ Chihuahua
+***_ USA
+****< New York
+**** Texas
+** Europe
+*** England
+***_ Germany
+**** Berlin
+***< Spain
+@endwbs
