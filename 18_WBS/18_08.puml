@@ -1,0 +1,24 @@
+@startwbs
+
+<style>
+    node {
+        MaximumWidth 150
+        RoundCorner 30
+    }
+    rootNode {
+        MaximumWidth 300
+    }
+    leafNode {
+        MaximumWidth 100
+    }
+    :depth(3) {
+        MaximumWidth 300
+    }
+</style>
+
+* Hi =) sometimes I have node in which I want to write a long text
+** sometimes I have node in which I want to write a long text
+*** this results in really really really huge diagram
+**** of course, I can explicit split with a\nnew line
+**** but it could be cool if PlantUML is able to split long lines, maybe with an option to specify the maximum width of a node
+@endwbs
