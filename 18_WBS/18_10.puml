@@ -1,0 +1,58 @@
+@startwbs
+* Creole on WBS
+**:==Creole
+    This is **bold**
+    This is //italics//
+    This is ""monospaced""
+    This is --striken-out--
+    This is __underlined__
+    This is ~~wave-underlined~~
+--test Unicode and icons--
+    This is <U+221E> long
+    This is a <&globe> icon
+    Use image : <img:logo.png>;
+**: <b>HTML Creole
+    This is <b>bold</b>
+    This is <i>italics</i>
+    This is <font:monospaced>monospaced</font>
+    This is <s>stroked</s>
+    This is <u>underlined</u>
+    This is <w>waved</w>
+    This is <s><color:green>stoked</color></s>
+    This is <u><color:red>underlined</color></u>
+    This is <w><color:#0000FF>waved</color></w>
+-- other examples --
+    This is <color:blue>Blue</color>
+    This is <back:orange>Orange backgrond</back>
+    This is <size:20>big</size>;
+**:==Creole Line
+You can have horizontal Line
+----
+Or double line
+====
+Or strong line
+____
+Or dotted line
+..My Title..
+Or dotted title
+//and title...//
+==Title==
+Or double-line title
+--Another Single Line--
+Or single-line-title
+Enjoy!;
+**:==Creole List Item
+**test list 1**
+* Bullet list
+* Second item
+** Sub Item
+*** sub sub item
+* Third Itme
+----
+**test list 2**
+# Numbered list
+# Second itme
+## Sub item
+## Another sub item
+# Third item;
+@endwbs
