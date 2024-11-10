@@ -1,0 +1,26 @@
+@startwbs
+
+<style>
+    .foo {
+        LineColor #FFAAAA
+        ' LineStyle 2
+        ' LineThickness 5
+        ' LineStyle 8.0;3.0
+    }
+</style>
+
+* Test
+** "A topic" as t1
+*** "common1" as c1
+*** "common2" as c2
+**** "common2-1" as c21
+** "Another topic" as t2
+
+t2 -> c1 <<foo>>
+c1 -> t1
+c21 -> t2 #blue
+t2 -> c21 #red
+c1 -> c21
+t1 -> c21
+
+@endwbs
