@@ -1,14 +1,14 @@
 # PlantUML in Action
 
-<div align="center">
-<!-- <p><a href="https://www.nuget.org/packages/MiniExcel"><img src="https://img.shields.io/nuget/v/MiniExcel.svg" alt="NuGet"></a>  <a href="https://www.nuget.org/packages/MiniExcel"><img src="https://img.shields.io/nuget/dt/MiniExcel.svg" alt=""></a> -->
-<a href="https://ci.appveyor.com/project/yasenstar/plantuml-in-action/branch/master"><img src="https://ci.appveyor.com/api/projects/status/b2vustrwsuqx45f4/branch/master?svg=true" alt="Build status"></a>
-<a href="https://github.com/yasenstar/PlantUML_in_Action" rel="nofollow">
-    <!-- <img src="https://img.shields.io/github/stars/yasenstar/plantuml-in-action?logo=github" alt="GitHub stars"> -->
-</a>
-<!-- <a href="https://www.nuget.org/packages/MiniExcel"><img src="https://img.shields.io/badge/.NET-%3E%3D%204.5-red.svg" alt="version"></a> -->
-</p>
-</div>
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/XiaoqiZhao)](https://x.com/XiaoqiZhao)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCTshmTJGpJunOz23vCEhzWg)](https://www.youtube.com/@yasenzhao)
+[![Static Badge](https://img.shields.io/badge/My_LinkedIn--XiaoqiZhao-blue)](https://www.linkedin.com/in/xiaoqi-zhao)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/yasenstar/PlantUML_in_Action)
+![GitHub forks](https://img.shields.io/github/forks/yasenstar/PlantUML_in_Action)
+[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE.txt)
+![GitHub language count](https://img.shields.io/github/languages/count/yasenstar/PlantUML_in_Action)
+[![pages-build-deployment](https://github.com/yasenstar/PlantUML_in_Action/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/yasenstar/PlantUML_in_Action/actions/workflows/pages/pages-build-deployment)
 
 ---
 
@@ -32,3 +32,5 @@ You can learn [What's New?](https://plantuml.com/news) from PlantUML homepage, t
 ---
 
 Welcome to get your questions or comments, let's make PlantUML more practical together, feel free to post in [Discusstion Board](https://github.com/yasenstar/PlantUML_in_Action/discussions) or send me [Email](mailto:xiaoqizhao@outlook.com?subject=About_PlantUML), good luck!
+
+Last Updated at: 12/31/2025, 1:05:25 PM 
