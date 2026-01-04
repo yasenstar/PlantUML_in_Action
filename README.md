@@ -6,7 +6,7 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/yasenstar/PlantUML_in_Action)
 ![GitHub forks](https://img.shields.io/github/forks/yasenstar/PlantUML_in_Action)
-[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE.txt)
+![GitHub License](https://img.shields.io/github/license/yasenstar/PlantUML_in_Action)
 ![GitHub language count](https://img.shields.io/github/languages/count/yasenstar/PlantUML_in_Action)
 [![pages-build-deployment](https://github.com/yasenstar/PlantUML_in_Action/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/yasenstar/PlantUML_in_Action/actions/workflows/pages/pages-build-deployment)
 
