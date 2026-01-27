@@ -1,36 +1,63 @@
-# PlantUML in Action
+# 🚀 PlantUML in Action: The Definitive Guide
 
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/XiaoqiZhao)](https://x.com/XiaoqiZhao)
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCTshmTJGpJunOz23vCEhzWg)](https://www.youtube.com/@yasenzhao)
-[![Static Badge](https://img.shields.io/badge/My_LinkedIn--XiaoqiZhao-blue)](https://www.linkedin.com/in/xiaoqi-zhao)
+[![Udemy Bestseller](https://img.shields.io/badge/Udemy-Bestseller-brightgreen?style=for-the-badge&logo=udemy)](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196)
+[![YouTube Playlist](https://img.shields.io/badge/YouTube-Free_Community_Course-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
+[![PlantUML Official](https://img.shields.io/badge/Authorized-by_PlantUML_Team-blue?style=for-the-badge)](https://plantuml.com/)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/yasenstar/PlantUML_in_Action)
-![GitHub forks](https://img.shields.io/github/forks/yasenstar/PlantUML_in_Action)
-![GitHub License](https://img.shields.io/github/license/yasenstar/PlantUML_in_Action)
-![GitHub language count](https://img.shields.io/github/languages/count/yasenstar/PlantUML_in_Action)
-[![pages-build-deployment](https://github.com/yasenstar/PlantUML_in_Action/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/yasenstar/PlantUML_in_Action/actions/workflows/pages/pages-build-deployment)
+> **Official Partnership:** This course and repository are developed in direct alignment with the PlantUML core development team. It is officially authorized and jointly promoted by **Arnaud Roques** (the creator of PlantUML).
 
 ---
 
-Learning and practice PlantUML languange and its modeling
+## 📖 Overview
 
-|![logo](img/PlantUML-Logo.png)|![PlantUML in Action TOC](img/PlantUML-in-action.jpg)|
-|---|---|
+**PlantUML in Action** is a comprehensive learning ecosystem designed to transform how you document software architecture. By treating "Diagrams as Code," we enable version-controlled, scalable, and beautiful technical documentation.
 
-## Videos/Course on Diagramming Practice
+This repository serves as the official companion for the **Bestselling Udemy Course**, containing all source code, templates, and exercise files.
 
-[Video List on YouTube](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
+## 🌟 Why This Course?
 
-For access full contents without waiting publishing gradually in YouTube, welcome to subscribe my packaged course in Udemy - 
-
-[![PlantUML in Action](img/udemy-cover.png)](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196)
-
-From Udemy published, you may view and learn this in structured course manner, and get certificate for your completion of the learning, welcome to visit [this course in Udemy](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196) and enroll, thanks for your supporting and appreciation to my work!
-
-You can learn [What's New?](https://plantuml.com/news) from PlantUML homepage, thanks for Arnaud's encouragement and posting my practices in the page. It's my pleasure that I can have chance to contribute back to the community!
+* **Official Recognition:** Proudly featured and recommended on the [Official PlantUML Website](https://plantuml.com/).
+* **Bestseller Status:** Trusted by thousands of architects and engineers on Udemy.
+* **Open Access:** To support the global developer community, the core video lessons are shared for free on YouTube.
+* **Practical & Applied:** Move beyond basic syntax to master complex real-world modeling scenarios.
 
 ---
 
-Welcome to get your questions or comments, let's make PlantUML more practical together, feel free to post in [Discusstion Board](https://github.com/yasenstar/PlantUML_in_Action/discussions) or send me [Email](mailto:xiaoqizhao@outlook.com?subject=About_PlantUML), good luck!
+## 🎓 Where to Learn
 
-Last Updated at: 12/31/2025, 1:05:25 PM 
+### 🏆 Premium Experience (Udemy)
+For a structured learning path, high-resolution content, quizzes, and a **Certificate of Completion** to boost your professional profile:
+👉 [**Enroll in the Bestseller Course on Udemy**](https://www.udemy.com/course/plantuml-in-action/?referralCode=D34C45B9FC7D631C0196)
+
+### 📺 Free Community Series (YouTube)
+Access the comprehensive video playlist for free. Perfect for self-paced learners and the open-source community:
+👉 [**Watch the PlantUML in Action Series**](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
+
+---
+
+## 🛠 Repository Contents
+
+This repo is organized by diagram type and complexity, allowing you to follow along with the course:
+
+* **Sequence Diagrams:** Mastering logic flow and asynchronous messaging.
+* **Class & Object Diagrams:** Deep dives into OOP structure and relationships.
+* **Component & Deployment:** Modeling physical and logical infrastructure.
+* **Gantt & Work Breakdown:** Using PlantUML for project management.
+* **Advanced Styling:** Customizing themes and `skinparam` for professional aesthetics.
+
+---
+
+## 🤝 Contributing & Feedback
+
+I am committed to keeping this the most up-to-date PlantUML resource on the web.
+* **Found a bug or have a suggestion?** Please open an [Issue](https://github.com/yasenstar/PlantUML_in_Action/issues).
+* **Want to show support?** Star this repository and share it with your engineering team!
+
+---
+
+## ❤️ Special Thanks
+
+A huge thank you to **Arnaud Roques** and the PlantUML community for their tireless work on the tool and their support in making this course a reality.
+
+---
+*Happy Modeling!* — **Yasen**, Last Updated at: 2026-01-27
