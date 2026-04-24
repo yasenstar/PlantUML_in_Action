@@ -4,7 +4,7 @@
 [![YouTube Playlist](https://img.shields.io/badge/YouTube-Free_Community_Course-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
 [![PlantUML Official](https://img.shields.io/badge/Authorized-by_PlantUML_Team-blue?style=for-the-badge)](https://plantuml.com/)
 
-| <img src="img/PlantUMLinAction_logo_2.png" alt="logo" width="400"></img>| > **Official Partnership:** This course and repository are developed in direct alignment with the PlantUML core development team. It is officially authorized and jointly promoted by **Arnaud Roques** (the creator of PlantUML). |
+| <img src="img/PlantUMLinAction_logo_2.png" alt="logo" width="600"></img>| **Official Partnership:** This course and repository are developed in direct alignment with the PlantUML core development team. It is officially authorized and jointly promoted by **Arnaud Roques** (the creator of PlantUML). |
 |---|---|
 
 
