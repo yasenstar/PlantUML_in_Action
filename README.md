@@ -4,7 +4,9 @@
 [![YouTube Playlist](https://img.shields.io/badge/YouTube-Free_Community_Course-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/playlist?list=PL6DEHvciXKeVpviuszy0l3yVIlhEFA4Sy)
 [![PlantUML Official](https://img.shields.io/badge/Authorized-by_PlantUML_Team-blue?style=for-the-badge)](https://plantuml.com/)
 
-> **Official Partnership:** This course and repository are developed in direct alignment with the PlantUML core development team. It is officially authorized and jointly promoted by **Arnaud Roques** (the creator of PlantUML).
+| <img src="img/PlantUMLinAction_logo_2.png" alt="logo" width="400"></img>| > **Official Partnership:** This course and repository are developed in direct alignment with the PlantUML core development team. It is officially authorized and jointly promoted by **Arnaud Roques** (the creator of PlantUML). |
+|---|---|
+
 
 ---
 
@@ -60,4 +62,4 @@ I am committed to keeping this the most up-to-date PlantUML resource on the web.
 A huge thank you to **Arnaud Roques** and the PlantUML community for their tireless work on the tool and their support in making this course a reality.
 
 ---
-*Happy Modeling!* — **Yasen**, Last Updated at: 2026-01-27
+*Happy Modeling!* — **Yasen**, Last Updated at: 2026-04-24

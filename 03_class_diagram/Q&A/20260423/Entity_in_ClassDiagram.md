@@ -9,6 +9,7 @@ I got this question and thought it would be quite simple and straighforward init
   - [Try 01: Normal Way by Using Stereotypes.](#try-01-normal-way-by-using-stereotypes)
   - [Try 02: Use "Robustness" shapes](#try-02-use-robustness-shapes)
   - [Try 03: Try to Replace Class Boxes with Shapes](#try-03-try-to-replace-class-boxes-with-shapes)
+  - [Try 04:](#try-04)
 
 ## Background of the Question
 
@@ -305,3 +306,4 @@ Reflections:
 3. Use "Lollipop" connection `--(0` between Control and Entity to simulate a "socket" or interface-style connection, can still use standard arrow `-->`
 4. However, the error (`Assumed diagram type: class`), possible reason could be: in older version or specific configurations of PlantUML, the `boundary`, `control` and `entity` keywords don't support the curly bracket `{}` block syntax for members (attributes and methods) like the `class` keyword does.
 
+## Try 04: 
