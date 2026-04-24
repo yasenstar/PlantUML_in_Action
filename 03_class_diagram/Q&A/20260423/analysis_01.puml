@@ -1,0 +1,5 @@
+@startuml
+boundary boundary1
+control control1
+entity entity1
+@enduml

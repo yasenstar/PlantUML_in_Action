@@ -1,0 +1,45 @@
+@startuml
+' filename: ecb_03
+
+' Forces the icons to be used instead of boxes with text stereotypes
+left to right direction
+
+boundary "FormCreateTourGroup" {
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+control "TourGroupControl" {
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+entity "TourPackage" {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    + checkPackageStatus()
+}
+
+entity "TourGroup" {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-right- "      0..*" "TourGroup"
+
+@enduml

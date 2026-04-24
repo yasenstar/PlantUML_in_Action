@@ -5,7 +5,10 @@ I got this question and thought it would be quite simple and straighforward init
 - [How to Show `Boundary`, `Control` and `Entity` Icons in Class Diagram? (PlantUML)](#how-to-show-boundary-control-and-entity-icons-in-class-diagram-plantuml)
   - [Background of the Question](#background-of-the-question)
   - [Analysis of the Diagram](#analysis-of-the-diagram)
+    - [Analyze Notations in PlantUML](#analyze-notations-in-plantuml)
   - [Try 01: Normal Way by Using Stereotypes.](#try-01-normal-way-by-using-stereotypes)
+  - [Try 02: Use "Robustness" shapes](#try-02-use-robustness-shapes)
+  - [Try 03: Try to Replace Class Boxes with Shapes](#try-03-try-to-replace-class-boxes-with-shapes)
 
 ## Background of the Question
 
@@ -55,7 +58,9 @@ As below allowed-communication matrix:
 
 Actually, the **Robustness Diagrams** (or Analysis Diagrams, as they are sometimes called) are just speciflized **Class Diagrams**. 
 
-Also, from diagram in the question, it have certain visibility indicators for methods or fields, below are the four definitions available in PlantUML:
+### Analyze Notations in PlantUML
+
+From diagram in the question, it have certain visibility indicators for methods or fields, below are the four definitions available in PlantUML `Class Diagram`:
 
 | Character | Icon for Field | Icon for Method | Visibility |
 | :---: | :---: | :---: | :---: |
@@ -72,8 +77,231 @@ The way to diagramming the relations between classes are as below:
 | Composition | *-- | <span style="color:#b00020;">◆────</span><br> |
 | Aggregation | o-- | <span style="color:#b00020;">◇────</span> |
 
+While, those objects are the declared participant in `Sequence Diagram`:
+
+```
+@startuml
+actor Actor1
+boundary boundary1
+control control1
+entity entity1
+@enduml
+```
+
+![ecb in seq diagram](img/ecb-in-seqdiagram.png)
+
+In PlantUML logic, if you just define as `boundary boundary1`, it is default rendered as a Sequence Diagram, so you see the icon in both top and bottom of the sequence indicating line. While, the good thing is the big icons are shown correctly.
+
+So, the question can be re-stated as
+
+- Define in Class Diagram with showing ECB objects as big icons, or
+- In Sequence like diagram, with EBC object icons defined (we only need one set, not two), show the box with class properties
+
+Following are the steps by steps practice to find the closest way for drawing the expected diagram:
+
+---
+
 ## Try 01: Normal Way by Using Stereotypes.
 
 I say Normal Way, since when I create a PlantUML Class Diagram with using certain notations like `Entity`, `Boundary`, and `Control`, I nomrally use specific stereotypes.
 
-PlantUML will automatically render those stereotypes, code as 
+PlantUML will automatically render those stereotypes, code as below
+
+```
+@startuml
+' filename: ecb_01
+
+skinparam style strictuml
+
+' --- Definitions ---
+
+class "FormCreateTourGroup" <<boundary>> {
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    + checkPackageStatus()
+}
+
+class "TourGroup" <<entity>> {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-right- "      0..*" "TourGroup"
+
+@enduml
+```
+
+![ecb_01](img/ecb_01.png)
+
+Code file: [ecb_01.puml](ecb_01.puml)
+
+Reflection:
+
+1. My practice of illustrating ECB objects are via stereotypes, however, this means the objects are just shown as text wrapped inside the « and », not the expected big icons -- so it's not fulfilled the need
+2. As the four elements are all defined as `class`, the grouping of lines below the name are Fields above Methods, e.g. `# packageId (PK): String` is recognized as method, so it's not shown in the top of the `TourPackage`, but in the method group
+3. You cannot simply extend the length of aggregation relation, so here using a trick with adding some dummy spaces as `"1   "`, which resulting the `0..*` is sitting in the second line
+
+## Try 02: Use "Robustness" shapes
+
+As the stereotypes are not the expected display result, try to use another `skinparam` command to change default behavior of stereotypes.
+
+Target is to use "Robustness" shapes (the circles with specific icons) instead of standard class boxes.
+
+Description of the "Robustness" shapes:
+   - boundary: circle with the "T-bar" line on the left
+   - control: circular arrow symbol used for logic components
+   - entity: circle with the flat base line
+
+```
+@startuml
+' filename: ecb_02
+
+' This command tells PlantUML to use EBC object shapes for those stereotypes
+skinparam folder {
+    BackgroundColor White
+} 
+
+' --- Defining classes with specific stereotypes ---
+
+class "FormCreateTourGroup" <<boundary>> {
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    + checkPackageStatus()
+}
+
+class "TourGroup" <<entity>> {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-right- "      0..*" "TourGroup"
+
+@enduml
+```
+
+![ecb_02](img/ecb_02.png)
+
+Source Code: [ecb_02.puml](./ecb_02.puml)
+
+Reflection:
+
+1. We keep using "Auto-Layout" since PlantUML will attempt to keep the attributes and methods in a box attached below the symbol
+2. This code doesn't show icon symbol, the class box is still the notation
+
+## Try 03: Try to Replace Class Boxes with Shapes
+
+To replace the standard class boxes with the actual `**Boundary**`, `**Control**` and `**Entity**` shapes, consider to use specific keywords `boundary`, `control` and `entity` instead of the word `class`, hope PlantUML treats them as specialized types (as used in above Sequence Diagram).
+
+```
+@startuml
+' filename: ecb_03
+
+' Forces the icons to be used instead of boxes with text stereotypes
+left to right direction
+
+boundary "FormCreateTourGroup" {
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+control "TourGroupControl" {
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+entity "TourPackage" {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+
+entity "TourGroup" {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --(0 "TourPackage" : uses >
+"TourPackage" "1" o-- "0..*" "TourGroup"
+
+@enduml
+```
+
+These's error happened and the diagram cannot display:
+
+![ecb_03](img/ecb_03.png)
+
+Source code: [ecb_03.puml](./ecb_03.puml)
+
+Reflections:
+
+1. By using `boundaary Name { ... }` instead of `class Name «bounday»`, expect PlantUML to prioritize the visual symbol as the primary header
+2. Since the diagram is not using `class`, add separator `--` inside the entities to create a horizontal line to separate the "Attributes" from the "Methods", which helps organize the data-heavy Entity shapes.
+3. Use "Lollipop" connection `--(0` between Control and Entity to simulate a "socket" or interface-style connection, can still use standard arrow `-->`
+4. However, the error (`Assumed diagram type: class`), possible reason could be: in older version or specific configurations of PlantUML, the `boundary`, `control` and `entity` keywords don't support the curly bracket `{}` block syntax for members (attributes and methods) like the `class` keyword does.
+
