@@ -10,6 +10,9 @@ I got this question and thought it would be quite simple and straighforward init
   - [Try 02: Use "Robustness" shapes](#try-02-use-robustness-shapes)
   - [Try 03: Try to Replace Class Boxes with Shapes](#try-03-try-to-replace-class-boxes-with-shapes)
   - [Try 04: Hide Stereotypes and Expect to Show Icons](#try-04-hide-stereotypes-and-expect-to-show-icons)
+  - [Try 05: `skinparam robustness` Command](#try-05-skinparam-robustness-command)
+  - [Try 06: Fix Issue Caused by `set skinparam robustness true`](#try-06-fix-issue-caused-by-set-skinparam-robustness-true)
+  - [Try 07: Using `skinparam linetype ortho` for Icon Displaying](#try-07-using-skinparam-linetype-ortho-for-icon-displaying)
 
 ## Background of the Question
 
@@ -376,3 +379,213 @@ Reflections:
 - `hide stereotypes` hides the text (e.g., it removes the word `«boundary»` from the diagram) but keep the specific circular icon
 - The separator line `--` can help to ensure the sequence of the Attributes/Methods are follow the order in the code, no automatically adjustment
 - However, it's still not showing the icon, class boxes are shown
+
+## Try 05: `skinparam robustness` Command
+
+Consider the way to get the circle icon for those Robustness/EBC notation while still showing the class box underneath, try using `skinparam robustness` command, this is the specific "mode" in PlantUML that tells it to render those stereotypes as the icons.
+
+```
+@startuml
+' filename: ecb_05
+
+' Enable the specialized Robustness icons
+set skinparam robustness true
+hide stereotypes
+
+class "FormCreateTourGroup" <<boundary>> {
+    --
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    --
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+
+class "TourGroup" <<entity>> {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-- "      0..*" "TourGroup"
+
+@enduml
+```
+
+![ecb_05](img/ecb_05.png)
+
+Source code: [ecb_05.puml](./ecb_05.puml)
+
+Reflection:
+
+- `set skinparam robustness true`: override the standard boxy class look for any class tagged with `«boundary»`, `«control»`, or `«entity»` and uses the circular EBC symbols instead
+- While, the error pops up, possible due to the version of PlantUML being a bit picky about the `set` prefix and the `skinparam` syntax.
+  - In many PlantUML versions, `skinparam` doesn't use the work `set` at the beginning, and `robustness` is a style choice rather than a simple true/false toggle.
+- `hide stereotypes`: cleans up the diagram so the text "<<control>>" will not be seen floating inside the circle, should just show the name
+
+## Try 06: Fix Issue Caused by `set skinparam robustness true`
+
+As the `set` prefix is not supported, so change to one alternative way `skinparam style ...`
+
+```
+@startuml
+' filename: ecb_06
+
+' Use "skinparam style robustness" to force the EBC shapes
+skinparam style robustness
+hide stereotypes
+
+class "FormCreateTourGroup" <<boundary>> {
+    --
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    --
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+
+class "TourGroup" <<entity>> {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-- "      0..*" "TourGroup"
+
+@enduml
+```
+
+![ecb_06](img/ecb_06.png)
+
+Source code: [ecb_06.puml](./ecb_06.puml)
+
+Reflections:
+
+- `skinparam style robustness`: still not show the expected result
+- `hide stereotypes`: as expected, the stereotypes are hidden now
+
+## Try 07: Using `skinparam linetype ortho` for Icon Displaying
+
+Since in above code, my current version of PlantUML (1.2026.2) seems to be struggling with the `style robustness` command, try an alternative "Layout Trick`.
+
+And, define the **Icon** and the **Class Box** as two separate elements and link them with one hidden line, try to build the diagram with mixed style.
+
+```
+@startuml
+' filename: ecb_07
+
+' This hides the line between the icon and the box to make them look like one piece
+skinparam linetype ortho
+hide stereotypes
+
+' --- Boundary ---
+boundary " " as B1
+class "formCreateTourGroup" as Form {
+    --
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+B1 -[hidden]- Form
+
+' --- Control ---
+control " " as C1
+class "TourGroupControl" as Control {
+    --
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+C1 -[hidden]- Control
+
+' --- Entity 1 ---
+entity " " as E1
+class "TourPackage" as Package {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+E1 -[hidden]- Package
+
+' --- Entity 2 ---
+entity " " as E2
+class "TourGroup" as Group {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+E2 -[hidden]- Group
+
+' --- Relationships ---
+
+Form - Control
+Control --> Package
+Package "1" o-- "0..*" Group
+
+@enduml
+```
+
+![ecb_07](img/ecb_07.png)
+
+Source code: [ecb_07.puml](./ecb_07.puml)
+

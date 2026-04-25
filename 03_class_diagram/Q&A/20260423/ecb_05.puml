@@ -1,0 +1,50 @@
+@startuml
+' filename: ecb_05
+
+' Enable the specialized Robustness icons
+set skinparam robustness true
+hide stereotypes
+
+class "FormCreateTourGroup" <<boundary>> {
+    --
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    --
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+
+class "TourGroup" <<entity>> {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-- "      0..*" "TourGroup"
+
+@enduml

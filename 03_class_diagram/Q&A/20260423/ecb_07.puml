@@ -1,0 +1,62 @@
+@startuml
+' filename: ecb_07
+
+' This hides the line between the icon and the box to make them look like one piece
+skinparam linetype ortho
+hide stereotypes
+
+' --- Boundary ---
+boundary " " as B1
+class "formCreateTourGroup" as Form {
+    --
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+B1 -[hidden]- Form
+
+' --- Control ---
+control " " as C1
+class "TourGroupControl" as Control {
+    --
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+C1 -[hidden]- Control
+
+' --- Entity 1 ---
+entity " " as E1
+class "TourPackage" as Package {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+E1 -[hidden]- Package
+
+' --- Entity 2 ---
+entity " " as E2
+class "TourGroup" as Group {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+E2 -[hidden]- Group
+
+' --- Relationships ---
+
+Form - Control
+Control --> Package
+Package "1" o-- "0..*" Group
+
+@enduml
