@@ -9,7 +9,7 @@ I got this question and thought it would be quite simple and straighforward init
   - [Try 01: Normal Way by Using Stereotypes.](#try-01-normal-way-by-using-stereotypes)
   - [Try 02: Use "Robustness" shapes](#try-02-use-robustness-shapes)
   - [Try 03: Try to Replace Class Boxes with Shapes](#try-03-try-to-replace-class-boxes-with-shapes)
-  - [Try 04:](#try-04)
+  - [Try 04: Hide Stereotypes and Expect to Show Icons](#try-04-hide-stereotypes-and-expect-to-show-icons)
 
 ## Background of the Question
 
@@ -306,4 +306,73 @@ Reflections:
 3. Use "Lollipop" connection `--(0` between Control and Entity to simulate a "socket" or interface-style connection, can still use standard arrow `-->`
 4. However, the error (`Assumed diagram type: class`), possible reason could be: in older version or specific configurations of PlantUML, the `boundary`, `control` and `entity` keywords don't support the curly bracket `{}` block syntax for members (attributes and methods) like the `class` keyword does.
 
-## Try 04: 
+## Try 04: Hide Stereotypes and Expect to Show Icons
+
+Define the members using a **stereotype** but tell PlantUML to hide the text and expect only icon will be shown.
+
+Although the "E" is normally used in E-R Diagram, we can use it instead of `Class" to show the big "E" with a circle.
+
+```
+@startuml
+' filename: ecb_04
+
+' This ensures only the icons are shown, not the «stereotyp» text
+hide stereotypes
+left to right direction
+
+class "FormCreateTourGroup" <<boundary>> {
+    --
+    + enterDetails()
+    + displayErrorMsg(: String)
+    + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    --
+    + validateTourGroupData(details)
+    + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    # packageId (PK): String
+    # packageName: String
+    # itinerary: String
+    # days: int
+    # unitPrice: float
+    # TourPackageStatus: String
+    --
+    + checkPackageStatus()
+}
+
+class "TourGroup" <<entity>> {
+    # tourId (PK): String
+    # packageID (FK): String
+    # departureDate: date
+    # minPeople: int
+    # maxPeople: int
+    # TourGroupstatus: String
+    --
+    + checkTourExist()
+    + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1   " o-- "      0..*" "TourGroup"
+
+@enduml
+```
+
+![ecb_04](img/ecb_04.png)
+
+Source code: [ecb_04.puml](./ecb_04.puml)
+
+Reflections:
+
+- Using `PlantUML.jar` can generate correct result with stereotypes are hided, while the PlanUML Previewer plug-in in VS Code still have stereotypes
+- `class ... <<stereotype>>` is the most stable syntax for adding methods and attributes
+- `hide stereotypes` hides the text (e.g., it removes the word `«boundary»` from the diagram) but keep the specific circular icon
+- The separator line `--` can help to ensure the sequence of the Attributes/Methods are follow the order in the code, no automatically adjustment
+- However, it's still not showing the icon, class boxes are shown
