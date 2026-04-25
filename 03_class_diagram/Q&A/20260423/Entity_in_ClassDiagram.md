@@ -13,6 +13,7 @@ I got this question and thought it would be quite simple and straighforward init
   - [Try 05: `skinparam robustness` Command](#try-05-skinparam-robustness-command)
   - [Try 06: Fix Issue Caused by `set skinparam robustness true`](#try-06-fix-issue-caused-by-set-skinparam-robustness-true)
   - [Try 07: Using `skinparam linetype ortho` for Icon Displaying](#try-07-using-skinparam-linetype-ortho-for-icon-displaying)
+  - [Try 08: Using `skinparam style robustness` Approach with Old-School Syntax](#try-08-using-skinparam-style-robustness-approach-with-old-school-syntax)
 
 ## Background of the Question
 
@@ -585,7 +586,107 @@ Package "1" o-- "0..*" Group
 @enduml
 ```
 
+One further modern way to show stereotype in the class box:
+
+```
+@startuml
+skinparam handwritten false
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
+}
+
+class "TourGroupControl" <<control>> {
+    + validateTourGroupData(details)
+}
+@enduml
+```
+
 ![ecb_07](img/ecb_07.png)
 
 Source code: [ecb_07.puml](./ecb_07.puml)
 
+![ecb_07_std](img/ecb_07_std.png)
+
+Source code: [ecb_07_std.puml](./ecb_07_std.puml)
+
+Reflections:
+
+- Using `boundary`, `control` and `entity` direct shape keywords as standalone object, it expects to force the "Real Shape" (the circle/icon) to appear, however, the error pop up
+  - Seems that due to the specific PlantUML environment is very strict about mixing `boundary` / `control` / `entity` keywords with the standard `class` syntax in the same block
+  - The "assumed diagram type: sequence) shows it's *confused* in PlantUML on whether to render this as one Class Diagram or Sequence Diagram
+- `-[hidden]- creates a link between the icon and the class box that the layout engine respects, but it doesn't actually draw a line, this is the way to keep the icon perfectly "on top" of the box -- while, due to error, this approach is not shown
+- Using alias system `as Form` or `as Control` allows drawing relationship arrows between the boxes easily while the icons just sit on the top -- while, same, due to error, this approach is not shown
+
+## Try 08: Using `skinparam style robustness` Approach with Old-School Syntax
+
+Since `skinparam linestyle ortho` is not supported, back to `skinparam style robustness`, and try to use most basic, "old-school" PlantUML syntax.
+
+```
+@startuml
+' filename: ecb_08
+
+' This line try to render the icons
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+class "FormCreateTourGroup" <<boundary>> {
+    --
+    "FormCreateTourGroup": + enterDetails()
+    "FormCreateTourGroup": + displayErrorMsg(: String)
+    "FormCreateTourGroup": + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    --
+    "TourGroupControl": + validateTourGroupData(details)
+    "TourGroupControl": + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    "TourPackage": # packageId (PK): String
+    "TourPackage": # packageName: String
+    "TourPackage": # itinerary: String
+    "TourPackage": # days: int
+    "TourPackage": # unitPrice: float
+    "TourPackage": # TourPackageStatus: String
+    --
+    "TourPackage": + checkPackageStatus()
+}
+
+
+class "TourGroup" <<entity>> {
+    "TourGroup": # tourId (PK): String
+    "TourGroup": # packageID (FK): String
+    "TourGroup": # departureDate: date
+    "TourGroup": # minPeople: int
+    "TourGroup": # maxPeople: int
+    "TourGroup": # TourGroupstatus: String
+    --
+    "TourGroup": + checkTourExist()
+    "TourGroup": + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1" o-- "0..*" "TourGroup"
+
+@enduml
+```
+
+![ecb_08](img/ecb_08.png)
+
+Source code: [ecb_08.puml](./ecb_08.puml)
+
+Reflections:
+
+- Diagram is back! However, it's still the standard class box, the expected Robustness Icons are now shown
+- In theory, `skinparam style robustness` tells PlantUML "instead of drawing a normal box header, draw the circle icon (Boundary/Control/Entity)
+  - The reason of this attempts failed could due to PlantUML versions can be quite finicky (挑剔的) about combining **Robustness symbols** (the circles) with **Class boxes** in a single element

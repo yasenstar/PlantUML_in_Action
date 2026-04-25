@@ -1,0 +1,13 @@
+@startuml
+!option handwritten true
+skinparam handwritten false
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
+}
+
+class "TourGroupControl" <<control>> {
+    + validateTourGroupData(details)
+}
+@enduml

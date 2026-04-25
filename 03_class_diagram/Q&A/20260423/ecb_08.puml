@@ -1,0 +1,55 @@
+@startuml
+' filename: ecb_08
+
+' This line try to render the icons
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+class "FormCreateTourGroup" <<boundary>> {
+    --
+    "FormCreateTourGroup": + enterDetails()
+    "FormCreateTourGroup": + displayErrorMsg(: String)
+    "FormCreateTourGroup": + displayCompletionMsg(: String)
+}
+
+class "TourGroupControl" <<control>> {
+    --
+    "TourGroupControl": + validateTourGroupData(details)
+    "TourGroupControl": + CreateTourGroup(details)
+}
+
+class "TourPackage" <<entity>> {
+    "TourPackage": # packageId (PK): String
+    "TourPackage": # packageName: String
+    "TourPackage": # itinerary: String
+    "TourPackage": # days: int
+    "TourPackage": # unitPrice: float
+    "TourPackage": # TourPackageStatus: String
+    --
+    "TourPackage": + checkPackageStatus()
+}
+
+
+class "TourGroup" <<entity>> {
+    "TourGroup": # tourId (PK): String
+    "TourGroup": # packageID (FK): String
+    "TourGroup": # departureDate: date
+    "TourGroup": # minPeople: int
+    "TourGroup": # maxPeople: int
+    "TourGroup": # TourGroupstatus: String
+    --
+    "TourGroup": + checkTourExist()
+    "TourGroup": + create()
+}
+
+' --- Relationships ---
+
+"FormCreateTourGroup" - "TourGroupControl"
+"TourGroupControl" --> "TourPackage"
+"TourPackage" "1" o-- "0..*" "TourGroup"
+
+@enduml
