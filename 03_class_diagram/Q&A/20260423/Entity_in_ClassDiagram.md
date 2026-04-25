@@ -14,6 +14,8 @@ I got this question and thought it would be quite simple and straighforward init
   - [Try 06: Fix Issue Caused by `set skinparam robustness true`](#try-06-fix-issue-caused-by-set-skinparam-robustness-true)
   - [Try 07: Using `skinparam linetype ortho` for Icon Displaying](#try-07-using-skinparam-linetype-ortho-for-icon-displaying)
   - [Try 08: Using `skinparam style robustness` Approach with Old-School Syntax](#try-08-using-skinparam-style-robustness-approach-with-old-school-syntax)
+  - [Try 09: adopt `together` keyword](#try-09-adopt-together-keyword)
+  - [Try 10: Use `colon syntax` instead of `together`](#try-10-use-colon-syntax-instead-of-together)
 
 ## Background of the Question
 
@@ -687,6 +689,105 @@ Source code: [ecb_08.puml](./ecb_08.puml)
 
 Reflections:
 
-- Diagram is back! However, it's still the standard class box, the expected Robustness Icons are now shown
+- Diagram is back! However, it's still the standard class box, the expected Robustness Icons are not shown
 - In theory, `skinparam style robustness` tells PlantUML "instead of drawing a normal box header, draw the circle icon (Boundary/Control/Entity)
   - The reason of this attempts failed could due to PlantUML versions can be quite finicky (挑剔的) about combining **Robustness symbols** (the circles) with **Class boxes** in a single element
+- Good thing: the stereotypes are hidden correctly, although we don't need that from the original question.
+
+## Try 09: adopt `together` keyword
+
+As the reason analyzed in "try 08", to achieve the "Stacked" look from the image - where the icon sits independently above the box - without triggering a syntax error, try adopting the `together` keyword and hidden lines.
+
+Expect this can force the layout engine to group them while keeping the syntax simple enough for older PlantUML versions.
+
+```
+@startuml
+' filename: ecb_09
+
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+' Use "together" to keep the icon and box aligned vertically
+together {
+    boundary "FormCreateTourGroup " as B_Icon
+    class "FormCreateTourGroup" as B_Box {
+        --
+        "FormCreateTourGroup": + enterDetails()
+        "FormCreateTourGroup": + displayErrorMsg(: String)
+        "FormCreateTourGroup": + displayCompletionMsg(: String)
+    }
+    B_Icon -[hidden]down- B_Box
+}
+
+together {
+    control "TourGroupControl " as C_Icon
+    class "TourGroupControl" as C_Box {
+        --
+        "TourGroupControl": + validateTourGroupData(details)
+        "TourGroupControl": + CreateTourGroup(details)
+    }
+    C_Icon -[hidden]down- C_Box
+}
+
+together {
+    entity "TourPackage " as E1_Icon
+    class "TourPackage" as E1_Box {
+        "TourPackage": # packageId (PK): String
+        "TourPackage": # packageName: String
+        "TourPackage": # itinerary: String
+        "TourPackage": # days: int
+        "TourPackage": # unitPrice: float
+        "TourPackage": # TourPackageStatus: String
+        --
+        "TourPackage": + checkPackageStatus()
+    }
+    E1_Icon -[hidden]down- E1_Box
+}
+
+together {
+    entity "TourGroup " as E2_Icon
+    class "TourGroup" as E2_Box {
+        "TourGroup": # tourId (PK): String
+        "TourGroup": # packageID (FK): String
+        "TourGroup": # departureDate: date
+        "TourGroup": # minPeople: int
+        "TourGroup": # maxPeople: int
+        "TourGroup": # TourGroupstatus: String
+        --
+        "TourGroup": + checkTourExist()
+        "TourGroup": + create()
+    }
+    E2_Icon -[hidden]down- E2_Box
+}
+
+
+' --- Relationships ---
+' Here connect the boxes to match the diagram's logic
+
+B_Box - C_Box
+C_Box --> E1_Box
+E1_Box "1" o-- "0..*" E2_Box
+
+@enduml
+```
+
+Got error:
+
+![ecb_09](img/ecb_09.png)
+
+Source code: [ecb_09.puml](./ecb_09.puml)
+
+Reflections:
+
+- `together { ... }` ensures the icon and the box stay close to each other during the layout process
+- `-[hidden]down-` acts as a "glue" that places the icon directly above the box without drawing an actual line between them
+- Add one space in the icon names (e.g. `"TourGroup "`) or used aliases (`as B_Icon`) to create **Unique Aliases**, since PlantUML won't let two different shapes have the exact same ID, so the space trick lets the text look identical while the IDs remain unique
+- According the **Relationship Logic**, the arrows are connected to the `_Box` aliases so the lines start and end at the class boxes, which is alike to the question image.
+- However, got syntax error to those `together` codeblocks
+
+## Try 10: Use `colon syntax` instead of `together`
+
