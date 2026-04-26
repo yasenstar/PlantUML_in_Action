@@ -16,6 +16,7 @@ I got this question and thought it would be quite simple and straighforward init
   - [Try 08: Using `skinparam style robustness` Approach with Old-School Syntax](#try-08-using-skinparam-style-robustness-approach-with-old-school-syntax)
   - [Try 09: adopt `together` keyword](#try-09-adopt-together-keyword)
   - [Try 10: Use `colon syntax` instead of `together`](#try-10-use-colon-syntax-instead-of-together)
+  - [Try 11: Add `allowmixing`](#try-11-add-allowmixing)
 
 ## Background of the Question
 
@@ -791,3 +792,153 @@ Reflections:
 
 ## Try 10: Use `colon syntax` instead of `together`
 
+The error in previous try appears the PlantUML version is extremelly sensitive to block definitions(` { } `) when keywords like `boundary` or `together` are present.
+
+Consider to remove the curly brackets entirely and use the `colon syntax` to define attributes and methods, which may avoides the modern syntax features that are causing the error.
+
+```
+@startuml
+' filename: ecb_10
+
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+' --- Boundary ---
+boundary "FormCreateTourGroup " as B_Icon
+class "FormCreateTourGroup" as B_Box
+B_Box : + enterDetails()
+B_Box : + displayErrorMsg(: String)
+B_Box : + displayCompletionMsg(: String)
+B_Icon -[hidden]down- B_Box
+
+' --- Control ---
+control "TourGroupControl " as C_Icon
+class "TourGroupControl" as C_Box
+C_Box : + validateTourGroupData(details)
+C_Box : + CreateTourGroup(details)
+C_Icon -[hidden]down- C_Box
+
+' --- Entity 1 ---
+entity "TourPackage " as E1_Icon
+class "TourPackage" as E1_Box
+E1_Box : # packageId (PK): String
+E1_Box : # packageName: String
+E1_Box : # itinerary: String
+E1_Box : # days: int
+E1_Box : # unitPrice: float
+E1_Box : # TourPackageStatus: String
+E1_Box : + checkPackageStatus()
+E1_Icon -[hidden]down- E1_Box
+
+' --- Entity 2 ---
+entity "TourGroup " as E2_Icon
+class "TourGroup" as E2_Box
+E2_Box : # tourId (PK): String
+E2_Box : # packageID (FK): String
+E2_Box : # departureDate: date
+E2_Box : # minPeople: int
+E2_Box : # maxPeople: int
+E2_Box : # TourGroupstatus: String
+E2_Box : + checkTourExist()
+E2_Box : + create()
+E2_Icon -[hidden]down- E2_Box
+
+
+' --- Relationships ---
+' Here connect the boxes to match the diagram's logic
+
+B_Box - C_Box
+C_Box --> E1_Box
+E1_Box "1" o-- "0..*" E2_Box
+
+@enduml
+```
+
+Still have error on both 2024 & 2026 versions:
+
+| PlantUML 1.2024.3 | PlantUML 1.2026.2 |
+| --- | --- |
+| ![ecb_10-1](img/ecb_10-1.png) | ![ecb_10-2](img/ecb_10-2.png) |
+
+Source code: [ecb_10.puml](./ecb_10.puml)
+
+Reflections:
+
+- **Removed** `together`: Some older parsers fail when `together` is used with specific shapes. I removed it and relied on the `-[hidden]down-` link to handle the alignment.
+- **No Curly Brackets** ` { } `: Instead of `class Name { ... }`, I used class Name followed by `Name : member`. This is the original PlantUML syntax and rarely ever fails.
+- **Colon Definition**: By using the `: ` after the class alias (e.g., `B_Box : + method()`), we define the class contents line-by-line, which is much easier for the parser to handle.
+- **Unique Aliases**: The icons use `_Icon` and the boxes use `_Box`. This allows them to exist as separate objects that we "stack" on top of each other.
+- While, the diagram is not rendered, further try in next step with `allowmixing`
+
+## Try 11: Add `allowmixing`
+
+In above try, the error **"(Assumed diagram type: sequendce)"** may caused by using keywords like `boundary`, `control`, and `entity`, PlantUML is getting confused and thinking we're trying to draw a **Sequence Diagram** instead of **Class Diagram**.
+
+In order to explicitly tell PlantUML that this is a class diagram, I'd like to use the `allowmixing` command or use the standard `class` keyword with specific stereotypes (since we can hide stereotypes, this can be still tried).
+
+```
+@startuml
+' filename: ecb_11
+
+' Force the diagram to use Class Diagram logic
+allowmixing
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+' --- Boundary ---
+class "FormCreateTourGroup" as B_Box <<boundary>>
+B_Box : + enterDetails()
+B_Box : + displayErrorMsg(: String)
+B_Box : + displayCompletionMsg(: String)
+
+' --- Control ---
+class "TourGroupControl" as C_Box <<control>>
+C_Box : + validateTourGroupData(details)
+C_Box : + CreateTourGroup(details)
+
+' --- Entity 1 ---
+class "TourPackage" as E1_Box <<entity>>
+E1_Box : # packageId (PK): String
+E1_Box : # packageName: String
+E1_Box : # itinerary: String
+E1_Box : # days: int
+E1_Box : # unitPrice: float
+E1_Box : # TourPackageStatus: String
+E1_Box : + checkPackageStatus()
+
+' --- Entity 2 ---
+class "TourGroup" as E2_Box <<entity>>
+E2_Box : # tourId (PK): String
+E2_Box : # packageID (FK): String
+E2_Box : # departureDate: date
+E2_Box : # minPeople: int
+E2_Box : # maxPeople: int
+E2_Box : # TourGroupstatus: String
+E2_Box : + checkTourExist()
+E2_Box : + create()
+
+' --- Relationships ---
+' Here connect the boxes to match the diagram's logic
+
+B_Box - C_Box
+C_Box --> E1_Box
+E1_Box "1" o-- "0..*" E2_Box
+
+@enduml
+```
+
+![ecb_11](img/ecb_11.png)
+
+Source code: [ecb_11.puml](./ecb_11.puml)
+
+Reflections:
+
+- Adding `allowmixing` really prevents the "Assumed diagram type: sequence" error, since it tells PlantUML that it's okay to use different types of shapes within a single diagram context.

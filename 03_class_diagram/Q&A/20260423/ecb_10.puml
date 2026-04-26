@@ -1,0 +1,59 @@
+@startuml
+' filename: ecb_10
+
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+' --- Boundary ---
+boundary "FormCreateTourGroup " as B_Icon
+class "FormCreateTourGroup" as B_Box
+B_Box : + enterDetails()
+B_Box : + displayErrorMsg(: String)
+B_Box : + displayCompletionMsg(: String)
+B_Icon -[hidden]down- B_Box
+
+' --- Control ---
+control "TourGroupControl " as C_Icon
+class "TourGroupControl" as C_Box
+C_Box : + validateTourGroupData(details)
+C_Box : + CreateTourGroup(details)
+C_Icon -[hidden]down- C_Box
+
+' --- Entity 1 ---
+entity "TourPackage " as E1_Icon
+class "TourPackage" as E1_Box
+E1_Box : # packageId (PK): String
+E1_Box : # packageName: String
+E1_Box : # itinerary: String
+E1_Box : # days: int
+E1_Box : # unitPrice: float
+E1_Box : # TourPackageStatus: String
+E1_Box : + checkPackageStatus()
+E1_Icon -[hidden]down- E1_Box
+
+' --- Entity 2 ---
+entity "TourGroup " as E2_Icon
+class "TourGroup" as E2_Box
+E2_Box : # tourId (PK): String
+E2_Box : # packageID (FK): String
+E2_Box : # departureDate: date
+E2_Box : # minPeople: int
+E2_Box : # maxPeople: int
+E2_Box : # TourGroupstatus: String
+E2_Box : + checkTourExist()
+E2_Box : + create()
+E2_Icon -[hidden]down- E2_Box
+
+
+' --- Relationships ---
+' Here connect the boxes to match the diagram's logic
+
+B_Box - C_Box
+C_Box --> E1_Box
+E1_Box "1" o-- "0..*" E2_Box
+
+@enduml

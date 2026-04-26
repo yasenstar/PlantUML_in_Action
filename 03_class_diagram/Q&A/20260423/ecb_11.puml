@@ -1,0 +1,52 @@
+@startuml
+' filename: ecb_11
+
+' Force the diagram to use Class Diagram logic
+allowmixing
+skinparam style robustness
+
+' Hide stereotypes specifically
+hide <<boundary>> stereotype
+hide <<control>> stereotype
+hide <<entity>> stereotype
+
+' --- Boundary ---
+class "FormCreateTourGroup" as B_Box <<boundary>>
+B_Box : + enterDetails()
+B_Box : + displayErrorMsg(: String)
+B_Box : + displayCompletionMsg(: String)
+
+' --- Control ---
+class "TourGroupControl" as C_Box <<control>>
+C_Box : + validateTourGroupData(details)
+C_Box : + CreateTourGroup(details)
+
+' --- Entity 1 ---
+class "TourPackage" as E1_Box <<entity>>
+E1_Box : # packageId (PK): String
+E1_Box : # packageName: String
+E1_Box : # itinerary: String
+E1_Box : # days: int
+E1_Box : # unitPrice: float
+E1_Box : # TourPackageStatus: String
+E1_Box : + checkPackageStatus()
+
+' --- Entity 2 ---
+class "TourGroup" as E2_Box <<entity>>
+E2_Box : # tourId (PK): String
+E2_Box : # packageID (FK): String
+E2_Box : # departureDate: date
+E2_Box : # minPeople: int
+E2_Box : # maxPeople: int
+E2_Box : # TourGroupstatus: String
+E2_Box : + checkTourExist()
+E2_Box : + create()
+
+' --- Relationships ---
+' Here connect the boxes to match the diagram's logic
+
+B_Box - C_Box
+C_Box --> E1_Box
+E1_Box "1" o-- "0..*" E2_Box
+
+@enduml
